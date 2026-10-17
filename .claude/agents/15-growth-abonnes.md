@@ -6,6 +6,8 @@ tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, mcp__Metricool_Social
 
 # Agent 15 — Growth (abonnés, likes, vues)
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md`, `data/lecons.md`, `data/journal-publications.md`.**
 
 ## Mission

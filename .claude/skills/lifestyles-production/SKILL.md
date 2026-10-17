@@ -1,6 +1,6 @@
 ---
 name: lifestyles-production
-description: Chef d'orchestre de l'équipe d'agents @lifestyles_hf. À utiliser quand Anthony demande un Reel, une publication, un plan, un bilan ou « lance l'équipe Lifestyles » : enchaîne les 15 agents dans le bon ordre, fait respecter les seuils de qualité et ne déclare « publié » qu'avec preuve.
+description: Chef d'orchestre de l'équipe d'agents @lifestyles_hf. À utiliser quand Anthony demande un Reel, une publication, un plan, un bilan ou « lance l'équipe Lifestyles » : enchaîne les 17 agents dans le bon ordre, fait respecter les seuils de qualité et ne déclare « publié » qu'avec preuve.
 ---
 
 # Chef d'orchestre Lifestyles
@@ -19,8 +19,9 @@ Tu (la session principale) pilotes les agents définis dans `.claude/agents/`. L
 | 2 | verificateur-science + scenariste-hook (chiffres provisoires entre crochets) | oui | verdict VALIDÉ après corrections |
 | 3 | Fusion : appliquer la fiche validée au script (toi) | — | 0 chiffre hors fiche |
 | 4 | critique-spectateur sur le script | non | PRÊT (sinon corriger et repasser, 2 tours max) |
-| 5 | labo-visuel (3 variantes de couverture testées) puis directeur-artistique (brief : plans réels, couverture gagnante) + growth-abonnes (mots-clés, appel à l'abonnement) | labo puis DA ; growth en parallèle | variante gagnante, plans listés, mots-clés transmis au rédacteur |
-| 6 | producteur-video + redacteur-legendes + declinaisons | oui | vidéo livrée, planche relue |
+| 4b | directeur-creatif-monde : recherche mondiale (20-40 requêtes), remise en question, brief créatif dans `docs/briefs/` | non | 2 innovations minimum, image 0 et moment waouh définis |
+| 5 | labo-visuel (3 variantes de couverture testées, à partir du brief) puis directeur-artistique (brief : plans réels, couverture gagnante) + growth-abonnes (mots-clés, appel à l'abonnement) | labo puis DA ; growth en parallèle | variante gagnante, plans listés, mots-clés transmis au rédacteur |
+| 6 | **motion-designer-3d** (moteur `tools/motion-engine/`, 3D + typographie cinétique) + redacteur-legendes + declinaisons. Le producteur-video (gabarit 2D) ne sert plus qu'en secours, et seulement si Anthony l'accepte | oui | aperçus validés puis vidéo livrée, planche relue |
 | 7 | `tools/qa/check_reel.py` (toi) puis directeur-artistique (contrôle) + critique-spectateur (vidéo) | oui | QA ≥ 90 sans ÉCHEC + GO + PRÊT |
 | 8 | verificateur-science (2e passage sur légendes et déclinaisons) | non | VALIDÉ |
 | 9 | Commit + push sur `main` (toi), puis controleur-publication | non | gate 10/10, statut PENDING vérifié |
@@ -32,6 +33,9 @@ veille-concurrence + labo-visuel (recherche visuelle) → analyste-stats → gro
 
 ## Mode « Bilan du soir »
 analyste-stats (met à jour `data/lecons.md`) → message court à Anthony : chiffres réels, 1 leçon, la consigne pour demain.
+
+## Exigence
+Lifestyles doit être reconnaissable par son originalité (playbook § 0). Un Reel qui ressemble au précédent ou au gabarit 2D d'origine est refusé, même s'il passe le contrôle technique.
 
 ## Règles du chef d'orchestre
 - Transmets à chaque agent les **rapports utiles** de l'étape précédente (il ne les voit pas sinon).

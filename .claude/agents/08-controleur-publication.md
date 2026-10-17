@@ -6,6 +6,8 @@ tools: Read, Edit, Bash, mcp__Metricool_Social_Media_Management__createScheduled
 
 # Agent 8 — Contrôleur premium gate & publication (v2)
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md`, `data/journal-publications.md` et `data/lecons.md`.**
 
 ## Premium gate (10 points, tous ✅ sinon NO-GO et renvoi à l'agent responsable)

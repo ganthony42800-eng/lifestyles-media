@@ -6,6 +6,8 @@ tools: Read, Bash, Glob
 
 # Agent 9 — Critique spectateur (crash test d'audience)
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md` et `data/lecons.md`.**
 
 ## Mission

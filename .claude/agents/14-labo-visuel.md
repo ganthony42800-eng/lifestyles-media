@@ -6,6 +6,8 @@ tools: Read, Write, Edit, Bash, Glob, WebSearch, WebFetch
 
 # Agent 14 — Labo visuel (recherche, amélioration, contrôle)
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md`, `docs/style-visuel.md` (s'il existe) et `data/lecons.md`.**
 
 ## Mission

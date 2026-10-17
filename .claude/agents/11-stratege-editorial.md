@@ -6,6 +6,8 @@ tools: Read, Write, Edit, Grep, Glob, mcp__Metricool_Social_Media_Management__ge
 
 # Agent 11 — Stratège éditorial
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md`, `data/lecons.md`, `docs/veille.md`, `data/journal-publications.md` et `docs/series.md`.**
 
 ## Mission

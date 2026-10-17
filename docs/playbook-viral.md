@@ -2,6 +2,28 @@
 
 Version 2 — 17/10/2026. **Chaque agent lit ce fichier avant de travailler.** En cas de conflit, ce playbook prime sur les habitudes ; la décision explicite la plus récente d'Anthony prime sur le playbook.
 
+## 0. Ce qu'on veut : l'exceptionnel, reconnaissable entre mille
+Lifestyles doit se reconnaître **à son originalité** en une demi-seconde. Pas « bien fait » : **différent**. Le standard n'est pas notre compte d'hier mais les meilleurs visuels du monde.
+
+### Originalité multidimensionnelle (chaque publication en combine au moins 4)
+| Dimension | Ce que ça veut dire concrètement |
+|---|---|
+| 1. Espace (3D) | Vrais volumes, profondeur, parallaxe, objets en verre, liquide, métal, lumière qui traverse |
+| 2. Temps (mouvement) | Caméra continue, transformations (un objet devient une donnée), rythme qui accélère et respire |
+| 3. Matière et lumière | Reflets, réfraction, bloom, lumière volumétrique, macro, textures réelles |
+| 4. Son | Sound design synchronisé à chaque effet, silence avant la révélation |
+| 5. Données vivantes | Les chiffres deviennent des objets (100 particules, une jauge en verre qui se remplit) |
+| 6. Récit et interaction | Boucle ouverte, révélation personnelle, question, sondage en story, épisode suivant |
+Les termes « 4D, 5D, 6D » servent de cap créatif : additionner les dimensions, pas empiler les effets.
+
+### Protocole de remise en question (obligatoire pour TOUS les agents)
+Avant d'appliquer une consigne ou de faire un audit, chaque agent :
+1. **Recherche d'abord** : ce qui se fait de mieux maintenant dans son domaine (autres pays, autres plateformes, études récentes), au moins 5 sources externes récentes.
+2. **Se compare sans complaisance** au meilleur trouvé : qu'est-ce qui est en retard chez nous ?
+3. **Propose au moins une amélioration nouvelle** par rapport à la publication précédente.
+4. **Après publication** : écrit ce qu'il referait autrement dans `data/lecons.md`.
+Un agent qui rend un travail identique au précédent sans justification a échoué.
+
 ## 1. L'objectif
 Un Reel réussi = **arrêter le pouce** (0-2 s) → **garder jusqu'au bout** (rétention ≥ 60 %) → **déclencher un envoi en message privé** (partage) → **donner une raison de s'abonner** (série, promesse de suite).
 Les partages sont la métrique n°1 : c'est elle qui pousse Instagram à montrer la vidéo à des non-abonnés. Aujourd'hui : 1 partage sur 7 jours. C'est le levier principal.

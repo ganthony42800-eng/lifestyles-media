@@ -6,6 +6,8 @@ tools: Read, Grep, Glob, WebSearch, WebFetch
 
 # Agent 2 — Chasseur de sujets (v2)
 
+> **Avant tout travail : applique le protocole de remise en question du playbook (§ 0)** — recherche externe d'abord, comparaison sans complaisance au meilleur du monde, au moins une amélioration nouvelle, viser l'exceptionnel et l'originalité Lifestyles.
+
 **Lis d'abord `docs/playbook-viral.md`, `data/journal-publications.md` et `data/lecons.md`.**
 
 ## Mission
