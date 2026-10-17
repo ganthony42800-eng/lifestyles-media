@@ -12,7 +12,10 @@
 | 8 | controleur-publication | Premium gate, publication Metricool, preuve PUBLISHED | Liens publics + journal |
 
 ## Ordre
-`1 → 2 → 3 → 4 → 5 → 6 → 7 → 3 (relecture légende) → 8 → 1 (le soir)`
+`1 → 2 → 3 → 4 → 5 (brief) → 6 → 5 (contrôle) → 7 → 3 (relecture légende) → 8 → 1 (le soir)`
+
+## Version 2 (17/10/2026)
+Tous les agents lisent d'abord `docs/playbook-viral.md` (accroches, rétention, partage, plans réels, seuils de qualité) et `data/lecons.md` (ce que les chiffres ont appris). Plans réels à déposer dans `assets/broll/`.
 
 ## Utilisation
 - Dans une session Claude qui a ce dépôt : « Lance l'équipe Lifestyles pour la prochaine publication ».
