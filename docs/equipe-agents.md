@@ -1,25 +1,35 @@
-# Équipe d'agents Lifestyles — chaîne de publication
+# Équipe d'agents Lifestyles — v3 (17/10/2026)
 
+13 agents spécialisés + 1 chef d'orchestre (`.claude/skills/lifestyles-production/SKILL.md`). Tous lisent d'abord `docs/playbook-viral.md` et `data/lecons.md`.
+
+## Production
 | # | Agent | Rôle | Livre |
 |---|---|---|---|
-| 1 | analyste-stats | Ce qui a marché et pourquoi | 3 leçons + recommandation |
-| 2 | chasseur-sujets | Sujets étonnants, utiles, partageables, non répétés | 5 idées notées /25 |
-| 3 | verificateur-science | Exactitude, sources, nuances | VALIDÉ / À CORRIGER / BLOQUÉ |
-| 4 | scenariste-hook | Script seconde par seconde, accroche, appel au partage | Script + 2 accroches de test |
-| 5 | directeur-artistique | Style néon, signature officielle, zones sûres | Planche OK / à corriger |
-| 6 | producteur-video | MP4 1080×1920 + audio original + couverture | `reels/…mp4` poussé sur GitHub |
-| 7 | redacteur-legendes | Légendes IG + TikTok, hashtags | Blocs prêts à publier |
-| 8 | controleur-publication | Premium gate, publication Metricool, preuve PUBLISHED | Liens publics + journal |
+| 1 | analyste-stats | Chiffres → décisions, ratios partages/enregistrements/abonnements | Consigne de la prochaine publication + `data/lecons.md` |
+| 2 | chasseur-sujets | Sujets contre-intuitifs, personnels, vérifiables, envoyables | 6 idées notées /25 |
+| 3 | verificateur-science | Source primaire, contre-vérification, accroche exacte | Fiche validée |
+| 4 | scenariste-hook | 3 accroches notées, script à la seconde, plans réels | Script + épisode 2 |
+| 5 | directeur-artistique | Brief réel + néon, contrôle image par image | GO / NO-GO |
+| 6 | producteur-video | MP4 réel + néon, audio original | `reels/…mp4` |
+| 7 | redacteur-legendes | Légendes, commentaire épinglé, story de relance | Blocs prêts |
+| 8 | controleur-publication | Gate 10 points, programmation, preuve PUBLISHED | Statut + journal |
 
-## Ordre
-`1 → 2 → 3 → 4 → 5 (brief) → 6 → 5 (contrôle) → 7 → 3 (relecture légende) → 8 → 1 (le soir)`
+## Qualité et croissance
+| # | Agent | Rôle | Livre |
+|---|---|---|---|
+| 9 | critique-spectateur | Crash test par 5 spectateurs types, prédiction de décrochage | PRÊT / À RETRAVAILLER |
+| 10 | veille-concurrence | Principes des meilleurs comptes, sans copier | `docs/veille.md` |
+| 11 | stratege-editorial | Plan 14 jours, séries, cadence, A/B | `data/plan-editorial.md` |
+| 12 | declinaisons | Carrousel 4:5, stories 9:16, version TikTok | `posts/`, `stories/` |
+| 13 | community-manager | Réponses types, routine 15 min, collaborations | `data/engagement/` |
 
-## Version 2 (17/10/2026)
-Tous les agents lisent d'abord `docs/playbook-viral.md` (accroches, rétention, partage, plans réels, seuils de qualité) et `data/lecons.md` (ce que les chiffres ont appris). Plans réels à déposer dans `assets/broll/`.
+## Modes
+- **Reel** : 1+2 → 3+4 → fusion → 9 → 5 → 6+7+12 → 5+9 → 3 → 8 → 13 → vérification.
+- **Semaine** (dimanche) : 10 → 1 → 11.
+- **Bilan du soir** : 1.
 
 ## Utilisation
-- Dans une session Claude qui a ce dépôt : « Lance l'équipe Lifestyles pour la prochaine publication ».
-- ChatGPT peut lire ces fiches sur GitHub et appliquer le même cahier des charges.
+Dans une session Claude qui a ce dépôt : « Lance l'équipe Lifestyles » (mode Reel), « Plan de la semaine », « Bilan du soir ». ChatGPT peut lire les mêmes fiches sur GitHub.
 
-## Règles communes
-Vérité avant tout (programmé ≠ publié), zéro dépense, signature officielle jamais redessinée, un sujet = un Reel, anti-répétition 3 mois.
+## Fichiers partagés
+`docs/playbook-viral.md` · `docs/series.md` · `docs/veille.md` · `data/lecons.md` · `data/journal-publications.md` · `data/plan-editorial.md` · `assets/broll/`
