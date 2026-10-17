@@ -9,3 +9,5 @@ Une ligne par publication. Vues = dernier relevé connu (source entre parenthès
 | 2026-10-17 | 08:12 | IG | Reel | Mousse 3 chocolats protéinée | Food Lab | Food Lab | 51 s | 24 (app 16:03) | n.d. | 0 | Claude | Faible : couverture banale, audience science |
 | 2026-10-17 | 16:35 | IG | Reel | 17 h éveillé = 0,5 g/L | Sommeil / sécurité | Néon bleu-violet | 25 s | à relever | à relever | à relever | Claude | Williamson & Feyer 2000 |
 | 2026-10-17 | 16:45 | TikTok | Vidéo | 17 h éveillé = 0,5 g/L | Sommeil / sécurité | Néon bleu-violet | 25 s | à relever | à relever | à relever | Claude | Même vidéo |
+| 2026-10-18 | 06:00 | IG | Reel | 7 000 pas | Sport / santé | Néon bleu-violet | 28,5 s | à relever | à relever | à relever | Claude (chaîne 8 agents) | programmé, à vérifier (Metricool id 398569211) |
+| 2026-10-18 | 06:10 | TikTok | Vidéo | 7 000 pas | Sport / santé | Néon bleu-violet | 28,5 s | à relever | à relever | à relever | Claude (chaîne 8 agents) | programmé, à vérifier (Metricool id 398569260) |
