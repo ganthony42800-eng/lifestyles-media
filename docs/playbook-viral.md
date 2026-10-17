@@ -61,5 +61,17 @@ Règles : ≤ 10 mots, un chiffre ou une contradiction, tutoiement, **lisible sa
 - Chaque soir → l'analyste met à jour `data/lecons.md` : ce qui marche se renforce, ce qui échoue deux fois est abandonné.
 - Tests A/B : **une seule variable** à la fois (accroche OU style OU durée), sur deux jours différents.
 
-## 9. Règles absolues
+## 9. Objectifs de croissance (suivis par l'agent growth)
+| Indicateur | Point de départ (17/10) | Objectif 30 jours |
+|---|---|---|
+| Vues médianes par Reel | 27 | 300 |
+| Partages / 1 000 vues | ≈ 0 | 10 |
+| Enregistrements / 1 000 vues | ≈ 0 | 15 |
+| Abonnements / 1 000 vues | n.d. | 5 |
+| Abonnés | 2 310 | 3 000 |
+
+## 10. Contrôle visuel automatique
+Toute vidéo passe par `tools/qa/check_reel.py` (format, durée, son audible, images vides, plans figés, rythme, luminosité, zone sûre, contraste de l'accroche). Score ≥ 90 et aucun ÉCHEC avant publication.
+
+## 11. Règles absolues
 Vérité (programmé ≠ publié), zéro dépense, signature officielle jamais redessinée, un sujet = un Reel, anti-répétition 3 mois, pas de promesse santé, secrets jamais dans le dépôt.

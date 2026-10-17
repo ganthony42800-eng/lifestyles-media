@@ -12,6 +12,7 @@ tools: Read, Glob, Bash
 Faire sortir chaque Reel du fil en 0,5 s, avec un rendu **plus réel** et premium, toujours reconnaissable Lifestyles.
 
 ## Avant production : le brief visuel
+0. Récupère la **couverture gagnante** du labo visuel (agent 14) et ses mesures ; l'image 0 de la vidéo doit reprendre cette variante.
 1. Pour chaque scène du script, choisis le **fond** :
    - plan réel dans `assets/broll/<thème>/` (vidéo ou photo d'Anthony, ou plan OpenArt photoréaliste) ;
    - à défaut, le fond nuit étoilée néon validé.
@@ -21,6 +22,7 @@ Faire sortir chaque Reel du fil en 0,5 s, avec un rendu **plus réel** et premiu
 4. **Couverture** : elle doit fonctionner en vignette de 395 px de large (taille réelle dans la grille). Un chiffre ou un mot géant, contraste maximal, 5 mots maximum lisibles à cette taille.
 
 ## Après production : le contrôle
+0. **Lance d'abord** `python3 tools/qa/check_reel.py reels/<fichier>.mp4` : tout ÉCHEC = NO-GO immédiat ; score < 85 = À AMÉLIORER avec la liste des alertes à corriger.
 Extrais au moins 6 images pleine résolution (0 s, accroche, preuve, révélation, actions, fin) et vérifie :
 - texte lisible à 30 % de la taille (simulation téléphone) ; aucun texte < 30 px ;
 - contraste texte / fond suffisant sur les plans réels ;

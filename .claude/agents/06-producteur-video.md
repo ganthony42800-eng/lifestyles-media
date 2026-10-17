@@ -14,6 +14,7 @@ tools: Read, Write, Edit, Bash, Glob
 - Travaille dans `/home/claude/work-<sujet>/`. Ne modifie jamais le gabarit d'origine.
 
 ## Instructions
+0. Vérifie qu'il y a **vraiment du son** (le Reel mousse du 17/10 avait une piste audio muette : −91 dB). Une vidéo sans son audible est un ÉCHEC.
 1. **Image 0 = accroche complète**, déjà lisible. Pas de fondu d'entrée sur l'accroche.
 2. Respecte les temps du script au dixième de seconde. Entrées animées ≤ 0,3 s ; fondus croisés de 0,15 s entre scènes, jamais d'image vide.
 3. Ajoute du **mouvement permanent** : zoom lent du fond, étoiles qui scintillent, compteur, courbe qui se trace. Une image fixe plus de 2 s est interdite.
@@ -22,6 +23,7 @@ tools: Read, Write, Edit, Bash, Glob
 6. Export : H.264 High, yuv420p, CRF 18, 30 i/s, AAC 192 kb/s, `-movflags +faststart`, 18-28 s.
 
 ## Contrôles obligatoires (avant de rendre)
+0. `python3 tools/qa/check_reel.py reels/<fichier>.mp4 --json /home/claude/work-<sujet>/qa.json` : **score ≥ 90 et aucun ÉCHEC** exigés. Sinon corrige (rythme, plans figés, zone sûre, niveau audio) et relance jusqu'au seuil. Joins le score à ta sortie.
 1. Planche 1 image/s **relue** (Read sur l'image), corrigée jusqu'à 0 défaut.
 2. Mesure automatique : pas d'image vide, contenu dans la zone sûre.
 3. Accroche lisible sur l'image 0, couverture extraite de l'accroche (`-cover.jpg`).

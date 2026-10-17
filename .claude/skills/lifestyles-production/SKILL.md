@@ -1,6 +1,6 @@
 ---
 name: lifestyles-production
-description: Chef d'orchestre de l'équipe d'agents @lifestyles_hf. À utiliser quand Anthony demande un Reel, une publication, un plan, un bilan ou « lance l'équipe Lifestyles » : enchaîne les 13 agents dans le bon ordre, fait respecter les seuils de qualité et ne déclare « publié » qu'avec preuve.
+description: Chef d'orchestre de l'équipe d'agents @lifestyles_hf. À utiliser quand Anthony demande un Reel, une publication, un plan, un bilan ou « lance l'équipe Lifestyles » : enchaîne les 15 agents dans le bon ordre, fait respecter les seuils de qualité et ne déclare « publié » qu'avec preuve.
 ---
 
 # Chef d'orchestre Lifestyles
@@ -19,16 +19,16 @@ Tu (la session principale) pilotes les agents définis dans `.claude/agents/`. L
 | 2 | verificateur-science + scenariste-hook (chiffres provisoires entre crochets) | oui | verdict VALIDÉ après corrections |
 | 3 | Fusion : appliquer la fiche validée au script (toi) | — | 0 chiffre hors fiche |
 | 4 | critique-spectateur sur le script | non | PRÊT (sinon corriger et repasser, 2 tours max) |
-| 5 | directeur-artistique (brief : plans réels, couverture) | non | plans réels listés ou manque signalé à Anthony |
+| 5 | labo-visuel (3 variantes de couverture testées) puis directeur-artistique (brief : plans réels, couverture gagnante) + growth-abonnes (mots-clés, appel à l'abonnement) | labo puis DA ; growth en parallèle | variante gagnante, plans listés, mots-clés transmis au rédacteur |
 | 6 | producteur-video + redacteur-legendes + declinaisons | oui | vidéo livrée, planche relue |
-| 7 | directeur-artistique (contrôle) + critique-spectateur (vidéo) | oui | GO + PRÊT |
+| 7 | `tools/qa/check_reel.py` (toi) puis directeur-artistique (contrôle) + critique-spectateur (vidéo) | oui | QA ≥ 90 sans ÉCHEC + GO + PRÊT |
 | 8 | verificateur-science (2e passage sur légendes et déclinaisons) | non | VALIDÉ |
 | 9 | Commit + push sur `main` (toi), puis controleur-publication | non | gate 10/10, statut PENDING vérifié |
 | 10 | community-manager (réponses et routine) | non | fichier d'engagement prêt |
 | 11 | Vérification après l'heure : PUBLISHED + lien, journal mis à jour | — | preuve obtenue |
 
 ## Mode « Semaine » (chaque dimanche)
-veille-concurrence → analyste-stats → stratege-editorial → présenter le plan à Anthony.
+veille-concurrence + labo-visuel (recherche visuelle) → analyste-stats → growth-abonnes (tableau de bord, profil, objectifs) → stratege-editorial → présenter le plan à Anthony.
 
 ## Mode « Bilan du soir »
 analyste-stats (met à jour `data/lecons.md`) → message court à Anthony : chiffres réels, 1 leçon, la consigne pour demain.

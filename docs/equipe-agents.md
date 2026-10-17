@@ -1,6 +1,6 @@
-# Équipe d'agents Lifestyles — v3 (17/10/2026)
+# Équipe d'agents Lifestyles — v4 (17/10/2026)
 
-13 agents spécialisés + 1 chef d'orchestre (`.claude/skills/lifestyles-production/SKILL.md`). Tous lisent d'abord `docs/playbook-viral.md` et `data/lecons.md`.
+15 agents spécialisés + 1 chef d'orchestre (`.claude/skills/lifestyles-production/SKILL.md`). Tous lisent d'abord `docs/playbook-viral.md` et `data/lecons.md`.
 
 ## Production
 | # | Agent | Rôle | Livre |
@@ -22,10 +22,15 @@
 | 11 | stratege-editorial | Plan 14 jours, séries, cadence, A/B | `data/plan-editorial.md` |
 | 12 | declinaisons | Carrousel 4:5, stories 9:16, version TikTok | `posts/`, `stories/` |
 | 13 | community-manager | Réponses types, routine 15 min, collaborations | `data/engagement/` |
+| 14 | labo-visuel | Recherche visuelle, 3 variantes de couverture mesurées, amélioration du gabarit | Variante gagnante + `docs/style-visuel.md` |
+| 15 | growth-abonnes | Abonnés, likes, vues : profil, mots-clés, Reels d'essai, collaborations, objectifs | Tableau de bord + 5 actions |
+
+## Outil de contrôle
+`tools/qa/check_reel.py` : score /100, GO / NO-GO automatique.
 
 ## Modes
-- **Reel** : 1+2 → 3+4 → fusion → 9 → 5 → 6+7+12 → 5+9 → 3 → 8 → 13 → vérification.
-- **Semaine** (dimanche) : 10 → 1 → 11.
+- **Reel** : 1+2 → 3+4 → fusion → 9 → 14 → 5+15 → 6+7+12 → QA + 5+9 → 3 → 8 → 13 → vérification.
+- **Semaine** (dimanche) : 10+14 → 1 → 15 → 11.
 - **Bilan du soir** : 1.
 
 ## Utilisation

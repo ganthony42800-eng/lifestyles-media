@@ -18,7 +18,7 @@ tools: Read, Edit, Bash, mcp__Metricool_Social_Media_Management__createScheduled
 | 5 | Au moins 2 leviers de partage | script + légende |
 | 6 | Visuel GO du directeur artistique | rapport DA |
 | 7 | Signature officielle + trèfle + @lifestyles_hf | images extraites |
-| 8 | Technique : 9:16, 18-28 s, H.264 + AAC, faststart | ffprobe |
+| 8 | Technique : `tools/qa/check_reel.py` score ≥ 90, aucun ÉCHEC, son audible | rapport QA |
 | 9 | Légendes IG + TikTok + commentaire épinglé prêts | rapport du rédacteur |
 | 10 | Provenance notée ; `isAiGenerated` vrai si plan IA réaliste | journal |
 
