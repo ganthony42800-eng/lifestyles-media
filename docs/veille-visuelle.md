@@ -5,6 +5,24 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 18/10/2026 soir (mode rapide) — pour « Mythe ou science ? » ép. 2 (craquer ses doigts)
+
+**Volume** : 13 requêtes + 7 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot ; requêtes chinoises et japonaises sans résultat exploitable (articles AFP / Nature Asia sur l'étude 2015, pas de vidéos chiffrées). Aucun compteur de vues des 30 derniers jours vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | Dr Karl (@drkarl) — [greenMe](https://www.greenme.it/?p=859083) | Australie, TikTok | > 350 000 vues (déclaré) | **Mythe cassé + nuance inattendue** (pas d'arthrose, mais la poigne) | La nuance donne l'argument de débat et la raison d'envoyer |
+| 2 | IRM en temps réel Kawchuk — [The Limbic](https://thelimbic.com/?p=3732) · [ScienceAlert](https://www.sciencealert.com/researchers-have-finally-worked-out-what-happens-when-you-crack-your-knuckles) | Canada, recherche reprise partout | n.d. | **Éclair blanc bref, puis cavité qui s'ouvre et reste**, en < 1 s | Un événement physique net, en un instant : parfait pour 0-1 s |
+| 3 | Radios animées en boucle (Cameron Drake / Weiss Orthopaedics) — [Creative Bloq](https://creativebloq.com/animation/animated-x-rays-reveal-how-your-bones-move-81412674) | États-Unis | n.d. | **Imagerie médicale réelle comme esthétique**, boucle parfaite | « Voir à travers » le corps fascine sans effet ajouté |
+| 4 | Tendances 2026 — [Tangence](https://www.tangence.com/blog/?p=1093) | Monde, blog métier | n.d. | **La typo porte le récit** ; 2D + 3D *légère* plutôt que 3D totale ; mouvement léger | Rejoint nos chiffres : texte néon 2D 60 % à 3 s contre 23 % pour la 3D |
+| 5 | Hook Reels 2026 — [BlitzCut (04/09/2026)](https://blitzcutai.com/blog/what-makes-a-reel-hook-viral) | Monde | Seuils déclarés : 3 s > 60 % « correct », > 80 % « fort » | **Décision de swipe ≈ 1 s, d'engagement ≈ 3 s ; l'image 0 doit avoir du sens seule** | Placer l'événement visuel avant 1 s |
+| 6 | Zones sûres / grille — [Hopper](https://www.hopperhq.com/blog/instagram-reel-size/) | Monde | Zone sûre ≈ x 65-1015, y 270-1250 ; grille 3:4 = y 240-1680 | Tout le sens de l'image 0 dans ce rectangle | Lisible dans le fil **et** dans la grille du profil |
+| 7 | Modèles « stomp » — [Videobolt](https://videobolt.net/author/Goldenmotion/trendy-stomp) · [Envato](https://elements.envato.com/stomp-intro-G98K4CP) | Monde, banques de modèles | n.d. | **Contre-exemple** : texte qui claque sur le temps = gabarit saturé | À éviter : on fait bouger le texte *selon le sujet* (il se fend comme l'articulation) |
+
+**À retenir** : l'image 0 reste typographique (géante, centrée, néon) ; la 3D intervient *dans* le texte (la fente du crac à 0,9 s) au lieu de le concurrencer. Personne, dans ce qu'on a trouvé, ne fait vivre la typo selon la physique du sujet : c'est notre ouverture.
+
+---
+
 ## Session du 18/10/2026 (mode rapide) — pour « Piéton : 2 secondes » (sécurité routière, conduite de nuit)
 
 **Volume** : 13 requêtes + 6 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot, aucun compteur de vues vidéo des 30 derniers jours trouvé sur ce thème ; requêtes coréennes, japonaises et brésiliennes = surtout campagnes institutionnelles sans chiffres d'audience. Rien n'est marqué « vérifié » côté vues.
