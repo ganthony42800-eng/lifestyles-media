@@ -5,6 +5,23 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 18/10/2026 (mode rapide) — pour « Piéton : 2 secondes » (sécurité routière, conduite de nuit)
+
+**Volume** : 13 requêtes + 6 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot, aucun compteur de vues vidéo des 30 derniers jours trouvé sur ce thème ; requêtes coréennes, japonaises et brésiliennes = surtout campagnes institutionnelles sans chiffres d'audience. Rien n'est marqué « vérifié » côté vues.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | Volvo LifePaint — [road.cc](https://road.cc/content/news/147107-paint-yourself-visible-night-volvo-develops-new-life-paint-cyclists) · [Cannes Lions](https://www.lovethework.com/work-awards/campaigns/volvo-lifepaint-43705) | Royaume-Uni / Suède, film + activation | Primé Cannes Lions (page The Work) ; vues n.d. | **Invisible jusqu'à ce que les phares le touchent** : la lumière comme révélateur | Effet « magie » instantané, compréhensible sans texte |
+| 2 | Visible Bag (GROSS, Uzum) — [GROSS](https://gross.uz/en/press_center/news/177) | Ouzbékistan, 2024-2025 | Or PHNX Paris 2025, Or Jolbors, Argent Baku Flames (déclaré) ; vues n.d. | **Langage des signes routiers + réfléchissant** sur un objet du quotidien | Code visuel connu de tous, lisible en un coup d'œil |
+| 3 | Borzendowski et al. — [APS](https://psychologicalscience.org/?p=116122) | États-Unis, recherche | Piétons en gilet : se croient vus à ≈ 140 m, vus à ≈ 40 m (feux de route) | **Écart « ce que je crois » / « ce que voit le conducteur »** → montrer le POV conducteur | Le spectateur se découvre en erreur sur lui-même |
+| 4 | Kennon et al. 2025 — [QUT](https://research.qut.edu.au/mqcollab/wp-content/uploads/sites/471/2026/01/Visual-motion-perception-and-driving-hazard-visibility-at-night.pdf) | Australie, recherche | n.d. | **La nuit, le mouvement est l'indice le plus fort** ; le plus dur à voir = lent et en sombre | Justifie une bande qui *bouge* avec la marche |
+| 5 | Vidéos police « vue conducteur » — [Police NRW](https://duisburg.polizei.nrw/en/article/safety-through-visibility-0) · [Derbyshire (road.cc)](https://cdn.road.cc/content/news/212365-police-video-pushes-reflective-clothing-cyclists-rider-breaking-law-not-having?page=1) | Allemagne, Royaume-Uni | n.d. | Comparaison sombre / clair / réfléchissant **depuis le siège conducteur** | Format éprouvé, mais filmé et plat : on le reprend en 3D spatialisée |
+| 6 | Campagnes 反射材 Japon — [Kagawa 2026](https://www.pref.kagawa.lg.jp/kurashi/kaigi/tsc/080930.html) · [Toyota](https://global.toyota/detail/52341) | Japon | n.d. | Saisonnalité (automne, nuit qui tombe tôt) + geste simple (coller un réflecteur) | Même angle que nous : le geste d'une minute |
+
+**À retenir** : POV conducteur + lumière qui révèle + distances spatialisées ; personne, dans ce qu'on a trouvé, ne montre les distances *à l'échelle sur la route* en 3D : c'est notre ouverture.
+
+---
+
 ## Session du 17/10/2026 — pour « Mythe ou science ? » ép. 1 (vitamine C)
 
 **Volume** : 39 requêtes web + 13 pages lues. **Limites honnêtes** : TikTok, Douyin, Xiaohongshu, Bilibili et Instagram ne sont pas lisibles par un robot (connexion obligatoire, pages dynamiques) ; les recherches en chinois, coréen, japonais et portugais ont surtout renvoyé des banques d'images et des agrégateurs. Les compteurs de vues par vidéo des 30 derniers jours ne sont **pas** accessibles d'ici : les chiffres ci-dessous sont des chiffres de comptes (abonnés, moyennes) et sont marqués « déclaré ». Le visuel « sucre et diabète » cité par Anthony n'a pas été retrouvé : le principe en est reconstitué plus bas (section D) à partir des codes du genre (3D médicale macro réaliste).
