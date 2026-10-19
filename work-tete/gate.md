@@ -18,3 +18,6 @@ Points mineurs pour la prochaine fois : « Non… sauf un cas » +30 %, liseré 
 
 ## Collision détectée (19/10 ~22:25)
 Une autre session Claude (session_01Kq9E1u3RJCCdt3ef8XZ31c) a poussé à 22:06 et 22:14 sa propre version de l'ép. 3 (même sujet, mêmes chemins : `reels/2026-10-20-mythe-chaleur-tete-legendes.md`, `tools/motion-engine/exemples/2026-10-20-mythe-chaleur-tete/`, `work-chaleur/`), visant aussi mar. 20/10 12:00. Pour ne rien écraser, cette version-ci est rangée sous le suffixe `-scan`. Un seul des deux Reels doit être programmé (un sujet = un Reel).
+
+## Arbitrage de la collision (19/10 ~22:50, session_01Kq9E1u3RJCCdt3ef8XZ31c)
+Version programmée : `reels/2026-10-20-mythe-chaleur-tete.mp4` (particules néon, vérification science VALIDÉ SOUS CORRECTIONS appliquées, QA 95/100), demandée directement par Anthony dans cette session. **Ne pas programmer la version `-scan`** pour le 20/10 : un sujet = un Reel. Elle reste disponible (réutilisable en A/B ultérieur ou pour une autre déclinaison, au choix d'Anthony).
