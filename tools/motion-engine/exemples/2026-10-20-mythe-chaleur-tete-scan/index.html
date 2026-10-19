@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Mythe ou science ? ép. 3 — la chaleur par la tête — Lifestyles</title>
+<style>
+@font-face{font-family:IDBk;src:url(/engine/fonts/InterDisplay-Black.otf)}
+@font-face{font-family:IDBi;src:url(/engine/fonts/InterDisplay-BlackItalic.otf)}
+@font-face{font-family:IDSb;src:url(/engine/fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:IDMd;src:url(/engine/fonts/InterDisplay-Medium.otf)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#05030F}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.ln{position:absolute;left:0;width:1080px;text-align:center;white-space:nowrap;color:#FFF6EC;opacity:0;isolation:isolate;
+  font-variant-numeric:tabular-nums;text-shadow:0 5px 26px rgba(10,4,30,.85),0 1px 3px rgba(10,4,30,.9)}
+.ln>.in{position:relative;display:inline-block}
+.ln>.in::before{content:'';position:absolute;inset:-34% -9%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(10,4,30,.58),rgba(10,4,30,.32) 62%,rgba(10,4,30,0))}
+.sb{font-family:IDSb}.bk{font-family:IDBk}.md{font-family:IDMd}.bi{font-family:IDBi}
+.hot{font-family:IDBk;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;text-shadow:none;
+  background-image:linear-gradient(180deg,#FFF8E1,#FFC24A 55%,#FF6A2B);filter:drop-shadow(0 0 14px rgba(255,140,60,.45)) drop-shadow(0 6px 26px rgba(10,4,30,.75))}
+.bi .hot,.hot.bi{font-family:IDBi}
+.army{letter-spacing:.04em}
+.stamp{display:inline-block;padding:0 30px 8px;border:7px solid #FFC24A;border-radius:18px;color:#FFC24A;line-height:1.1;
+  box-shadow:0 0 24px rgba(255,160,60,.55),inset 0 0 16px rgba(255,160,60,.35);text-shadow:0 0 18px rgba(255,150,60,.7);background:rgba(10,4,30,.45)}
+#sigS{position:absolute;left:420px;top:38px;width:240px;opacity:.85}
+#hdl{position:absolute;left:0;width:1080px;top:122px;text-align:center;font-family:IDMd;font-size:26px;color:#FFE9CF;letter-spacing:.04em;opacity:.9;
+  text-shadow:0 2px 12px rgba(10,4,30,.9)}
+#pill{position:absolute;top:172px;left:50%;transform:translateX(-50%);height:58px;line-height:58px;padding:0 32px;border-radius:999px;
+  border:2px solid #FF8A3D;background:rgba(255,138,61,.14);color:#FFF6EC;font-family:IDSb;font-size:28px;letter-spacing:.14em;white-space:nowrap;
+  box-shadow:0 0 18px rgba(255,138,61,.35),inset 0 0 14px rgba(255,138,61,.16)}
+#sigB{position:absolute;left:180px;top:285px;width:720px;height:235px;opacity:0}
+#sigB img{width:720px;height:235px;display:block}
+#shine{position:absolute;inset:0;mix-blend-mode:screen;
+  background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,240,200,.95) 50%,rgba(255,226,176,0) 60%);
+  background-size:300% 100%;-webkit-mask:url(signature-officielle.png) center/100% 100% no-repeat;mask:url(signature-officielle.png) center/100% 100% no-repeat}
+#hdlB{position:absolute;left:0;width:1080px;top:528px;text-align:center;font-family:IDMd;font-size:38px;color:#FFE9CF;opacity:0;text-shadow:0 2px 14px rgba(10,4,30,.9)}
+#sub{position:absolute;left:50%;top:790px;transform:translateX(-50%);height:88px;line-height:88px;padding:0 60px;border-radius:999px;
+  font-family:IDBk;font-size:46px;color:#1A0820;background:linear-gradient(90deg,#FFE27A,#FF9A1F);white-space:nowrap;opacity:0;box-shadow:0 0 30px rgba(255,154,31,.55)}
+#mention{position:absolute;left:0;width:1080px;top:1452px;text-align:center;font-family:IDMd;font-size:23px;letter-spacing:.06em;color:rgba(255,246,236,.66);
+  text-shadow:0 1px 8px rgba(10,4,30,.9)}
+/* viseur */
+#ret{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible;pointer-events:none}
+#ret path{fill:none;stroke:rgba(255,255,255,.72);stroke-width:2.5}
+#hotlab{position:absolute;font-family:IDMd;font-size:25px;letter-spacing:.12em;color:rgba(255,255,255,.8);white-space:nowrap;opacity:0;text-shadow:0 1px 8px rgba(10,4,30,.9)}
+#leg{position:absolute;border:2px solid rgba(255,255,255,.55);box-sizing:border-box;opacity:.78;overflow:hidden}
+#leg .g{position:absolute;inset:0}
+#leg .gi{background:linear-gradient(to top,#05030F 0%,#1C0B4A 15%,#4B1590 32%,#A0228F 50%,#E8473A 66%,#FF9A1F 80%,#FFE27A 92%,#FFFBEA 100%)}
+#leg .gw{background:linear-gradient(to top,#060606,#FFFFFF);opacity:0}
+#palname{position:absolute;right:156px;top:930px;font-family:IDMd;font-size:22px;letter-spacing:.12em;color:rgba(255,255,255,.72);text-shadow:0 1px 8px rgba(10,4,30,.9)}
+.col{position:absolute;width:44px;height:480px;top:960px;border:2px solid rgba(255,255,255,.7);box-sizing:border-box;background:rgba(10,4,30,.55);opacity:0}
+.col .s{position:absolute;left:3px;right:3px;opacity:0}
+.col .s.h{background:linear-gradient(180deg,#FFF8E1,#FFC24A 55%,#FF6A2B);box-shadow:0 0 16px rgba(255,150,60,.7)}
+.col .s.o{background:#4B1590;border-top:2px solid rgba(10,4,30,.9)}
+.chd{position:absolute;top:905px;font-family:IDMd;font-size:22px;letter-spacing:.1em;color:rgba(255,246,236,.9);white-space:nowrap;opacity:0;transform:translateX(-50%);
+  text-shadow:0 1px 8px rgba(10,4,30,.95)}
+#tlab{position:absolute;font-family:IDBk;font-size:28px;letter-spacing:.06em;color:#FFC24A;white-space:nowrap;opacity:0;transform:translate(-100%,-50%);
+  text-shadow:0 0 12px rgba(255,140,60,.6),0 2px 10px rgba(10,4,30,.9)}
+#scan{position:absolute;left:150px;width:780px;height:3px;background:#FFFFFF;opacity:0;box-shadow:0 0 14px 3px rgba(255,240,200,.75),0 0 40px 8px rgba(255,160,80,.35)}
+#send{position:absolute;width:150px;height:150px;margin:-75px 0 0 -75px;opacity:0}
+</style>
+<script type="importmap">{"imports":{"three":"/engine/vendor/three/three.module.js","three/addons/":"/engine/vendor/three/addons/"}}</script>
+</head><body>
+<img id="sigS" src="signature-officielle.png" alt="">
+<div id="hdl">@lifestyles_hf</div>
+<div id="pill">MYTHE OU SCIENCE&#8239;? · ÉP.&nbsp;3</div>
+<div id="sigB"><img src="signature-officielle.png" alt=""><div id="shine"></div></div>
+<div id="hdlB">@lifestyles_hf</div>
+<div id="sub">Abonne-toi</div>
+<svg id="ret" viewBox="0 0 1080 1920"><path id="rp" d=""/></svg>
+<div id="hotlab">POINT CHAUD</div>
+<div id="leg"><div class="g gi"></div><div class="g gw"></div></div>
+<div id="palname">IRONBOW</div>
+<div class="col" id="c1"></div><div class="col" id="c2"></div>
+<div class="chd" id="h1">SURFACE</div><div class="chd" id="h2">PERTES</div>
+<div id="tlab">TÊTE</div>
+<div id="scan"></div>
+<svg id="send" viewBox="0 0 150 150"><circle id="sr2" cx="75" cy="75" r="70" fill="none" stroke="#FFC24A" stroke-width="3" opacity=".5"/>
+ <circle cx="75" cy="75" r="56" fill="rgba(10,4,30,.6)" stroke="#FF9A1F" stroke-width="6"/>
+ <path d="M54 96 L94 56 M66 54 H95 V83" fill="none" stroke="#FFF6EC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div id="texts"></div>
+<div id="mention">Simulation · couleurs indicatives</div>
+<script type="module">
+import * as THREE from 'three';
+
+/* ============================== utilitaires déterministes ============================== */
+const W=1080,H=1920,RW=720,RH=1280,SW=270,SHh=480,LOOP=25.4;
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,a,b)=>clamp((t-a)/(b-a));
+const mix=(a,b,k)=>a+(b-a)*k;
+const sm=x=>{x=clamp(x);return x*x*(3-2*x)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const eout=x=>1-Math.pow(1-clamp(x),3);
+const ein=x=>Math.pow(clamp(x),3);
+const pulse=(t,c,w)=>Math.exp(-Math.pow((t-c)/w,2));
+const V3=(x,y,z)=>new THREE.Vector3(x,y,z);
+const C=c=>new THREE.Color(c);
+const $=id=>document.getElementById(id);
+const NB='&#8239;';
+function hex2rgb(h){h=h.replace('#','');return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+function mixHex(a,b,k){const A=hex2rgb(a),B=hex2rgb(b);return 'rgb('+A.map((v,i)=>Math.round(mix(v,B[i],clamp(k)))).join(',')+')';}
+// la typo « chauffe » le long de la table fer : indigo → magenta → orange → couleur finale
+function heatCol(h,fin){h=clamp(h);const S=['#1C0B4A','#A0228F','#FF9A1F',fin];const x=h*3;const i=Math.min(2,Math.floor(x));return mixHex(S[i],S[i+1],x-i);}
+
+/* ============================== rendu « champ de température » ============================== */
+const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+r.setPixelRatio(1);r.setSize(RW,RH,false);r.domElement.id='gl';document.body.prepend(r.domElement);
+const scene=new THREE.Scene();
+const FOV=34;
+const cam=new THREE.PerspectiveCamera(FOV,RW/RH,5,3000);scene.add(cam);
+const rtT=new THREE.WebGLRenderTarget(SW,SHh,{type:THREE.HalfFloatType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter,depthBuffer:true});
+const PX=(SHh/2)/Math.tan(FOV/2*Math.PI/180); // pixels capteur par unité à distance 1
+
+const NOISE=`
+float hash3(vec3 p){p=fract(p*0.3183099+.1);p*=17.0;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
+float vn3(vec3 x){vec3 i=floor(x);vec3 f=fract(x);f=f*f*(3.0-2.0*f);
+ return mix(mix(mix(hash3(i),hash3(i+vec3(1,0,0)),f.x),mix(hash3(i+vec3(0,1,0)),hash3(i+vec3(1,1,0)),f.x),f.y),
+            mix(mix(hash3(i+vec3(0,0,1)),hash3(i+vec3(1,0,1)),f.x),mix(hash3(i+vec3(0,1,1)),hash3(i+vec3(1,1,1)),f.x),f.y),f.z);}
+float fbm3(vec3 p){float a=.5,s=0.;for(int i=0;i<3;i++){s+=a*vn3(p);p*=2.07;a*=.5;}return s;}
+`;
+const SH={uScanY:{value:999},uMythY:{value:999},uMythK:{value:0}};
+const T_VS=`#ifdef MORPH
+attribute vec3 p2;attribute vec3 n2;uniform float uMorph;
+#endif
+varying vec3 vN,vV,vW;
+void main(){
+#ifdef MORPH
+ vec3 p=mix(position,p2,uMorph);vec3 n=normalize(mix(normal,n2,uMorph));
+#else
+ vec3 p=position;vec3 n=normal;
+#endif
+ vec4 wp=modelMatrix*vec4(p,1.0);vW=wp.xyz;vec4 mv=viewMatrix*wp;vN=normalize(normalMatrix*n);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}`;
+const T_FS=NOISE+`uniform float uTemp,uCoat,uScanY,uMythY,uMythK,uTex;varying vec3 vN,vV,vW;
+void main(){
+ if(uCoat>0.5&&vW.y>uScanY)discard;
+ float ndv=max(dot(normalize(vN),normalize(vV)),0.0);
+ float sh=mix(0.70,1.0,pow(ndv,0.6));
+ float T=uTemp*sh;
+ if(uCoat<0.5&&uTemp>0.6&&uTemp<0.93){T-=0.07*smoothstep(12.0,26.0,abs(vW.x))+0.10*(1.0-smoothstep(25.0,95.0,vW.y))-0.03*exp(-pow(vW.x/5.0,2.0))*step(95.0,vW.y);}
+ T+=(fbm3(vW*0.075)-0.5)*0.035*uTex;
+ // bord de scan : la couture du manteau chauffe un instant (le scan se lit dans le monde)
+ if(uCoat>0.5&&uScanY<500.0)T+=0.42*exp(-pow((vW.y-uScanY)/2.2,2.0));
+ float m=smoothstep(uMythY-4.0,uMythY+4.0,vW.y)*uMythK;
+ T=mix(T,0.95*sh,m);
+ gl_FragColor=vec4(T,0.0,0.0,1.0);}`;
+function tMat(T,coat=0,tex=1,morph=false){
+  const U={uTemp:{value:T},uCoat:{value:coat},uTex:{value:tex},uMorph:{value:0},uScanY:SH.uScanY,uMythY:SH.uMythY,uMythK:SH.uMythK};
+  const m=new THREE.ShaderMaterial({uniforms:U,vertexShader:T_VS,fragmentShader:T_FS});if(morph)m.defines={MORPH:1};return m;}
+
+/* ---------- rue (n'existe qu'en thermique) : façade, trottoir ---------- */
+const bgMat=new THREE.ShaderMaterial({uniforms:{},vertexShader:`varying vec3 vW;void main(){vec4 wp=modelMatrix*vec4(position,1.0);vW=wp.xyz;gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:NOISE+`varying vec3 vW;
+ float rect(vec2 p,vec4 q,float s){return smoothstep(q.x-s,q.x+s,p.x)*smoothstep(q.z+s,q.z-s,p.x)*smoothstep(q.y-s,q.y+s,p.y)*smoothstep(q.w+s,q.w-s,p.y);}
+ void main(){vec2 p=vW.xy;float T=0.205-0.035*smoothstep(0.0,420.0,p.y);
+  float row=floor(p.y/7.5);float bx=p.x/22.0+0.5*mod(row,2.0);
+  T+=0.016*(hash3(vec3(floor(bx),row,3.0))-0.5);
+  float mort=max(smoothstep(0.1,0.0,fract(p.y/7.5)),smoothstep(0.05,0.0,fract(bx)));T-=0.010*mort;
+  T+=(fbm3(vec3(p*0.02,1.0))-0.5)*0.03;
+  // fenêtres chauffées (gauche), porte entrouverte (droite)
+  vec4 w1=vec4(-150.0,120.0,-112.0,182.0),w2=vec4(-150.0,300.0,-112.0,362.0),w3=vec4(150.0,300.0,188.0,362.0);
+  float leak=0.0;
+  leak+=exp(-pow(length(max(abs(p-vec2(-131.0,151.0))-vec2(19.0,31.0),0.0))/16.0,1.2))*0.12;
+  leak+=exp(-pow(length(max(abs(p-vec2(-131.0,331.0))-vec2(19.0,31.0),0.0))/16.0,1.2))*0.10;
+  T+=leak;
+  T=mix(T,0.66+0.05*fbm3(vec3(p*0.08,2.0)),rect(p,w1,5.0)*0.95);
+  T=mix(T,0.60+0.05*fbm3(vec3(p*0.08,5.0)),rect(p,w2,5.0)*0.95);
+  
+  T=mix(T,0.25,rect(p,vec4(40.0,-5.0,95.0,214.0),4.0));
+  T=mix(T,0.40,rect(p,vec4(40.0,-5.0,47.0,212.0),3.0));
+  // trottoir enneigé (froid) : plan horizontal
+  if(vW.y<0.5){T=0.115+(fbm3(vW*0.03)-0.5)*0.03+0.03*smoothstep(-450.0,-640.0,vW.z);}
+  gl_FragColor=vec4(T,0.0,0.0,1.0);}`});
+const fac=new THREE.Mesh(new THREE.PlaneGeometry(1400,1100),bgMat);fac.position.set(0,500,-640);scene.add(fac);
+const gnd=new THREE.Mesh(new THREE.PlaneGeometry(1400,1400),bgMat);gnd.rotation.x=-Math.PI/2;gnd.position.set(0,0,250);scene.add(gnd);
+
+/* ---------- silhouette (primitives lissées par le flou thermique) ---------- */
+const lathePts=a=>a.map(([x,y])=>new THREE.Vector2(x,y));
+function morphLathe(A,B,seg=40){const g=new THREE.LatheGeometry(lathePts(A),seg),g2=new THREE.LatheGeometry(lathePts(B),seg);
+  g.setAttribute('p2',g2.getAttribute('position').clone());g.setAttribute('n2',g2.getAttribute('normal').clone());return g;}
+const COAT_A=[[0,68],[19,68.5],[20.6,78],[19.6,95],[18.4,108],[19.7,124],[21.1,134],[22.4,141],[19.6,146.2],[14.2,149.6],[9.8,151.8],[8.8,153.2]];
+const COAT_B=[[0,60],[10,61],[14.2,68],[15.6,82],[15.8,98],[15.2,114],[14.2,126],[12.9,135],[11.6,141.5],[9.4,145.5],[7.2,147.8],[6.6,149.0]];
+const SKIN_A=[[0,90],[15,90.5],[16,96],[15,104],[14.3,110],[16.2,124],[17.5,133],[19,140],[16.6,144.6],[11.6,147.6],[6.9,149.6],[0,151]];
+const SKIN_B=COAT_B.map(([x,y],i)=>[i===0||i===COAT_B.length-1?0:x*0.86,y+2]);
+const P=new THREE.Group();scene.add(P);
+const parts={};
+function add(name,geo,mat,ry=0){const m=new THREE.Mesh(geo,mat);P.add(m);parts[name]=m;m.userData.mat=mat;return m;}
+add('torso',morphLathe(SKIN_A,SKIN_B),tMat(0.90,0,1,true));
+add('coat',morphLathe(COAT_A,COAT_B),tMat(0.36,1,1.4,true));
+add('head',new THREE.SphereGeometry(1,32,24),tMat(1.0,0,0.5));
+add('earL',new THREE.SphereGeometry(1,12,10),tMat(0.84));add('earR',new THREE.SphereGeometry(1,12,10),tMat(0.84));
+add('neck',new THREE.CylinderGeometry(5.4,5.8,14,20),tMat(0.90));
+const collarG=new THREE.TorusGeometry(8.8,3.6,12,32);collarG.rotateX(Math.PI/2);
+add('collar',collarG,tMat(0.38,1,1.4));
+const cap=(r,l)=>new THREE.CapsuleGeometry(r,l,6,14);
+const LIMB={upA:[4.7,0.87,0],foA:[3.9,0.85,0],hand:[3.3,0.70,0],slU:[7.1,0.35,1],slF:[6.3,0.34,1],thigh:[7.3,0.86,0],shin:[5.3,0.82,0],paT:[8.9,0.33,1],paS:[6.9,0.32,1],shoe:[4.6,0.20,0]};
+for(const s of ['L','R'])for(const k in LIMB){const [rad,T,coat]=LIMB[k];const m=add(k+s,cap(rad,1),tMat(T,coat,coat?1.4:1));m.userData.r=rad;}
+// bonnet : calotte + bord roulé + pompon
+const BON=new THREE.Group();scene.add(BON);
+const bonCap=new THREE.Mesh(new THREE.SphereGeometry(1,32,16,0,Math.PI*2,0,Math.PI*0.7),tMat(0.30,0,1.6));BON.add(bonCap);
+const rimG=new THREE.TorusGeometry(Math.sin(Math.PI*0.7),0.17,10,40);rimG.rotateX(Math.PI/2);
+const bonRim=new THREE.Mesh(rimG,tMat(0.29,0,1.6));bonRim.position.y=Math.cos(Math.PI*0.7)+0.04;BON.add(bonRim);
+const bonPom=new THREE.Mesh(new THREE.SphereGeometry(0.3,16,12),tMat(0.26,0,1.6));bonPom.position.y=1.12;BON.add(bonPom);
+BON.traverse(o=>{if(o.isMesh)o.frustumCulled=false;});
+
+const _a=new THREE.Vector3(),_b=new THREE.Vector3(),_d=new THREE.Vector3(),_up=new THREE.Vector3(0,1,0);
+function limb(m,a,b,s=1){_a.set(...a);_b.set(...b);_d.subVectors(_b,_a);const len=_d.length();m.position.addVectors(_a,_b).multiplyScalar(0.5);
+  m.quaternion.setFromUnitVectors(_up,_d.normalize());
+  // capsule de longueur 1 : on étire le cylindre (pas les calottes) en reconstruisant l'échelle
+  const rad=m.userData.r;const cyl=Math.max(0.01,len);m.scale.set(s,1,s);
+  if(m.geometry.userData.len!==cyl){m.geometry.dispose();m.geometry=cap(rad,cyl);m.geometry.userData.len=cyl;}
+  if(s!==1)m.scale.setScalar(s);}
+const L2=(a,b,k)=>a.map((v,i)=>mix(v,b[i],k));
+// pose adulte / bébé emmailloté (b = 0 → 1)
+const HEAD_A={c:[0,163,0],r:[8.0,11.2,9.4]},HEAD_B={c:[0,160.5,0],r:[10.8,11.4,10.6]};
+function pose(b,breath){
+  const hc=L2(HEAD_A.c,HEAD_B.c,b),hr=L2(HEAD_A.r,HEAD_B.r,b);
+  const H_=parts.head;H_.position.set(...hc);H_.scale.set(...hr);H_.rotation.set(-0.08*(1-b),0,0.05*(1-b));
+  for(const [nm,sx] of [['earL',-1],['earR',1]]){const e=parts[nm];e.position.set(sx*hr[0]*0.97,hc[1]-0.8,0.6);e.scale.set(mix(1.4,1.1,b),mix(3.0,2.0,b),mix(2.2,1.6,b));}
+  const nk=parts.neck;nk.position.set(0,mix(150,146,b),0);nk.scale.setScalar(mix(1,0.6,b));
+  for(const nm of ['torso','coat']){const m=parts[nm];m.userData.mat.uniforms.uMorph.value=b;m.scale.set(1,1+0.004*breath,nm==='coat'?mix(0.66,0.8,b):mix(0.62,0.76,b));}
+  const co=parts.collar;co.position.set(0,mix(152.6,147.6,b),0.4);co.scale.set(mix(1,0.78,b),mix(1,0.8,b),mix(0.82,0.86,b));
+  const sh=0.5*breath;
+  for(const [s,sx] of [['L',-1],['R',1]]){
+    // bras : épaule → coude → poignet → main ; bébé : rentrés dans la coque
+    const k=1-b, sc=mix(1,0.35,b);
+    const asy=sx<0?1:0; // bras gauche un peu plus fléchi (main vers la poche)
+    const S=[sx*mix(19.6,6,b),mix(139.5+sh,120,b),0], E=[sx*mix(23.2+asy*0.8,7,b),mix(112.5,112,b),mix(-1.5,0,b)], Wr=[sx*mix(22.6-asy*1.5,7,b),mix(89+asy*3,106,b),mix(-6-asy*3,0,b)], Hn=[sx*mix(21.8-asy*2,7,b),mix(81+asy*3,104,b),mix(-8-asy*3,0,b)];
+    limb(parts['upA'+s],S,E,sc);limb(parts['foA'+s],E,Wr,sc);limb(parts['hand'+s],Wr,Hn,sc);
+    limb(parts['slU'+s],S,E,sc);limb(parts['slF'+s],E,[Wr[0],Wr[1]+1.5,Wr[2]],sc);
+    const rl=sx>0?1:0; // appui sur la jambe gauche, genou droit relâché
+    const Hp=[sx*mix(9.2,5,b)-mix(1.2,0,b),mix(92-rl*1.2,100,b),0],Kn=[sx*mix(10.2,5,b)-mix(rl*1.5,0,b),mix(51-rl*0.8,90,b),mix(-1-rl*2.5,0,b)],An=[sx*mix(11.4,5,b)+mix(rl*1.5,0,b),mix(9,82,b),mix(rl*1.5,0,b)];
+    limb(parts['thigh'+s],Hp,Kn,sc);limb(parts['shin'+s],Kn,An,sc);limb(parts['paT'+s],[Hp[0],Hp[1]+6,0],Kn,sc);limb(parts['paS'+s],Kn,[An[0],An[1]+2,0],sc);
+    limb(parts['shoe'+s],[An[0],mix(4.5,82,b),mix(2,0,b)],[An[0],mix(4.5,82,b),mix(-12,0,b)],sc);
+    for(const nm of ['upA','foA','hand','slU','slF','thigh','shin','paT','paS','shoe'])parts[nm+s].visible=b<0.98;
+  }
+  return {hc,hr};
+}
+
+/* ---------- neige : points froids (plus froids que tout → points sombres) ---------- */
+const NS=620;
+const sG=new THREE.BufferGeometry();{const R=mulberry32(2010);const p=new Float32Array(NS*3),s=new Float32Array(NS*4);
+ for(let i=0;i<NS;i++){p[i*3]=(R()-0.5)*460;p[i*3+1]=R()*330;p[i*3+2]=-600+R()*1120;s[i*4]=R();s[i*4+1]=R();s[i*4+2]=R();s[i*4+3]=R();}
+ sG.setAttribute('position',new THREE.BufferAttribute(p,3));sG.setAttribute('aS',new THREE.BufferAttribute(s,4));}
+const snowU={uT:{value:0},uPx:{value:PX}};
+const snow=new THREE.Points(sG,new THREE.ShaderMaterial({uniforms:snowU,transparent:true,depthWrite:false,
+ vertexShader:`attribute vec4 aS;uniform float uT,uPx;varying float vSoft,vA;
+ void main(){vec3 p=position;float ph=6.2831853/${LOOP.toFixed(1)};
+  p.y=mod(position.y-${(330*5/LOOP).toFixed(5)}*uT,330.0)-10.0;
+  p.x+=6.0*sin(ph*7.0*uT+aS.x*6.2831)+3.0*sin(ph*13.0*uT+aS.y*6.2831);p.z+=4.0*cos(ph*5.0*uT+aS.y*6.2831);
+  vec4 mv=modelViewMatrix*vec4(p,1.0);float d=max(-mv.z,1.0);float sz=1.4+2.4*aS.z;
+  float px=sz*uPx/d;gl_PointSize=clamp(px,1.3,34.0);vSoft=smoothstep(5.0,22.0,px);vA=mix(1.0,0.55,vSoft)*(0.7+0.3*aS.w);
+  gl_Position=projectionMatrix*mv;}`,
+ fragmentShader:`varying float vSoft,vA;void main(){float r=length(gl_PointCoord-0.5)*2.0;float a=smoothstep(1.0,mix(0.45,0.0,vSoft),r)*vA;if(a<0.01)discard;
+  gl_FragColor=vec4(0.0,0.0,0.0,a);}`}));
+snow.frustumCulled=false;scene.add(snow);
+
+/* ---------- souffle : nuages tièdes devant le visage (débordent autour de la tête) ---------- */
+const NB_=12;const bG=new THREE.BufferGeometry();bG.setAttribute('position',new THREE.BufferAttribute(new Float32Array(NB_*3),3));
+bG.setAttribute('aA',new THREE.BufferAttribute(new Float32Array(NB_),1));bG.setAttribute('aR',new THREE.BufferAttribute(new Float32Array(NB_),1));
+const brU={uPx:{value:PX}};
+const brPts=new THREE.Points(bG,new THREE.ShaderMaterial({uniforms:brU,transparent:true,depthWrite:false,
+ vertexShader:`attribute float aA,aR;uniform float uPx;varying float vA;void main(){vec4 mv=modelViewMatrix*vec4(position,1.0);float d=max(-mv.z,1.0);
+  gl_PointSize=clamp(2.0*aR*uPx/d,1.0,120.0);vA=aA;gl_Position=projectionMatrix*mv;}`,
+ fragmentShader:`varying float vA;void main(){vec2 q=gl_PointCoord-0.5;float a=exp(-dot(q,q)*9.0)*vA;if(a<0.01)discard;gl_FragColor=vec4(0.56,0.0,0.0,a);}`}));
+brPts.frustumCulled=false;brPts.renderOrder=10;scene.add(brPts);
+const PUFFS=[0.4,3.6,6.9,10.1,13.3,16.2,17.75,21.3,23.45];
+function breathState(t,hc,hr,b){const pa=bG.attributes.position.array,aa=bG.attributes.aA.array,ar=bG.attributes.aR.array;let n=0;let br=0;
+  for(const t0 of PUFFS){const u=(t-t0)/1.4;if(u<-0.25||u>1)continue;if(u<0){br=Math.max(br,sm(1+u*4));continue;}
+    br=Math.max(br,1-sm(u*3));
+    for(let k=0;k<3&&n<NB_;k++,n++){const sx=[-1,1,0][k];const s=mix(1,1.4,b);
+      pa[n*3]=hc[0]+sx*(3+16*eout(u))*s;pa[n*3+1]=hc[1]-6*s+22*eout(u)*s+(k===2?6:0);pa[n*3+2]=hc[2]-hr[2]-9-6*u;
+      aa[n]=0.62*Math.pow(1-u,1.4)*clamp(u*6)*(k===2?0.8:1);ar[n]=(8+15*eout(u))*s;}}
+  for(;n<NB_;n++){aa[n]=0;pa[n*3+2]=-9999;}
+  bG.attributes.position.needsUpdate=true;bG.attributes.aA.needsUpdate=true;bG.attributes.aR.needsUpdate=true;return br;}
+
+/* ============================== passe finale : capteur → table de couleurs ============================== */
+const postU={tT:{value:rtT.texture},uRes:{value:new THREE.Vector2(SW,SHh)},uFrame:{value:0},uPal:{value:0},uLo:{value:0},uHi:{value:1},
+  uZoom:{value:1},uZC:{value:new THREE.Vector2(0.5,0.5)},uPix:{value:0},uFlash:{value:0},uBlur:{value:1.35}};
+const postMat=new THREE.ShaderMaterial({uniforms:postU,depthTest:false,depthWrite:false,
+ vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.0,1.0);}`,
+ fragmentShader:`uniform sampler2D tT;uniform vec2 uRes,uZC;uniform float uFrame,uPal,uLo,uHi,uZoom,uPix,uFlash,uBlur;varying vec2 vUv;
+ vec3 iron(float x){
+  const vec3 c0=vec3(0.020,0.012,0.059),c1=vec3(0.110,0.043,0.290),c2=vec3(0.294,0.082,0.565),c3=vec3(0.627,0.133,0.561),
+   c4=vec3(0.910,0.278,0.227),c5=vec3(1.0,0.604,0.122),c6=vec3(1.0,0.886,0.478),c7=vec3(1.0,0.984,0.918);
+  if(x<0.15)return mix(c0,c1,x/0.15);if(x<0.32)return mix(c1,c2,(x-0.15)/0.17);if(x<0.50)return mix(c2,c3,(x-0.32)/0.18);
+  if(x<0.66)return mix(c3,c4,(x-0.50)/0.16);if(x<0.80)return mix(c4,c5,(x-0.66)/0.14);if(x<0.92)return mix(c5,c6,(x-0.80)/0.12);return mix(c6,c7,(x-0.92)/0.08);}
+ float h21(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}
+ void main(){vec2 uv=uZC+(vUv-uZC)/uZoom;float T;
+  if(uPix>0.5){vec2 q=(floor(uv*uRes)+0.5)/uRes;T=texture2D(tT,q).r;}
+  else{vec2 o=uBlur/uRes;
+   T=texture2D(tT,uv).r*0.2270;
+   T+=(texture2D(tT,uv+vec2(o.x,0.)).r+texture2D(tT,uv-vec2(o.x,0.)).r+texture2D(tT,uv+vec2(0.,o.y)).r+texture2D(tT,uv-vec2(0.,o.y)).r)*0.1216;
+   T+=(texture2D(tT,uv+o).r+texture2D(tT,uv-o).r+texture2D(tT,uv+vec2(o.x,-o.y)).r+texture2D(tT,uv+vec2(-o.x,o.y)).r)*0.0716;}
+  vec2 sp=floor(uv*uRes);
+  T+=(h21(sp+vec2(uFrame*17.31,uFrame*3.17))-0.5)*0.035+(h21(vec2(sp.x,7.0))-0.5)*0.012;
+  float x=clamp((T-uLo)/(uHi-uLo),0.0,1.0);
+  vec3 c=mix(iron(x),vec3(pow(x,1.15)),uPal);
+  vec2 d=vUv-0.5;c*=mix(0.70,1.0,smoothstep(0.82,0.30,length(d*vec2(1.0,0.82))));
+  float sy=1.0-vUv.y;c*=mix(1.0,0.30,smoothstep(0.70,0.80,sy));
+  c+=uFlash;gl_FragColor=vec4(c,1.0);}`});
+const postScene=new THREE.Scene();const postCam=new THREE.OrthographicCamera(-1,1,1,-1,0,1);
+const quad=new THREE.Mesh(new THREE.PlaneGeometry(2,2),postMat);quad.frustumCulled=false;postScene.add(quad);
+
+/* ============================== caméra de terrain ============================== */
+// cadrages : A = de dos, taille → au-dessus de la tête ; B = recul, corps entier ; Z = poussée avant le bonnet
+const FR={A:[343,186],B:[540,155],Z:[318,184]};
+const YAW=6*Math.PI/180;
+function camFrame(t){
+  let d,yc;const A=FR.A,B=FR.B,Z=FR.Z;
+  const ab=eio(lin(t,6.2,7.4))*(1-eio(lin(t,13.6,15.0)));
+  d=mix(A[0],B[0],ab);yc=mix(A[1],B[1],ab);
+  const z=sm(lin(t,15.2,17.3))*(1-eio(lin(t,18.0,19.0)));d=mix(d,Z[0],z);yc=mix(yc,Z[1],z);
+  return [d,yc];}
+const camT=new THREE.Vector3();
+function hand(t){const w=2*Math.PI/LOOP;
+  return [0.30*Math.sin(w*13*t+0.3)+0.18*Math.sin(w*29*t+1.1),0.26*Math.sin(w*11*t+2.0)+0.14*Math.sin(w*23*t+0.4),
+          0.0044*Math.sin(w*15*t+0.9)+0.0022*Math.sin(w*31*t+2.2),0.0040*Math.sin(w*17*t+1.7)+0.0020*Math.sin(w*27*t+0.2),0.0025*Math.sin(w*9*t+0.5)];}
+function cameraAt(t){const [d,yc]=camFrame(t);const h=hand(t);
+  cam.position.set(d*Math.sin(YAW)+h[0],yc+0.03*d+h[1],d*Math.cos(YAW));
+  camT.set(0+h[2]*d,yc+h[3]*d,0);cam.up.set(Math.sin(h[4]),Math.cos(h[4]),0);cam.lookAt(camT);cam.updateProjectionMatrix();cam.updateMatrixWorld(true);}
+
+/* ============================== calque texte HTML ============================== */
+const HOT=(s,fs)=>`<span class="hot"${fs?` style="font-size:${fs}px"`:''}>${s}</span>`;
+const IT=[
+ // 1 accroche
+ {a:-1,z:3.0,y:520,cls:'sb',fs:78,h:'Tu perds la moitié'},
+ {a:-1,z:3.0,y:610,cls:'sb',fs:78,h:'de ta chaleur'},
+ {a:-1,z:3.0,y:790,cls:'bk',fs:'fit',h:HOT('PAR LA TÊTE'+NB+'?'),fit:1},
+ {a:1.6,z:3.0,y:935,cls:'sb',fs:52,col:'#E9D9FF',h:'Non… '+HOT('sauf un cas.')},
+ // 2 le mythe (palette « armée »)
+ {a:3.05,z:5.85,y:420,cls:'sb army',fs:64,k:'army',h:'Le mythe'+NB+':'},
+ {a:3.12,z:5.85,y:555,cls:'bk army',fs:150,k:'army',h:'40 à 45'+NB+'%'},
+ {a:3.2,z:5.85,y:690,cls:'sb army',fs:64,k:'army',h:'par la tête.'},
+ {a:3.6,z:5.85,y:790,cls:'md',fs:32,col:'#E9D9FF',h:'un vieux manuel de survie de l’armée US'},
+ {a:3.65,z:5.85,y:836,cls:'md',fs:32,col:'#E9D9FF',h:'cité par le BMJ, 2008'},
+ // 3 le balayage
+ {a:5.9,z:8.2,y:470,cls:'sb',fs:68,h:'Sous le manteau,'},
+ {a:6.3,z:8.2,y:560,cls:'sb',fs:68,h:'tout ton corps '+HOT('chauffe.')},
+ // 4 la part réelle
+ {a:8.25,z:10.6,y:372,cls:'sb',fs:66,h:'Ta tête'},
+ {a:8.32,z:10.6,y:505,cls:'bk',fs:176,h:HOT('≈'+NB+'7'+NB+'%')},
+ {a:8.42,z:10.6,y:640,cls:'sb',fs:66,h:'de ta surface.'},
+ {a:8.8,z:10.6,y:722,cls:'md',fs:30,col:'#E9D9FF',h:'adulte · Lund &amp; Browder, 1944'},
+ // 5 l'étude + verdict
+ {a:10.65,z:12.32,y:372,cls:'sb',fs:66,h:'Dans l’étude'+NB+':'},
+ {a:10.72,z:12.32,y:492,cls:'sb',fs:66,h:'la tête '+HOT('≈'+NB+'10'+NB+'%',124)},
+ {a:10.8,z:12.32,y:612,cls:'sb',fs:66,h:'des pertes.'},
+ {a:10.9,z:13.35,y:700,cls:'md',fs:28,col:'#E9D9FF',h:'Pretorius et al. · J Appl Physiol · 2006'},
+ {a:10.95,z:13.35,y:740,cls:'md',fs:28,col:'#E9D9FF',h:'eau à 17'+NB+'°C'},
+ {a:12.32,z:13.4,y:440,cls:'bk',fs:72,h:'VERDICT'+NB+':'},
+ {a:12.34,z:13.4,y:582,cls:'bk',fs:80,k:'stamp',h:'<span class="stamp" id="stmp">SURTOUT'+NB+'MYTHE</span>'},
+ // 6 mais…
+ {a:13.4,z:15.8,y:410,cls:'bi',fs:150,h:'<span class="hot bi">Mais…</span>'},
+ {a:13.62,z:15.8,y:560,cls:'sb',fs:62,h:'corps couvert, tête nue'+NB+':'},
+ {a:13.78,z:15.8,y:645,cls:'sb',fs:62,h:'là, elle '+HOT('compte.')},
+ {a:14.3,z:15.8,y:745,cls:'md',fs:38,col:'#E9D9FF',h:'Ta mère avait raison… à moitié.'},
+ // 7 principale fuite → bonnet
+ {a:15.85,z:18.0,y:560,cls:'sb',fs:74,h:'C’est par là que'},
+ {a:15.95,z:18.0,y:655,cls:'sb',fs:74,h:'ta chaleur '+HOT('file.'),cool:17.45},
+ // 8 bébé
+ {a:18.05,z:20.4,y:430,cls:'sb',fs:66,h:'Chez un bébé'+NB+':'},
+ {a:18.15,z:20.4,y:562,cls:'sb',fs:66,h:'tête = '+HOT('19'+NB+'%',150)},
+ {a:18.25,z:20.4,y:694,cls:'sb',fs:66,h:'de sa surface.'},
+ {a:18.6,z:20.4,y:776,cls:'md',fs:30,col:'#E9D9FF',h:'moins d’un an · Lund &amp; Browder, 1944'},
+ // 9 partage
+ {a:20.36,z:22.8,y:500,cls:'sb',fs:70,h:'Envoie ça à celle'},
+ {a:20.42,z:22.8,y:590,cls:'sb',fs:70,h:'qui crie'},
+ {a:20.52,z:22.8,y:700,cls:'bk',fs:72,h:HOT('«'+NB+'Mets ton bonnet'+NB+'!'+NB+'»')},
+ // 10 fin
+ {a:22.95,z:24.78,y:648,cls:'sb',fs:56,h:'<span class="bk" style="color:#FFC24A">Ép.&nbsp;4</span>'+NB+': le froid'},
+ {a:23.02,z:24.78,y:716,cls:'sb',fs:56,h:'donne le rhume'+NB+'?'},
+ // 11 raccord de boucle = image 0
+ {a:24.8,z:99,y:520,cls:'sb',fs:78,h:'Tu perds la moitié',fast:1},
+ {a:24.84,z:99,y:610,cls:'sb',fs:78,h:'de ta chaleur',fast:1},
+ {a:24.9,z:99,y:790,cls:'bk',fs:'fit',h:HOT('PAR LA TÊTE'+NB+'?'),fit:1,fast:1},
+];
+const TX=$('texts');
+for(const it of IT){const d=document.createElement('div');d.className='ln '+it.cls;const fs=it.fs==='fit'?150:it.fs;it.lh=Math.round(fs*1.18);
+  d.style.fontSize=fs+'px';d.style.lineHeight=it.lh+'px';d.style.top=(it.y-it.lh/2)+'px';d.innerHTML=`<span class="in">${it.h}</span>`;
+  TX.appendChild(d);it.el=d;it.in=d.firstChild;it.hots=Array.from(d.querySelectorAll('.hot'));it.base=it.col||'#FFF6EC';}
+function styleText(t){
+  for(const it of IT){const el=it.el;if((it.a>0&&t<it.a)||t>=it.z){el.style.opacity=0;continue;}
+    const dur=it.fast?0.2:0.333;const u=it.a>0?lin(t,it.a,it.a+dur):1;const k=lin(t,it.z-0.27,it.z);
+    let h=u*(1-k),op=clamp(u*2.5)*(1-ein(k)),bl=(1-eout(u))*10+k*6,ty=(1-eout(u))*10;
+    let col;
+    if(it.k==='army'){h=1;col=k>0?mixHex('#FFFFFF','#7A5CC8',clamp(k*1.7)):'#FFFFFF';op=clamp(u*2.5)*(1-clamp((k-0.45)*1.8));bl=(1-eout(u))*8+(k>0.45?(k-0.45)*12:0);}
+    else col=heatCol(h,it.base);
+    el.style.opacity=op.toFixed(3);el.style.color=col;
+    el.style.filter=bl>0.15?`blur(${bl.toFixed(2)}px)`:'none';
+    el.style.transform=ty>0.05?`translateY(${ty.toFixed(1)}px)`:'none';
+    // entrée par masque : la chaleur monte du bas vers le haut
+    const cl=(1-eout(u))*100;it.in.style.clipPath=cl>0.1?`inset(${cl.toFixed(1)}% -30% -40% -30%)`:'none';
+    let hh=h;if(it.cool)hh=Math.min(hh,1-0.85*sm(lin(t,it.cool,it.cool+0.4)));
+    for(const s of it.hots){s.style.backgroundImage=`linear-gradient(180deg,${heatCol(hh,'#FFF8E1')},${heatCol(hh,'#FFC24A')} 55%,${heatCol(hh,'#FF6A2B')})`;}
+    if(it.k==='stamp'){const sp=$('stmp');const v=lin(t,it.a,it.a+0.14);sp.style.transform=`rotate(-3deg) scale(${mix(1.25,1,eout(v)).toFixed(3)})`;
+      sp.style.color=heatCol(h,'#FFC24A');sp.style.borderColor=heatCol(h,'#FFC24A');}
+  }}
+
+/* ============================== viseur, barre de palette → barre de surface ============================== */
+const LEG={x:910,y:980,w:12,h:460},G1={x:876,y:960,w:44,h:480},G2={x:738,y:960,w:44,h:480};
+const SEG=[0.07,0.34,0.19,0.40];
+function mkSegs(el,n){const a=[];for(let i=0;i<n;i++){const s=document.createElement('div');s.className='s '+(i===0?'h':'o');el.appendChild(s);a.push(s);}return a;}
+const S1=mkSegs($('c1'),4),S2=mkSegs($('c2'),2);
+function setSegs(S,fr,ops,hpx=474){let y=0;S.forEach((s,i)=>{s.style.top=(1+y*hpx).toFixed(1)+'px';s.style.height=Math.max(0,fr[i]*hpx-(i===0?0:0)).toFixed(1)+'px';s.style.opacity=ops[i].toFixed(3);y+=fr[i];});}
+function setRect(el,R){el.style.left=R.x.toFixed(1)+'px';el.style.top=R.y.toFixed(1)+'px';el.style.width=R.w.toFixed(1)+'px';el.style.height=R.h.toFixed(1)+'px';}
+const lerpR=(A,B,k)=>({x:mix(A.x,B.x,k),y:mix(A.y,B.y,k),w:mix(A.w,B.w,k),h:mix(A.h,B.h,k)});
+function hudState(t,pal,headScr){
+  // légende ↔ colonne « surface »
+  const m1=eio(lin(t,8.25,8.55))*(1-sm(lin(t,13.3,13.6)));const m2=eio(lin(t,18.1,18.4))*(1-sm(lin(t,20.25,20.55)));const m=Math.max(m1,m2);
+  const leg=$('leg');setRect(leg,lerpR(LEG,G1,m));leg.style.opacity=(0.78*(1-sm(lin(m,0.6,1)))).toFixed(3);
+  leg.querySelector('.gw').style.opacity=pal.toFixed(3);
+  const endK=1-lin(t,22.85,23.1)*(1-lin(t,24.62,24.8));const pn=$('palname');pn.textContent=pal>0.5?'WHITE HOT':'IRONBOW';pn.style.opacity=((1-m)*endK).toFixed(3);
+  const c1=$('c1'),c2=$('c2');const o1=sm(lin(m,0.6,1));c1.style.opacity=o1.toFixed(3);setRect(c1,G1);
+  let fr=SEG.slice(),ops=[0,0,0,0];
+  if(m1>0){ops=[8.6,8.8,9.0,9.2].map(x=>lin(t,x,x+0.08));}
+  if(m2>0){ops=[1,1,1,1];const g=eio(lin(t,19.0,19.6));const hf=mix(0.07,0.19,g);const rest=(1-hf)/0.93;fr=[hf,SEG[1]*rest,SEG[2]*rest,SEG[3]*rest];}
+  setSegs(S1,fr,ops);
+  const k2=lin(t,10.75,10.95)*(1-sm(lin(t,13.3,13.6)));c2.style.opacity=k2.toFixed(3);setRect(c2,G2);
+  setSegs(S2,[0.10*eout(lin(t,11.0,11.35)),0.90*eout(lin(t,11.3,11.65))],[lin(t,11.0,11.05),lin(t,11.3,11.35)]);
+  $('h1').style.left=(G1.x+G1.w/2)+'px';$('h1').style.opacity=(o1*clamp(m1>0?lin(t,8.6,8.8):1)).toFixed(3);
+  $('h2').style.left=(G2.x+G2.w/2)+'px';$('h2').style.opacity=k2.toFixed(3);
+  const tl=$('tlab');const leftX=k2>0.5?G2.x:G1.x;tl.style.left=(leftX-14)+'px';tl.style.top=(G1.y+fr[0]*474/2+1).toFixed(1)+'px';
+  tl.style.opacity=(o1*Math.max(ops[0],0)).toFixed(3);
+}
+function reticle(t,hs,zoomF){
+  // réticule + « POINT CHAUD » sur la tête
+  let o=0;if(t<6.05)o=1-lin(t,5.9,6.05);if(t>=14.9&&t<17.6)o=lin(t,14.9,15.2)*(1-lin(t,17.42,17.6));if(t>=24.8)o=lin(t,24.8,25.0);
+  const rp=$('rp');const lab=$('hotlab');
+  if(o<=0.001){rp.setAttribute('d','');lab.style.opacity=0;return;}
+  // verrouillage : les coins se resserrent au déclic (0,9 s)
+  const lock=t<0.9?0:eout(lin(t,0.93,1.15));const breathe=t<0.9?3*Math.sin(t*9):0;
+  const bw=hs.rw*mix(1.75,1.4,lock)+breathe,bh=hs.rh*mix(1.45,1.18,lock)+breathe;const c=26*mix(1.0,1.25,lock);
+  const x0=hs.x-bw,x1=hs.x+bw,y0=hs.y-bh,y1=hs.y+bh;
+  const d=`M${x0} ${y0+c}V${y0}H${x0+c} M${x1-c} ${y0}H${x1}V${y0+c} M${x1} ${y1-c}V${y1}H${x1-c} M${x0+c} ${y1}H${x0}V${y1-c} M${hs.x-9} ${hs.y}H${hs.x+9} M${hs.x} ${hs.y-9}V${hs.y+9}`;
+  rp.setAttribute('d',d);rp.style.opacity=o;lab.style.opacity=(o*0.95).toFixed(3);lab.style.left=(x1+12)+'px';lab.style.top=(y0-6)+'px';}
+
+/* ============================== temps → état du monde ============================== */
+const _v=new THREE.Vector3();
+function proj(v){_v.copy(v).project(cam);return {x:(_v.x+1)/2*W,y:(1-_v.y)/2*H};}
+function hatState(t){ // décalage vertical du bonnet (cm au-dessus de la position portée) ; null = absent
+  if(t<17.18)return null;
+  if(t<17.4){const u=lin(t,17.18,17.4);return {y:150*(1-u*u),sq:1};}
+  if(t<17.95){const v=lin(t,17.4,17.7);return {y:3.0*Math.sin(Math.PI*v)*(1-v),sq:1-0.08*pulse(t,17.42,0.04)};}
+  if(t<18.25){return {y:160*ein(lin(t,17.95,18.25)),sq:1};}
+  if(t<19.8)return null;
+  if(t<20.0){const u=lin(t,19.8,20.0);return {y:130*(1-u*u),sq:1};}
+  if(t<23.4){const v=lin(t,20.0,20.3);return {y:2.5*Math.sin(Math.PI*v)*(1-v),sq:1-0.07*pulse(t,20.02,0.04)};}
+  if(t<24.0)return {y:170*ein(lin(t,23.4,24.0)),sq:1};
+  return null;}
+function sceneState(t){
+  cameraAt(t);
+  const b=eio(lin(t,18.0,19.0))*(1-eio(lin(t,20.4,21.2)));
+  const brK=0; const {hc,hr}=pose(b,brK);
+  // bonnet
+  const hs_=hatState(t);BON.visible=!!hs_;
+  if(hs_){BON.position.set(hc[0],hc[1]+0.14*hr[1]+hs_.y,hc[2]);BON.scale.set(hr[0]*1.13*(2-hs_.sq),hr[1]*1.02*hs_.sq,hr[2]*1.13*(2-hs_.sq));BON.rotation.z=hs_.y>5?0.12*Math.sin(t*7):0;}
+  const br=breathState(t,hc,hr,b);
+  P.updateMatrixWorld(true);
+  // scan : descend 6,2 → 7,35 ; remonte 13,6 → 14,8
+  let sy=999;
+  if(t>=6.2&&t<13.6)sy=mix(182,-6,eio(lin(t,6.2,7.35)));
+  if(t>=13.6&&t<14.85)sy=mix(-6,182,eio(lin(t,13.6,14.8)));
+  SH.uScanY.value=sy;
+  // le mythe : la zone « chaude » envahit le dos (≈ 45 % de la silhouette visible)
+  SH.uMythK.value=t<3.0?0:(t<6.2?sm(lin(t,3.1,3.35)):1-sm(lin(t,6.2,6.45)));
+  SH.uMythY.value=t<6.2?mix(186,133,eio(lin(t,3.3,4.9))):133;
+  if(t>=6.6)SH.uMythK.value=0;
+  snowU.uT.value=t;
+  // palette : fer → « white hot » (3,0) → fer d'un coup (6,2)
+  const pal=t<3.0?0:(t<6.2?lin(t,3.0,3.2):0);postU.uPal.value=pal;
+  // étalonnage (NUC) à 0,9 s : la palette se ré-étale, la tête passe au blanc saturé
+  const cal=(t>=0.93&&t<24.8)?1:0;postU.uLo.value=mix(0.0,0.02,cal);postU.uHi.value=mix(1.10,0.975,cal);
+  postU.uFlash.value=0.07*pulse(t,0.95,0.03)+0.05*pulse(t,8.42,0.03)+0.05*pulse(t,9.62,0.03);
+  // zoom numérique par paliers sur la tête (×1,4) : gros pixels 3 images puis lissés
+  const head=proj(V3(hc[0],hc[1],hc[2]));
+  let zoom=1,pix=0;if(t>=8.4&&t<9.6){zoom=1.4;pix=t<8.5?1:0;}else if(t>=9.6&&t<9.7)pix=1;
+  postU.uZoom.value=zoom;postU.uPix.value=pix;postU.uZC.value.set(head.x/W,1-head.y/H);
+  postU.uBlur.value=1.75;
+  // HUD
+  const top=proj(V3(hc[0],hc[1]+hr[1],hc[2])),side=proj(V3(hc[0]+hr[0],hc[1],hc[2]));
+  const zc={x:head.x,y:head.y};const Z=p=>({x:zc.x+(p.x-zc.x)*zoom,y:zc.y+(p.y-zc.y)*zoom});
+  const hs={x:head.x,y:head.y,rw:Math.abs(side.x-head.x)*zoom,rh:Math.abs(top.y-head.y)*zoom};
+  reticle(t,hs,zoom);hudState(t,pal,hs);
+  // ligne de scan (UI) : suit la couture du manteau
+  const sc=$('scan');if(sy<500){const p=Z(proj(V3(0,sy,8)));sc.style.top=(p.y-1.5).toFixed(1)+'px';
+    sc.style.opacity=(clamp((1470-p.y)/60)*(t<13.6?lin(t,6.2,6.26)*(1-lin(t,7.3,7.45)):lin(t,13.6,13.66)*(1-lin(t,14.7,14.85)))).toFixed(3);}else sc.style.opacity=0;
+  // signature, pastille, fin
+  const big=lin(t,22.85,23.1)*(1-lin(t,24.62,24.8));
+  const small=1-big;
+  $('sigS').style.opacity=(0.85*small).toFixed(3);$('hdl').style.opacity=(0.9*small).toFixed(3);$('pill').style.opacity=small.toFixed(3);
+  $('sigB').style.opacity=big.toFixed(3);$('hdlB').style.opacity=(big*lin(t,23.15,23.35)).toFixed(3);
+  $('shine').style.backgroundPosition=`${(100-lin(t,23.1,23.9)*100).toFixed(1)}% 0`;
+  const su=$('sub');const so=lin(t,23.3,23.45)*(1-lin(t,24.55,24.72));su.style.opacity=so.toFixed(3);
+  su.style.transform=`translateX(-50%) scale(${(mix(0.7,1,eout(lin(t,23.3,23.5)))*(1+0.07*pulse(t,23.95,0.07))).toFixed(3)})`;
+  // icône d'envoi
+  const sd=$('send');const sdo=t>=21.0&&t<22.8?lin(t,21.0,21.2)*(1-lin(t,22.55,22.75)):0;sd.style.opacity=sdo.toFixed(3);
+  if(sdo>0){sd.style.left='540px';sd.style.top='840px';sd.style.transform=`scale(${(1+0.16*pulse(t,21.6,0.06)).toFixed(3)})`;
+    const rr=70+26*lin(t,21.6,22.0);$('sr2').setAttribute('r',rr.toFixed(1));$('sr2').setAttribute('opacity',(0.6*(1-lin(t,21.6,22.0))).toFixed(3));}
+}
+
+/* ============================== entrée publique ============================== */
+window.renderAt=(t)=>{
+  const f=Math.round(t*30);
+  // déclic d'étalonnage : image figée 2 images (27, 28)
+  let tw=t,fr=f;if(f===27||f===28){tw=26/30;fr=26;}
+  sceneState(tw);styleText(tw);
+  postU.uFrame.value=fr%997;
+  r.setRenderTarget(rtT);r.setClearColor(0x000000,1);r.clear();r.render(scene,cam);
+  r.setRenderTarget(null);r.render(postScene,postCam);};
+window.sceneReady=(async()=>{for(const f of ['IDBk','IDBi','IDSb','IDMd'])await document.fonts.load('100px '+f);await document.fonts.ready;
+  await Promise.all(Array.from(document.images).map(im=>im.decode().catch(()=>{})));
+  for(const it of IT.filter(x=>x.fit)){it.el.style.fontSize='100px';}
+  const w100=IT.find(x=>x.fit).in.getBoundingClientRect().width;const fs=Math.min(172,100*820/w100);
+  for(const it of IT.filter(x=>x.fit)){it.el.style.fontSize=fs.toFixed(1)+'px';it.lh=Math.round(fs*1.18);it.el.style.lineHeight=it.lh+'px';it.el.style.top=(it.y-it.lh/2)+'px';}
+  window.renderAt(0);})();
+</script></body></html>

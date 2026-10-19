@@ -5,6 +5,24 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 19/10/2026 (mode rapide) — pour « Mythe ou science ? » ép. 3 (chaleur perdue par la tête)
+
+**Volume** : 16 requêtes + 10 pages lues. **Limites** : TikTok / Instagram / Douyin / Xiaohongshu illisibles par robot ; requêtes chinoises et japonaises = presse et fiches produit, pas de vidéos chiffrées. Aucun compteur de vues des 30 derniers jours vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | BBC Earth Unplugged, homme torse nu dans la neige en thermique — [VICE](https://vice.com/en/article/two-long-shirtless-minutes-in-the-snow-through-the-lens-of-an-infrared-camera) · [TVOvermind 14/11/2025](https://tvovermind.com/?p=1305327) | Royaume-Uni, YouTube (re-diffusé 2016 → 2025) | n.d. | **Retirer un vêtement = une zone qui s'allume** ; neige en points sombres ; main froide qui laisse une empreinte | Avant / après dans le même plan ; le contenu revient 10 ans plus tard |
+| 2 | « Grief » (Hiro Murai) — [Dezeen](https://www.dezeen.com/2015/04/04/grief-earl-sweatshirt-music-video-hiro-murai-thermal-camera/) · « Creepin' » — [FLIR](https://www.flir.com/discover/professional-tools/creepn-with-flir-the-weeknd-diddy-21-savage-and-metro-boomin-in-thermal-for-their-latest-music-video/) | États-Unis, clips | n.d. | **Monde révélé par la chaleur, pas par la lumière** ; palette choisie selon l'humeur (gris = sombre) | Inversion de la visibilité : ce qui est froid disparaît |
+| 3 | Fausse vidéo « pets en thermique » — [Gizmodo](https://gizmodo.com/that-video-of-farts-captured-by-thermal-cameras-looking-1841442780) | Chine / monde | > 9 M vues (déclaré) | L'image thermique est un code si convaincant qu'on la falsifie | Pour nous : toujours étiqueter « simulation » |
+| 4 | Remotion `thermalVision()` — [doc](https://remotion.dev/docs/effects/thermal-vision) | Outil, 2026 | — | Luminance → table de couleurs | **Alerte** : le look thermique devient un préréglage ; la différence doit venir du récit (scan, palette qui raconte) |
+| 5 | Scan sur carte de profondeur — [Codrops](https://tympanus.net/codrops/?p=90674) | Monde, technique | — | **Une ligne qui balaie et révèle une couche cachée** | Événement net, lisible, très peu coûteux en shader |
+| 6 | Tendances motion 10/2026 — [mean.ceo](https://blog.mean.ceo/?p=10938) · [Centric 2026](https://www.centricdxb.com/insights/social-media-design-trends) | Monde, blogs métier | — | Vraies interfaces plutôt que tableaux de bord fictifs ; le son devient un test de crédibilité ; typo héroïne | → la barre de palette d'une vraie caméra devient le graphique |
+| 7 | Xinhua 02/02/2026 — [news.cn](https://www.news.cn/20260202/b4e0910f95c04c7d83b03fb5861380e8/c.html) | Chine, presse d'État | — | Répète le mythe (« moitié à 4 °C ») | Le mythe est mondial et actuel : argument de débat |
+
+**À retenir** : le thermique donne un **lieu et un humain crédibles** sans tournage, et son flou naturel rend crédibles des primitives 3D simples. Notre ouverture : faire réfuter l'image par la même image (scan) et tirer la donnée de l'interface de l'appareil.
+
+---
+
 ## Session du 18/10/2026 soir (mode rapide) — pour « Mythe ou science ? » ép. 2 (craquer ses doigts)
 
 **Volume** : 13 requêtes + 7 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot ; requêtes chinoises et japonaises sans résultat exploitable (articles AFP / Nature Asia sur l'étude 2015, pas de vidéos chiffrées). Aucun compteur de vues des 30 derniers jours vérifié.
