@@ -392,9 +392,9 @@ function styleText(t){
   const ul=$('ul');let ulo=0;if(t>=T_CRACK+0.12&&t<2.62)ulo=(1-kz);const ulw=w*1.05*eout(lin(t,T_CRACK+0.12,T_CRACK+0.3));
   ul.style.opacity=ulo.toFixed(3);ul.style.left=(540-ulw/2)+'px';ul.style.width=ulw+'px';ul.style.top=(midY-6)+'px';
   // compteurs
-  setCount('c7',Math.round(7*eout(lin(t,11.45,12.2))));
-  setCount('c10',Math.round(10*eout(lin(t,13.65,14.4))));
-  setCount('c19',Math.round(19*eout(lin(t,18.65,19.3))));
+  setCount('c7',Math.round(7*eout(lin(t,11.3,12.2))));
+  setCount('c10',Math.round(10*eout(lin(t,13.5,14.4))));
+  setCount('c19',Math.round(19*eout(lin(t,17.75,19.3))));
   // tampons du verdict
   const stamp=(sel,t0)=>{const u=lin(t,t0,t0+0.13);for(const e of all(sel)){e.style.opacity=(u>0?1:0);e.style.transform=`rotate(-4deg) scale(${mix(1.15,1,eout(u)).toFixed(3)})`;}};
   stamp('#stA',20.05);stamp('#stB',20.45);
