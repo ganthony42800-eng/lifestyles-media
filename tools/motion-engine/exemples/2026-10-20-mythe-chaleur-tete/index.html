@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Mythe ou science ? ép. 3 — chaleur par la tête — Lifestyles</title>
+<style>
+@font-face{font-family:IDBk;src:url(/engine/fonts/InterDisplay-Black.otf)}
+@font-face{font-family:IDSb;src:url(/engine/fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:IDMd;src:url(/engine/fonts/InterDisplay-Medium.otf)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#06051A}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.blk{position:absolute;left:60px;width:960px;text-align:center;color:#F4F4FF;white-space:nowrap;font-family:IDSb;opacity:0;
+  font-variant-numeric:tabular-nums;text-shadow:0 4px 26px rgba(6,5,26,.9),0 1px 3px rgba(6,5,26,.9)}
+.blk::before{content:'';position:absolute;inset:-70px -10px;z-index:-1;
+  background:radial-gradient(closest-side,rgba(6,5,26,.62),rgba(6,5,26,.3) 64%,rgba(6,5,26,0))}
+.ln{position:relative;transform-origin:50% 100%}
+.ln>.a{clip-path:inset(-120px -90px 50% -90px)}
+.ln>.b{position:absolute;left:0;top:0;width:100%;clip-path:inset(50% -90px -120px -90px)}
+.bk{font-family:IDBk}.md{font-family:IDMd}
+.neo{font-family:IDBk;background:linear-gradient(180deg,#6FF5E6 8%,#A08CFF 92%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 12px rgba(140,150,255,.55)) drop-shadow(0 4px 24px rgba(6,5,26,.8))}
+.hot{font-family:IDBk;background:linear-gradient(180deg,#FFF6DA 0%,#FFC447 38%,#FF6B3A 72%,#D63CC8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 16px rgba(255,140,60,.55)) drop-shadow(0 4px 24px rgba(6,5,26,.8))}
+.cy{color:#5EF2E0}.vi{color:#A898FF}.am{color:#FFC447}.rd{color:#FF4A4A}.g2{color:#B7B3D9}.bl{color:#7FB2FF}
+.plq{display:inline-block;background:rgba(6,5,26,.68);padding:6px 20px 8px;border-radius:12px}
+#sigS{position:absolute;left:425px;top:34px;width:230px;opacity:.9}
+#hdl{position:absolute;left:0;width:1080px;top:118px;text-align:center;font-family:IDMd;font-size:26px;color:#C9C4FF;letter-spacing:.04em;opacity:.9}
+#pill{position:absolute;top:232px;left:50%;transform:translateX(-50%);height:62px;line-height:62px;padding:0 34px;border-radius:999px;
+  border:2px solid #9682FF;background:rgba(150,130,255,.16);color:#F4F4FF;font-family:IDSb;font-size:29px;letter-spacing:.14em;white-space:nowrap;
+  box-shadow:0 0 18px rgba(150,130,255,.35),inset 0 0 14px rgba(150,130,255,.18)}
+#sigB{position:absolute;left:180px;top:300px;width:720px;height:235px;opacity:0}
+#sigB img{width:720px;height:235px;display:block}
+#shine{position:absolute;inset:0;mix-blend-mode:screen;
+  background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,240,200,.95) 50%,rgba(255,226,176,0) 60%);
+  background-size:300% 100%;-webkit-mask:url(signature-officielle.png) center/100% 100% no-repeat;mask:url(signature-officielle.png) center/100% 100% no-repeat}
+#hdlB{position:absolute;left:0;width:1080px;top:545px;text-align:center;font-family:IDMd;font-size:38px;color:#E9E6FF;opacity:0}
+#gap{position:absolute;left:0;height:0;background:#05040F;border-top:2px solid #7FB2FF;border-bottom:2px solid #7FB2FF;box-sizing:border-box;
+  box-shadow:0 0 16px rgba(127,178,255,.8);opacity:0}
+#ul{position:absolute;height:12px;border-radius:6px;background:#FF3B3B;box-shadow:0 0 14px rgba(255,59,59,.7);opacity:0;transform:rotate(-6deg)}
+#lock{position:absolute;width:110px;height:114px;margin:-57px 0 0 -55px;opacity:0;overflow:visible}
+.stamp{display:inline-block;line-height:1.15;vertical-align:middle;margin-left:22px;padding:2px 20px 6px;border:6px solid currentColor;border-radius:14px;font-family:IDBk;
+  box-shadow:0 0 22px currentColor,inset 0 0 14px currentColor;text-shadow:0 0 18px currentColor;opacity:0}
+#send{position:absolute;left:540px;top:1210px;width:170px;height:170px;margin:-85px 0 0 -85px;opacity:0}
+#sub{position:absolute;left:50%;top:1290px;transform:translateX(-50%);height:96px;line-height:96px;padding:0 64px;border-radius:999px;
+  font-family:IDBk;font-size:50px;color:#07061A;background:linear-gradient(90deg,#6FF5E6,#A08CFF);white-space:nowrap;opacity:0;
+  box-shadow:0 0 30px rgba(140,150,255,.6)}
+.lab{position:absolute;font-family:IDBk;white-space:nowrap;opacity:0;transform:translate(-50%,-50%);text-shadow:0 0 14px currentColor,0 3px 18px rgba(6,5,26,.9)}
+</style>
+<script type="importmap">{"imports":{"three":"/engine/vendor/three/three.module.js","three/addons/":"/engine/vendor/three/addons/"}}</script>
+</head><body>
+<svg width="0" height="0" style="position:absolute"><defs id="fdefs"></defs></svg>
+<img id="sigS" src="signature-officielle.png" alt="">
+<div id="hdl">@lifestyles_hf</div>
+<div id="pill">MYTHE OU SCIENCE&#8239;? · ÉP.&nbsp;3</div>
+<div id="sigB"><img src="signature-officielle.png" alt=""><div id="shine"></div></div>
+<div id="hdlB">@lifestyles_hf</div>
+<div id="gap"></div><div id="ul"></div>
+<svg id="lock" viewBox="0 0 110 114"><g id="shk"><path d="M30 60 V40 a25 25 0 0 1 50 0 V60" fill="none" stroke="#FFC447" stroke-width="10" stroke-linecap="round"/></g>
+ <rect x="16" y="56" width="78" height="56" rx="13" fill="rgba(6,5,26,.85)" stroke="#FFC447" stroke-width="7"/><circle cx="55" cy="80" r="8" fill="#FFC447"/><rect x="51.5" y="82" width="7" height="16" rx="3" fill="#FFC447"/></svg>
+<svg id="send" viewBox="0 0 170 170"><circle id="sr2" cx="85" cy="85" r="80" fill="none" stroke="#A08CFF" stroke-width="3" opacity=".5"/>
+ <circle cx="85" cy="85" r="64" fill="rgba(6,5,26,.55)" stroke="#6FF5E6" stroke-width="6"/>
+ <path d="M62 108 L106 64 M76 62 H107 V93" fill="none" stroke="#F4F4FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div id="sub">Abonne-toi</div>
+<div id="texts"></div>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+
+/* ============================== utilitaires déterministes ============================== */
+const W=1080,H=1920,RW=720,RH=1280,DUR=27.0;
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,a,b)=>clamp((t-a)/(b-a));
+const mix=(a,b,k)=>a+(b-a)*k;
+const sm=x=>{x=clamp(x);return x*x*(3-2*x)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const eout=x=>1-Math.pow(1-clamp(x),3);
+const ein=x=>Math.pow(clamp(x),3);
+const pulse=(t,c,w)=>Math.exp(-Math.pow((t-c)/w,2));
+const V3=(x,y,z)=>new THREE.Vector3(x,y,z);
+const C=c=>new THREE.Color(c);
+const T_CRACK=1.5;
+
+/* ============================== rendu ============================== */
+const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+r.setPixelRatio(1);r.setSize(RW,RH,false);r.domElement.id='gl';document.body.prepend(r.domElement);
+r.toneMapping=THREE.NeutralToneMapping;r.toneMappingExposure=1.0;
+const scene=new THREE.Scene();
+const cam=new THREE.PerspectiveCamera(30,RW/RH,0.05,400);scene.add(cam);
+
+/* ---------- fond : pièce froide vue en caméra thermique ---------- */
+const bgU={uK:{value:1},uT:{value:0},uWarm:{value:0}};
+const bg=new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.ShaderMaterial({uniforms:bgU,depthWrite:false,depthTest:false,
+ vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.9999,1.0);}`,
+ fragmentShader:`varying vec2 vUv;uniform float uK,uT,uWarm;
+ float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+ float n2(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+ void main(){vec2 d=(vUv-vec2(0.5,0.40))*vec2(1.0,1.5);float rr=length(d);
+  vec3 c=mix(vec3(0.085,0.075,0.30),vec3(0.035,0.035,0.13),smoothstep(0.0,0.55,rr));c=mix(c,vec3(0.012,0.012,0.045),smoothstep(0.45,1.1,rr));
+  float m=n2(vUv*vec2(3.0,5.0)+vec2(0.0,uT*0.05))*0.6+n2(vUv*vec2(7.0,12.0)-vec2(uT*0.03,0.0))*0.4;
+  c+=vec3(0.02,0.05,0.14)*m*(1.0-smoothstep(0.2,1.0,rr));
+  c=mix(c,c*vec3(1.25,0.95,1.1),uWarm);
+  gl_FragColor=vec4(c*uK,1.0);}`}));
+bg.frustumCulled=false;bg.renderOrder=-100;scene.add(bg);
+
+/* ---------- sol : halo froid ---------- */
+const floorU={uA:{value:1}};
+const floor=new THREE.Mesh(new THREE.CircleGeometry(2.6,64),new THREE.ShaderMaterial({uniforms:floorU,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+ vertexShader:`varying vec2 vP;void main(){vP=position.xy;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+ fragmentShader:`varying vec2 vP;uniform float uA;void main(){float rr=length(vP);float ring=exp(-pow((rr-0.55)/0.05,2.0))*0.5+exp(-pow((rr-1.15)/0.03,2.0))*0.25;
+  float glow=exp(-rr*rr*2.2)*0.35;vec3 c=vec3(0.25,0.35,1.0)*glow+vec3(0.45,0.55,1.0)*ring*0.5;gl_FragColor=vec4(c*uA*0.5,1.0);}`}));
+floor.rotation.x=-Math.PI/2;floor.position.set(-0.2,0.002,0.05);scene.add(floor);
+
+/* ============================== corps en nuage de points ============================== */
+// régions : 0 tête · 1 cou · 2 torse · 3 bras · 4 mains · 5 jambes · 6 pieds
+function sampleBody(spec,N,seed,off){
+  const R=mulberry32(seed);
+  const prims=[];
+  const ell=(c,rad,reg)=>prims.push({k:'e',c,rad,reg,area:4*Math.PI*Math.pow((Math.pow(rad[0]*rad[1],1.6)+Math.pow(rad[0]*rad[2],1.6)+Math.pow(rad[1]*rad[2],1.6))/3,1/1.6)});
+  const cap=(a,b,ra,rb,reg)=>{const L=Math.hypot(b[0]-a[0],b[1]-a[1],b[2]-a[2]);prims.push({k:'c',a,b,ra,rb,reg,L,area:Math.PI*(ra+rb)*L+2*Math.PI*(ra*ra+rb*rb)});};
+  spec(ell,cap);
+  const tot=prims.reduce((s,p)=>s+p.area,0);
+  const pos=new Float32Array(N*3),nor=new Float32Array(N*3),reg=new Float32Array(N),sv=new Float32Array(N*3);
+  const regArea=new Array(7).fill(0);for(const p of prims)regArea[p.reg]+=p.area;
+  // cumul
+  const cum=[];let s=0;for(const p of prims){s+=p.area/tot;cum.push(s);}
+  const rnd3=()=>{let x,y,z,l;do{x=R()*2-1;y=R()*2-1;z=R()*2-1;l=x*x+y*y+z*z;}while(l>1||l<1e-4);l=Math.sqrt(l);return [x/l,y/l,z/l];};
+  const inside=(P,skip)=>{for(let k=0;k<prims.length;k++){if(k===skip)continue;const q=prims[k];
+      if(q.k==='e'){const x=(P[0]-q.c[0])/q.rad[0],y=(P[1]-q.c[1])/q.rad[1],z=(P[2]-q.c[2])/q.rad[2];if(x*x+y*y+z*z<0.94)return true;}
+      else{const ab=[q.b[0]-q.a[0],q.b[1]-q.a[1],q.b[2]-q.a[2]];const ap=[P[0]-q.a[0],P[1]-q.a[1],P[2]-q.a[2]];
+        const h=clamp((ab[0]*ap[0]+ab[1]*ap[1]+ab[2]*ap[2])/(q.L*q.L));const d=Math.hypot(ap[0]-ab[0]*h,ap[1]-ab[1]*h,ap[2]-ab[2]*h);if(d<mix(q.ra,q.rb,h)*0.96)return true;}}
+    return false;};
+  for(let i=0,guard=0;i<N&&guard<N*12;guard++){const u=R();let j=0;while(j<cum.length-1&&u>cum[j])j++;const p=prims[j];let P,Nn,up;
+    if(p.k==='e'){const d=rnd3();P=[p.c[0]+d[0]*p.rad[0],p.c[1]+d[1]*p.rad[1],p.c[2]+d[2]*p.rad[2]];
+      Nn=[d[0]/p.rad[0],d[1]/p.rad[1],d[2]/p.rad[2]];up=(d[1]+1)/2;}
+    else{const ax=[(p.b[0]-p.a[0])/p.L,(p.b[1]-p.a[1])/p.L,(p.b[2]-p.a[2])/p.L];
+      let tmp=Math.abs(ax[1])<0.9?[0,1,0]:[1,0,0];
+      let e1=[ax[1]*tmp[2]-ax[2]*tmp[1],ax[2]*tmp[0]-ax[0]*tmp[2],ax[0]*tmp[1]-ax[1]*tmp[0]];let l1=Math.hypot(...e1);e1=e1.map(v=>v/l1);
+      const e2=[ax[1]*e1[2]-ax[2]*e1[1],ax[2]*e1[0]-ax[0]*e1[2],ax[0]*e1[1]-ax[1]*e1[0]];
+      const side=Math.PI*(p.ra+p.rb)*p.L/p.area;
+      if(R()<side){const v=R(),th=R()*Math.PI*2;const rr=mix(p.ra,p.rb,v);const c=Math.cos(th),sn=Math.sin(th);
+        const rv=[e1[0]*c+e2[0]*sn,e1[1]*c+e2[1]*sn,e1[2]*c+e2[2]*sn];
+        P=[p.a[0]+ax[0]*p.L*v+rv[0]*rr,p.a[1]+ax[1]*p.L*v+rv[1]*rr,p.a[2]+ax[2]*p.L*v+rv[2]*rr];Nn=rv;up=1-v;}
+      else{const end=R()<0.5;const d=rnd3();const cc=end?p.b:p.a;const rr=end?p.rb:p.ra;const dd=(d[0]*ax[0]+d[1]*ax[1]+d[2]*ax[2])*(end?1:-1);
+        const dv=dd<0?d.map((v,k)=>v-2*dd*ax[k]*(end?1:-1)):d;P=[cc[0]+dv[0]*rr,cc[1]+dv[1]*rr,cc[2]+dv[2]*rr];Nn=dv;up=end?0:1;}}
+    if(inside(P,j))continue;
+    const ln=Math.hypot(...Nn);
+    pos[i*3]=P[0]+off[0];pos[i*3+1]=P[1]+off[1];pos[i*3+2]=P[2]+off[2];
+    nor[i*3]=Nn[0]/ln;nor[i*3+1]=Nn[1]/ln;nor[i*3+2]=Nn[2]/ln;reg[i]=p.reg;sv[i*3]=R();sv[i*3+1]=R();sv[i*3+2]=up;i++;}
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('aN',new THREE.BufferAttribute(nor,3));
+  g.setAttribute('aR',new THREE.BufferAttribute(reg,1));g.setAttribute('aS',new THREE.BufferAttribute(sv,3));
+  g.boundingSphere=new THREE.Sphere(V3(off[0],off[1]+0.9,off[2]),3);
+  return {g,pos,nor,reg,regArea,tot};
+}
+// adulte : 1,75 m, vu de dos (il regarde vers +z)
+const ADULT=(ell,cap)=>{
+  ell([0,1.645,-0.008],[0.079,0.098,0.094],0);ell([0,1.575,0.022],[0.064,0.072,0.078],0);
+  for(const s of [-1,1])ell([s*0.079,1.6,-0.002],[0.013,0.03,0.02],0);
+  cap([0,1.44,-0.005],[0,1.535,0.0],0.056,0.05,1);
+  for(const s of [-1,1])cap([s*0.03,1.465,-0.015],[s*0.16,1.415,0],0.058,0.052,2);
+  ell([0,1.275,0.008],[0.182,0.195,0.112],2);ell([0,1.07,0],[0.148,0.125,0.096],2);ell([0,0.94,-0.003],[0.168,0.1,0.106],2);
+  for(const s of [-1,1]){
+    ell([s*0.07,0.875,-0.035],[0.086,0.09,0.082],2);
+    ell([s*0.19,1.39,0],[0.066,0.072,0.066],3);
+    cap([s*0.205,1.37,0],[s*0.245,1.11,0.012],0.05,0.041,3);
+    cap([s*0.245,1.11,0.012],[s*0.27,0.86,0.042],0.04,0.031,3);
+    ell([s*0.276,0.79,0.048],[0.026,0.062,0.042],4);
+    cap([s*0.088,0.9,0],[s*0.1,0.5,0.0],0.08,0.057,5);
+    ell([s*0.1,0.48,0.008],[0.052,0.05,0.052],5);
+    ell([s*0.102,0.33,-0.018],[0.05,0.11,0.054],5);
+    cap([s*0.1,0.46,0.0],[s*0.105,0.09,-0.012],0.05,0.036,5);
+    ell([s*0.106,0.045,0.035],[0.044,0.036,0.112],6);}
+};
+// bébé (~9 mois) : 0,7 m, grosse tête
+const BABY=(ell,cap)=>{
+  ell([0,0.59,-0.004],[0.068,0.074,0.072],0);ell([0,0.555,0.02],[0.055,0.052,0.058],0);
+  for(const s of [-1,1])ell([s*0.067,0.57,0],[0.01,0.02,0.015],0);
+  cap([0,0.49,0],[0,0.515,0],0.036,0.036,1);
+  ell([0,0.40,0],[0.098,0.105,0.075],2);ell([0,0.29,0.004],[0.094,0.075,0.07],2);
+  for(const s of [-1,1]){
+    ell([s*0.095,0.455,0],[0.038,0.035,0.036],3);
+    cap([s*0.105,0.45,0],[s*0.125,0.35,0.02],0.031,0.028,3);cap([s*0.125,0.35,0.02],[s*0.13,0.265,0.05],0.028,0.024,3);
+    ell([s*0.132,0.232,0.06],[0.022,0.03,0.022],4);
+    cap([s*0.05,0.26,0],[s*0.06,0.14,0.01],0.045,0.037,5);cap([s*0.06,0.14,0.01],[s*0.06,0.04,0],0.036,0.029,5);
+    ell([s*0.062,0.022,0.025],[0.03,0.022,0.05],6);}
+};
+const BABY_OFF=[-0.62,0,0.18];
+const AD=sampleBody(ADULT,72000,4242,[0,0,0]);
+const BB=sampleBody(BABY,26000,909,BABY_OFF);
+console.log('surface tête adulte %',(AD.regArea[0]/AD.tot*100).toFixed(1),' bébé %',(BB.regArea[0]/BB.tot*100).toFixed(1));
+
+const PAL=`vec3 pal(float x){x=clamp(x,0.0,1.0);
+ vec3 c0=vec3(0.016,0.012,0.10),c1=vec3(0.063,0.133,0.43),c2=vec3(0.18,0.36,1.0),c3=vec3(0.48,0.29,1.0),c4=vec3(0.84,0.235,0.78),c5=vec3(1.0,0.42,0.23),c6=vec3(1.0,0.77,0.28),c7=vec3(1.0,0.965,0.855);
+ if(x<0.15)return mix(c0,c1,x/0.15);if(x<0.3)return mix(c1,c2,(x-0.15)/0.15);if(x<0.45)return mix(c2,c3,(x-0.3)/0.15);if(x<0.6)return mix(c3,c4,(x-0.45)/0.15);
+ if(x<0.74)return mix(c4,c5,(x-0.6)/0.14);if(x<0.87)return mix(c5,c6,(x-0.74)/0.13);return mix(c6,c7,(x-0.87)/0.13);}`;
+function bodyMat(shell){
+  const U={uTemp:{value:new Array(7).fill(0.6)},uHL:{value:new Array(7).fill(1)},uShell:{value:new Array(7).fill(0)},uGrow:{value:0},uHt:{value:1.75},uBase:{value:0},
+    uA:{value:1},uT:{value:0},uPx:{value:0.0062*RH/(2*Math.tan(15*Math.PI/180))},uScan:{value:-9},uGrid:{value:0},uFlash:{value:0}};
+  const m=new THREE.ShaderMaterial({uniforms:U,transparent:true,depthWrite:false,depthTest:false,blending:THREE.AdditiveBlending,
+   vertexShader:PAL+`attribute vec3 aN;attribute float aR;attribute vec3 aS;
+   uniform float uTemp[7],uHL[7],uShell[7];uniform float uGrow,uHt,uBase,uA,uT,uPx,uScan,uGrid,uFlash;varying vec3 vC;varying float vA;
+   void main(){int ri=int(aR+0.5);vec3 p=position;float yN=(p.y-uBase)/uHt;
+    float cov=uShell[ri]*smoothstep(yN-0.02,yN+0.02,uGrow)*(ri==0?smoothstep(0.30,0.40,aS.z):1.0);
+    ${shell?`p+=aN*(0.028+0.018*aS.y);`:``}
+    vec4 wp=modelMatrix*vec4(p,1.0);vec3 V=normalize(cameraPosition-wp.xyz);vec3 Nw=normalize(mat3(modelMatrix)*aN);float rim=1.0-abs(dot(Nw,V));
+    float tp=uTemp[ri]+0.05*(aS.x-0.5)+0.025*sin(uT*1.7+aS.y*20.0+p.y*9.0);
+    ${shell?`
+    float rib=0.5+0.5*sin(p.y*(ri==0?260.0:140.0)+aS.x*0.6);
+    tp=0.20+0.06*rib+0.03*aS.y;
+    float a=cov*(0.25+0.75*pow(rim,1.4))*(0.65+0.35*rib);`:`
+    float a=(0.22+0.78*pow(rim,1.6))*(1.0-0.86*cov)*uHL[ri];`}
+    vec3 c=pal(tp)*(0.75+0.5*tp);
+    ${shell?``:`
+    float sc=exp(-pow((p.y-uScan)/0.025,2.0));c+=vec3(0.4,0.95,1.0)*sc*1.6;a+=sc*0.6;
+    if(ri==0&&uGrid>0.0){float gy=smoothstep(0.82,0.98,fract(p.y*42.0));float ang=atan(p.x-${(0).toFixed(1)},p.z);float gx=smoothstep(0.82,0.98,fract(ang*4.0));
+      c+=vec3(0.35,0.95,0.9)*max(gx,gy)*uGrid*1.4;}`}
+    c+=vec3(1.0)*uFlash;
+    vC=c;vA=a*uA;
+    vec4 mv=viewMatrix*wp;float d=max(-mv.z,0.2);gl_PointSize=clamp(uPx*(0.75+0.6*aS.x)/d,1.0,4.5);gl_Position=projectionMatrix*mv;}`,
+   fragmentShader:`varying vec3 vC;varying float vA;void main(){vec2 q=gl_PointCoord-0.5;float rr=dot(q,q)*4.0;if(rr>1.0)discard;
+    gl_FragColor=vec4(vC*vA*exp(-rr*2.2)*0.55,1.0);}`});
+  return {m,U};
+}
+function makeFigure(S,ht,base){
+  const inner=bodyMat(false),shell=bodyMat(true);inner.U.uHt.value=ht;shell.U.uHt.value=ht;inner.U.uBase.value=base;shell.U.uBase.value=base;
+  shell.U.uShell=inner.U.uShell;shell.U.uGrow=inner.U.uGrow;shell.U.uT=inner.U.uT;
+  const pi=new THREE.Points(S.g,inner.m),ps=new THREE.Points(S.g,shell.m);pi.renderOrder=10;ps.renderOrder=11;scene.add(pi);scene.add(ps);
+  return {pi,ps,I:inner.U,Sh:shell.U,S};
+}
+const FA=makeFigure(AD,1.72,0),FB=makeFigure(BB,0.64,0);
+
+/* ---------- flux de chaleur (particules qui quittent la peau) ---------- */
+// adulte : 1000 particules réparties comme la surface (≈ 7-10 % sur la tête) ; bébé : 400
+function makeHeat(S,N,seed,figId){
+  const R=mulberry32(seed);const n=S.reg.length;
+  const pos=new Float32Array(N*3),nor=new Float32Array(N*3),reg=new Float32Array(N),sv=new Float32Array(N*3);
+  for(let i=0;i<N;i++){const j=Math.floor(R()*n);for(let k=0;k<3;k++){pos[i*3+k]=S.pos[j*3+k];nor[i*3+k]=S.nor[j*3+k];}reg[i]=S.reg[j];sv[i*3]=R();sv[i*3+1]=R();sv[i*3+2]=figId;}
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('aN',new THREE.BufferAttribute(nor,3));
+  g.setAttribute('aR',new THREE.BufferAttribute(reg,1));g.setAttribute('aS',new THREE.BufferAttribute(sv,3));g.boundingSphere=new THREE.Sphere(V3(0,1,0),4);
+  const U={uE:{value:new Array(7).fill(0)},uT:{value:0},uA:{value:1},uHeadGold:{value:1},uPx:{value:0.016*RH/(2*Math.tan(15*Math.PI/180))},uSpd:{value:1}};
+  const m=new THREE.ShaderMaterial({uniforms:U,transparent:true,depthWrite:false,depthTest:false,blending:THREE.AdditiveBlending,
+   vertexShader:`attribute vec3 aN;attribute float aR;attribute vec3 aS;uniform float uE[7];uniform float uT,uA,uHeadGold,uPx,uSpd;varying vec3 vC;varying float vA;
+   void main(){int ri=int(aR+0.5);float L=1.7;float ph=fract(uT*uSpd/L+aS.x);
+    vec3 p=position+aN*(0.012+0.20*ph)+vec3(0.0,0.42*ph*ph,0.0)+0.035*vec3(sin(uT*2.1+aS.y*30.0),0.0,cos(uT*1.7+aS.x*25.0))*ph;
+    float a=sin(3.14159*ph)*uE[ri]*uA;
+    vec3 hc=mix(vec3(1.0,0.77,0.28),vec3(1.0,0.96,0.85),0.4*(1.0-ph));
+    vec3 bc=mix(vec3(0.84,0.235,0.78),vec3(0.48,0.29,1.0),ph);
+    vC=(ri==0?mix(bc,hc,uHeadGold):bc);vA=a;
+    vec4 mv=modelViewMatrix*vec4(p,1.0);float d=max(-mv.z,0.2);gl_PointSize=clamp(uPx*(0.6+0.8*ph)/d,1.5,16.0);gl_Position=projectionMatrix*mv;}`,
+   fragmentShader:`varying vec3 vC;varying float vA;void main(){vec2 q=gl_PointCoord-0.5;float rr=dot(q,q)*4.0;if(rr>1.0)discard;gl_FragColor=vec4(vC*vA*exp(-rr*3.0)*0.9,1.0);}`});
+  const pts=new THREE.Points(g,m);pts.renderOrder=20;scene.add(pts);return U;
+}
+const HA=makeHeat(AD,1300,77,0),HB=makeHeat(BB,520,78,1);
+
+/* ---------- air froid (flocons hors mise au point) ---------- */
+const ND=420;
+const dG=new THREE.BufferGeometry();{const R=mulberry32(1910);const p=new Float32Array(ND*3),s=new Float32Array(ND*2);
+ for(let i=0;i<ND;i++){p[i*3]=(R()-0.5)*9;p[i*3+1]=-1+R()*6;p[i*3+2]=-9+R()*12;s[i*2]=R();s[i*2+1]=R();}
+ dG.setAttribute('position',new THREE.BufferAttribute(p,3));dG.setAttribute('aS',new THREE.BufferAttribute(s,2));}
+const dustU={uT:{value:0},uA:{value:1}};
+const dust=new THREE.Points(dG,new THREE.ShaderMaterial({uniforms:dustU,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+ vertexShader:`attribute vec2 aS;uniform float uT;varying float vA;varying float vF;
+ void main(){vec3 p=position;p.y=mod(p.y-uT*(0.08+0.12*aS.x)+1.0,6.0)-1.0;p.x+=0.15*sin(uT*0.4+aS.y*30.0);
+  vec4 mv=modelViewMatrix*vec4(p,1.0);float d=-mv.z;vF=smoothstep(2.5,0.6,d);
+  gl_PointSize=clamp((2.0+aS.y*3.0)*(1.0+vF*8.0)*60.0/max(d,0.3),1.0,60.0);vA=(0.35+0.65*aS.x)*smoothstep(0.15,0.6,d)/(1.0+vF*4.0);
+  gl_Position=projectionMatrix*mv;}`,
+ fragmentShader:`varying float vA;varying float vF;uniform float uA;void main(){vec2 q=gl_PointCoord-0.5;float r=length(q)*2.0;
+  float a=mix(exp(-r*r*5.0),smoothstep(1.0,0.75,r)*(0.55+0.45*r),vF)*step(r,1.0);
+  gl_FragColor=vec4(vec3(0.7,0.85,1.0)*a*vA*0.22*uA,1.0);}`}));
+dust.frustumCulled=false;dust.renderOrder=30;scene.add(dust);
+
+/* ============================== caméra (plan continu) ============================== */
+function hermK(K,t,idx){const n=K.length;let i=0;while(i<n-2&&t>K[i+1][0])i++;const a=K[i],b=K[i+1];const dt=b[0]-a[0];const u=clamp((t-a[0])/dt);
+  const val=(k,j)=>Array.isArray(K[k][idx])?K[k][idx][j]:K[k][idx];
+  const tan=(k,j)=>{if(k===0||k===n-1)return 0;const h0=K[k][0]-K[k-1][0],h1=K[k+1][0]-K[k][0];const d0=(val(k,j)-val(k-1,j))/h0,d1=(val(k+1,j)-val(k,j))/h1;
+    if(d0*d1<=0)return 0;const w1=2*h1+h0,w2=h1+2*h0;return (w1+w2)/(w1/d0+w2/d1);};
+  const dim=Array.isArray(a[idx])?3:1;const out=[];
+  for(let j=0;j<dim;j++){const p0=val(i,j),p1=val(i+1,j),m0=tan(i,j)*dt,m1=tan(i+1,j)*dt;const u2=u*u,u3=u2*u;
+    out.push((2*u3-3*u2+1)*p0+(u3-2*u2+u)*m0+(-2*u3+3*u2)*p1+(u3-u2)*m1);}return out;}
+const K0=[[0.62,1.80,-1.32],[0.04,1.86,0]];
+const K=[ // t, position, cible
+ [0.0, K0[0],K0[1]],
+ [2.6, [0.78,1.74,-1.62],[0.04,1.84,0]],
+ [4.4, [1.0,1.3,-3.1],   [-0.25,1.38,0]],
+ [6.8, [2.6,1.35,-6.0],  [0,1.42,0]],
+ [9.0, [-1.6,1.55,-5.4], [0,1.48,0]],
+ [11.2,[-0.7,1.85,-2.4], [0,1.78,0]],
+ [13.4,[0.55,1.84,-1.4], [0.02,1.85,0]],
+ [15.6,[2.0,1.3,-5.8],   [0,1.4,0]],
+ [17.6,[0.4,0.95,-4.4],  [-0.35,0.95,0]],
+ [18.7,[-1.05,0.62,-2.25],[-0.6,0.72,0]],
+ [19.8,[-1.0,1.0,-4.5], [-0.32,1.02,0]],
+ [21.2,[-0.3,1.15,-4.6], [-0.3,1.3,0]],
+ [23.0,[1.5,1.2,-5.2],   [-0.2,1.35,0]],
+ [24.8,[0.7,1.45,-5.6],  [-0.1,1.25,0]],
+ [26.3,[0.2,1.7,-8.5],   [-0.1,1.1,0]],
+ [26.55,K0[0],K0[1]],
+ [27.0,[0.6,1.80,-1.34],K0[1]]];
+const camTgt=new THREE.Vector3();
+function cameraAt(t){const p=hermK(K,t,1),q=hermK(K,t,2);
+  p[0]+=0.03*Math.sin(t*0.7)+0.012*Math.sin(t*1.9);p[1]+=0.02*Math.sin(t*0.53+1);
+  cam.position.set(...p);camTgt.set(...q);cam.up.set(0,1,0);cam.lookAt(camTgt);cam.updateProjectionMatrix();cam.updateMatrixWorld();}
+
+/* ============================== post-traitement ============================== */
+const rt=new THREE.WebGLRenderTarget(RW,RH,{type:THREE.HalfFloatType,samples:4});
+const comp=new EffectComposer(r,rt);comp.setSize(RW,RH);
+comp.addPass(new RenderPass(scene,cam));
+const bloom=new UnrealBloomPass(new THREE.Vector2(RW/2,RH/2),0.7,0.5,0.55);comp.addPass(bloom);
+comp.addPass(new OutputPass());
+const fin=new ShaderPass({uniforms:{tDiffuse:{value:null},uFrame:{value:0},uJolt:{value:0},uFlash:{value:0},uWhip:{value:0}},
+ vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+ fragmentShader:`uniform sampler2D tDiffuse;uniform float uFrame,uJolt,uFlash,uWhip;varying vec2 vUv;
+ void main(){vec2 uv=vUv;uv.y-=uJolt*6.0/1280.0;float ca=uJolt*3.0/720.0+0.6/720.0;
+  vec3 col;
+  if(uWhip>0.001){col=vec3(0.0);for(int i=0;i<12;i++){float o=(float(i)/11.0-0.5)*uWhip*0.22;col+=texture2D(tDiffuse,uv+vec2(0.0,o)).rgb;}col/=12.0;}
+  else{col.r=texture2D(tDiffuse,uv+vec2(ca,0.0)).r;col.g=texture2D(tDiffuse,uv).g;col.b=texture2D(tDiffuse,uv-vec2(ca,0.0)).b;}
+  vec2 dc=vUv-0.5;float v=smoothstep(1.0,0.28,length(dc*vec2(1.0,0.85)));col*=mix(0.62,1.0,v);
+  float sy=1.0-vUv.y;col*=mix(1.0,0.55,smoothstep(0.78,0.94,sy));
+  col+=vec3(0.86,0.93,1.0)*uFlash;
+  float n=fract(sin(dot(vUv*vec2(1271.3,1817.7)+uFrame*0.6180339,vec2(12.9898,78.233)))*43758.5453);
+  col+=(n-0.5)*0.03;gl_FragColor=vec4(col,1.0);}`});
+comp.addPass(fin);
+
+/* ============================== calque texte ============================== */
+const NB='&#8239;';
+const B=[
+ {id:'h1',a:-1,z:2.62,y:420,css:'font-size:74px;line-height:90px',lines:['Tu perds']},
+ {id:'h2',a:-1,z:2.62,y:500,css:'line-height:250px',lines:['<span class="hot" id="hw1" style="font-size:250px">45'+NB+'%</span>'],hook:1},
+ {id:'h3',a:-1,z:2.62,y:760,css:'font-size:70px;line-height:86px',lines:['de ta chaleur','par la <span class="bk">tête</span>'+NB+'?']},
+ {id:'h4',a:1.52,z:2.62,y:960,css:'font-size:76px;line-height:90px',lines:['<span class="bk rd">Faux.</span> Plutôt <span class="bk cy">10'+NB+'%</span>.'],fast:1},
+ {id:'s2',a:2.6,z:4.42,y:470,css:'font-size:78px;line-height:96px',lines:['Sauf dans <span class="bk am">un cas</span>.','<span class="g2">Attends la fin.</span>']},
+ {id:'s3',a:4.4,z:6.82,y:430,css:'font-size:66px;line-height:84px',lines:['Le «'+NB+'45'+NB+'%'+NB+'» vient d’un','<span class="bk am">manuel de survie</span>','de l’armée US.']},
+ {id:'s3s',a:4.8,z:6.82,y:1478,cls:'md',css:'font-size:30px',lines:['<span class="g2 plq">cité par Vreeman &amp; Carroll · BMJ · 2008</span>']},
+ {id:'s4',a:6.8,z:9.02,y:430,css:'font-size:68px;line-height:88px',lines:['Les tests d’origine'+NB+':','corps <span class="bk bl">emmitouflé</span>…','tête <span class="bk am">nue</span>.']},
+ {id:'s5',a:9.0,z:11.22,y:430,css:'font-size:70px;line-height:90px',lines:['Forcément, la chaleur','<span class="hot">sortait par la tête.</span>']},
+ {id:'s6',a:11.2,z:13.42,y:420,css:'font-size:74px;line-height:96px',lines:['Ta tête'+NB+'= <span class="neo" style="font-size:150px"><span id="c7">7</span>'+NB+'%</span>','<span class="g2">de ta peau.</span>']},
+ {id:'s6s',a:11.6,z:13.42,y:1478,cls:'md',css:'font-size:30px',lines:['<span class="g2 plq">Pretorius et al. · J Appl Physiol · 2006</span>']},
+ {id:'s7',a:13.4,z:15.62,y:420,css:'font-size:70px;line-height:96px',lines:['Elle perd environ','<span class="hot" style="font-size:150px"><span id="c10">10</span>'+NB+'%</span>','<span class="g2">de ta chaleur.</span>']},
+ {id:'s7s',a:13.8,z:15.62,y:1478,cls:'md',css:'font-size:30px',lines:['<span class="g2 plq">mesuré en eau froide · 8 volontaires</span>']},
+ {id:'s8',a:15.6,z:17.62,y:430,css:'font-size:64px;line-height:86px',lines:['Si c’était 45'+NB+'%, sortir','sans bonnet'+NB+'= sortir','<span class="hot" style="font-size:92px">sans pantalon.</span>']},
+ {id:'s9',a:17.6,z:19.82,y:420,css:'font-size:64px;line-height:86px',lines:['Le cas qui change tout'+NB+':','<span class="bk am" style="font-size:96px">bébé.</span>','Sa tête'+NB+'= <span class="hot" style="font-size:96px"><span id="c19">19</span>'+NB+'%</span> du corps.']},
+ {id:'s9s',a:18.0,z:19.82,y:1478,cls:'md',css:'font-size:30px',lines:['<span class="g2 plq">surface corporelle · tables de Lund-Browder</span>']},
+ {id:'s10',a:19.8,z:21.22,y:470,css:'font-size:66px;line-height:150px',lines:['ADULTE'+NB+': <span class="stamp rd" id="stA">MYTHE</span>','BÉBÉ'+NB+': <span class="stamp am" id="stB">ÇA COMPTE</span>']},
+ {id:'s11',a:21.2,z:23.02,y:450,css:'font-size:72px;line-height:94px',lines:['Le vrai conseil'+NB+':','<span class="neo">couvre tout le corps.</span>']},
+ {id:'s12',a:23.0,z:24.82,y:440,css:'font-size:70px;line-height:94px',lines:['Envoie ça à celui','qui te dit','<span class="hot">«'+NB+'mets ton bonnet'+NB+'!'+NB+'»</span>']},
+ {id:'s13',a:24.8,z:26.32,y:720,css:'font-size:66px;line-height:84px',lines:['<span class="bk cy">Ép.&nbsp;4</span>'+NB+': l’alcool','<span class="bk">réchauffe</span>'+NB+'?']},
+ // retour boucle = image 0
+ {id:'e1',a:26.4,z:99,y:420,css:'font-size:74px;line-height:90px',lines:['Tu perds'],fast:1},
+ {id:'e2',a:26.42,z:99,y:500,css:'line-height:250px',lines:['<span class="hot" id="hw2" style="font-size:250px">45'+NB+'%</span>'],fast:1},
+ {id:'e3',a:26.44,z:99,y:760,css:'font-size:70px;line-height:86px',lines:['de ta chaleur','par la <span class="bk">tête</span>'+NB+'?'],fast:1},
+];
+const TX=document.getElementById('texts');const FD=document.getElementById('fdefs');let fid=0;
+for(const b of B){const d=document.createElement('div');d.className='blk '+(b.cls||'');d.id='b_'+b.id;
+  d.style.cssText+=';'+(b.css||'')+';top:'+b.y+'px';b.L=[];
+  for(const h of b.lines){const ln=document.createElement('div');ln.className='ln';ln.innerHTML=`<div class="a">${h}</div><div class="b">${h}</div>`;d.appendChild(ln);
+    const f=document.createElementNS('http://www.w3.org/2000/svg','filter');f.id='mb'+fid;f.setAttribute('x','-20%');f.setAttribute('y','-60%');f.setAttribute('width','140%');f.setAttribute('height','220%');
+    const gb=document.createElementNS('http://www.w3.org/2000/svg','feGaussianBlur');gb.setAttribute('stdDeviation','0 0');f.appendChild(gb);FD.appendChild(f);
+    b.L.push({ln,a:ln.children[0],b:ln.children[1],fid:'mb'+fid,gb});fid++;}
+  TX.appendChild(d);b.el=d;}
+const BI=Object.fromEntries(B.map(b=>[b.id,b]));
+const $=id=>document.getElementById(id);
+const all=sel=>Array.from(document.querySelectorAll(sel));
+function mkLab(id,html,css){const d=document.createElement('div');d.className='lab';d.id=id;d.innerHTML=html;d.style.cssText+=';'+css;document.body.appendChild(d);return d;}
+const LAd=mkLab('labA','ADULTE · 7'+NB+'%','color:#A898FF;font-size:44px');
+const LBb=mkLab('labB','BÉBÉ · 19'+NB+'%','color:#FFC447;font-size:44px');
+
+function lineEntry(t,t0,fast){const d=fast?0.16:0.22;const u=lin(t,t0,t0+d);
+  let rot=u<0.72?mix(72,-5,eout(u/0.72)):mix(-5,0,sm((u-0.72)/0.28));const op=lin(t,t0,t0+d*0.3);const bl=(1-eout(u))*9;return {rot,op,bl};}
+let hookW=600;
+function hookLift(t){if(t<T_CRACK||t>=2.7)return 0;const u=t-T_CRACK;return u<0.1?40*eout(u/0.1):mix(40,26,eio(lin(u,0.1,0.35)));}
+function setCount(id,v){for(const e of all('#'+id))e.textContent=String(v);}
+function styleText(t){
+  for(const b of B){const el=b.el;if((b.a>0&&t<b.a-0.02)||t>b.z+0.02){el.style.opacity=0;continue;}el.style.opacity=1;
+    const kz=eio(lin(t,b.z-0.1,b.z));
+    b.L.forEach((L,i)=>{let rot=0,op=1,bl=0;
+      if(b.a>0){const e=lineEntry(t,b.a+i*(b.fast?0.03:0.05),b.fast);rot=e.rot;op=e.op;bl=e.bl;}
+      L.ln.style.transform=rot!==0?`perspective(900px) rotateX(${rot.toFixed(2)}deg)`:'none';
+      L.ln.style.opacity=op.toFixed(3);
+      if(bl>0.15){L.gb.setAttribute('stdDeviation','0 '+bl.toFixed(2));L.ln.style.filter=`url(#${L.fid})`;}else L.ln.style.filter='none';
+      let up=0,dn=0;if(kz>0){up=-30*kz;dn=30*kz;L.a.style.opacity=L.b.style.opacity=(1-kz).toFixed(3);}else{L.a.style.opacity=L.b.style.opacity=1;}
+      if(b.hook){const lift=hookLift(t);up+=-lift;dn+=lift*0.25;const dim=t>=T_CRACK?mix(1,0.42,lin(t,T_CRACK+0.05,T_CRACK+0.35)):1;L.a.style.opacity=L.b.style.opacity=((1-kz)*dim).toFixed(3);}
+      L.a.style.transform=up?`translateY(${up.toFixed(1)}px)`:'none';L.b.style.transform=dn?`translateY(${dn.toFixed(1)}px)`:'none';});}
+  // fente glacée sur « 45 % » + barre rouge
+  const w=hookW,gx=540-w/2,lift=hookLift(t),kz=eio(lin(t,2.52,2.62));const g=$('gap');const midY=500+125;
+  if(t<2.62&&lift>0.5){g.style.opacity=(1-kz).toFixed(3);g.style.left=gx+'px';g.style.width=w+'px';g.style.top=(midY-lift-30*kz)+'px';g.style.height=(lift*1.25+60*kz)+'px';
+    const fl=t>=T_CRACK&&t<T_CRACK+0.067;g.style.background=fl?'#FFFFFF':'#05040F';g.style.boxShadow=fl?'0 0 60px 18px rgba(200,230,255,.95)':'0 0 16px rgba(127,178,255,.8)';}
+  else g.style.opacity=0;
+  const ul=$('ul');let ulo=0;if(t>=T_CRACK+0.12&&t<2.62)ulo=(1-kz);const ulw=w*1.05*eout(lin(t,T_CRACK+0.12,T_CRACK+0.3));
+  ul.style.opacity=ulo.toFixed(3);ul.style.left=(540-ulw/2)+'px';ul.style.width=ulw+'px';ul.style.top=(midY-6)+'px';
+  // compteurs
+  setCount('c7',Math.round(7*eout(lin(t,11.45,12.2))));
+  setCount('c10',Math.round(10*eout(lin(t,13.65,14.4))));
+  setCount('c19',Math.round(19*eout(lin(t,18.65,19.3))));
+  // tampons du verdict
+  const stamp=(sel,t0)=>{const u=lin(t,t0,t0+0.13);for(const e of all(sel)){e.style.opacity=(u>0?1:0);e.style.transform=`rotate(-4deg) scale(${mix(1.15,1,eout(u)).toFixed(3)})`;}};
+  stamp('#stA',20.05);stamp('#stB',20.45);
+  // pastille, signatures
+  const pillO=t<24.6?1:(t<24.8?1-lin(t,24.6,24.8):(t>=26.4?lin(t,26.4,26.5):0));$('pill').style.opacity=pillO.toFixed(3);
+  const big=lin(t,24.85,25.05)*(1-lin(t,26.2,26.35));
+  const smallO=t<24.85?1:(t>=26.35?lin(t,26.35,26.45):1-big);
+  $('sigS').style.opacity=(0.9*smallO).toFixed(3);$('hdl').style.opacity=(0.9*smallO).toFixed(3);
+  $('sigB').style.opacity=big.toFixed(3);$('hdlB').style.opacity=(big*lin(t,25.2,25.4)).toFixed(3);
+  $('shine').style.backgroundPosition=`${(100-lin(t,25.05,25.9)*100).toFixed(1)}% 0`;
+  const su=$('sub');const so=lin(t,25.0,25.15)*(1-lin(t,26.15,26.3));su.style.opacity=so.toFixed(3);
+  su.style.top='1080px';
+  su.style.transform=`translateX(-50%) scale(${(mix(0.7,1,eout(lin(t,25.0,25.2)))*(1+0.08*pulse(t,25.7,0.07))).toFixed(3)})`;
+  // icône d'envoi
+  const sd=$('send');const so2=t>=23.3&&t<24.8?lin(t,23.3,23.5)*(1-lin(t,24.6,24.78)):0;sd.style.opacity=so2.toFixed(3);
+  if(so2>0){sd.style.top='800px';const pl=1+0.18*pulse(t,23.75,0.06)+0.18*pulse(t,24.25,0.06);sd.style.transform=`scale(${pl.toFixed(3)})`;
+    const ph=((t-23.75)%0.5+0.5)%0.5;$('sr2').setAttribute('r',(80+30*ph/0.5).toFixed(1));$('sr2').setAttribute('opacity',(0.5*(1-ph/0.5)).toFixed(3));}
+}
+
+/* ============================== temps → état du monde ============================== */
+const _v=new THREE.Vector3();
+function proj(v){_v.copy(v).project(cam);return {x:(_v.x+1)/2*W,y:(1-_v.y)/2*H};}
+function arr(o,vals){for(let i=0;i<7;i++)o.value[i]=vals[i];}
+function lerpArr(a,b,k){return a.map((v,i)=>mix(v,b[i],k));}
+// états de température (0 tête · 1 cou · 2 torse · 3 bras · 4 mains · 5 jambes · 6 pieds)
+const T_HOOK=[0.97,0.6,0.44,0.40,0.36,0.40,0.32];
+const T_NEUT=[0.66,0.64,0.64,0.6,0.55,0.6,0.5];
+const T_LEGS=[0.6,0.6,0.6,0.56,0.5,0.92,0.7];
+const T_BABY=[0.95,0.66,0.62,0.6,0.55,0.6,0.5];
+function figureState(t){
+  // --- adulte
+  let tA=T_HOOK,hl=[1,1,1,1,1,1,1],shell=[0,0,0,0,0,0,0],grow=0,aA=1,grid=0,scan=-9;
+  let eA=[0,0,0,0,0,0,0];
+  if(t<4.4){tA=T_HOOK;eA=[1.0,0,0,0,0,0,0];aA=t<2.6?1:mix(1,0.8,sm(lin(t,2.6,3.2)));}
+  else if(t<6.8){tA=lerpArr(T_HOOK,T_NEUT,sm(lin(t,4.4,5.0)));scan=mix(1.95,-0.05,lin(t,4.9,6.3));eA=[0.4*(1-lin(t,4.4,4.9)),0,0,0,0,0,0];}
+  else if(t<11.2){tA=lerpArr(T_NEUT,T_HOOK,sm(lin(t,6.9,7.8)));shell=[0,1,1,1,1,1,1];grow=mix(0,1.15,eio(lin(t,6.9,8.1)));
+    eA=[sm(lin(t,7.6,8.4))*1.25,0,0,0,0,0,0];}
+  else if(t<13.4){tA=T_NEUT;shell=[0,1,1,1,1,1,1];grow=mix(1.15,0,eio(lin(t,11.2,11.7)));hl=[1.25,0.45,0.45,0.45,0.45,0.45,0.45];grid=sm(lin(t,11.4,11.8));
+    eA=[0.5*(1-lin(t,11.2,11.6)),0,0,0,0,0,0];}
+  else if(t<15.6){tA=T_NEUT;hl=[1.15,0.8,0.8,0.8,0.8,0.8,0.8];grid=1-sm(lin(t,13.4,13.8));const e=sm(lin(t,13.5,14.1));eA=[e*0.95,e*0.7,e*0.7,e*0.7,e*0.7,e*0.7,e*0.7];}
+  else if(t<17.6){tA=lerpArr(T_NEUT,T_LEGS,sm(lin(t,15.6,16.2)));hl=[0.8,0.7,0.7,0.7,0.7,1.25,1.1];const e=1;eA=[0.35,0.3,0.35,0.35,0.3,1.1*sm(lin(t,15.7,16.3))+0.4,0.8];}
+  else if(t<21.2){tA=T_NEUT;aA=t<19.8?mix(1,0.32,sm(lin(t,17.6,18.2))):mix(0.32,0.8,sm(lin(t,19.8,20.3)));eA=[0.35,0.3,0.3,0.3,0.3,0.3,0.3];}
+  else if(t<24.8){tA=T_NEUT;shell=[1,1,1,1,1,1,1];grow=mix(0,1.15,eio(lin(t,21.3,22.3)));aA=t<23?0.95:0.9;const e=1-sm(lin(t,21.6,22.6));eA=[0.3*e,0.3*e,0.3*e,0.3*e,0.3*e,0.3*e,0.3*e];}
+  else if(t<26.4){tA=T_NEUT;shell=[1,1,1,1,1,1,1];grow=1.15;aA=mix(0.9,0.25,sm(lin(t,24.8,25.3)));}
+  else{tA=T_HOOK;aA=1;eA=[1,0,0,0,0,0,0];shell=[1,1,1,1,1,1,1];grow=mix(1.15,0,sm(lin(t,26.32,26.45)));}
+  arr(FA.I.uTemp,tA);arr(FA.I.uHL,hl);arr(FA.I.uShell,shell);FA.I.uGrow.value=grow;FA.I.uA.value=aA;FA.Sh.uA.value=aA;FA.I.uGrid.value=grid;FA.I.uScan.value=scan;
+  FA.I.uT.value=t;FA.I.uFlash.value=0.25*pulse(t,T_CRACK+0.03,0.05);
+  arr(HA.uE,eA);HA.uT.value=t;HA.uA.value=aA;HA.uHeadGold.value=1;
+  // --- bébé
+  let bA=0,tB=T_BABY,bhl=[1,1,1,1,1,1,1],bsh=[0,0,0,0,0,0,0],bgr=0,eB=[0,0,0,0,0,0,0];
+  if(t>=2.7&&t<4.4){bA=0.28*sm(lin(t,2.7,3.0))*(1-sm(lin(t,4.1,4.4)));tB=[0.5,0.45,0.42,0.4,0.38,0.4,0.35];}
+  else if(t>=17.6&&t<21.2){bA=sm(lin(t,17.65,18.1));tB=lerpArr([0.5,0.45,0.42,0.4,0.38,0.4,0.35],T_BABY,sm(lin(t,18.2,18.8)));bhl=[1.35,0.9,0.9,0.9,0.9,0.9,0.9];
+    const e=sm(lin(t,18.4,19.0));eB=[1.15*e,0.5*e,0.5*e,0.5*e,0.5*e,0.5*e,0.5*e];}
+  else if(t>=21.2&&t<26.4){bA=t<24.8?1:mix(1,0.25,sm(lin(t,24.8,25.3)));tB=T_BABY;bsh=[1,1,1,1,1,1,1];bgr=mix(0,1.15,eio(lin(t,21.4,22.4)));const e=1-sm(lin(t,21.6,22.6));eB=[0.5*e,0.3*e,0.3*e,0.3*e,0.3*e,0.3*e,0.3*e];}
+  FB.pi.visible=FB.ps.visible=bA>0.003;
+  arr(FB.I.uTemp,tB);arr(FB.I.uHL,bhl);arr(FB.I.uShell,bsh);FB.I.uGrow.value=bgr;FB.I.uA.value=bA;FB.Sh.uA.value=bA;FB.I.uT.value=t;
+  arr(HB.uE,eB);HB.uT.value=t;HB.uA.value=bA;
+}
+function sceneState(t){
+  cameraAt(t);figureState(t);
+  bgU.uT.value=t;bgU.uWarm.value=0.0;dustU.uT.value=t;dustU.uA.value=1.0;
+  const jolt=(t>=T_CRACK&&t<T_CRACK+0.1)?1:0;fin.uniforms.uJolt.value=jolt;
+  fin.uniforms.uFlash.value=0.2*pulse(t,T_CRACK+0.02,0.035)+0.07*pulse(t,20.07,0.03)+0.07*pulse(t,20.47,0.03);
+  fin.uniforms.uWhip.value=t>26.3&&t<26.58?Math.sin(Math.PI*lin(t,26.3,26.58)):0;
+  bloom.strength=0.62+0.8*pulse(t,T_CRACK+0.05,0.12)+0.25*pulse(t,12.2,0.2)+0.25*pulse(t,14.4,0.2)+0.25*pulse(t,19.3,0.2);
+  // cadenas sur la tête du bébé : verrouillé (2,7-4,4), saute (17,9)
+  const lk=$('lock');let lo=0;const bh=V3(BABY_OFF[0],0.73,BABY_OFF[2]);
+  if(t>=2.8&&t<4.4)lo=lin(t,2.8,3.05)*(1-lin(t,4.15,4.38));else if(t>=17.6&&t<18.5)lo=lin(t,17.6,17.75)*(1-lin(t,18.15,18.45));
+  lk.style.opacity=lo.toFixed(3);
+  if(lo>0){const p=proj(bh);lk.style.left=p.x.toFixed(1)+'px';lk.style.top=(p.y-40).toFixed(1)+'px';const jump=lin(t,17.85,18.1);
+    $('shk').setAttribute('transform',`translate(0 ${(-30*eout(jump)).toFixed(1)}) rotate(${(-28*eout(jump)).toFixed(1)} 80 60)`);
+    lk.style.transform=`translateY(${(t>18.1?60*ein(lin(t,18.1,18.45)):0).toFixed(1)}px)`;}
+  // étiquettes du verdict
+  const vo=t>=19.95&&t<21.2?lin(t,19.95,20.2)*(1-lin(t,21.0,21.2)):0;
+  LAd.style.opacity=0;LBb.style.opacity=vo.toFixed(3);
+  if(vo>0){const pa=proj(V3(0,1.86,0)),pb=proj(V3(BABY_OFF[0],0.72,BABY_OFF[2]));LAd.style.left=pa.x+'px';LAd.style.top=pa.y+'px';LBb.style.left=pb.x+'px';LBb.style.top=pb.y+'px';}
+}
+
+/* ============================== entrée publique ============================== */
+window.renderAt=(t)=>{sceneState(t);styleText(t);fin.uniforms.uFrame.value=Math.round(t*30);comp.render();};
+window.sceneReady=(async()=>{for(const f of ['IDBk','IDSb','IDMd'])await document.fonts.load('100px '+f);await document.fonts.ready;
+  await Promise.all(Array.from(document.images).map(im=>im.decode().catch(()=>{})));
+  hookW=document.querySelector('#b_h2 .a #hw1').getBoundingClientRect().width;
+  window.renderAt(0);})();
+</script></body></html>
