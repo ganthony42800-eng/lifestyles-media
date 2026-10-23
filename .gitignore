@@ -3,3 +3,4 @@
 work-*/apercus/
 work-*/audio.wav
 work-*/render.*
+__pycache__/
