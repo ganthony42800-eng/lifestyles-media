@@ -5,6 +5,24 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 23/10/2026 (mode rapide) — pour « Le chiffre qui pique » ép. 2 (l'heure « offerte », brief `docs/briefs/2026-10-24-heure-offerte.md`)
+
+**Volume** : 15 requêtes + 12 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot ; requête chinoise (卧室 / 闹钟 / 睡眠) = fonds d'écran et banques d'images, rien de chiffré. Aucun compteur de vues des 30 derniers jours vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | « Alright bro goodnight » — [Know Your Meme](https://knowyourmeme.com/memes/alright-bro-goodnight-i-forgot-to-get-my-water) | États-Unis / monde, TikTok 2021 | 23 M à 49 M vues par variante (déclaré) | **POV depuis le lit** : le spectateur est couché, le décor de la chambre suffit à poser la situation | Lieu vécu + attente ; confirme la leçon « 3D en POV humain » |
+| 2 | Gobos de fenêtre — [Superhive (2026)](https://superhivemarket.com/products/50-cinematic-gobo-light-alphas-vol1) · [three.js forum](https://discourse.threejs.org/t/what-does-the-textures-map-do-for-a-spotlight-and-do-i-need-one/44357/4) | Monde, outils | — | **Lumière de fenêtre projetée** comme narration de l'heure ; faisable en plan additif sans ombre calculée | Une chambre devient crédible avec une seule tache de lumière |
+| 3 | Jauges liquides — [Framer](https://www.framer.com/marketplace/components/dynamic-liquid-gauge/) · [Power BI](https://powerbi.microsoft.com/blog/visual-awesomeness-unlocked-liquid-fill-gauge/) | Monde, composants UI | — | **Alerte** : la jauge liquide est un widget banal ; la différence doit venir de l'objet réel (verre de la table de nuit) et de l'écart promis / réel dans le même verre | Lecture instantanée d'un pourcentage |
+| 4 | Liquid Glass — [STRV](https://strv.com/blog/liquid-glass-and-the-future-of-design) · [autoae, tendances 2026](https://autoae.online/blog/motion-graphics-trends-2026) | États-Unis, design d'interface → motion | — | Réfraction de bord, reflet spéculaire qui suit le mouvement ; typo cinétique pour le muet ; glitch / analogique comme « signe humain » | Code visuel que tout possesseur d'iPhone reconnaît |
+| 5 | Hooks visuels — [BlitzCut, 03/09/2026](https://blitzcutai.com/blog/visual-hooks-instagram-reels) | Monde | < 60 % à 3 s = problème visuel (déclaré) | Image 1 = accroche visuelle + 4-7 mots ; « transformation split », « obscured reveal » < 2 s | Rejoint notre règle : tout se joue avant 1,5 s |
+| 6 | Couvertures — [Krumzi 2026](https://www.krumzi.com/blog/instagram-reels-cover) · [Mosseri via Lindsey Gamble](https://www.lindseygamble.com/blog/cover-photos-for-reels-have-minimal-impact-according-to-instagram-head-adam-mosseri) | Monde | « effet marginal » des couvertures (Mosseri) | Recadrages 4:5 et carré central ; la couverture compte peu, **l'image 0 compte** | Couverture = image 0, contrôlée dans le carré central |
+| 7 | Presse changement d'heure — [Axios 30/10/2025](https://www.axios.com/2025/10/30/time-change-fall-back-2025) · [IBTimes 19/10/2026](https://www.ibtimes.co.uk/uk-clocks-change-social-media-debate-winter-darkness-1826496) | États-Unis, Royaume-Uni | n.d. | La presse illustre en **2D plate** (réveil avec des yeux) ; le débat « give me the extra hour in bed » est actif cette semaine | Ouverture : personne ne montre l'heure « offerte » comme un volume mesuré dans une chambre |
+
+**À retenir** : la nuit chez nous = pluie + néon depuis 6 Reels ; on passe à une **chambre silencieuse éclairée par la lune et un écran ambre** (chaud / froid), sans pluie ni étoiles. Ouvertures : la lumière du mur comme horloge qui rembobine, et le « liquide fantôme » (promis vs réel dans le même verre).
+
+---
+
 ## Session du 19/10/2026 (mode rapide) — pour « Mythe ou science ? » ép. 3 (chaleur perdue par la tête)
 
 **Volume** : 16 requêtes + 10 pages lues. **Limites** : TikTok / Instagram / Douyin / Xiaohongshu illisibles par robot ; requêtes chinoises et japonaises = presse et fiches produit, pas de vidéos chiffrées. Aucun compteur de vues des 30 derniers jours vérifié.

@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Le chiffre qui pique · ép. 2 : l'heure offerte — Lifestyles</title>
+<style>
+@font-face{font-family:IDBk;src:url(/engine/fonts/InterDisplay-Black.otf)}
+@font-face{font-family:IDSb;src:url(/engine/fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:IDBd;src:url(/engine/fonts/InterDisplay-Bold.otf)}
+@font-face{font-family:IDLt;src:url(/engine/fonts/InterDisplay-Light.otf)}
+@font-face{font-family:IMd;src:url(/engine/fonts/Inter-Medium.otf)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#05071A}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.blk{position:absolute;left:90px;width:850px;text-align:center;color:#F4F4FF;white-space:nowrap;font-family:IDSb;
+  text-shadow:0 4px 24px rgba(5,7,26,.92),0 1px 3px rgba(5,7,26,.95);opacity:0;transform-origin:50% 0}
+#cnt{font-variant-numeric:tabular-nums}
+.blk::before{content:'';position:absolute;inset:-70px -50px;z-index:-1;
+  background:radial-gradient(closest-side,rgba(5,7,26,.62),rgba(5,7,26,.32) 60%,rgba(5,7,26,0))}
+.blk.ns::before{display:none}
+.bk{font-family:IDBk}.sb{font-family:IDSb}.lv{color:#B49CFF}.rd{color:#FF4D6A}.gr{color:#AAB0D6}
+.sm{font-family:IMd;font-size:31px;color:#B8BEDF;letter-spacing:.01em}
+.tag{font-family:IDBd;font-size:30px;letter-spacing:.32em;color:#C3C8E6}
+#ul1,#ul2{position:absolute;height:9px;border-radius:5px;background:#FF4D6A;transform-origin:0 50%}
+#ul2{background:#B49CFF}
+#fill{background:linear-gradient(0deg,#9B7FFF 0%,#C9B8FF var(--lv),#F4F4FF calc(var(--lv) + .5%),#F4F4FF 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 4px 22px rgba(5,7,26,.9))}
+/* pastille + mention */
+#pillW{position:absolute;left:0;width:1080px;top:150px;height:56px;display:flex;justify-content:center;perspective:600px}
+#pill{height:54px;padding:0 26px;border:1.5px solid #B49CFF;border-radius:28px;background:rgba(5,7,26,.6);color:#F4F4FF;
+  font-family:IDBd;font-size:26px;letter-spacing:.14em;display:flex;align-items:center;white-space:nowrap;transform-origin:50% 50%}
+#pill b{color:#B49CFF;font-weight:normal;margin-left:.35em}
+#sim{position:absolute;right:140px;top:232px;font-family:IMd;font-size:22px;color:rgba(170,176,214,.75);letter-spacing:.04em}
+#nu{position:absolute;left:540px;transform:translateX(-50%);white-space:nowrap;padding:7px 20px;border-radius:22px;background:rgba(5,7,26,.62);top:1446px;font-family:IMd;font-size:27px;color:#AEB4D8;opacity:0;
+  text-shadow:0 2px 12px rgba(5,7,26,.95)}
+#sig{position:absolute;left:420px;top:1580px;width:240px;opacity:.85}
+#sigShine{position:absolute;left:420px;top:1580px;width:240px;height:78px;mix-blend-mode:screen;opacity:0;
+  background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,240,200,.95) 50%,rgba(255,226,176,0) 60%);background-size:300% 100%;
+  -webkit-mask:url(signature-officielle.png) center/100% 100% no-repeat;mask:url(signature-officielle.png) center/100% 100% no-repeat}
+/* paupières */
+.lid{position:absolute;left:-260px;width:1600px;height:1250px;background:#030206;filter:blur(26px)}
+#lidT{top:-1250px;border-radius:0 0 50% 50%/0 0 34% 34%;box-shadow:0 30px 60px #120C10}
+#lidB{top:1920px;border-radius:50% 50% 0 0/34% 34% 0 0;box-shadow:0 -30px 60px #120C10}
+/* carte « verre liquide » */
+#card{position:absolute;left:0;top:0;width:620px;height:128px;border-radius:36px;opacity:0;transform-origin:50% 50%;
+  background:linear-gradient(160deg,rgba(255,255,255,.20),rgba(255,255,255,.06) 55%,rgba(180,156,255,.10));
+  backdrop-filter:blur(16px) saturate(1.7) brightness(1.15);-webkit-backdrop-filter:blur(16px) saturate(1.7) brightness(1.15);
+  border:1.5px solid rgba(255,255,255,.38);box-shadow:0 24px 60px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.12);
+  overflow:hidden;display:flex;align-items:center;gap:22px;padding:0 26px;box-sizing:border-box;font-family:IMd;color:#F4F4FF}
+#card .ic{width:70px;height:70px;border-radius:18px;background:linear-gradient(160deg,#FFB547,#FF8A3C);display:flex;align-items:center;justify-content:center;flex:none}
+#card .tx{font-size:33px;white-space:nowrap;letter-spacing:.005em}
+#card .tx span{color:#C9CEEA}
+#card .spec{position:absolute;top:-40%;left:0;width:30%;height:180%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.28),rgba(255,255,255,0));transform:rotate(18deg)}
+#share{position:absolute;width:92px;height:92px;opacity:0;border-radius:50%;background:rgba(180,156,255,.18);border:2px solid #B49CFF;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(180,156,255,.5)}
+#bm{position:absolute;left:0;top:0;width:90px;height:130px;opacity:0;overflow:visible;filter:drop-shadow(0 0 8px #B49CFF) drop-shadow(0 0 22px rgba(180,156,255,.8))}
+</style>
+<script type="importmap">{"imports":{"three":"/engine/vendor/three/three.module.js","three/addons/":"/engine/vendor/three/addons/"}}</script>
+</head><body>
+<div id="texts"></div>
+<div id="card"><div class="spec"></div><div class="ic"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1A0E05" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9.5V13l2 1.6M5 4.5 3 6.5M19 4.5l2 2"/><path d="M3.5 21 20.5 4" stroke="#1A0E05" stroke-width="2.6"/></svg></div>
+  <div class="tx">Dimanche <span>·</span> réveil désactivé</div></div>
+<div id="share"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#E9E2FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></div>
+<svg id="bm" viewBox="0 0 90 130"><path id="bmP" d="M12 6 H78 V122 L45 94 L12 122 Z" fill="rgba(180,156,255,.12)" stroke="#D9CCFF" stroke-width="6" stroke-linejoin="round"/></svg>
+<div id="lidT" class="lid"></div><div id="lidB" class="lid"></div>
+<div id="pillW"><div id="pill">LE CHIFFRE QUI PIQUE ·<b id="ep">ÉP. 2</b></div></div>
+<div id="sim">Simulation 3D</div>
+<div id="nu">Étude UK Biobank · sommeil estimé par bracelet</div>
+<img id="sig" src="signature-officielle.png" alt="">
+<div id="sigShine"></div>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+/* ============================== utilitaires déterministes ============================== */
+const W=1080,H=1920,RW=720,RH=1280,DUR=26;
+const AMB='#FFB547';
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,a,b)=>clamp((t-a)/(b-a));
+const mix=(a,b,k)=>a+(b-a)*k;
+const sm=x=>{x=clamp(x);return x*x*(3-2*x)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const eout=x=>1-Math.pow(1-clamp(x),3);
+const ein=x=>Math.pow(clamp(x),3);
+const pulse=(t,c,w)=>Math.exp(-Math.pow((t-c)/w,2));
+const C=c=>new THREE.Color(c);
+const V3=(x,y,z)=>new THREE.Vector3(x,y,z);
+
+/* ============================== rendu ============================== */
+const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+r.setPixelRatio(1);r.setSize(RW,RH,false);r.domElement.id='gl';document.body.prepend(r.domElement);
+r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.0;
+const scene=new THREE.Scene();scene.background=C('#04061A');
+scene.fog=new THREE.FogExp2('#0A0F2E',0.32);
+const cam=new THREE.PerspectiveCamera(40,RW/RH,0.02,12);
+
+/* environnement réfléchissant de nuit : fenêtre lunaire froide à droite, lueur ambre de l'écran à gauche */
+{const pm=new THREE.PMREMGenerator(r);const e=new THREE.Scene();e.background=C('#03040c');
+ const panel=(w,h,col,k,pos)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:C(col).multiplyScalar(k),side:THREE.DoubleSide}));m.position.set(...pos);m.lookAt(0,0,0);e.add(m);};
+ panel(2.2,3.0,'#8FA8FF',3.2,[6,1.5,1.0]);      // fenêtre
+ panel(0.5,3.0,'#C9D4FF',2.0,[5.5,1.5,3.5]);
+ panel(1.2,0.8,'#FFB547',2.2,[-5,-0.5,-2.5]);  // écran
+ panel(14,6,'#161C4A',0.55,[0,6,-6]);           // plafond / mur
+ panel(30,30,'#020308',1,[0,-8,0]);
+ scene.environment=pm.fromScene(e,0.02).texture;scene.environmentIntensity=0.7;}
+
+function canvasTex(w,h,draw,srgb=true){const c=document.createElement('canvas');c.width=w;c.height=h;const t=new THREE.CanvasTexture(c);
+  if(srgb)t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;t.userData.canvas=c;
+  t.userData.redraw=(...a)=>{const g=c.getContext('2d');g.clearRect(0,0,w,h);draw(g,w,h,...a);t.needsUpdate=true;};t.userData.redraw();return t;}
+const addMat=(o)=>new THREE.MeshBasicMaterial(Object.assign({transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,toneMapped:false,fog:false},o));
+const softTex=canvasTex(128,128,(g)=>{const rg=g.createRadialGradient(64,64,0,64,64,64);rg.addColorStop(0,'rgba(255,255,255,1)');rg.addColorStop(0.4,'rgba(255,255,255,.45)');rg.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=rg;g.fillRect(0,0,128,128);});
+
+/* ============================== décor ============================== */
+const TABLE_Y=-0.045;          // dessus du plateau
+const GX=0.075,GZ=-0.715;      // verre
+const PX=-0.035,PZ=-0.705;     // téléphone
+
+/* mur en plâtre */
+const plaster=canvasTex(512,512,(g,w,h)=>{const R=mulberry32(11);g.fillStyle='#0E1436';g.fillRect(0,0,w,h);
+  for(let i=0;i<30000;i++){const v=R();g.fillStyle=`rgba(${v>0.5?255:0},${v>0.5?255:0},${v>0.5?255:0},${0.02+0.03*R()})`;g.fillRect(R()*w,R()*h,1+R()*2,1+R()*2);}});
+plaster.wrapS=plaster.wrapT=THREE.RepeatWrapping;plaster.repeat.set(3,2);
+const wall=new THREE.Mesh(new THREE.PlaneGeometry(3,2.2),new THREE.MeshStandardMaterial({map:plaster,roughness:0.95,envMapIntensity:0.25}));
+wall.position.set(0,0.3,-1.05);scene.add(wall);
+
+/* table de nuit : plateau verni (veinage seedé) + caisson + tiroir */
+const woodTex=canvasTex(1024,1024,(g,w,h)=>{const R=mulberry32(21);g.fillStyle='#2A1C14';g.fillRect(0,0,w,h);
+  for(let i=0;i<260;i++){const y0=R()*h,a=8+R()*30,f=0.002+R()*0.004,ph=R()*6.28;g.strokeStyle=`rgba(${R()<0.5?58:20},${R()<0.5?40:13},${R()<0.5?28:9},${0.25+0.5*R()})`;g.lineWidth=1+R()*3;
+    g.beginPath();for(let x=0;x<=w;x+=16){const y=y0+a*Math.sin(x*f+ph)+6*Math.sin(x*f*5+ph*2);x?g.lineTo(x,y):g.moveTo(x,y);}g.stroke();}
+  for(let i=0;i<8000;i++){g.fillStyle=`rgba(0,0,0,${0.08*R()})`;g.fillRect(R()*w,R()*h,1,2+R()*6);}});
+const wood=new THREE.MeshPhysicalMaterial({map:woodTex,roughness:0.42,metalness:0,clearcoat:0.55,clearcoatRoughness:0.22,envMapIntensity:0.9});
+const woodSide=new THREE.MeshPhysicalMaterial({map:woodTex,color:'#8a7a70',roughness:0.6,clearcoat:0.3,clearcoatRoughness:0.4,envMapIntensity:0.5});
+const top=new THREE.Mesh(new RoundedBoxGeometry(0.50,0.03,0.40,4,0.008),wood);top.position.set(0.03,TABLE_Y-0.015,-0.76);scene.add(top);
+const box=new THREE.Mesh(new RoundedBoxGeometry(0.47,0.52,0.37,2,0.006),woodSide);box.position.set(0.03,TABLE_Y-0.03-0.26,-0.775);scene.add(box);
+const groove=new THREE.Mesh(new THREE.BoxGeometry(0.45,0.004,0.004),new THREE.MeshBasicMaterial({color:'#050302'}));groove.position.set(0.03,TABLE_Y-0.12,-0.588);scene.add(groove);
+const knob=new THREE.Mesh(new THREE.SphereGeometry(0.009,16,10),new THREE.MeshPhysicalMaterial({color:'#B9935A',metalness:1,roughness:0.4,envMapIntensity:0.4}));knob.position.set(0.03,TABLE_Y-0.075,-0.585);
+
+/* ombres de contact */
+const shadowMat=o=>new THREE.MeshBasicMaterial({map:softTex,color:'#000',transparent:true,opacity:o,depthWrite:false});
+const shG=new THREE.Mesh(new THREE.CircleGeometry(0.06,32),shadowMat(0.75));shG.rotation.x=-Math.PI/2;shG.position.set(GX,TABLE_Y+0.0006,GZ);scene.add(shG);
+const shP=new THREE.Mesh(new THREE.PlaneGeometry(0.11,0.07),shadowMat(0.8));shP.rotation.x=-Math.PI/2;shP.position.set(PX,TABLE_Y+0.0006,PZ-0.01);scene.add(shP);
+
+/* lampe de chevet éteinte (silhouette de profondeur) */
+const fabricDark=new THREE.MeshPhysicalMaterial({color:'#1A1E33',roughness:1,sheen:1,sheenColor:C('#2A3470'),sheenRoughness:0.6,envMapIntensity:0.2});
+{const g=new THREE.Group();g.position.set(-0.155,TABLE_Y,-0.93);scene.add(g);
+ const base=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.04,0.012,32),new THREE.MeshPhysicalMaterial({color:'#15171f',metalness:0.8,roughness:0.3,envMapIntensity:1.2}));base.position.y=0.006;g.add(base);
+ const stem=new THREE.Mesh(new THREE.CylinderGeometry(0.006,0.006,0.2,12),base.material);stem.position.y=0.11;g.add(stem);
+ const shade=new THREE.Mesh(new THREE.CylinderGeometry(0.055,0.085,0.12,40,1,true),fabricDark);shade.material.side=THREE.DoubleSide;shade.position.y=0.25;g.add(shade);}
+
+/* rideau (bord droit, hors mise au point) */
+const curtMat=new THREE.MeshPhysicalMaterial({color:'#141A3D',roughness:0.95,sheen:1,sheenColor:C('#8FA8FF'),sheenRoughness:0.35,side:THREE.DoubleSide,envMapIntensity:0.6});
+{const gq=new THREE.PlaneGeometry(0.34,1.4,40,1);const p=gq.attributes.position;for(let i=0;i<p.count;i++){const x=p.getX(i);p.setZ(i,0.03*Math.sin(x*48)+0.012*Math.sin(x*110+1));}gq.computeVertexNormals();
+ const cu=new THREE.Mesh(gq,curtMat);cu.position.set(0.40,0.35,-0.98);cu.rotation.y=-0.5;scene.add(cu);}
+
+/* gobo de lune : fenêtre 4 carreaux + croisillon + bord de rideau, bords flous */
+const goboTex=canvasTex(1024,1024,(g,w,h)=>{const c=document.createElement('canvas');c.width=w;c.height=h;const q=c.getContext('2d');
+  q.fillStyle='#fff';const m=150,gap=26;const x0=m,y0=m,x1=w-m,y1=h-m;const cx=(x0+x1)/2,cy=(y0+y1)/2;
+  q.fillRect(x0,y0,cx-gap/2-x0,cy-gap/2-y0);q.fillRect(cx+gap/2,y0,x1-cx-gap/2,cy-gap/2-y0);q.fillRect(x0,cy+gap/2,cx-gap/2-x0,y1-cy-gap/2);q.fillRect(cx+gap/2,cy+gap/2,x1-cx-gap/2,y1-cy-gap/2);
+  // bord de rideau ondulé qui mange le côté droit
+  q.globalCompositeOperation='destination-out';q.beginPath();q.moveTo(w,0);for(let y=0;y<=h;y+=8)q.lineTo(x1-60+28*Math.sin(y*0.018)+14*Math.sin(y*0.05),y);q.lineTo(w,h);q.closePath();q.fill();
+  g.filter='blur(14px)';g.drawImage(c,0,0);g.filter='none';
+  const lg=g.createLinearGradient(0,0,w,h);lg.addColorStop(0,'rgba(0,0,0,0)');lg.addColorStop(1,'rgba(0,0,0,.45)');g.globalCompositeOperation='destination-out';g.fillStyle=lg;g.fillRect(0,0,w,h);});
+const goboGeo=new THREE.PlaneGeometry(0.46,0.52);{const p=goboGeo.attributes.position;for(let i=0;i<p.count;i++){p.setX(i,p.getX(i)+p.getY(i)*0.42);}} // cisaillement : lumière rasante d'en haut à droite
+const goboMat=addMat({map:goboTex,color:C('#8FA8FF').multiplyScalar(0.4)});
+const gobo=new THREE.Mesh(goboGeo,goboMat);scene.add(gobo);
+const goboGold=new THREE.Mesh(goboGeo,addMat({map:goboTex,color:C('#FFC46B').multiplyScalar(0)}));scene.add(goboGold);
+// tache de lune sur le plateau
+const goboTop=new THREE.Mesh(new THREE.PlaneGeometry(0.2,0.12),addMat({map:goboTex,color:C('#8FA8FF').multiplyScalar(0.25)}));goboTop.rotation.x=-Math.PI/2;goboTop.position.set(0.17,TABLE_Y+0.0008,-0.8);scene.add(goboTop);
+const GOBO0=V3(0.06,0.13,-1.048);
+
+/* rai de lune volumétrique + poussière */
+const beamMat=new THREE.ShaderMaterial({uniforms:{uA:{value:1},uCol:{value:C('#9FB2FF')}},transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,
+ vertexShader:`varying float vK;varying vec3 vN,vV;void main(){vK=uv.y;vec4 wp=modelMatrix*vec4(position,1.0);vN=normalize(mat3(modelMatrix)*normal);vV=normalize(cameraPosition-wp.xyz);gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:`varying float vK;varying vec3 vN,vV;uniform float uA;uniform vec3 uCol;void main(){float f=pow(abs(dot(vN,vV)),2.0);float a=f*smoothstep(0.0,0.35,vK)*smoothstep(1.0,0.75,vK);gl_FragColor=vec4(uCol*a*0.05*uA,1.0);}`});
+const beam=new THREE.Mesh(new THREE.CylinderGeometry(0.5,0.5,1,4,1,true),beamMat);scene.add(beam);
+const ND=220;const dustG=new THREE.BufferGeometry();{const a=new Float32Array(ND*4);const R=mulberry32(31);for(let i=0;i<ND*4;i++)a[i]=R();dustG.setAttribute('position',new THREE.BufferAttribute(new Float32Array(ND*3),3));dustG.setAttribute('aS',new THREE.BufferAttribute(a,4));}
+const dustU={uTau:{value:0},uA:{value:1},uCol:{value:C('#C9D4FF')},uO:{value:V3(0,0,0)},uX:{value:V3(1,0,0)},uY:{value:V3(0,1,0)},uZ:{value:V3(0,0,1)}};
+const dust=new THREE.Points(dustG,new THREE.ShaderMaterial({uniforms:dustU,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,
+ vertexShader:`attribute vec4 aS;uniform float uTau;uniform vec3 uO,uX,uY,uZ;varying float vA;
+ void main(){float s=aS.x;float u=aS.y-0.5,v=aS.z-0.5;vec3 p=uO+uZ*s+uX*u+uY*v;p.y=uO.y+uZ.y*s+uY.y*v+ (fract(aS.w-uTau*0.035)-0.5)*0.5;
+  p.x+=0.01*sin(uTau*0.7+aS.w*30.0);vec4 mv=viewMatrix*vec4(p,1.0);gl_Position=projectionMatrix*mv;
+  vA=(0.35+0.65*fract(aS.w*7.3))*(0.6+0.4*sin(uTau*2.0+aS.w*40.0))*smoothstep(0.05,0.3,s)*smoothstep(1.0,0.8,s);gl_PointSize=clamp(2.2/(-mv.z),1.0,7.0);}`,
+ fragmentShader:`uniform float uA;uniform vec3 uCol;varying float vA;void main(){vec2 q=gl_PointCoord-0.5;float d=1.0-smoothstep(0.1,0.5,length(q));gl_FragColor=vec4(uCol*d*vA*0.55*uA,1.0);}`}));
+dust.frustumCulled=false;scene.add(dust);
+
+/* lumières : lune (découpe froide), lueur d'écran ambre, ciel */
+const moon=new THREE.DirectionalLight('#8FA8FF',0.9);moon.position.set(1.4,0.9,0.1);moon.target.position.set(0,-0.1,-0.8);scene.add(moon,moon.target);
+const hemi=new THREE.HemisphereLight('#1E2660','#05071A',0.4);scene.add(hemi);
+const screenLight=new THREE.PointLight('#FFB547',0.05,0.9,1.6);scene.add(screenLight);
+const rim=new THREE.SpotLight('#5E74D9',2.0,2.5,0.6,0.8,1.5);rim.position.set(0.5,0.4,-1.0);rim.target.position.set(0,-0.05,-0.7);scene.add(rim,rim.target);
+
+/* ---------- téléphone sur son support ---------- */
+const phone=new THREE.Group();phone.position.set(PX,TABLE_Y+0.006,PZ);phone.rotation.set(-0.31,0.12,0);scene.add(phone);
+const chassis=new THREE.MeshPhysicalMaterial({color:'#1B1D24',metalness:0.85,roughness:0.28,clearcoat:1,clearcoatRoughness:0.08,envMapIntensity:1.6});
+{const b=new THREE.Mesh(new RoundedBoxGeometry(0.072,0.150,0.008,4,0.0036),chassis);b.position.y=0.075;phone.add(b);}
+const SCW=540,SCH=1180;
+const screenTex=canvasTex(SCW,SCH,(g,w,h,t)=>drawScreen(g,w,h,t||0));
+const screenMat=new THREE.MeshBasicMaterial({map:screenTex,toneMapped:false,fog:false});
+const screen=new THREE.Mesh(new THREE.PlaneGeometry(0.0675,0.1475),screenMat);screen.position.set(0,0.075,0.00415);phone.add(screen);
+const glare=new THREE.Mesh(new THREE.PlaneGeometry(0.0675,0.1475),addMat({map:canvasTex(256,512,(g,w,h)=>{const lg=g.createLinearGradient(0,0,w,h);lg.addColorStop(0.35,'rgba(255,255,255,0)');lg.addColorStop(0.47,'rgba(200,215,255,.22)');lg.addColorStop(0.52,'rgba(200,215,255,.05)');lg.addColorStop(0.6,'rgba(255,255,255,0)');g.fillStyle=lg;g.fillRect(0,0,w,h);}),color:C('#ffffff').multiplyScalar(0.5)}));
+glare.position.set(0,0.075,0.0046);phone.add(glare);
+{const st=new THREE.Mesh(new THREE.BoxGeometry(0.06,0.012,0.05),new THREE.MeshPhysicalMaterial({color:'#20232c',metalness:0.7,roughness:0.35,envMapIntensity:1.2}));st.position.set(0,-0.002,-0.006);phone.add(st);
+ const back=new THREE.Mesh(new THREE.BoxGeometry(0.05,0.07,0.006),st.material);back.position.set(0,0.035,-0.012);back.rotation.x=0.1;phone.add(back);}
+/* câble de charge */
+{const pts=[V3(PX,TABLE_Y+0.004,PZ+0.012),V3(PX+0.01,TABLE_Y+0.0025,PZ+0.06),V3(PX-0.025,TABLE_Y+0.0025,PZ+0.09),V3(PX-0.09,TABLE_Y+0.002,PZ+0.10),V3(PX-0.17,TABLE_Y+0.002,PZ+0.06),V3(PX-0.215,TABLE_Y-0.01,PZ+0.05),V3(PX-0.22,TABLE_Y-0.2,PZ+0.05)];
+ const cab=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),80,0.0018,8),new THREE.MeshPhysicalMaterial({color:'#D9DCE6',roughness:0.55,clearcoat:0.4,envMapIntensity:0.6}));scene.add(cab);}
+
+/* ---------- verre-jauge ---------- */
+const GR=0.033,GH=0.15,BASE=0.008;
+const LV=m=>BASE+m/60*0.115;              // niveau (min) → hauteur locale ; 60 = 0,123 m
+const glass=new THREE.Group();glass.position.set(GX,TABLE_Y,GZ);scene.add(glass);
+const glassBody=new THREE.Mesh(new THREE.CylinderGeometry(GR,GR*0.96,GH,64,1,true).translate(0,GH/2,0),
+  new THREE.MeshPhysicalMaterial({color:'#dfe6ff',transparent:true,opacity:0.10,roughness:0.03,metalness:0,ior:1.5,clearcoat:1,clearcoatRoughness:0.02,specularIntensity:1,envMapIntensity:2.2,side:THREE.DoubleSide,depthWrite:true}));
+glassBody.renderOrder=6;glass.add(glassBody);
+const glassBase=new THREE.Mesh(new THREE.CylinderGeometry(GR*0.96,GR*0.96,BASE,48).translate(0,BASE/2,0),new THREE.MeshPhysicalMaterial({color:'#cdd6ff',transparent:true,opacity:0.3,roughness:0.05,ior:1.5,clearcoat:1,envMapIntensity:2}));glassBase.renderOrder=5;glass.add(glassBase);
+const fresMat=new THREE.ShaderMaterial({uniforms:{uCol:{value:C('#C9D4FF')},uK:{value:1},uAmb:{value:C('#FFB547')},uAk:{value:0.5}},transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,
+ vertexShader:`varying vec3 vN,vV,vL;void main(){vec4 wp=modelMatrix*vec4(position,1.0);vN=normalize(mat3(modelMatrix)*normal);vV=normalize(cameraPosition-wp.xyz);vL=position;gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:`uniform vec3 uCol,uAmb;uniform float uK,uAk;varying vec3 vN,vV,vL;void main(){float f=pow(1.0-abs(dot(vN,vV)),3.0);float side=step(0.0,vL.x);
+  vec3 c=mix(uAmb*uAk,uCol,side)*f*0.75*uK;c*=smoothstep(0.0,0.01,vL.y);gl_FragColor=vec4(c,1.0);}`});
+const fres=new THREE.Mesh(glassBody.geometry,fresMat);fres.renderOrder=7;glass.add(fres);
+const rimG=new THREE.Mesh(new THREE.TorusGeometry(GR,0.0011,8,96),addMat({color:C('#C9D4FF').multiplyScalar(0.55)}));rimG.rotation.x=Math.PI/2;rimG.position.y=GH;rimG.renderOrder=8;glass.add(rimG);
+const specMat=addMat({map:canvasTex(32,256,(g,w,h)=>{const lg=g.createLinearGradient(0,0,w,0);lg.addColorStop(0,'rgba(255,255,255,0)');lg.addColorStop(0.5,'rgba(255,255,255,1)');lg.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=lg;g.fillRect(0,0,w,h);const v=g.createLinearGradient(0,0,0,h);v.addColorStop(0,'rgba(0,0,0,1)');v.addColorStop(0.15,'rgba(0,0,0,0)');v.addColorStop(0.85,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,1)');g.globalCompositeOperation='destination-out';g.fillStyle=v;g.fillRect(0,0,w,h);}),color:C('#DDE4FF').multiplyScalar(0.32)});
+const specs=[0,1].map(i=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(i?0.0035:0.007,0.13),specMat);m.renderOrder=9;glass.add(m);return m;});
+/* graduations : traits tous les 5 « min », trait 60 en anneau, étiquettes gravées « 60 » et « PROMIS » */
+const GCW=2048,GCH=Math.round(2048/(2*Math.PI*GR*1.004)*GH);
+const yOf=hh=>(1-hh/GH)*GCH;
+const gradA=canvasTex(GCW,GCH,(g,w,h)=>{g.fillStyle='#000';g.fillRect(0,0,w,h);
+  for(let m=5;m<60;m+=5){const y=yOf(LV(m));const big=m%15===0;g.fillStyle='#f00';const x0=w*0.455,x1=w*(big?0.505:0.49);g.fillRect(x0,y-3,x1-x0,6);}
+  const y60=yOf(LV(60));g.fillStyle='#0f0';g.fillRect(0,y60-6,w,12);},false);
+const gradB=canvasTex(GCW,GCH,(g,w,h)=>{g.fillStyle='#000';g.fillRect(0,0,w,h);g.textBaseline='middle';
+  const y60=yOf(LV(60));g.fillStyle='#f00';g.font='96px IDBd';g.fillText('60',w*0.515,y60-58);
+  g.fillStyle='#0f0';g.font='50px IDBd';if(g.letterSpacing!==undefined)g.letterSpacing='10px';g.fillText('PROMIS',w*0.515,y60+50);},false);
+const gradMat=new THREE.ShaderMaterial({uniforms:{tA:{value:gradA},tB:{value:gradB},uLevel:{value:0},uLit:{value:0},u60:{value:0},uSweep:{value:0},uPromis:{value:0},uOp:{value:1},uLab:{value:0}},
+ transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,
+ vertexShader:`varying vec2 vUv;varying float vY;varying vec3 vN,vV;void main(){vUv=uv;vY=position.y;vec4 wp=modelMatrix*vec4(position,1.0);vN=normalize(mat3(modelMatrix)*normal);vV=normalize(cameraPosition-wp.xyz);gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:`uniform sampler2D tA,tB;uniform float uLevel,uLit,u60,uSweep,uPromis,uOp,uLab;varying vec2 vUv;varying float vY;varying vec3 vN,vV;
+ void main(){vec4 a=texture2D(tA,vUv);vec4 b=texture2D(tB,vUv);float facing=gl_FrontFacing?1.0:0.22;
+  float under=step(vY,uLevel+0.0005);
+  vec3 c=vec3(0.80,0.84,1.0)*a.r*(0.38+1.2*under*uLit)
+   +vec3(1.0,0.97,0.98)*a.g*(0.25+1.3*u60*step(abs(vUv.x-0.5)*2.0,uSweep))
+   +vec3(1.0)*b.r*(0.30+1.0*u60)*uLab+vec3(0.85,0.87,1.0)*b.g*uPromis*1.5;
+  gl_FragColor=vec4(c*facing*uOp,1.0);}`});
+const grad=new THREE.Mesh(new THREE.CylinderGeometry(GR*1.004,GR*0.964,GH,96,1,true).translate(0,GH/2,0),gradMat);grad.rotation.y=Math.PI-0.15;grad.renderOrder=3;glass.add(grad);
+/* liquide de mesure (émissif violet) + surface à ménisque + fantôme rouge hachuré */
+const LR=GR*0.93;
+const liqU={uK:{value:1},uT:{value:0}};
+const liquid=new THREE.Mesh(new THREE.CylinderGeometry(LR,LR*0.985,1,64,1,false).translate(0,0.5,0),new THREE.ShaderMaterial({uniforms:liqU,
+ vertexShader:`varying vec3 vN,vV;varying float vY;void main(){vY=position.y;vec4 wp=modelMatrix*vec4(position,1.0);vN=normalize(mat3(modelMatrix)*normal);vV=normalize(cameraPosition-wp.xyz);gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:`uniform float uK,uT;varying vec3 vN,vV;varying float vY;
+ void main(){vec3 deep=vec3(0.16,0.08,0.85),topc=vec3(0.50,0.36,1.0);vec3 c=mix(deep,topc,smoothstep(0.0,1.0,vY));float f=pow(1.0-abs(dot(vN,vV)),2.0);
+  float core=pow(max(dot(vN,vV),0.0),3.0);c=c*(0.55+0.9*core)+vec3(0.75,0.65,1.0)*f*0.9;c+=vec3(0.06,0.03,0.18)*sin(vY*40.0-uT*3.0);gl_FragColor=vec4(c*uK*0.62,1.0);}`}));
+liquid.renderOrder=0;glass.add(liquid);
+const surfU={uT:{value:0},uRing:{value:0},uK:{value:1},uSwirl:{value:0}};
+const surf=new THREE.Mesh(new THREE.CircleGeometry(LR,64,0,Math.PI*2),new THREE.ShaderMaterial({uniforms:surfU,side:THREE.DoubleSide,
+ vertexShader:`varying vec2 vP;void main(){vP=position.xy;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+ fragmentShader:`uniform float uT,uRing,uK,uSwirl;varying vec2 vP;void main(){float rr=length(vP)/${LR.toFixed(5)};float a=atan(vP.y,vP.x);
+  float rip=0.5+0.5*sin(rr*40.0-uT*9.0)*(0.25+uRing);float sw=0.5+0.5*sin(a*3.0+rr*12.0-uT*7.0);
+  vec3 c=mix(vec3(0.55,0.42,1.0),vec3(0.85,0.78,1.0),rip*0.35+uSwirl*sw*0.3);c+=vec3(0.9,0.85,1.0)*smoothstep(0.82,1.0,rr)*0.7;gl_FragColor=vec4(c*uK*0.7,1.0);}`}));
+surf.rotation.x=-Math.PI/2;glass.add(surf);
+const ghostU={uA:{value:0},uT:{value:0}};
+const ghost=new THREE.Mesh(new THREE.CylinderGeometry(GR*0.985,GR*0.985,1,64,1,true).translate(0,0.5,0),new THREE.ShaderMaterial({uniforms:ghostU,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,
+ vertexShader:`varying vec3 vN,vV,vW;varying float vY;void main(){vY=position.y;vec4 wp=modelMatrix*vec4(position,1.0);vW=wp.xyz;vN=normalize(mat3(modelMatrix)*normal);vV=normalize(cameraPosition-wp.xyz);gl_Position=projectionMatrix*viewMatrix*wp;}`,
+ fragmentShader:`uniform float uA,uT;varying vec3 vN,vV,vW;varying float vY;void main(){float f=pow(1.0-abs(dot(vN,vV)),1.6);
+  float hatch=step(0.72,fract((vW.y*1.0+vW.x*0.7+vW.z*0.7)/0.0055));float edge=smoothstep(0.03,0.0,vY)+smoothstep(0.97,1.0,vY);
+  vec3 col=vec3(1.0,0.30,0.42);float a=(f*0.9+hatch*0.22+edge*1.2)*(gl_FrontFacing?1.0:0.4);gl_FragColor=vec4(col*a*uA,1.0);}`}));
+ghost.renderOrder=2;glass.add(ghost);
+const ghostRing=[0,1].map(()=>{const m=new THREE.Mesh(new THREE.TorusGeometry(GR*0.99,0.0007,6,96),addMat({color:C('#FF4D6A').multiplyScalar(2)}));m.rotation.x=Math.PI/2;m.renderOrder=2;glass.add(m);return m;});
+const caustic=new THREE.Mesh(new THREE.CircleGeometry(0.08,40),addMat({map:softTex,color:C('#7B5CFF').multiplyScalar(0)}));caustic.rotation.x=-Math.PI/2;caustic.position.set(GX+0.01,TABLE_Y+0.001,GZ+0.02);scene.add(caustic);
+/* bulles, gouttelettes, rangée de 7 gouttes */
+const NB=24,NDp=30;
+const ptsMat=(n)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(n*3),3));g.setAttribute('aA',new THREE.BufferAttribute(new Float32Array(n),1));
+  const m=new THREE.Points(g,new THREE.ShaderMaterial({uniforms:{uSz:{value:1}},transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,
+   vertexShader:`attribute float aA;varying float vA;uniform float uSz;void main(){vA=aA;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_Position=projectionMatrix*mv;gl_PointSize=clamp(uSz*1.6/(-mv.z),1.0,14.0);}`,
+   fragmentShader:`varying float vA;void main(){float d=length(gl_PointCoord-0.5);float a=smoothstep(0.5,0.2,d);gl_FragColor=vec4(vec3(0.78,0.68,1.0)*a*vA*1.6,1.0);}`}));m.frustumCulled=false;return m;};
+const bubbles=ptsMat(NB);glass.add(bubbles);
+const drops=ptsMat(NDp);drops.material.uniforms.uSz.value=1.4;glass.add(drops);
+const liqMat7=new THREE.MeshBasicMaterial({color:C('#A890FF').multiplyScalar(2.2),toneMapped:false});
+const row7=Array.from({length:7},()=>{const m=new THREE.Mesh(new THREE.SphereGeometry(0.0042,20,14),liqMat7);m.visible=false;scene.add(m);return m;});
+
+/* ---------- lit : couette (plis), poignet en manche de pyjama + capteur ---------- */
+const duvetH=(x,z)=>-0.115+0.012*Math.sin(x*14+z*6)+0.007*Math.sin(x*31-z*17+1.3)+0.004*Math.sin(x*57+z*41)-0.05*sm((z+0.40)/-0.12);
+const duvetG=new THREE.PlaneGeometry(1.1,0.9,160,140);duvetG.rotateX(-Math.PI/2);
+{const p=duvetG.attributes.position;for(let i=0;i<p.count;i++){const x=p.getX(i)+0.1,z=p.getZ(i)-0.05;p.setX(i,x);p.setZ(i,z);p.setY(i,duvetH(x,z));}duvetG.computeVertexNormals();}
+const duvet=new THREE.Mesh(duvetG,new THREE.MeshPhysicalMaterial({color:'#2B2D3A',roughness:0.93,sheen:0.35,sheenColor:C('#7A84B0'),sheenRoughness:0.6,envMapIntensity:0.35}));scene.add(duvet);
+const arm=new THREE.Group();scene.add(arm);
+const SENS=V3(0.150,0,-0.445);SENS.y=duvetH(SENS.x,SENS.z)+0.026;
+{const dir=new THREE.Vector3(0.62,0,0.78).normalize();arm.position.copy(SENS);arm.lookAt(SENS.clone().add(dir));
+ const knit=canvasTex(256,256,(g,w,h)=>{g.fillStyle='#8080ff';g.fillRect(0,0,w,h);for(let y=0;y<h;y+=8)for(let x=0;x<w;x+=6){g.fillStyle=`rgb(${100+((x/6)%2)*55},128,255)`;g.fillRect(x,y,3,7);}},false);
+ knit.wrapS=knit.wrapT=THREE.RepeatWrapping;knit.repeat.set(10,14);
+ const sleeveM=new THREE.MeshPhysicalMaterial({color:'#181C38',roughness:0.95,sheen:0.8,sheenColor:C('#4A5BA8'),sheenRoughness:0.7,normalMap:knit,normalScale:new THREE.Vector2(0.5,0.5),envMapIntensity:0.5});
+ const sg=new THREE.CylinderGeometry(0.036,0.044,0.34,40,24,true);sg.rotateX(Math.PI/2);
+ {const p=sg.attributes.position;for(let i=0;i<p.count;i++){const z=p.getZ(i),x=p.getX(i),y=p.getY(i);const a=Math.atan2(y,x);const k=1+0.06*Math.sin(z*70+a*2)+0.04*Math.sin(a*5+z*30);p.setX(i,x*k);p.setY(i,y*k*0.82);}sg.computeVertexNormals();}
+ const sleeve=new THREE.Mesh(sg,sleeveM);sleeve.position.z=0.20;arm.add(sleeve);
+ const cuff=new THREE.Mesh(new THREE.TorusGeometry(0.035,0.006,10,40),sleeveM);cuff.position.z=0.031;cuff.scale.set(1,0.82,1);arm.add(cuff);
+ const skin=new THREE.MeshPhysicalMaterial({color:'#8C6B5E',roughness:0.6,sheen:0.4,sheenColor:C('#ffb090'),envMapIntensity:0.3});
+ const wr=new THREE.Mesh(new THREE.CylinderGeometry(0.022,0.028,0.07,32),skin);wr.rotation.x=Math.PI/2;wr.scale.set(1,1,0.78);wr.position.z=0.0;arm.add(wr);
+ const band=new THREE.Mesh(new THREE.TorusGeometry(0.0255,0.0042,10,40),new THREE.MeshPhysicalMaterial({color:'#15161c',roughness:0.45,clearcoat:0.5,envMapIntensity:0.8}));band.scale.set(1.05,0.8,1.4);band.position.z=0.0;arm.add(band);
+ const pod=new THREE.Mesh(new RoundedBoxGeometry(0.023,0.009,0.032,3,0.003),new THREE.MeshPhysicalMaterial({color:'#0E0F14',roughness:0.6,clearcoat:0.25,clearcoatRoughness:0.5,envMapIntensity:0.35}));pod.position.set(0,0.022,0);arm.add(pod);
+ // repli de couette qui cache la main
+ const fold=new THREE.Mesh(new THREE.CapsuleGeometry(0.03,0.22,6,20),duvet.material);
+ fold.rotation.set(0,0,Math.PI/2);fold.position.set(0,-0.004,-0.06);fold.scale.set(1,1,0.9);arm.add(fold);}
+const led=new THREE.Mesh(new THREE.SphereGeometry(0.0018,12,8),new THREE.MeshBasicMaterial({color:C('#B49CFF').multiplyScalar(3),toneMapped:false}));led.position.set(0.0125,0.022,0.006);arm.add(led);
+const ledGlow=new THREE.Sprite(new THREE.SpriteMaterial({map:softTex,color:'#B49CFF',blending:THREE.AdditiveBlending,depthWrite:false,transparent:true,toneMapped:false}));ledGlow.position.copy(led.position);ledGlow.scale.set(0.02,0.02,1);arm.add(ledGlow);
+const waveMat=addMat({color:C('#B49CFF').multiplyScalar(0)});
+const waves=[0,1,2,3].map(()=>{const m=new THREE.Mesh(new THREE.RingGeometry(0.96,1,96),waveMat.clone());m.rotation.x=-Math.PI/2;m.position.set(SENS.x,SENS.y-0.016,SENS.z);scene.add(m);return m;});
+/* 7 211 points : un par participant, allumés par l'onde du capteur */
+const NP=7211;const ppG=new THREE.BufferGeometry();
+{const pos=new Float32Array(NP*3),dd=new Float32Array(NP);const R=mulberry32(7211);for(let i=0;i<NP;i++){const a=R()*Math.PI*2,rr=0.03+Math.sqrt(R())*0.30;const x=SENS.x+Math.cos(a)*rr*1.2,z=SENS.z+Math.sin(a)*rr*0.9;
+  pos[i*3]=x;pos[i*3+1]=duvetH(x,z)+0.0025;pos[i*3+2]=z;dd[i]=Math.hypot(x-SENS.x,z-SENS.z)+R()*0.01;}
+ ppG.setAttribute('position',new THREE.BufferAttribute(pos,3));ppG.setAttribute('aD',new THREE.BufferAttribute(dd,1));}
+const ppU={uR:{value:-1},uA:{value:0}};
+const pp=new THREE.Points(ppG,new THREE.ShaderMaterial({uniforms:ppU,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,
+ vertexShader:`attribute float aD;uniform float uR;varying float vA;void main(){vA=smoothstep(uR,uR-0.03,aD)*(0.6+0.4*smoothstep(uR-0.05,uR-0.01,aD)*2.0);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);gl_PointSize=1.6;}`,
+ fragmentShader:`uniform float uA;varying float vA;void main(){gl_FragColor=vec4(vec3(0.75,0.65,1.0)*vA*uA*0.9,1.0);}`}));pp.frustumCulled=false;scene.add(pp);
+
+/* ---------- oreiller (premier plan, pré-flouté, attaché au regard) ---------- */
+const pillowTex=canvasTex(512,256,(g,w,h)=>{const c=document.createElement('canvas');c.width=w;c.height=h;const q=c.getContext('2d');
+  q.fillStyle='#C8D0E8';q.beginPath();q.moveTo(-20,h);q.lineTo(-20,120);q.bezierCurveTo(120,70,330,58,560,110);q.lineTo(w+20,h);q.closePath();q.fill();
+  q.strokeStyle='rgba(120,130,170,.6)';q.lineWidth=5;q.beginPath();q.moveTo(0,150);q.bezierCurveTo(140,110,330,100,520,140);q.stroke();
+  const lg=q.createLinearGradient(0,60,0,h);lg.addColorStop(0,'rgba(0,0,0,0)');lg.addColorStop(1,'rgba(0,0,10,.75)');q.globalCompositeOperation='source-atop';q.fillStyle=lg;q.fillRect(0,0,w,h);
+  const rl=q.createLinearGradient(0,0,w,0);rl.addColorStop(0.6,'rgba(143,168,255,0)');rl.addColorStop(1,'rgba(143,168,255,.6)');q.fillStyle=rl;q.fillRect(0,0,w,140);
+  g.filter='blur(16px)';g.drawImage(c,0,0);});
+const pillow=new THREE.Mesh(new THREE.PlaneGeometry(0.24,0.12),new THREE.MeshBasicMaterial({map:pillowTex,color:C('#ffffff').multiplyScalar(0.36),transparent:true,depthWrite:false,fog:false}));
+pillow.position.set(0.01,-0.062,-0.2);pillow.renderOrder=50;cam.add(pillow);scene.add(cam);
+
+/* ============================== écran du téléphone ============================== */
+function digitCell(g,ch,x,y,fs,col){g.fillStyle=col;g.textAlign='center';g.textBaseline='alphabetic';g.font=`${fs}px IDLt`;g.fillText(ch,x,y);}
+function rollDigit(g,v,x,y,fs,col,cellH,n=10){ // v continu : chiffre affiché = floor(v) mod n, défilement vertical flou
+  const i0=Math.floor(v),fr=v-i0;const sp=Math.abs(fr)>0.001;
+  g.save();g.beginPath();g.rect(x-fs*0.4,y-cellH,fs*0.8,cellH*1.18);g.clip();
+  for(const [k,a] of sp?[[0,1],[1,1]]:[[0,1]]){const d=((i0+k)%n+n)%n;const yy=y+(fr-k)*cellH;
+    if(sp){g.globalAlpha=0.45;digitCell(g,String(d),x,yy-cellH*0.06,fs,col);digitCell(g,String(d),x,yy+cellH*0.06,fs,col);g.globalAlpha=0.6;}
+    digitCell(g,String(d),x,yy,fs,col);g.globalAlpha=1;}
+  g.restore();}
+function drawScreen(g,w,h,t){
+  g.fillStyle='#060302';g.fillRect(0,0,w,h);
+  const rg=g.createRadialGradient(w/2,h*0.35,10,w/2,h*0.4,h*0.7);rg.addColorStop(0,'rgba(255,140,40,.10)');rg.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=rg;g.fillRect(0,0,w,h);
+  const night=(t<15.15)||(t>=25.2);
+  if(night){
+    let H1='0',H2='2',M1=5,M2=9,roll=null;
+    if(t>=1.4&&t<1.5){H2='3';M1=0;M2=0;}
+    else if(t>=1.5&&t<1.75){roll=eio(lin(t,1.5,1.75));}
+    else if(t>=1.75&&t<25.2){H2='2';M1=0;M2=0;}
+    const fs=430,cx=w/2,dx=128,yH=470,yM=900,col=AMB;
+    const dim=(t>=2.6&&t<25.2)?0.75:1;g.globalAlpha=dim;
+    digitCell(g,H1,cx-dx,yH,fs,col);
+    if(roll!==null){rollDigit(g,3-roll,cx+dx,yH,fs,col,330);const mv=60*(1-roll);rollDigit(g,Math.floor(mv/10)%6+((mv%10)>9?((mv%10)-9):0),cx-dx,yM,fs,col,330,6);rollDigit(g,mv%10,cx+dx,yM,fs,col,330);}
+    else{digitCell(g,H2,cx+dx,yH,fs,col);digitCell(g,String(M1),cx-dx,yM,fs,col);digitCell(g,String(M2),cx+dx,yM,fs,col);}
+    const on=(t%1)<0.5;g.fillStyle=col;g.globalAlpha=dim*(on?0.95:0.15);for(const s of [-1,1]){g.beginPath();g.arc(cx+s*26,560,11,0,7);g.fill();}
+    g.globalAlpha=dim*0.55;g.fillStyle=col;g.fillRect(cx-46,1080,92,8);g.font='38px IDBd';g.textAlign='center';g.fillText('⚡',cx,1060);g.globalAlpha=1;
+    // notification qui descend (12,7) puis se détache (13,0)
+    if(t>=12.68&&t<15.15){const k=eout(lin(t,12.68,12.92));const det=lin(t,12.98,13.12);const y=-150+200*k;
+      g.globalAlpha=1-det*0.85;g.fillStyle='rgba(60,50,40,.92)';roundRect(g,30,y,w-60,130,34);g.fill();
+      g.fillStyle=AMB;roundRect(g,52,y+28,74,74,18);g.fill();g.fillStyle='#F4EDE4';g.font='34px IMd';g.textAlign='left';g.fillText('Dimanche · réveil',146,y+60);g.fillStyle='#CFC4B8';g.fillText('désactivé',146,y+102);g.globalAlpha=1;}
+  } else if(t<18.2){ // lundi 06:30 qui sonne
+    const p=0.8+0.2*Math.sin((t-15.3)*Math.PI*2*2.2);g.globalAlpha=p;
+    for(let i=0;i<3;i++){const ph=((t-15.3)*0.9+i/3)%1;g.strokeStyle=`rgba(255,181,71,${0.35*(1-ph)})`;g.lineWidth=6;g.beginPath();g.arc(w/2,620,120+ph*260,0,7);g.stroke();}
+    g.fillStyle=AMB;g.textAlign='center';g.font='70px IDBd';if(g.letterSpacing!==undefined)g.letterSpacing='14px';g.fillText('LUN',w/2+7,330);if(g.letterSpacing!==undefined)g.letterSpacing='0px';
+    g.font='190px IDLt';g.fillText('06:30',w/2,620);
+    g.fillStyle='rgba(255,181,71,.9)';g.beginPath();g.arc(w/2,900,70,0,7);g.fill();g.fillStyle='#160c04';g.font='70px IDBd';g.fillText('✕',w/2,925);g.globalAlpha=1;
+  } else if(t<23.0){ // réveils : le même 06:30, interrupteur activé
+    const k=t<20.6?1:0.8;g.globalAlpha=k;
+    g.fillStyle='rgba(255,181,71,.10)';roundRect(g,26,420,w-52,220,40);g.fill();
+    g.fillStyle=AMB;g.textAlign='left';g.font='150px IDLt';g.fillText('06:30',56,585);
+    g.fillStyle=AMB;roundRect(g,w-170,495,120,70,35);g.fill();g.fillStyle='#fff7ea';g.beginPath();g.arc(w-85,530,29,0,7);g.fill();g.globalAlpha=1;
+  } else { // SNOOZE
+    g.fillStyle=AMB;g.textAlign='center';g.font='150px IDLt';g.globalAlpha=0.8;g.fillText('06:30',w/2,420);g.globalAlpha=1;
+    let s=1;for(const c of [23.25,23.85,24.45])s+=0.07*pulse(t,c,0.12);
+    const pw=420*s,ph=150*s;g.fillStyle=AMB;roundRect(g,w/2-pw/2,700-ph/2,pw,ph,ph/2);g.fill();
+    g.fillStyle='#1a0e04';g.font=`${Math.round(66*s)}px IDBd`;if(g.letterSpacing!==undefined)g.letterSpacing='6px';g.fillText('SNOOZE',w/2+3,700+23*s);if(g.letterSpacing!==undefined)g.letterSpacing='0px';
+    if(t>24.4){g.fillStyle=`rgba(6,3,2,${0.85*lin(t,24.4,25.2)})`;g.fillRect(0,0,w,h);}
+  }
+}
+function roundRect(g,x,y,w,h,r){g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath();}
+
+/* ============================== caméra ============================== */
+function hermK(K,t,idx){const n=K.length;let i=0;while(i<n-2&&t>K[i+1][0])i++;const a=K[i],b=K[i+1];const dt=b[0]-a[0];const u=clamp((t-a[0])/dt);
+  const val=(k,j)=>Array.isArray(K[k][idx])?K[k][idx][j]:K[k][idx];
+  const tan=(k,j)=>{if(k===0||k===n-1)return 0;const h0=K[k][0]-K[k-1][0],h1=K[k+1][0]-K[k][0];const d0=(val(k,j)-val(k-1,j))/h0,d1=(val(k+1,j)-val(k,j))/h1;
+    if(d0*d1<=0)return 0;const w1=2*h1+h0,w2=h1+2*h0;return (w1+w2)/(w1/d0+w2/d1);};
+  const dim=Array.isArray(a[idx])?3:1;const out=[];
+  for(let j=0;j<dim;j++){const p0=val(i,j),p1=val(i+1,j),m0=tan(i,j)*dt,m1=tan(i+1,j)*dt;const u2=u*u,u3=u2*u;
+    out.push((2*u3-3*u2+1)*p0+(u3-2*u2+u)*m0+(-2*u3+3*u2)*p1+(u3-u2)*m1);}return out;}
+// Plans définis autour d'un point focal F : distance, azimut, élévation, focale, roulis, position verticale de F à l'écran (fraction, négatif = sous le centre)
+const MID=[0.020,0.030,-0.710],GL=[GX,0.030,GZ],PH=[PX,0.035,PZ],SN=[SENS.x,SENS.y,SENS.z];
+const S0=[MID,0.710,-0.070,0.000,40,-5,-0.22];
+// [t, F, dist, az, él, fov, roulis, frac]
+const sh=(t,a)=>[t,...a];
+const KA=[
+ sh(0.0,  S0),
+ sh(1.45, [MID,0.690,-0.068,0.004,40.5,-5,-0.22]),
+ sh(2.6,  [MID,0.660,-0.040,0.010,41,-4.5,-0.22]),
+ sh(4.45, [GL, 0.470, 0.110,0.090,50,-2,-0.22]),      // travelling + dolly-zoom vers le verre
+ sh(5.05, [SN, 0.330,-0.450,0.740,42,-3,-0.20]),      // panoramique vers le poignet
+ sh(7.45, [SN, 0.300,-0.520,0.720,41,-3,-0.20]),
+ sh(8.25, [GL, 0.440, 0.080,0.075,49,-1,-0.21]),
+ sh(9.75, [GL, 0.420, 0.080,0.070,50,-1,-0.21]),
+ sh(10.2, [GL, 0.415, 0.080,0.070,50,-1,-0.21]),
+ sh(10.42,[GL, 0.500, 0.060,0.060,48,0,-0.22]),       // recul punch
+ sh(12.6, [GL, 0.515, 0.040,0.060,48,0,-0.22]),
+ sh(12.88,[PH, 0.540,-0.090,0.040,46,-2,-0.20]),      // panoramique filé vers le téléphone
+ sh(15.13,[PH, 0.520,-0.100,0.045,46,-2.5,-0.20])];
+const KB=[
+ sh(15.13,[MID,0.640, 0.020,0.040,44,-5,-0.22]),
+ sh(18.2, [MID,0.610, 0.030,0.045,44,-5,-0.22]),
+ sh(20.6, [MID,0.820, 0.000,0.130,42,-3,-0.17]),      // grue arrière, aube
+ sh(23.0, [GL, 0.480, 0.100,0.080,49,-1,-0.22]),
+ sh(25.2, [MID,0.680,-0.050,0.010,41,-4,-0.22]),
+ sh(25.5, S0),
+ sh(26.0, S0)];
+let FOCUS=0.7;
+const _t=new THREE.Vector3(),_F=new THREE.Vector3();
+function cameraAt(t){const K=t<15.13?KA:KB;
+  const F=hermK(K,t,1),d=hermK(K,t,2)[0],az=hermK(K,t,3)[0],el=hermK(K,t,4)[0],f=hermK(K,t,5)[0],rl=hermK(K,t,6)[0],fr=hermK(K,t,7)[0];
+  const br=0.0028*Math.sin(2*Math.PI*6*t/DUR);                 // respiration (périodique sur 26 s)
+  _F.set(...F);cam.position.set(F[0]+d*Math.sin(az)*Math.cos(el),F[1]+d*Math.sin(el)+br,F[2]+d*Math.cos(az)*Math.cos(el));
+  cam.up.set(0,1,0);cam.lookAt(_F);cam.fov=f;cam.updateProjectionMatrix();
+  cam.rotateX(Math.atan(-fr*Math.tan(THREE.MathUtils.degToRad(f/2))));cam.rotateZ(THREE.MathUtils.degToRad(rl));cam.updateMatrixWorld();
+  FOCUS=d;
+  const p0=[MID[0]+S0[1]*Math.sin(S0[2]),MID[2]+S0[1]*Math.cos(S0[2])];
+  pillow.material.opacity=clamp(1-Math.hypot(cam.position.x-p0[0],cam.position.z-p0[1])/0.06);pillow.visible=pillow.material.opacity>0.01;}
+
+/* ============================== post-traitement ============================== */
+const sceneRT=new THREE.WebGLRenderTarget(RW,RH,{type:THREE.HalfFloatType,samples:4});
+sceneRT.depthTexture=new THREE.DepthTexture(RW,RH);sceneRT.depthTexture.type=THREE.UnsignedIntType;
+const comp=new EffectComposer(r,new THREE.WebGLRenderTarget(RW,RH,{type:THREE.HalfFloatType}));comp.setSize(RW,RH);
+const dof=new ShaderPass({uniforms:{tColor:{value:sceneRT.texture},tDepth:{value:sceneRT.depthTexture},uFocus:{value:0.7},uAper:{value:7},uMax:{value:13},uNear:{value:0.02},uFar:{value:12},uRes:{value:new THREE.Vector2(RW,RH)}},
+ vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+ fragmentShader:`uniform sampler2D tColor,tDepth;uniform float uFocus,uAper,uMax,uNear,uFar;uniform vec2 uRes;varying vec2 vUv;
+ float lz(vec2 uv){float d=texture2D(tDepth,uv).r;float z=d*2.0-1.0;return 2.0*uNear*uFar/(uFar+uNear-z*(uFar-uNear));}
+ float coc(float z){return clamp(abs(1.0/uFocus-1.0/z)*uAper,0.0,uMax);}
+ void main(){float zc=lz(vUv);float c0=coc(zc);vec3 acc=texture2D(tColor,vUv).rgb;float wsum=1.0;
+  const int N=40;for(int i=0;i<N;i++){float fi=float(i)+0.5;float rr=uMax*sqrt(fi/float(N));float a=fi*2.39996;vec2 o=vec2(cos(a),sin(a))*rr/uRes;
+   vec2 uv=vUv+o;float zs=lz(uv);float cs=coc(zs);if(zs>zc)cs=min(cs,c0);float w=smoothstep(rr-1.0,rr+1.0,cs);acc+=texture2D(tColor,uv).rgb*w;wsum+=w;}
+  gl_FragColor=vec4(acc/wsum,1.0);}`});
+dof.textureID=null;dof.uniforms.tColor.value=sceneRT.texture;dof.uniforms.tDepth.value=sceneRT.depthTexture;comp.addPass(dof);
+const bloom=new UnrealBloomPass(new THREE.Vector2(W/3,H/3),0.5,0.45,0.85);comp.addPass(bloom);
+comp.addPass(new OutputPass());
+const fin=new ShaderPass({uniforms:{tDiffuse:{value:null},uFrame:{value:0},uGlitch:{value:0},uWhip:{value:0},uLift:{value:0}},
+ vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+ fragmentShader:`uniform sampler2D tDiffuse;uniform float uFrame,uGlitch,uWhip,uLift;varying vec2 vUv;
+ float h1(float n){return fract(sin(n*127.1)*43758.5453);}
+ void main(){vec2 uv=vUv;
+  if(uGlitch>0.0){float band=floor(uv.y*48.0);float k=step(0.72,h1(band+uFrame*13.0));uv.x+=(h1(band*3.1+uFrame)-0.5)*0.05*k*uGlitch;}
+  vec2 dc=uv-0.5;float ca=0.0010+0.009*uGlitch;vec3 col;
+  col.r=texture2D(tDiffuse,uv-vec2(ca,0.0)-dc*0.002).r;col.g=texture2D(tDiffuse,uv).g;col.b=texture2D(tDiffuse,uv+vec2(ca,0.0)+dc*0.002).b;
+  if(uWhip>0.0){vec3 s=col;for(int i=1;i<=10;i++){float o=float(i)*0.0065*uWhip;s+=texture2D(tDiffuse,uv+vec2(o,0.0)).rgb+texture2D(tDiffuse,uv-vec2(o,0.0)).rgb;}col=s/21.0;}
+  if(uGlitch>0.0){col*=1.0-0.18*uGlitch*step(0.5,fract(vUv.y*RH_LINES));}
+  float v=smoothstep(1.1,0.28,length(dc*vec2(1.0,0.78)));col*=mix(0.58,1.0,v);
+  vec3 lift=vec3(0.010,0.012,0.030)+uLift;col=col*(1.0-lift)+lift;
+  float n=fract(sin(dot(vUv*vec2(1271.3,1817.7)+uFrame*0.6180339,vec2(12.9898,78.233)))*43758.5453);col+=(n-0.5)*0.03;gl_FragColor=vec4(col,1.0);}`.replace('RH_LINES','320.0')});
+comp.addPass(fin);
+
+/* ============================== calque texte ============================== */
+const B=[
+ {id:'s1a',a:-1,z:2.45,y:300,html:'<div style="font-size:66px;line-height:1.12">Cette nuit, tu dors</div><div class="bk lv" style="font-size:108px;line-height:1.05;letter-spacing:-1px">1 h de plus ?</div>'},
+ {id:'s1b',a:1.5,z:2.45,y:452,cls:'bk',css:'font-size:116px;letter-spacing:-2px',html:'Pas <span id="w_vr">vraiment.</span><div id="ul1"></div>'},
+ {id:'s2a',a:2.62,z:4.45,y:318,css:'font-size:68px;line-height:1.16',html:'Devine :<br><span class="bk lv">combien</span>, en vrai ?'},
+ {id:'s2b',a:3.12,z:4.45,y:520,cls:'tag ns',html:'PROMIS'},
+ {id:'s3a',a:4.64,z:7.62,y:296,html:'<div class="bk lv" style="font-size:132px;line-height:1.0;letter-spacing:-2px">7 211</div><div style="font-size:70px;line-height:1.15">Britanniques,</div>'},
+ {id:'s3b',a:6.4,z:7.62,y:520,css:'font-size:70px',html:'43-78 ans.'},
+ {id:'s4a',a:7.82,z:10.05,y:300,css:'font-size:62px;line-height:1.16',html:'Le dimanche du changement,<br>en moyenne…'},
+ {id:'s4b',a:8.0,z:10.05,y:462,cls:'bk lv',css:'font-size:176px;letter-spacing:-3px',html:'<span id="cnt">0</span>'},
+ {id:'s5a',a:10.2,z:12.45,y:282,cls:'bk',css:'font-size:178px;letter-spacing:-4px',html:'<span id="fill">+33 min.</span>'},
+ {id:'s5b',a:10.8,z:12.45,y:500,cls:'bk rd',css:'font-size:112px;letter-spacing:-2px',html:'Pas 60.'},
+ {id:'s5c',a:10.95,z:12.45,y:655,cls:'sm',html:'en moyenne · vs le dimanche d’avant'},
+ {id:'s6a',a:12.66,z:14.92,y:318,css:'font-size:62px;line-height:1.18',html:'Envoie ça à celui qui<br><span class="bk lv" style="font-size:74px">prévoit sa grasse mat’.</span>'},
+ {id:'s7a',a:15.3,z:18.05,y:300,cls:'bk',css:'font-size:100px;letter-spacing:-1px',html:'Et lundi ?'},
+ {id:'s7b',a:15.72,z:18.05,y:438,css:'font-size:58px',html:'Moins de <span class="bk lv">3 min</span> d’écart.'},
+ {id:'s7c',a:16.2,z:18.05,y:540,cls:'sm',html:'lun.-ven. · non significatif'},
+ {id:'s8a',a:18.25,z:20.45,y:306,css:'font-size:62px;line-height:1.2',html:'<span class="bk" style="font-size:78px">Des horaires réguliers</span><br>aident le sommeil <span class="gr">(INSV)</span>.'},
+ {id:'s9a',a:20.66,z:22.85,y:306,css:'font-size:62px;line-height:1.2',html:'Enregistre-le pour le<br><span class="bk lv" style="font-size:86px">ressortir dimanche.</span>'},
+ {id:'s9b',a:21.05,z:22.85,y:530,cls:'sm',html:'de Lange et al. · J Sleep Res · 2024'},
+ {id:'s10a',a:23.05,z:25.05,y:306,css:'font-size:62px',html:'Ép. 3 : <span class="bk lv">le snooze</span>, ça aide ?'},
+ {id:'s10b',a:23.5,z:25.05,y:410,cls:'bk',css:'font-size:100px;letter-spacing:-1px',html:'Abonne-toi<div id="ul2"></div>'},
+ {id:'s11',a:25.2,z:99,y:300,html:'<div style="font-size:66px;line-height:1.12">Cette nuit, tu dors</div><div class="bk lv" style="font-size:108px;line-height:1.05;letter-spacing:-1px">1 h de plus ?</div>'},
+];
+const TX=document.getElementById('texts');
+for(const b of B){const d=document.createElement('div');d.className='blk '+(b.cls||'');d.id='b_'+b.id;d.innerHTML=b.html;d.style.cssText+=';'+(b.css||'')+';top:'+b.y+'px';TX.appendChild(d);b.el=d;}
+const $=id=>document.getElementById(id);
+function styleText(t){
+  for(const b of B){const el=b.el;if(t<b.a-0.02||t>b.z+0.22){el.style.opacity=0;continue;}
+    let op=1,blur=0,sc=1,ty=0,ls=0;
+    if(b.a>0){const e=eout(lin(t,b.a,b.a+0.33));op=lin(t,b.a,b.a+0.13);blur=(1-e)*14;sc=1+0.06*(1-e);ls=0.04*(1-e);}  // entrée « mise au point »
+    if(t>b.z){const e=lin(t,b.z,b.z+0.2);op*=1-e;blur=Math.max(blur,e*10);ty=-14*e;}
+    if(b.id==='s1a'&&t>=1.5){const e=eio(lin(t,1.5,1.75));sc=1-0.4*e;ty=-10*e;}
+    el.style.opacity=op.toFixed(3);el.style.transform=`translateY(${ty.toFixed(1)}px) scale(${sc.toFixed(4)})`;
+    el.style.filter=blur>0.05?`blur(${blur.toFixed(2)}px)`:'none';el.style.letterSpacing=ls>0.0005?ls.toFixed(4)+'em':'';}
+  // trait rouge sous « vraiment »
+  {const w=$('w_vr'),u=$('ul1');const k=eout(lin(t,1.62,1.82));u.style.left=w.offsetLeft+'px';u.style.top=(w.offsetTop+w.offsetHeight-12)+'px';u.style.width=w.offsetWidth+'px';u.style.transform=`scaleX(${k.toFixed(3)})`;}
+  {const k=eout(lin(t,23.75,24.05));const u=$('ul2');u.style.left='255px';u.style.width='340px';u.style.top='118px';u.style.transform=`scaleX(${k.toFixed(3)})`;}
+  // compteur 0 → 33 (8,0 → 9,8) ; décélération finale
+  {const v=Math.round(33*eout(lin(t,8.0,9.8)));const c=$('cnt');c.textContent=String(v);const mb=t>8.0&&t<9.7?3*(1-lin(t,9.0,9.7)):0;c.style.filter=mb>0.1?`blur(${mb.toFixed(1)}px)`:'none';
+   $('b_s4b').style.transform+=` scale(${(1+0.08*pulse(t,9.83,0.08)).toFixed(3)})`;}
+  // « +33 min. » se remplit de liquide (10,2 → 10,6)
+  {const k=eout(lin(t,10.22,10.62));$('fill').style.setProperty('--lv',(k*102-2+1.5*Math.sin(t*9)).toFixed(1)+'%');}
+  // pastille : ÉP. 2 → ÉP. 3 (23,6) puis retour ÉP. 2 (25,2) — bascule à palettes
+  {const p=$('pill');let ang=0;let ep='ÉP. 2';
+   if(t>=23.6&&t<25.2){const k=lin(t,23.6,23.87);ang=k<0.5?k*180:(k-1)*180;ep=k<0.5?'ÉP. 2':'ÉP. 3';}
+   else if(t>=25.2){const k=lin(t,25.2,25.45);ang=k<0.5?k*180:(k-1)*180;ep=k<0.5?'ÉP. 3':'ÉP. 2';}
+   p.style.transform=`rotateX(${ang.toFixed(1)}deg)`;$('ep').textContent=ep;}
+  // nuance permanente (4,6 → 25,2)
+  $('nu').style.opacity=(lin(t,4.6,4.9)*(1-lin(t,25.2,25.4))).toFixed(3);
+  // signature : grande pendant l'appel à s'abonner
+  {const g=eio(lin(t,23.6,23.95))*(1-eio(lin(t,24.85,25.2)));const w=240+150*g,h=w*379/1160;const s=$('sig'),sh=$('sigShine');
+   for(const e of [s,sh]){e.style.width=w+'px';e.style.left=(540-w/2)+'px';e.style.top=(1660-h)+'px';}sh.style.height=h+'px';
+   s.style.opacity=(0.85+0.15*g).toFixed(3);sh.style.opacity=g.toFixed(3);sh.style.backgroundPosition=`${(100-lin(t,23.9,24.6)*100).toFixed(1)}% 0`;}
+  // clignement 15,0 → 15,3 (fermeture 0,08 s, noir, ouverture 0,08 s)
+  {const c=t<15.0||t>15.3?0:(t<15.08?eio(lin(t,15.0,15.08)):(t<15.22?1:1-eio(lin(t,15.22,15.3))));
+   $('lidT').style.transform=`translateY(${(c*(1250+990)).toFixed(1)}px)`;$('lidB').style.transform=`translateY(${(-c*(1250+990)).toFixed(1)}px)`;}
+}
+/* projection monde → écran (repère 1080×1920) */
+const _p=new THREE.Vector3();
+function toScreen(v){_p.copy(v).project(cam);return {x:(_p.x+1)/2*W,y:(1-_p.y)/2*H};}
+function overlays(t){
+  // carte « verre liquide » qui sort de l'écran (13,0 → 14,85)
+  const card=$('card'),sh=$('share');
+  if(t>=12.98&&t<15.0){const a=toScreen(phone.localToWorld(V3(0,0.135,0.006)));const k=eout(lin(t,12.98,13.4));const out=lin(t,14.7,14.95);
+    const x0=a.x,y0=a.y,x1=500,y1=1015;const x=mix(x0,x1,k),y=mix(y0,y1,k)-30*out;const s=mix(0.42,1.0,k)*(1-0.15*out);
+    card.style.opacity=(clamp(lin(t,12.98,13.05))*(1-out)).toFixed(3);card.style.transform=`translate(${(x-310).toFixed(1)}px,${(y-64).toFixed(1)}px) scale(${s.toFixed(3)}) perspective(800px) rotateX(${(10*(1-k)).toFixed(1)}deg)`;
+    card.querySelector('.spec').style.left=`${(-40+150*lin(t,13.0,14.6)).toFixed(1)}%`;
+    const sp=1+0.14*pulse(t,13.75,0.11)+0.14*pulse(t,14.25,0.11);sh.style.opacity=(lin(t,13.45,13.6)*(1-out)).toFixed(3);
+    sh.style.transform=`translate(${(x+210).toFixed(1)}px,${(y+105).toFixed(1)}px) scale(${sp.toFixed(3)})`;}
+  else{card.style.opacity=0;sh.style.opacity=0;}
+  // marque-page néon qui se dessine puis se clipse sur le bord du verre (20,8 → 21,45)
+  const bm=$('bm'),bp=$('bmP');
+  if(t>=20.75&&t<23.0){const rimP=toScreen(glass.localToWorld(V3(GR*0.55,GH,GR*0.6)));const d=lin(t,20.78,21.15);bp.style.strokeDasharray='420';bp.style.strokeDashoffset=(420*(1-d)).toFixed(1);
+    const drop=t<21.15?0:eout(lin(t,21.15,21.42));const bounce=Math.sin(lin(t,21.3,21.6)*Math.PI)*12*(1-lin(t,21.3,21.6));
+    const x=rimP.x-45,y=rimP.y-150+110*drop-bounce;bm.style.opacity=(lin(t,20.75,20.85)*(1-lin(t,22.8,23.0))).toFixed(3);bm.style.transform=`translate(${x.toFixed(1)}px,${y.toFixed(1)}px) scale(${(1+0.1*pulse(t,21.33,0.06)).toFixed(3)})`;}
+  else bm.style.opacity=0;
+}
+
+/* ============================== temps → état du monde ============================== */
+function levelAt(t){if(t<8.0)return 0;if(t<9.8)return 33*eout(lin(t,8.0,9.8));if(t<15.6)return 33;if(t<17.4)return mix(33,3,eio(lin(t,15.6,17.4)));if(t<25.2)return 3;return 3*(1-eout(lin(t,25.2,25.42)));}
+function tauAt(t){if(t<1.5)return t;if(t<1.75)return 1.5-(t-1.5)*3;return 0.75+(t-1.75);}   // temps de la poussière : remonte pendant le rembobinage
+const R7=mulberry32(707);const BSEED=Array.from({length:NB},()=>[R7(),R7(),R7()]);const DSEED=Array.from({length:NDp},()=>[R7(),R7(),R7()]);
+function sceneState(t){
+  const ts=(t>=1.55&&t<1.616)?1.55:t;  // 2 images figées pendant le glitch
+  cameraAt(ts);
+  const lv=levelAt(ts);const hL=LV(lv);
+  // --- gobo de lune : glisse en arrière à 1,5 s, aube 18,2 → 24,4, retour nuit, position de départ à 25,5 ---
+  const back=eout(lin(ts,1.5,1.77));const ret=eio(lin(ts,25.2,25.5));
+  const gx=GOBO0.x-0.15*back*(1-ret)+0.004*Math.max(0,ts-1.77)*(1-ret),gy=GOBO0.y+0.05*back*(1-ret);
+  gobo.position.set(gx,gy,GOBO0.z);goboGold.position.set(gx,gy,GOBO0.z+0.0005);
+  const dawn=sm(lin(ts,18.2,19.4))*(1-sm(lin(ts,24.4,25.2)));const mon=ts>=15.15&&ts<18.2?1:0;
+  goboMat.color.set('#8FA8FF').lerp(C('#9DB4FF'),dawn).multiplyScalar(0.36*(1-0.35*mon)+0.2*dawn);
+  goboGold.material.color.set('#FFC46B').multiplyScalar(0.22*dawn);goboGold.scale.set(1.02,1.02,1);
+  goboTop.material.color.set('#8FA8FF').multiplyScalar(0.22+0.15*dawn);
+  scene.background.set('#04061A').lerp(C('#0E1640'),dawn*0.6);
+  hemi.intensity=0.4+0.3*dawn;hemi.color.set('#1E2660').lerp(C('#3D5BD9'),dawn);
+  moon.intensity=0.9+0.4*dawn;
+  // rai volumétrique : de la fenêtre (hors champ à droite) au gobo
+  {const A=V3(1.3,0.85,-0.25),Bp=V3(gx,gy,GOBO0.z);const mid=A.clone().add(Bp).multiplyScalar(0.5);const L=A.distanceTo(Bp);
+   beam.position.copy(mid);beam.scale.set(0.42,L,0.30);beam.quaternion.setFromUnitVectors(V3(0,1,0),Bp.clone().sub(A).normalize());beamMat.uniforms.uA.value=1+0.6*dawn;
+   const Z=Bp.clone().sub(A);dustU.uO.value.copy(A);dustU.uZ.value.copy(Z);dustU.uX.value.set(0,0,0.32);dustU.uY.value.set(0,0.45,0);}
+  dustU.uTau.value=tauAt(ts);dustU.uCol.value.set('#C9D4FF').lerp(C('#FFD9A0'),dawn);dustU.uA.value=1+0.5*dawn;
+  // --- écran ---
+  screenTex.userData.redraw(ts);
+  let sb=1.0;if(ts>=2.6&&ts<15.15)sb=0.8;if(ts>=12.68&&ts<13.1)sb=1.25;if(ts>=15.3&&ts<18.2)sb=1.0+0.25*Math.sin((ts-15.3)*Math.PI*2*2.2);if(ts>=15.13&&ts<15.3)sb=0.2;
+  if(ts>=23&&ts<25.2)sb=0.85;
+  screenMat.color.setScalar(1.35*sb);screenLight.intensity=0.06*sb;phone.localToWorld(screenLight.position.set(0,0.08,0.04));
+  // vibration lundi 06:30
+  const vib=ts>=15.3&&ts<17.6?0.0006*Math.sin(ts*2*Math.PI*25):0;phone.position.set(PX+vib,TABLE_Y+0.006,PZ);
+  // --- verre ---
+  liquid.visible=lv>0.05;liquid.scale.set(1,Math.max(hL-BASE,0.0001),1);liquid.position.y=BASE;
+  surf.visible=lv>0.05;surf.position.y=hL+0.0003;surfU.uT.value=ts;surfU.uRing.value=2.5*Math.exp(-Math.max(0,ts-9.8)*3)*(ts>=9.8?1:0)+(ts>8&&ts<9.8?0.6:0);
+  surfU.uSwirl.value=ts>15.6&&ts<17.6?1:0;liqU.uT.value=ts;
+  const flash=pulse(ts,9.82,0.12);liqU.uK.value=1+0.6*flash;surfU.uK.value=1+0.6*flash;
+  gradMat.uniforms.uLevel.value=hL;gradMat.uniforms.uLit.value=lv>0.05?1:0;
+  const m60=ts<25.2?eout(lin(ts,3.1,3.37)):1-lin(ts,25.2,25.4);gradMat.uniforms.u60.value=0.75*m60+0.25*pulse(ts,3.3,0.15);gradMat.uniforms.uSweep.value=ts<25.2?lin(ts,3.1,3.37):1;
+  gradMat.uniforms.uLab.value=1;gradMat.uniforms.uPromis.value=lin(ts,3.15,3.45)*(1-lin(ts,12.4,12.8));
+  // fantôme 33 → 60 : clignote 3 fois puis 40 %, s'étend de ≈ 3 à 60 lundi
+  let ga=0;if(ts>=10.2&&ts<25.4){ga=ts<11.4?(Math.floor((ts-10.2)/0.2)%2===0?1:0.12):0.42;if(ts>=18.2)ga=0.3;ga*=1-lin(ts,25.2,25.4);}
+  ghostU.uA.value=ga;ghost.visible=ga>0.001;ghost.position.y=hL;ghost.scale.set(1,Math.max(LV(60)-hL,0.0001),1);
+  ghostRing[0].position.y=LV(60);ghostRing[1].position.y=hL+0.0006;for(const g of ghostRing){g.visible=ghost.visible;g.material.color.set('#FF4D6A').multiplyScalar(2*ga);}
+  caustic.material.color.set('#7B5CFF').multiplyScalar(0.32*clamp(lv/33)*(1+flash));caustic.scale.setScalar(0.6+0.6*clamp(lv/33));
+  fresMat.uniforms.uAk.value=0.45*sb;
+  // reflets spéculaires verticaux qui glissent avec la caméra
+  {const toCam=cam.position.clone().sub(glass.position);const ang=Math.atan2(toCam.x,toCam.z);
+   specs.forEach((m,i)=>{const a=ang+(i?-0.95:0.75)-ang*0.6;m.position.set(Math.sin(a)*GR*1.02,0.072,Math.cos(a)*GR*1.02);m.rotation.y=ang;});}
+  // bulles pendant le remplissage
+  {const pa=bubbles.geometry.attributes.position.array,aa=bubbles.geometry.attributes.aA.array;const on=ts>8.0&&ts<10.4?1-lin(ts,9.8,10.4):0;
+   BSEED.forEach((s,i)=>{const a=s[0]*6.28,rr=LR*0.8*Math.sqrt(s[1]);const y=BASE+((s[2]+ts*0.5)%1)*(hL-BASE);pa.set([Math.cos(a)*rr,y,Math.sin(a)*rr],i*3);aa[i]=on*0.5;});
+   bubbles.geometry.attributes.position.needsUpdate=true;bubbles.geometry.attributes.aA.needsUpdate=true;}
+  // 30 gouttelettes à l'arrêt net (9,8)
+  {const pa=drops.geometry.attributes.position.array,aa=drops.geometry.attributes.aA.array;const dt=ts-9.8;
+   DSEED.forEach((s,i)=>{if(dt<0||dt>0.9){aa[i]=0;return;}const a=s[0]*6.28,v=0.25+0.35*s[1],up=0.35+0.4*s[2];const x=Math.cos(a)*v*0.08*dt,z=Math.sin(a)*v*0.08*dt;const y=LV(33)+up*0.25*dt-0.5*1.0*dt*dt*0.9;
+     pa.set([x,Math.max(y,LV(33)),z],i*3);aa[i]=(1-dt/0.9)*(y>LV(33)?1:0);});
+   drops.geometry.attributes.position.needsUpdate=true;drops.geometry.attributes.aA.needsUpdate=true;}
+  // rangée régulière de 7 gouttes (aube) : la régularité devient une image
+  for(let i=0;i<7;i++){const m=row7[i];const t0=18.45+i*0.1;const up=eout(lin(ts,t0,t0+0.55));const dn=ein(lin(ts,20.45+i*0.03,20.75+i*0.03));m.visible=ts>t0&&dn<1;
+    const src=glass.localToWorld(V3(0,LV(3),0));const dst=V3(-0.075+i*0.026,TABLE_Y+0.15+0.002*Math.sin(ts*3+i),-0.70);
+    m.position.copy(src).lerp(dst,up*(1-dn));m.position.y+=Math.sin(up*Math.PI)*0.02*(1-dn);m.scale.setScalar(0.6+0.4*up);}
+  // --- poignet + capteur (4,4 → 8,2) ---
+  const armOn=ts>4.3&&ts<8.3;arm.visible=armOn;duvet.visible=true;
+  const pulses=[4.85,5.6,6.35,7.1];let lk=0.25;pulses.forEach((c,i)=>{lk+=pulse(ts,c,0.09);const w=waves[i];const dt=ts-c;w.visible=armOn&&dt>0&&dt<0.9;const rr=0.005+dt*0.22;w.scale.set(rr,rr,1);w.material.color.set('#B49CFF').multiplyScalar(0.75*(1-dt/0.9));});
+  led.material.color.set('#B49CFF').multiplyScalar(0.8+1.0*lk);ledGlow.material.opacity=clamp(0.15+0.35*lk);ledGlow.scale.setScalar(0.008+0.005*lk);
+  ppU.uR.value=ts<5.6?-1:(ts-5.6)*0.75;ppU.uA.value=ts<5.6?0:1-lin(ts,6.3,6.9);pp.visible=ppU.uA.value>0.001;
+  // --- post ---
+  dof.uniforms.uFocus.value=FOCUS;dof.uniforms.uAper.value=ts>4.4&&ts<8.0?5.5:7;
+  bloom.strength=0.48+0.5*pulse(ts,9.82,0.12)+0.3*pulse(ts,10.22,0.1)+0.25*pulse(ts,1.62,0.12)+0.2*dawn;
+  fin.uniforms.uFrame.value=Math.round(t*30);fin.uniforms.uGlitch.value=ts>=1.5&&ts<1.75?(0.6+0.4*Math.sin(ts*90)):0;
+  fin.uniforms.uWhip.value=Math.sin(Math.PI*lin(ts,12.6,12.88))*1.0+Math.sin(Math.PI*lin(ts,4.55,4.95))*0.7+Math.sin(Math.PI*lin(ts,7.5,7.95))*0.6;
+  fin.uniforms.uLift.value=0;
+}
+
+/* ============================== entrée publique ============================== */
+window.renderAt=(t)=>{sceneState(t);styleText(t);overlays(t>=1.55&&t<1.616?1.55:t);r.setRenderTarget(sceneRT);r.render(scene,cam);r.setRenderTarget(null);comp.render();};
+window.sceneReady=(async()=>{for(const f of ['IDBk','IDSb','IDBd','IDLt','IMd'])await document.fonts.load(`100px ${f}`);await document.fonts.ready;
+  gradA.userData.redraw();gradB.userData.redraw();
+  window.renderAt(0);
+  // contrôle de largeur des blocs (zone x 90-940)
+  for(const b of B){b.el.style.opacity=1;b.el.style.transform='none';const rg=document.createRange();rg.selectNodeContents(b.el);const bb=rg.getBoundingClientRect();if(bb.left<90||bb.right>940)console.warn('trop large',b.id,Math.round(bb.left),Math.round(bb.right));}
+  window.renderAt(0);})();
+</script></body></html>
