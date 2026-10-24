@@ -1,0 +1,47 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "einstein",
+  "kicker": "ASSIDUITÉ · EINSTEIN",
+  "quote": "Chez l’homme, c’est comme à vélo&nbsp;: ce n’est qu’en <b>avançant</b> qu’on garde l’équilibre.",
+  "author": "ALBERT EINSTEIN",
+  "source": "Lettre à son fils Eduard, 5 février 1930 (Archives Einstein, citée par W. Isaacson)",
+  "cta": "Aujourd’hui, un pas.<br><i>Même petit, il compte.</i>",
+  "wm": "AVANCE"
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "CONDITIONNEMENT",
+  "quote": "Ne dis pas «&nbsp;je ferai du sport&nbsp;».<br>Dis «&nbsp;<b>lundi 18&nbsp;h, après le boulot</b>, je mets mes baskets&nbsp;».",
+  "author": "",
+  "source": "Plans « si… alors… » : effet moyen à fort sur l’atteinte des objectifs, 94 tests (Gollwitzer & Sheeran, 2006)",
+  "cta": "Écris ton «&nbsp;si… alors…&nbsp;» <i>en réponse à cette story ✍️</i>",
+  "wm": "SI → ALORS",
+  "wmsize": 190
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "Le jour où tu n’as <b>pas envie</b>, c’est celui qui construit qui tu es.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à celui qui <i>reprend lundi.</i>",
+  "wm": "EXIGENCE",
+  "wmsize": 200
+ },
+ {
+  "type": "post",
+  "file": "post-01.png",
+  "theme": "sport",
+  "size": 98,
+  "title": "Une habitude ne se crée pas en 21&nbsp;jours.",
+  "subtitle": "Dans une étude, il a fallu <b>66&nbsp;jours</b> en moyenne, de 18 à 254 selon les personnes. Et rater un jour n’a pas tout effacé.",
+  "foot": "Lally et al. · European Journal of Social Psychology · 2010",
+  "wm": "66"
+ }
+]
