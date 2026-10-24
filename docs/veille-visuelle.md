@@ -5,6 +5,23 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 24/10/2026 (mode rapide) — pour « Le chiffre qui pique » ép. 3 (le snooze, brief `docs/briefs/2026-10-25-snooze.md`)
+
+**Volume** : 10 requêtes + 6 pages lues. **Limites** : TikTok / Instagram illisibles par robot ; Douyin (闹钟) = tutoriels de sonneries, sans intérêt visuel. Aucun compteur de vues des 30 derniers jours vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | « Pop out of phone » — [Picsart, 17/04/2026](https://picsart.com/blog/pop-out-of-phone-trend-tutorial/) | Monde, Reels / TikTok | n.d. | Un sujet sort de l'écran d'un téléphone et passe devant son cadre | « Pattern interrupt » ; chez nous : la vitre elle-même se déforme et accouche d'un objet |
+| 2 | 100 vidéos UI 2026 — [Advids](https://advids.co/blog/ui-animation-motion-design-trends) | Monde, vidéos produit | écrans réels 37 → 63 % ; rendu clair 35 → 55 % ; 3D 23 → 13 % (vérifié) | Vraies interfaces, rendu clair, 3D rare donc distinctive | Justifie le **premier Reel clair** du compte |
+| 3 | Tendances motion 10/2026 — [mean.ceo](https://blog.mean.ceo/?p=10938) | Monde | n.d. | Son calé sur chaque action visible ; « un faux écran crée un problème de confiance » | → règle-xylophone, écran réveil crédible |
+| 4 | Astuce « réveils multiples » — [T3, 07/08/2026](https://www.t3.com/home-living/sleep/this-viral-tiktok-alarm-hack-is-dividing-opinions-and-its-the-one-sleep-hack-ill-never-try) | Royaume-Uni, TikTok | n.d. | Le réveil et le snooze sont un débat vivant sur TikTok | Argument de débat pour le partage |
+| 5 | Presse sur Sundelin 2023 — [Earth.com](https://earth.com/news/hitting-the-snooze-button-does-not-disrupt-your-sleep-or-hurt-your-brain) · [Fortune](https://fortune.com/well/2023/10/18/hitting-snooze-button-alarm-could-make-you-mentally-sharper-sleep) | États-Unis | n.d. | Illustré par photos de banque d'images, aucun visuel de donnée | Ouverture : montrer 30 → 6 min comme un objet découpé |
+| 6 | Jelly / clay buttons — [Framer](https://www.framer.com/marketplace/components/jelly-button/) · [Pixso](https://pixso.net/articles/glassmorphism-vs-neumorphism-vs-claymorphism/) | Monde, UI | — | **Alerte** : bouton gélatineux = préréglage banal ; notre bouton reste verre net, c'est l'écran qui ondule | Éviter le gabarit |
+
+**À retenir** : sortir de la nuit (7 Reels sombres d'affilée) ; la donnée se **découpe** au lieu de se remplir ; l'interface devient matière.
+
+---
+
 ## Session du 23/10/2026 (mode rapide) — pour « Le chiffre qui pique » ép. 2 (l'heure « offerte », brief `docs/briefs/2026-10-24-heure-offerte.md`)
 
 **Volume** : 15 requêtes + 12 pages lues. **Limites** : TikTok / Instagram / Douyin toujours illisibles par robot ; requête chinoise (卧室 / 闹钟 / 睡眠) = fonds d'écran et banques d'images, rien de chiffré. Aucun compteur de vues des 30 derniers jours vérifié.
