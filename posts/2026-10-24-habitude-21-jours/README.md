@@ -10,9 +10,9 @@ Le chiffre des 21 jours circule partout. Les mesures racontent autre chose.
 
 En 2010, une équipe de l'University College London a suivi 96 volontaires qui voulaient prendre une nouvelle habitude : boire un verre d'eau au déjeuner, manger un fruit, courir 15 minutes avant le dîner… Chaque jour, ils notaient à quel point le geste devenait automatique.
 
-Résultat : il a fallu 66 jours en moyenne pour atteindre le plateau de l'automatisme. Mais l'écart entre les personnes était énorme : de 18 à 254 jours. Et les gestes plus exigeants, comme l'exercice, prenaient en général plus de temps qu'un verre d'eau.
+Résultat : il a fallu 66 jours (valeur médiane) pour atteindre le plateau de l'automatisme. Mais l'écart entre les personnes était énorme : de 18 à 254 jours.
 
-La bonne nouvelle : rater une occasion de temps en temps n'a pas empêché l'habitude de se construire. Ce qui compte, c'est la répétition dans le même contexte, pas la perfection.
+La bonne nouvelle : rater une occasion de temps en temps n'a pas empêché l'habitude de se construire. Ce qui compte, c'est la répétition au même moment, dans le même contexte, pas la perfection.
 
 La nuance : 96 personnes, des habitudes choisies par chacun, et des moyennes. Ton rythme peut être plus court ou plus long.
 
