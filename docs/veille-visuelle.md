@@ -5,6 +5,24 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 25/10/2026 (mode rapide) — pour « Mythe ou science ? » ép. 4 (l'alcool réchauffe ?, brief `docs/briefs/2026-10-26-mythe-alcool-rechauffe.md`)
+
+**Volume** : 22 requêtes + 11 pages lues (FR, EN, DE, PT, KO, JA, ZH). **Limites** : TikTok / Instagram / Douyin / Xiaohongshu illisibles par robot ; requêtes chinoises = presse et thermographies d'archives ; PMC (thermographie faciale et alcool) bloqué. Un seul compteur de Reel trouvé (déclaré par la presse).
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | Reel de Bhawesh Gupta sur l'alcool et le froid, relayé par [The Week, 11/01/2026](https://www.theweek.in/news/health/2026/01/11/fact-check-does-alcohol-really-keep-you-warm-during-winters.amp.html) | Inde, Instagram | ≈ 285 000 vues, 11 700 j'aime, ≈ 4 000 partages (déclaré) ≈ 14 partages / 1 000 | Mythe d'hiver + alternative utile (boisson chaude) | Sujet qui **porte le partage** : au-dessus de notre objectif |
+| 2 | « In Hot Water », NOMINT pour WWF — [D&AD](https://www.dandad.org/work/d-ad-awards-archive/in-hot-water) · [Gerety](https://www.geretyawards.com/winners/2025/entry/186529/in-hot-water-wwf) | Chili, film COP29 | Graphite Pencil D&AD 2025 (déclaré par la page) | **La chaleur est la matière de l'image** (maquettes chauffées une à une) | Principe gardé sans le filtre : la chaleur devient une lumière qui circule |
+| 3 | Thermographie de visages après alcool, Université de Patras — [ScienceDaily](https://www.sciencedaily.com/releases/2012/09/120904100137.htm) | Grèce, recherche 2012 | — | Nez plus chaud, front plus froid : la vasodilatation **se voit** | Preuve visuelle de la « peau qui chauffe » |
+| 4 | Presse mythe alcool / froid — [Newsis](https://www.newsis.com/view/NISX20250106_0003022427) · [Utopia](https://utopia.de/ratgeber/gluehwein-zum-aufwaermen-warum-das-keine-gute-idee-ist/) · [Joyn](https://newstime.joyn.de/themen/panorama/von-nassen-haaren-bis-gluehwein-die-groessten-winter-irrtuemer-34599) · [Xataka](https://www.xataka.com/medicina-y-salud/falsa-sensacion-calor-que-nos-da-alcohol-sabemos-que-mito-sigue-siendo-peligroso) | Corée, Allemagne, Espagne | n.d. | Tous illustrés en photo de banque d'images | **Ouverture** : personne ne montre le trajet de la chaleur dans le corps |
+| 5 | Mythe du tonnelet — [Mental Floss](https://www.mentalfloss.com/animals/dogs/10-big-facts-about-saint-bernards) · [AKC](https://www.akc.org/expert-advice/dog-breeds/saint-bernard-history/) | États-Unis | — | Une icône mondiale (le chien au tonnelet), elle-même née d'un tableau (Landseer, années 1820) | Le mythe peut être **montré**, pas seulement dit ; argument de débat (à vérifier en source primaire) |
+| 6 | Masques de ski à affichage (Rekkie) — [InTheSnow 2026](https://www.inthesnow.com/smart-goggles-and-airbag-vests-the-must-have-ski-tech-for-2026/) | États-Unis | — | Donnée discrète dans un coin du verre | Repère de lieu crédible, à doser (risque de gadget) |
+| 7 | Tendances 10/2026 — [mean.ceo](https://blog.mean.ceo/?p=10995) · [Design Monks, typo 2026](https://www.designmonks.co/blog/typography-trends-2026) · [Codrops 08/2026](https://tympanus.net/codrops/2026/08/) | Monde | Publication courte +71 % sur un an (déclaré) | Question à l'écran dès 2 s, une seule action finale ; typo dimensionnelle ; scènes three.js « son + matière » | Confirme : question lisible sans son + son calé sur la matière |
+
+**À retenir** : deux mythes « chaleur » d'affilée → **interdiction du filtre thermique** pour l'ép. 4. Ouvertures : la caméra **portée par un télésiège** (le décor donne le rythme) et **le corps du spectateur dans l'image** (mains, genoux, veste), la chaleur montrée comme un circuit de lumière braise → vaisseaux → vent.
+
+---
+
 ## Session du 24/10/2026 (mode rapide) — pour « Le chiffre qui pique » ép. 3 (le snooze, brief `docs/briefs/2026-10-25-snooze.md`)
 
 **Volume** : 10 requêtes + 6 pages lues. **Limites** : TikTok / Instagram illisibles par robot ; Douyin (闹钟) = tutoriels de sonneries, sans intérêt visuel. Aucun compteur de vues des 30 derniers jours vérifié.

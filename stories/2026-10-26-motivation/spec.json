@@ -1,0 +1,20 @@
+[
+ {"type":"story","file":"story-01.png","theme":"mental","kicker":"MENTAL · LUNDI MATIN",
+  "quote":"Le matin, quand tu as du mal à te lever, pense&nbsp;: je me lève pour <b>faire œuvre d’homme</b>.",
+  "author":"MARC AURÈLE",
+  "source":"Pensées, livre V, 1 (vers 170-180) · traduction libre",
+  "cta":"Debout. <i>La semaine commence maintenant.</i>",
+  "wm":"DEBOUT","wmsize":210},
+ {"type":"story","file":"story-02.png","theme":"einstein","kicker":"TRAVAIL · PETITS PROGRÈS",
+  "quote":"Sur 12&nbsp;000 journaux de bord, un <b>progrès</b> était associé à 76&nbsp;% des meilleures journées de travail.",
+  "author":"",
+  "source":"Amabile & Kramer, Harvard Business Review, mai 2011 (238 personnes, 7 entreprises)",
+  "cta":"Ton petit progrès du jour&nbsp;? <i>Réponds en un mot ✍️</i>",
+  "wm":"76 %","wmsize":300},
+ {"type":"story","file":"story-03.png","theme":"exigence","kicker":"EXIGENCE",
+  "quote":"J’ai détesté chaque minute. Mais je me suis dit&nbsp;: <b>souffre maintenant</b>, et vis le reste de ta vie en champion.",
+  "author":"MUHAMMAD ALI",
+  "source":"Newsweek, 1978 · The Sunday Gleaner, 1er oct. 1978 (à propos de son entraînement)",
+  "cta":"Envoie-la à celui qui <i>s’entraîne ce soir.</i>",
+  "wm":"CHAMPION","wmsize":190}
+]
