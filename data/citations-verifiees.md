@@ -15,6 +15,8 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-10-27 | J'ai raté plus de 9 000 tirs dans ma carrière. J'ai échoué encore et encore. C'est pour ça que je réussis. | Michael Jordan | Publicité Nike « Failure » (« 9,000 Shots »), 1997, Wieden+Kennedy, texte dit par Jordan | Gale Encyclopedia of Major Marketing Campaigns (via WARC/encyclopedia.com), Shmoop ; vérificateur 26/10. Traduction abrégée (2 phrases omises) |
+| 2026-10-27 | L'imagination est plus importante que le savoir. Le savoir est limité. L'imagination englobe le monde. | Albert Einstein | Interview de G. S. Viereck, « What Life Means to Einstein », The Saturday Evening Post, 26/10/1929, p. 117 | Quote Investigator (microfilm) ; vérificateur 26/10. Ne pas utiliser la variante de 1931 |
 | 2026-10-26 | Le matin, quand tu as du mal à te lever, pense : je me lève pour faire œuvre d'homme. | Marc Aurèle | Pensées, V, 1 (vers 170-180) | Trad. libre contrôlée sur la trad. G. Long 1862 (lexundria.com) ; vérificateur 25/10 |
 | 2026-10-26 | J'ai détesté chaque minute. Mais je me suis dit : souffre maintenant, et vis le reste de ta vie en champion. | Muhammad Ali | Newsweek vol. 92 (1978) p. 368 ; The Sunday Gleaner, 01/10/1978 (revanche contre Spinks) | Barry Popik (barrypopik.com) ; vérificateur 25/10 |
 | 2026-10-25 | Ce n'est pas parce que c'est difficile que nous n'osons pas ; c'est parce que nous n'osons pas que c'est difficile. | Sénèque | Lettres à Lucilius, lettre 104, § 26 (Ier s.) : « Non quia difficilia sunt non audemus, sed quia non audemus difficilia sunt. » | Trad. Gummere (monadnock.net) ; vérificateur 24/10 |
@@ -22,7 +24,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-10-24 | Chez l'homme, c'est comme à vélo : ce n'est qu'en avançant qu'on garde l'équilibre. | Albert Einstein | Lettre à son fils Eduard, 5/02/1930 (« Beim Menschen ist es wie beim Velo… ») | Quote Investigator ; Isaacson, Einstein (2007), p. 565 |
 
 ## Réserve (à vérifier à la source avant usage)
-- « L'imagination est plus importante que le savoir. » — Einstein, interview de G. S. Viereck, Saturday Evening Post, 26/10/1929 (authentique selon le vérificateur du 24/10 ; relire la source avant usage)
+- (vide — l'interview Viereck 1929 est passée en « Utilisées » le 27/10)
 
 ## Principes psychologiques utilisés (pas de réutilisation sur 3 mois)
 | Date | Principe | Source |
@@ -30,3 +32,4 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-10-24 | Plans « si… alors… » | Gollwitzer & Sheeran 2006 |
 | 2026-10-25 | Temptation bundling (+51 % de visites, effet qui s'estompe) | Milkman, Minson & Volpp, Management Science 2014, doi:10.1287/mnsc.2013.1784 |
 | 2026-10-26 | Principe du progrès (progrès associé à 76 % des meilleures journées, ≈ 12 000 journaux) | Amabile & Kramer, « The Power of Small Wins », HBR, mai 2011 |
+| 2026-10-27 | Effet « nouveau départ » (début de semaine : +33 % de probabilité d'aller à la salle, 11 912 étudiants US ; pas « +33 % de visites ») | Dai, Milkman & Riis, Management Science 2014, doi:10.1287/mnsc.2014.1901 |
