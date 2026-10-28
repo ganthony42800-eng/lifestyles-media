@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT · COUBERTIN",
+  "quote": "L’important dans la vie ce n’est point le triomphe, mais le combat&nbsp;; l’essentiel, ce n’est pas d’avoir vaincu, mais <b>de s’être bien battu.</b>",
+  "author": "PIERRE DE COUBERTIN",
+  "source": "Pierre de Coubertin, discours, Londres, 24 juillet 1908",
+  "cta": "Ta séance du jour compte, <i>gagnée ou pas.</i>",
+  "wm": "COMBAT",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Pas besoin d’être motivé.<br>Juste d’être là.<br><b>Encore aujourd’hui.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à quelqu’un qui <i>tient bon.</i>",
+  "wm": "PRÉSENT",
+  "wmsize": 200
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "einstein",
+  "kicker": "CURIOSITÉ · EINSTEIN",
+  "quote": "L’important, c’est de ne pas cesser de s’interroger. <b>La curiosité a sa propre raison d’exister.</b>",
+  "author": "ALBERT EINSTEIN",
+  "source": "Albert Einstein, cité par W. Miller, LIFE, 2 mai 1955",
+  "cta": "Ce soir, une question <i>de plus qu’hier.</i>",
+  "wm": "CURIEUX",
+  "wmsize": 190
+ }
+]

@@ -5,6 +5,24 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 28/10/2026 (mode rapide), pour « Mythe ou science ? » ép. 7 (les carottes, brief `docs/briefs/2026-10-29-mythe-carottes.md`)
+
+**Volume** : 13 requêtes + 7 pages lues (FR, EN, KO/ZH). **Limites** : TikTok, Instagram et Douyin illisibles par robot ; la requête coréenne/chinoise n'a renvoyé que des articles anglophones de vérification ; la page de l'IWM (Blitz en couleur) était inaccessible. Aucun compteur de Reel vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | Tetris sur le Green Building du MIT : [The Tech, 30/04/2026](https://thetech.com/2026/04/30/green-building-tetris-2026) · [Boston Globe](https://www.bostonglobe.com/2026/04/21/metro/mit-tetris-game-hack-returns-to-green-building/) | États-Unis, Instagram / Reddit | 153 fenêtres ; « des milliers de vues en une semaine » (déclaré) | **Les fenêtres d'un immeuble deviennent des pixels** | Le décor devient l'écran, sans rien ajouter par-dessus |
+| 2 | [Project Blinkenlights](https://en.wikipedia.org/wiki/Project_Blinkenlights) | Allemagne, 2001 | n.d. | Une façade comme écran monochrome basse résolution | Lisible de loin, magique, très peu coûteux en shader |
+| 3 | [ISLE Hanover, simulation Purkinje](https://isle.hanover.edu/Ch03Eye/Ch03PurkinjieSim.html) | États-Unis, pédagogie | — | La nuit, **le rouge et l'orange noircissent d'abord**, le bleu tient | La carotte est la première chose qu'on ne voit plus : ironie visuelle vraie |
+| 4 | Presse sur le mythe : [Science Norway, 25/05/2026](https://www.sciencenorway.no/culture-food-and-health-war/where-the-carrot-myth-comes-from/2665915) · [Daily Maverick, 09/06/2026](https://www.dailymaverick.co.za/article/2026-06-09-do-carrots-really-improve-your-night-vision-6-enduring-diet-myths-debunked.md) | Norvège, Afrique du Sud | n.d. | Photos de carottes + affiche « Dig for Victory » | **Ouverture** : personne ne montre la nuit, ni la perception |
+| 5 | [Vitres scotchées des années 1940](https://1900s.org.uk/1940s-taped-windows.htm) | Royaume-Uni | — | Papier gommé brun en diagonale, d'un coin à l'autre de chaque carreau | Code d'époque par l'objet, aucune affiche à copier |
+| 6 | [three-fenestra](https://www.jsdelivr.com/package/npm/three-fenestra) · [Godot interior mapping](https://godotshaders.com/shader/interior-mapping-shader/) | Outils | — | Pièces en parallaxe derrière les fenêtres (interior mapping) | Une ville crédible sans texture externe |
+| 7 | [mean.ceo, motion octobre 2026](https://blog.mean.ceo/?p=10946) · [Anijam, MAJ 10/10/2026](https://www.anijam.ai/blog/instagram-reels-trends/) | Monde | plan unique en lip-sync : 336 M vues (déclaré) | Motion codée, une action visuelle par temps fort, plan unique sans coupe | Confirme un seul trajet de caméra et une action par temps fort |
+
+**À retenir** : 5 couvertures d'affilée sur le même gabarit et 5 nuits. Pour l'ép. 7, l'orange domine, le héros quitte le centre, zéro bokeh ni poussière. Ouvertures : **façade-pixel** (la ville écrit le chiffre) et **bascule Purkinje** (l'orange meurt en premier quand la lumière baisse).
+
+---
+
 ## Session du 25/10/2026 (mode rapide) — pour « Mythe ou science ? » ép. 4 (l'alcool réchauffe ?, brief `docs/briefs/2026-10-26-mythe-alcool-rechauffe.md`)
 
 **Volume** : 22 requêtes + 11 pages lues (FR, EN, DE, PT, KO, JA, ZH). **Limites** : TikTok / Instagram / Douyin / Xiaohongshu illisibles par robot ; requêtes chinoises = presse et thermographies d'archives ; PMC (thermographie faciale et alcool) bloqué. Un seul compteur de Reel trouvé (déclaré par la presse).
