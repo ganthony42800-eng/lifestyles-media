@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · EDISON",
+  "quote": "Le génie, c’est 1&nbsp;% d’inspiration et <b>99&nbsp;% de transpiration.</b>",
+  "author": "THOMAS EDISON",
+  "source": "Thomas Edison, cité dans l’Idaho Daily Statesman, 6 mai 1901",
+  "cta": "Ce matin, tu fais <i>ta part des 99&nbsp;%.</i>",
+  "wm": "99 %",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Tu ne regretteras jamais<br>la séance que tu as faite.<br><b>Seulement celle que tu as sautée.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à ton <i>partenaire de séance.</i>",
+  "wm": "SÉANCE",
+  "wmsize": 210
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "mental",
+  "kicker": "MENTAL · ROOSEVELT",
+  "quote": "Ce n’est pas le critique qui compte. Le mérite revient à celui qui est <b>vraiment dans l’arène.</b>",
+  "author": "THEODORE ROOSEVELT",
+  "source": "Theodore Roosevelt, discours à la Sorbonne, Paris, 23 avril 1910",
+  "cta": "Ce soir, sois fier <i>d’avoir essayé.</i>",
+  "wm": "ARÈNE",
+  "wmsize": 230
+ }
+]
