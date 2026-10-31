@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ · SÉNÈQUE",
+  "quote": "Ce n’est pas que nous ayons peu de temps.<br><b>C’est que nous en perdons beaucoup.</b>",
+  "author": "SÉNÈQUE",
+  "source": "Sénèque, De la brièveté de la vie, I, 3 (vers 49 apr. J.-C.)",
+  "cta": "Aujourd’hui, 20&nbsp;minutes<br><i>rien que pour ton objectif.</i>",
+  "wm": "TEMPS",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "MENTAL · STRESS",
+  "quote": "Avant un moment stressant, ne te dis pas «&nbsp;je&nbsp;».<br><b>Parle-toi avec ton prénom.</b>",
+  "author": "",
+  "source": "7 études, 585 participants : moins de détresse et meilleure prise de parole en public (Kross et al., J. Pers. Soc. Psychol., 2014)",
+  "cta": "Essaie avant ton prochain défi&nbsp;: <i>« [Prénom], tu gères. »</i>",
+  "wm": "PRÉNOM",
+  "wmsize": 200
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "Ne négocie pas avec toi-même.<br><b>Décide la veille. Exécute le matin.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ce soir, écris <i>ta première action de demain.</i>",
+  "wm": "DÉCIDE",
+  "wmsize": 210
+ }
+]
