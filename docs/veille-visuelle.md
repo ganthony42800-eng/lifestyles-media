@@ -5,6 +5,27 @@ Statuts des chiffres : **vérifié** (lu sur la page citée) · **déclaré** (c
 
 ---
 
+## Session du 01/11/2026 (mode rapide), pour « Mythe ou science ? » ép. 8 (le chewing-gum, brief `docs/briefs/2026-11-02-mythe-chewing-gum.md`)
+
+**Volume** : 27 requêtes + 9 pages lues (FR, EN, PT-BR, KO, JA, ZH). **Limites** : TikTok, Instagram, Douyin et Xiaohongshu toujours illisibles par robot ; les requêtes chinoises (抖音 / 小红书) n'ont renvoyé que des banques d'animations médicales et des fiches Fiverr, les requêtes coréennes et japonaises que des articles de vérification. Aucun compteur de Reel vérifié.
+
+| # | Référence | Pays / support | Chiffres | Principe visuel extrait | Pourquoi ça retient |
+|---|---|---|---|---|---|
+| 1 | Bulles géantes à 50 000 i/s, Slow Mo Guys : [DIY Photography](https://www.diyphotography.net/giant-bubbles-popping-at-50000fps-looks-like-a-weird-gelatinous-transparent-fabric/) · [PetaPixel](https://petapixel.com/2022/03/15/slow-mo-of-a-bubble-being-popped-from-the-inside/) | Royaume-Uni, YouTube | n.d. | La membrane qui éclate **se rétracte comme un tissu gélatineux** et se replie | Plaisir « satisfaisant », replay ; jamais fait chez nous |
+| 2 | Bulles de chewing-gum au ralenti, Philip Bloom : [The Daily Meal](https://www.thedailymeal.com/watch-bubble-gum-bubbles-slow-motion) | Royaume-Uni, Vimeo | n.d. | Gros plan matière, « magnifique et dérangeant » | Le léger dégoût tactile arrête le pouce |
+| 3 | Rampe de vitesse : [NemoVideo / CapCut](https://www.nemovideo.com/blog/capcut-slow-motion-speed-ramp) · [Media.io, modèles 2026 (KO)](https://www.media.io/ai/ko/explore/zone/slowmo-capcut-template-rajaned) | Monde, Corée | n.d. | Ralenti extrême → claque au temps réel sur le temps fort | Langage dominant du format court ; nous ne manipulons jamais le temps |
+| 4 | « Life in Weeks » : [Life Calendar](https://kyrylo.org/life-calendar/) · [Obsidian](https://community.obsidian.md/plugins/life-in-weeks-calendar) · [Product Hunt](https://www.producthunt.com/p/lifetimer-2/lifetimer-2) | Monde, applis | n.d. | **Une case = une unité de temps vécue** ; on compte sans lire | Base de la grille 2 555 = 7 bandes de 365 (73 × 5) |
+| 5 | Calendriers qui s'effeuillent en banque d'images : [Adobe Stock](https://stock.adobe.com/video/red-calendar-on-a-red-background-flipping-through-31-days-of-the-month-pages-are-torn-off-and-fly-away-to-the-left-loopable-computer-generated-animation-including-luma-matte/141186929) · [Motion Array](https://motionarray.com/stock-motion-graphics/days-flying-calendar-pack-159699/) | Monde | — | **Contre-exemple** : les feuilles s'envolent « vers ailleurs » | Chez nous, elles **construisent** la donnée sur le tableau |
+| 6 | Knife Motion, KINETIC TYPE v2 : [Abduzeedo, 10/06/2026](https://www.abduzeedo.com/kinetic-typography-motion-design-words-move-bodies) | Royaume-Uni | — | Lettres avec inertie, résistance, relâchement ; pas de préréglage | → typo « gomme » qui s'étire et casse |
+| 7 | Tendances 2026 : [Renderforest, 26/12/2025](https://www.renderforest.com/blog/design-trends-in-2026) · [Wannathis, couleurs 2026](https://wannathis.one/blog/color-trends-2026-for-designers-and-brands) | Monde | — | Imparfait et fait main (craie, papier, grain) ; Jelly Mint, washed pinks | Palette rose / menthe de jour, crédible et dans l'air du temps |
+| 8 | Originalité Instagram : [PetaPixel, 30/04/2026](https://petapixel.com/2026/04/30/new-instagram-policies-target-reposted-content/) | États-Unis | jugé sur ≈ 1 mois de publications | Reprises, filigranes, recadrages ≠ original | Un décor maison reconnaissable est un avantage de diffusion |
+| 9 | Presse sur le mythe : [Tua Saúde, 22/03/2026](https://www.tuasaude.com/news/2026/03/22/quanto-tempo-leva-para-o-chiclete-ser-processado-se-for-engolido-por-acidente/) · [Duke Health](https://www.dukehealth.org/blog/myth-or-fact-it-takes-seven-years-digest-chewing-gum) · [Kormedi 2026](https://kormedi.com/1593183/) · [Gigazine](https://gigazine.net/gsc_news/en/20240706-when-you-swallow-gum) | Brésil, États-Unis, Corée, Japon | n.d. | Photos de banque d'images, ou dessin plat « dans le ventre » | **Ouverture** : personne ne montre les 7 ans comme une quantité de jours, ni l'école où on a appris le mythe |
+| 10 | Chewing-gums sous les tables : [Tes, 31/07/2019](https://www.tes.com/news/dark-side-desk-area-no-gum-control) · [Gum Wall, Wikipédia](https://en.wikipedia.org/wiki/Gum_Wall) | Royaume-Uni, États-Unis | Gum Wall : ≈ 1,07 t retirée en 2015 (vérifié sur la page) | Le dessous de table, « zone de non-droit » de la gomme | Souvenir universel → plongée « sous la table » |
+
+**À retenir** : 4 des 5 dernières couvertures dans la nuit ou la pénombre, et toutes les 5 au même gabarit → l'ép. 8 se passe **de jour**, en diagonale, sans main ni voile. Ouvertures : **l'objet du mythe devient la donnée** (éphéméride → 2 555 feuilles sur le tableau), **la rampe de vitesse** sur l'éclatement, **le décor comme fond de texte** (ardoise).
+
+---
+
 ## Session du 28/10/2026 (mode rapide), pour « Mythe ou science ? » ép. 7 (les carottes, brief `docs/briefs/2026-10-29-mythe-carottes.md`)
 
 **Volume** : 13 requêtes + 7 pages lues (FR, EN, KO/ZH). **Limites** : TikTok, Instagram et Douyin illisibles par robot ; la requête coréenne/chinoise n'a renvoyé que des articles anglophones de vérification ; la page de l'IWM (Blitz en couleur) était inaccessible. Aucun compteur de Reel vérifié.

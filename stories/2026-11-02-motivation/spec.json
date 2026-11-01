@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT · KIPCHOGE",
+  "quote": "<b>Aucun humain n’est limité.</b>",
+  "author": "ELIUD KIPCHOGE",
+  "source": "Vienne, 12 octobre 2019, après 1:59:40 au marathon (course assistée, temps non homologué) · AP, NPR",
+  "cta": "Ta limite d’aujourd’hui<br><i>n’est pas celle de demain.</i>",
+  "wm": "1:59:40",
+  "wmsize": 210
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "assiduite",
+  "kicker": "MÉTHODE · MÉMOIRE",
+  "quote": "Relire, c’est confortable.<br><b>Se tester, c’est retenir.</b>",
+  "author": "",
+  "source": "180 étudiants, après une semaine : 61 % retenu en se testant 3 fois contre 40 % en relisant 4 fois (Roediger & Karpicke, Psychological Science, 2006)",
+  "cta": "Ce soir, ferme le cours<br><i>et récite ce que tu as retenu.</i>",
+  "wm": "61 %",
+  "wmsize": 240
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · STEVE JOBS",
+  "quote": "La seule façon de faire du grand travail, c’est d’<b>aimer ce que tu fais.</b> Si tu n’as pas encore trouvé, continue de chercher.",
+  "author": "STEVE JOBS",
+  "source": "Discours de remise des diplômes, université Stanford, 12 juin 2005 (Stanford News)",
+  "cta": "Envoie-la à celui qui <i>cherche encore sa voie.</i>",
+  "wm": "CHERCHE",
+  "wmsize": 200
+ }
+]
