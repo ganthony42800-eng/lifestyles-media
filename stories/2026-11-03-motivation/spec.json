@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · CHURCHILL",
+  "quote": "N’abandonne jamais, jamais, jamais, <b>dans rien, grand ou petit</b>, sauf devant l’honneur et le bon sens.",
+  "author": "WINSTON CHURCHILL",
+  "source": "Discours à la Harrow School, 29 octobre 1941 (International Churchill Society) · trad. Lifestyles",
+  "cta": "Ce que tu as commencé hier,<br><i>termine-le aujourd’hui.</i>",
+  "wm": "JAMAIS",
+  "wmsize": 220
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "MENTAL · SUIVI",
+  "quote": "Un objectif qu’on suit <b>a plus de chances d’être atteint.</b>",
+  "author": "",
+  "source": "Suivre ses progrès aide à atteindre ses objectifs, surtout quand on les note ou qu’on les partage : 138 études, 19 951 participants (Harkin et al., Psychological Bulletin, 2016)",
+  "cta": "Note ta séance du jour.<br><i>Une ligne suffit ✍️</i>",
+  "wm": "NOTE-LE",
+  "wmsize": 210
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "einstein",
+  "kicker": "VALEURS · EINSTEIN",
+  "quote": "Essaie moins de devenir quelqu’un qui réussit que <b>quelqu’un qui a de la valeur.</b>",
+  "author": "ALBERT EINSTEIN (cité par W. Miller)",
+  "source": "LIFE, 2 mai 1955, « Death of a Genius », p. 64 (« Try not to become a man of success but rather try to become a man of value ») · Quote Investigator",
+  "cta": "Envoie-la à quelqu’un <i>qui compte pour toi.</i>",
+  "wm": "VALEUR",
+  "wmsize": 220
+ }
+]
