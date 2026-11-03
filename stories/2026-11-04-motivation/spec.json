@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ · LAO-TSEU",
+  "quote": "Un voyage de mille lieues <b>commence sous tes pieds.</b>",
+  "author": "LAO-TSEU",
+  "source": "Tao-tö-king, chapitre 64 (« 千里之行，始於足下 », litt. « commence sous les pieds ») · trad. Lifestyles",
+  "cta": "Le premier pas d’aujourd’hui,<br><i>fais-le avant midi.</i>",
+  "wm": "UN PAS",
+  "wmsize": 220
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "sport",
+  "kicker": "SPORT · DIALOGUE INTÉRIEUR",
+  "quote": "« Allez, tu gères. »<br>Ce genre de phrase a fait tenir <b>18&nbsp;% plus longtemps</b> sur le vélo.",
+  "author": "",
+  "source": "Phrases motivantes travaillées 2 semaines : temps avant épuisement 637 → 750 s, effort ressenti plus faible, 24 participants (Blanchfield et al., Med Sci Sports Exerc, 2014)",
+  "cta": "Choisis ta phrase<br><i>avant ta prochaine séance 💬</i>",
+  "wm": "+18 %",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · MONTAIGNE",
+  "quote": "Nul vent fait pour celui qui <b>n’a point de port destiné.</b>",
+  "author": "MICHEL DE MONTAIGNE",
+  "source": "Essais, livre II, chap. 1, « De l’inconstance de nos actions » (1580) · graphie modernisée (« celuy »)",
+  "cta": "Ton cap de la semaine&nbsp;?<br><i>Écris-le en réponse ✍️</i>",
+  "wm": "CAP",
+  "wmsize": 260
+ }
+]
