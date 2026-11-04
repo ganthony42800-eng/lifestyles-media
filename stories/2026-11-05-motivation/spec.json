@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · CORNEILLE",
+  "quote": "À vaincre <b>sans péril</b>, on triomphe <b>sans gloire.</b>",
+  "author": "PIERRE CORNEILLE",
+  "source": "Le Cid, acte II, scène 2 (1637), réplique du Comte à Rodrigue",
+  "cta": "Aujourd’hui, choisis<br><i>la séance qui te fait peur.</i>",
+  "wm": "PÉRIL",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "PERSÉVÉRANCE · MANDELA",
+  "quote": "Après avoir gravi une grande colline, on découvre seulement qu’il reste <b>beaucoup d’autres collines à gravir.</b>",
+  "author": "NELSON MANDELA",
+  "source": "Un long chemin vers la liberté (Long Walk to Freedom), dernier paragraphe, 1994 · trad. Lifestyles",
+  "cta": "Ta prochaine colline&nbsp;?<br><i>Écris-la en réponse ⛰️</i>",
+  "wm": "COLLINES",
+  "wmsize": 180
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "mental",
+  "kicker": "MENTAL · DISCIPLINE",
+  "quote": "Tu n’as pas besoin d’y croire ce matin.<br>Tu as besoin <b>d’y aller.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à celui<br><i>qui hésite encore.</i>",
+  "wm": "VAS-Y",
+  "wmsize": 240
+ }
+]
