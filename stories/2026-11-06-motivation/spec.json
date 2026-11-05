@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "einstein",
+  "kicker": "TRAVAIL · PASTEUR",
+  "quote": "Dans les champs de l’observation, le hasard ne favorise que <b>les esprits préparés.</b>",
+  "author": "LOUIS PASTEUR",
+  "source": "Discours d’installation de la Faculté des sciences de Lille, Douai, 7 décembre 1854",
+  "cta": "La chance, ça se prépare.<br><i>Qu’as-tu préparé aujourd’hui&nbsp;?</i>",
+  "wm": "PRÊT",
+  "wmsize": 250
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ · LA FONTAINE",
+  "quote": "Rien ne sert de courir&nbsp;; <b>il faut partir à point.</b>",
+  "author": "JEAN DE LA FONTAINE",
+  "source": "Fables, livre VI, fable 10, « Le Lièvre et la Tortue » (1668)",
+  "cta": "Sois la tortue.<br><i>Commence aujourd’hui, à ton rythme.</i>",
+  "wm": "TORTUE",
+  "wmsize": 210
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "sport",
+  "kicker": "CONDITIONNEMENT · OBJECTIFS",
+  "quote": "«&nbsp;Fais de ton mieux&nbsp;» ne suffit pas.<br>Fixe un chiffre&nbsp;: <b>précis, difficile, mesurable.</b>",
+  "author": "",
+  "source": "Objectifs précis et difficiles > « fais de ton mieux », surtout avec engagement et suivi des progrès · 35 ans de recherches (Locke & Latham, American Psychologist, 2002)",
+  "cta": "Écris ton chiffre de la semaine<br><i>en réponse 🎯</i>",
+  "wm": "OBJECTIF",
+  "wmsize": 190
+ }
+]

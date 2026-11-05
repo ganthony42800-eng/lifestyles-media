@@ -15,6 +15,8 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-11-06 | Dans les champs de l'observation, le hasard ne favorise que les esprits préparés. | Louis Pasteur | Discours d'installation de la Faculté des sciences de Lille, prononcé à Douai le 07/12/1854 | WIST 68288, Wikiquote (non contestée ; version anglaise parfois attribuée à tort à Ansel Adams), titre fr.wikisource ; run du 05/11 |
+| 2026-11-06 | Rien ne sert de courir ; il faut partir à point. | Jean de La Fontaine | Fables, livre VI, fable 10, « Le Lièvre et la Tortue » (1668), 1er vers | Texte de la fable ; run du 05/11 |
 | 2026-11-05 | À vaincre sans péril, on triomphe sans gloire. | Pierre Corneille | Le Cid, acte II, scène 2 (1637), le Comte à Rodrigue | Texte de la pièce (lalanguefrancaise.com, renvoi Wikisource) ; run du 04/11 |
 | 2026-11-05 | Après avoir gravi une grande colline, on découvre seulement qu'il reste beaucoup d'autres collines à gravir. | Nelson Mandela | Long Walk to Freedom (Little, Brown, 1994), dernier paragraphe (« after climbing a great hill, one only finds that there are many more hills to climb ») | Paragraphe reproduit par Sri Chinmoy (Agni Press, 1998) ; trad. Lifestyles ; run du 04/11 |
 | 2026-11-04 | Un voyage de mille lieues commence sous tes pieds. | Lao-tseu (attribution traditionnelle) | Tao-tö-king, chap. 64 : « 千里之行，始於足下 » (litt. « commence sous les pieds ») | Texte chinois + trad. littérale (Wikipedia, article dédié) ; la forme « par un seul pas » est une adaptation ; pas Confucius. Run du 03/11 |
@@ -53,6 +55,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-11-02 | Effet test (se tester plutôt que relire : 180 étudiants, à une semaine 61 % retenu avec 1 lecture + 3 tests contre 40 % avec 4 lectures ; à 5 min, l'inverse) | Roediger H.L. & Karpicke J.D., « Test-enhanced learning », Psychological Science 2006;17(3):249-255 (exp. 2, PDF lu) |
 | 2026-11-03 | Suivre ses progrès (surtout noté ou partagé) aide à atteindre ses objectifs (138 études, 19 951 participants) | Harkin B. et al., Psychological Bulletin 2016;142(2):198-229, doi:10.1037/bul0000025 (communiqué APA 2015) |
 | 2026-11-04 | Dialogue intérieur motivant : 2 semaines d'entraînement → temps avant épuisement à vélo 637 → 750 s (+18 %), effort ressenti plus faible (24 participants ; contrôle inchangé) | Blanchfield A.W., Hardy J., De Morree H.M., Staiano W., Marcora S.M., Med Sci Sports Exerc 2014;46(5):998-1007 (portail Bangor) |
+| 2026-11-06 | Objectifs précis et difficiles > « fais de ton mieux » (35 ans de recherches ; plus fort avec engagement et retour sur les progrès, plus faible sur tâches complexes) | Locke E.A. & Latham G.P., American Psychologist 2002;57(9):705-717, doi:10.1037/0003-066X.57.9.705 (PDF lu) |
 
 ## Principes écartés
 - Écrire ses inquiétudes 10 min avant un examen (Ramirez & Beilock, Science 2011) : réplication échouée (Camerer et al., Nature Human Behaviour 2018, doi:10.1038/s41562-018-0399-z) → ne pas présenter comme établi.
