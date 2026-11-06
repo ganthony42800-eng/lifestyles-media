@@ -15,6 +15,8 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-11-07 | Hâtez-vous lentement ; et, sans perdre courage, vingt fois sur le métier remettez votre ouvrage. | Nicolas Boileau | L'Art poétique, chant I (1674) | Texte du poème (Wikisource, Œuvres poétiques) + WIST ; run du 06/11 |
+| 2026-11-07 | Ce qui fait obstacle à l'action fait avancer l'action. Ce qui barre la route devient la route. | Marc Aurèle | Pensées, V, 20 (vers 170-180) | Trad. libre contrôlée sur la trad. G. Long (lexundria.com 5.20) ; run du 06/11 |
 | 2026-11-06 | Dans les champs de l'observation, le hasard ne favorise que les esprits préparés. | Louis Pasteur | Discours d'installation de la Faculté des sciences de Lille, prononcé à Douai le 07/12/1854 | WIST 68288, Wikiquote (non contestée ; version anglaise parfois attribuée à tort à Ansel Adams), titre fr.wikisource ; run du 05/11 |
 | 2026-11-06 | Rien ne sert de courir ; il faut partir à point. | Jean de La Fontaine | Fables, livre VI, fable 10, « Le Lièvre et la Tortue » (1668), 1er vers | Texte de la fable ; run du 05/11 |
 | 2026-11-05 | À vaincre sans péril, on triomphe sans gloire. | Pierre Corneille | Le Cid, acte II, scène 2 (1637), le Comte à Rodrigue | Texte de la pièce (lalanguefrancaise.com, renvoi Wikisource) ; run du 04/11 |

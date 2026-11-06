@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · BOILEAU",
+  "quote": "Hâtez-vous lentement&nbsp;; et, sans perdre courage, <b>vingt fois sur le métier remettez votre ouvrage.</b>",
+  "author": "NICOLAS BOILEAU",
+  "source": "L’Art poétique, chant I (1674)",
+  "cta": "Le premier jet n’est jamais le bon.<br><i>Reprends-le, encore une fois.</i>",
+  "wm": "×20",
+  "wmsize": 250
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "MENTAL · MARC AURÈLE",
+  "quote": "Ce qui fait obstacle à l’action fait avancer l’action. <b>Ce qui barre la route devient la route.</b>",
+  "author": "MARC AURÈLE",
+  "source": "Pensées, livre V, 20 (vers 170-180) · traduction libre",
+  "cta": "Ton obstacle du jour&nbsp;?<br><i>Écris-le en réponse 👇</i>",
+  "wm": "ROUTE",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "Ne négocie pas avec ta séance.<br><b>Elle est déjà dans ton agenda.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Bloque ta prochaine séance<br><i>maintenant, pas «&nbsp;plus tard&nbsp;».</i>",
+  "wm": "NON",
+  "wmsize": 260
+ }
+]
