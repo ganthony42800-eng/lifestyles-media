@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "einstein",
+  "kicker": "TRAVAIL · EINSTEIN",
+  "quote": "Ne t’inquiète pas de tes difficultés en mathématiques. <b>Je peux t’assurer que les miennes sont encore plus grandes.</b>",
+  "author": "ALBERT EINSTEIN",
+  "source": "Lettre à une collégienne, Barbara Wilson, 7 janvier 1943",
+  "cta": "Bloqué sur un problème&nbsp;?<br><i>Les meilleurs aussi. Continue.</i>",
+  "wm": "E=?",
+  "wmsize": 250
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "sport",
+  "kicker": "SPORT · RÉCUPÉRATION",
+  "quote": "Tu veux aller plus vite&nbsp;?<br><b>Commence par dormir plus.</b>",
+  "author": "",
+  "source": "11 basketteurs de Stanford, 5 à 7 semaines à viser 10 h au lit : sprint 16,2 → 15,5 s, lancers francs +9 % (Mah et al., Sleep, 2011 · petit échantillon)",
+  "cta": "Ce soir, couche-toi<br><i>30 minutes plus tôt.</i>",
+  "wm": "10 H",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Personne ne te regarde à 6&nbsp;h du matin.<br><b>C’est là que tout se joue.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ton rendez-vous de demain matin&nbsp;?<br><i>Écris-le en réponse 👇</i>",
+  "wm": "6:00",
+  "wmsize": 250
+ }
+]

@@ -15,6 +15,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-11-08 | Ne t'inquiète pas de tes difficultés en mathématiques. Je peux t'assurer que les miennes sont encore plus grandes. | Albert Einstein | Lettre à Barbara Wilson (collégienne), 07/01/1943 (« Do not worry about your difficulties in Mathematics. I can assure you mine are still greater. ») | Texte relu (blog.enotes.com, renvoi au recueil Dear Professor Einstein, A. Calaprice, 2002) ; trad. Lifestyles ; run du 07/11 |
 | 2026-11-07 | Hâtez-vous lentement ; et, sans perdre courage, vingt fois sur le métier remettez votre ouvrage. | Nicolas Boileau | L'Art poétique, chant I (1674) | Texte du poème (Wikisource, Œuvres poétiques) + WIST ; run du 06/11 |
 | 2026-11-07 | Ce qui fait obstacle à l'action fait avancer l'action. Ce qui barre la route devient la route. | Marc Aurèle | Pensées, V, 20 (vers 170-180) | Trad. libre contrôlée sur la trad. G. Long (lexundria.com 5.20) ; run du 06/11 |
 | 2026-11-06 | Dans les champs de l'observation, le hasard ne favorise que les esprits préparés. | Louis Pasteur | Discours d'installation de la Faculté des sciences de Lille, prononcé à Douai le 07/12/1854 | WIST 68288, Wikiquote (non contestée ; version anglaise parfois attribuée à tort à Ansel Adams), titre fr.wikisource ; run du 05/11 |
@@ -58,6 +59,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-11-03 | Suivre ses progrès (surtout noté ou partagé) aide à atteindre ses objectifs (138 études, 19 951 participants) | Harkin B. et al., Psychological Bulletin 2016;142(2):198-229, doi:10.1037/bul0000025 (communiqué APA 2015) |
 | 2026-11-04 | Dialogue intérieur motivant : 2 semaines d'entraînement → temps avant épuisement à vélo 637 → 750 s (+18 %), effort ressenti plus faible (24 participants ; contrôle inchangé) | Blanchfield A.W., Hardy J., De Morree H.M., Staiano W., Marcora S.M., Med Sci Sports Exerc 2014;46(5):998-1007 (portail Bangor) |
 | 2026-11-06 | Objectifs précis et difficiles > « fais de ton mieux » (35 ans de recherches ; plus fort avec engagement et retour sur les progrès, plus faible sur tâches complexes) | Locke E.A. & Latham G.P., American Psychologist 2002;57(9):705-717, doi:10.1037/0003-066X.57.9.705 (PDF lu) |
+| 2026-11-08 | Allonger son sommeil (viser 10 h au lit 5-7 semaines) : sprint 16,2 → 15,5 s, lancers francs +9 %, 11 basketteurs (petit échantillon, sans groupe témoin) | Mah C.D. et al., SLEEP, juillet 2011 (Stanford Medicine News 30/06/2011) |
 
 ## Principes écartés
 - Écrire ses inquiétudes 10 min avant un examen (Ramirez & Beilock, Science 2011) : réplication échouée (Camerer et al., Nature Human Behaviour 2018, doi:10.1038/s41562-018-0399-z) → ne pas présenter comme établi.
