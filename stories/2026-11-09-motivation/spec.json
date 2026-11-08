@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · VOLTAIRE",
+  "quote": "Le travail éloigne de nous <b>trois grands maux&nbsp;: l’ennui, le vice et le besoin.</b>",
+  "author": "VOLTAIRE",
+  "source": "Candide ou l’Optimisme, chapitre 30 (1759), réplique du vieux Turc",
+  "cta": "Lundi.<br><i>Une heure de vrai travail avant midi.</i>",
+  "wm": "LUNDI",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "MENTAL · FRANKL",
+  "quote": "On peut tout enlever à un homme, sauf une chose&nbsp;: <b>la dernière des libertés humaines, choisir son attitude</b> face aux circonstances.",
+  "author": "VIKTOR FRANKL",
+  "source": "Découvrir un sens à sa vie (Man’s Search for Meaning), 1re partie, 1946 (éd. anglaise 1959)",
+  "cta": "Tu ne choisis pas ta journée.<br><i>Tu choisis comment tu la prends.</i>",
+  "wm": "CHOIX",
+  "wmsize": 240
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "« Assez bien », c’est le prix que tu paies<br><b>pour ne jamais savoir ce que tu vaux.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ta dernière rep de demain&nbsp;:<br><i>fais-la vraiment.</i>",
+  "wm": "100%",
+  "wmsize": 250
+ }
+]
