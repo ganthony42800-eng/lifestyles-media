@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT · ARISTOTE",
+  "quote": "C’est en accomplissant des actes courageux que nous devenons <b>courageux</b>.",
+  "author": "ARISTOTE",
+  "source": "Éthique à Nicomaque, livre II, chapitre 1 (IVe s. av. J.-C.) · traduction libre",
+  "cta": "Le courage ne se trouve pas.<br><i>Il s’entraîne. Aujourd’hui.</i>",
+  "wm": "ACTE",
+  "wmsize": 240
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Tu n’as pas besoin d’un grand jour.<br><b>Tu as besoin d’un jour de plus.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Mardi. Même séance.<br><i>Une rep de plus.</i>",
+  "wm": "+1",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "einstein",
+  "kicker": "MENTAL · CAMUS",
+  "quote": "La lutte elle-même vers les sommets suffit à remplir un cœur d’homme. <b>Il faut imaginer Sisyphe heureux.</b>",
+  "author": "ALBERT CAMUS",
+  "source": "Le Mythe de Sisyphe (1942), dernières lignes de l’essai",
+  "cta": "Ton rocher de demain&nbsp;?<br><i>Réponds en un mot.</i>",
+  "wm": "SOMMET",
+  "wmsize": 200
+ }
+]
