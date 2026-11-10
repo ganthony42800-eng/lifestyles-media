@@ -15,6 +15,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-11-11 | De l'école de guerre de la vie : ce qui ne me tue pas me rend plus fort. | Friedrich Nietzsche | Crépuscule des idoles (Götzen-Dämmerung), « Maximes et traits » n° 8 (préface datée Turin, 30/09/1888) | Trad. anglaise Kaufmann/Hollingdale relue (dhspriory.org : « Out of life's school of war: What does not destroy me, makes me stronger. ») ; trad. libre ; run du 10/11 |
 | 2026-11-10 | C'est en accomplissant des actes courageux que nous devenons courageux. | Aristote | Éthique à Nicomaque, livre II, chap. 1 (1103a-b) (« we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts ») | Trad. anglaise relue (monadnock.net, livre II) ; trad. libre ; distincte de la formule interdite de Durant ; run du 09/11 |
 | 2026-11-10 | La lutte elle-même vers les sommets suffit à remplir un cœur d'homme. Il faut imaginer Sisyphe heureux. | Albert Camus | Le Mythe de Sisyphe (1942), dernières lignes | Texte relu (extrait mediterranees.net, daté 1942) ; non contestée ; run du 09/11 |
 | 2026-11-09 | Le travail éloigne de nous trois grands maux : l'ennui, le vice et le besoin. | Voltaire | Candide ou l'Optimisme, chap. 30 (1759), réplique du vieux Turc (« Le travail éloigne de nous trois grands maux, l'ennui, le vice, et le besoin. ») | Texte du chapitre relu (reproduction bacfrancais.com) ; run du 08/11 |
@@ -48,6 +49,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-10-24 | Chez l'homme, c'est comme à vélo : ce n'est qu'en avançant qu'on garde l'équilibre. | Albert Einstein | Lettre à son fils Eduard, 5/02/1930 (« Beim Menschen ist es wie beim Velo… ») | Quote Investigator ; Isaacson, Einstein (2007), p. 565 |
 
 ## Réserve (à vérifier à la source avant usage)
+- « Ce que j'ai fait, je te le jure, jamais aucune bête ne l'aurait fait » (Guillaumet, dans Saint-Exupéry, Terre des hommes, 1939) : texte non retrouvé le 10/11 → relire le chapitre avant usage
 - (vide — l'interview Viereck 1929 est passée en « Utilisées » le 27/10)
 
 ## Principes psychologiques utilisés (pas de réutilisation sur 3 mois)

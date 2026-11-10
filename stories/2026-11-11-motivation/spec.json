@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL",
+  "quote": "L’inspiration ne prévient pas.<br><b>Elle trouve celui qui est déjà au travail.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ouvre le fichier.<br><i>Dix minutes. Maintenant.</i>",
+  "wm": "GO",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "MENTAL · NIETZSCHE",
+  "quote": "De l’école de guerre de la vie&nbsp;: <b>ce qui ne me tue pas me rend plus fort.</b>",
+  "author": "FRIEDRICH NIETZSCHE",
+  "source": "Crépuscule des idoles (1888), « Maximes et traits », n° 8 · traduction libre",
+  "cta": "Ce qui t’a coûté cette année&nbsp;?<br><i>Ça t’a appris quoi&nbsp;?</i>",
+  "wm": "PLUS FORT",
+  "wmsize": 170
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "La fatigue te propose une version courte.<br><b>Fais la version complète.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ce soir, la dernière série<br><i>se fait jusqu’au bout.</i>",
+  "wm": "100%",
+  "wmsize": 240
+ }
+]
