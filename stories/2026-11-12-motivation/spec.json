@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Le corps ne se souvient pas de ta motivation.<br><b>Il se souvient de tes séances.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Pas envie&nbsp;? Fais l’échauffement.<br><i>Décide après.</i>",
+  "wm": "GO",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "APPRENDRE · EINSTEIN",
+  "quote": "C’est ainsi qu’on apprend le plus&nbsp;: <b>quand on fait quelque chose avec tant de plaisir qu’on ne voit pas le temps passer.</b>",
+  "author": "ALBERT EINSTEIN",
+  "source": "Lettre à son fils Hans Albert, 4 novembre 1915 · recueil « Posterity » (2004) · traduction libre",
+  "cta": "Ce qui te fait oublier l’heure&nbsp;?<br><i>Fais-en plus.</i>",
+  "wm": "1915",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Un jour raté, c’est un accident.<br><b>Deux jours ratés, c’est le début d’une habitude.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Raté hier&nbsp;?<br><i>Aujourd’hui, même 10 minutes.</i>",
+  "wm": "J+1",
+  "wmsize": 230
+ }
+]
