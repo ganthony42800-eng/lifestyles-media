@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "mental",
+  "kicker": "MENTAL",
+  "quote": "Ton humeur est une météo.<br><b>Ton programme, c’est le climat.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Mauvais jour&nbsp;?<br><i>Garde le programme, baisse l’intensité.</i>",
+  "wm": "☁",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · MARC AURÈLE",
+  "quote": "Cesse une fois pour toutes de discuter de ce que doit être un homme de bien. <b>Sois-en un.</b>",
+  "author": "MARC AURÈLE",
+  "source": "Pensées pour moi-même, livre X, 16 (vers 170-180) · traduction libre",
+  "cta": "Moins en parler.<br><i>Le faire aujourd’hui.</i>",
+  "wm": "X·16",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL",
+  "quote": "Commence avant d’être prêt.<br><b>Tu seras prêt en route.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "La tâche que tu repousses&nbsp;?<br><i>5 minutes, maintenant.</i>",
+  "wm": "GO",
+  "wmsize": 260
+ }
+]
