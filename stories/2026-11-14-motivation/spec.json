@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT · GRETZKY",
+  "quote": "J’ai appris que <b>100&nbsp;% des tirs que tu ne tentes pas</b> ne vont pas au fond du filet.",
+  "author": "WAYNE GRETZKY",
+  "source": "The Philadelphia Inquirer, 9 février 1983, p. F1 · version d’origine (relevée par Barry Popik)",
+  "cta": "Le tir que tu repousses&nbsp;?<br><i>Tente-le aujourd’hui.</i>",
+  "wm": "99",
+  "wmsize": 280
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "TRAVAIL · NEWTON",
+  "quote": "Si j’ai vu plus loin, <b>c’est en me tenant sur les épaules de géants.</b>",
+  "author": "ISAAC NEWTON",
+  "source": "Lettre à Robert Hooke, 5 février 1675 (calendrier julien, soit 1676) · Historical Society of Pennsylvania",
+  "cta": "Qui sont tes géants&nbsp;?<br><i>Apprends d’eux, puis va plus loin.</i>",
+  "wm": "1676",
+  "wmsize": 220
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Personne ne t’applaudit au 40<sup>e</sup> jour.<br><b>C’est pourtant lui qui change tout.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Tu en es à quel jour&nbsp;?<br><i>Ajoute-en un ce soir.</i>",
+  "wm": "40",
+  "wmsize": 280
+ }
+]
