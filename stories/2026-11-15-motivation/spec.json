@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "mental",
+  "kicker": "MENTAL · ÉPICTÈTE",
+  "quote": "Ce qui trouble les hommes, <b>ce ne sont pas les choses,</b> mais les jugements qu’ils portent sur les choses.",
+  "author": "ÉPICTÈTE",
+  "source": "Manuel, chap. 5 (propos notés par Arrien, vers 125 apr. J.-C.) · trad. Lifestyles du grec",
+  "cta": "Ce qui te pèse aujourd’hui ?<br><i>Change le regard avant la chose.</i>",
+  "wm": "V",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL",
+  "quote": "La motivation te fait commencer.<br><b>La routine te fait finir.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ta tâche d’aujourd’hui ?<br><i>Même heure, même endroit, demain aussi.</i>",
+  "wm": "1",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "Le dernier quart d’heure ne se voit pas.<br><b>C’est lui qui te sépare des autres.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ce soir, encore 15 minutes ?<br><i>Celles que personne ne fait.</i>",
+  "wm": "15′",
+  "wmsize": 260
+ }
+]
