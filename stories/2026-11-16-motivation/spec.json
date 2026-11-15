@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Le premier kilomètre ment.<br><b>Attends le troisième.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envie d’arrêter dès le début ?<br><i>Donne-toi 10 minutes avant de juger.</i>",
+  "wm": "3",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "EINSTEIN",
+  "quote": "Les idéaux qui ont éclairé ma route et m’ont redonné, maintes fois, le courage d’affronter la vie avec gaieté : <b>la bonté, la beauté et la vérité.</b>",
+  "author": "ALBERT EINSTEIN",
+  "source": "« The World as I See It » (Forum and Century, oct. 1930 ; trad. anglaise Ideas and Opinions, 1954) · trad. Lifestyles",
+  "cta": "Ton idéal à toi ?<br><i>Écris-le en un mot.</i>",
+  "wm": "E",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Les jours sans envie<br><b>comptent double.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Pas motivé aujourd’hui ?<br><i>Fais la version de 10 minutes.</i>",
+  "wm": "×2",
+  "wmsize": 260
+ }
+]
