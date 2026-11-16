@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL",
+  "quote": "Une tâche commencée pèse moins lourd<br><b>qu’une tâche évitée.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "La tâche que tu repousses ?<br><i>Donne-lui 5 minutes, maintenant.</i>",
+  "wm": "GO",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "mental",
+  "kicker": "MENTAL · APRÈS UN ÉCHEC",
+  "quote": "Rater ne te rend pas nul.<br><b>Te parler avec bienveillance peut t’aider à retravailler plus longtemps.</b>",
+  "author": "",
+  "source": "86 étudiants après un test raté : avec un message bienveillant, ≈ 5 min de révision contre ≈ 3 min 20 sans message (Breines & Chen, PSPB 2012, exp. 3 ; note finale non différente)",
+  "cta": "Ton dernier raté ?<br><i>Parle-toi comme à un ami.</i>",
+  "wm": "+",
+  "wmsize": 300
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · KIPLING",
+  "quote": "Si tu peux remplir la minute impitoyable<br><b>de soixante secondes de course…</b>",
+  "author": "RUDYARD KIPLING",
+  "source": "Poème « If— », recueil Rewards and Fairies (1910) · trad. Lifestyles",
+  "cta": "Ta minute la plus dure aujourd’hui ?<br><i>Remplis-la jusqu’au bout.</i>",
+  "wm": "60",
+  "wmsize": 300
+ }
+]
