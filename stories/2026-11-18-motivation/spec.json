@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Ton corps s’adapte à ce que tu <b>répètes</b>.<br>Pas à ce que tu <b>promets</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "La séance promise cette semaine ?<br><i>Bloque-la dans ton agenda.</i>",
+  "wm": "REP",
+  "wmsize": 280
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "TRAVAIL · SÉNÈQUE",
+  "quote": "Pendant qu’on la remet à plus tard,<br><b>la vie passe en courant.</b>",
+  "author": "SÉNÈQUE",
+  "source": "Lettres à Lucilius, lettre 1, § 3 (vers 62-64) : « Dum differtur vita transcurrit » · trad. Lifestyles",
+  "cta": "Ce que tu repousses depuis une semaine ?<br><i>Commence-le aujourd’hui.</i>",
+  "wm": "VITA",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Fais-le petit.<br>Mais fais-le<br>tous les jours.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ton petit geste quotidien ?<br><i>Réponds à cette story ✍️</i>",
+  "wm": "1/1",
+  "wmsize": 280
+ }
+]
