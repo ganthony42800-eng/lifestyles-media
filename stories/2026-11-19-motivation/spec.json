@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · HORACE",
+  "quote": "Qui a commencé a fait la <b>moitié</b> du travail.<br>Ose être sage&nbsp;: <b>commence.</b>",
+  "author": "HORACE",
+  "source": "Épîtres, livre I, 2, v. 40-41 (vers 20 av. J.-C.) : « Dimidium facti qui coepit habet ; sapere aude, incipe » · trad. Lifestyles",
+  "cta": "La moitié, c’est maintenant.<br><i>5 minutes sur ta tâche repoussée.</i>",
+  "wm": "INCIPE",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE",
+  "quote": "Le niveau que tu <b>tolères</b><br>devient le niveau<br>que tu <b>as</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à celui qui <i>vise plus haut.</i>",
+  "wm": "NIVEAU",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "mental",
+  "kicker": "MENTAL",
+  "quote": "Tes pensées <b>proposent</b>.<br>Toi, tu <b>décides</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ce que ta tête t’a soufflé d’abandonner ?<br><i>Réponds à cette story ✍️</i>",
+  "wm": "CHOIX",
+  "wmsize": 260
+ }
+]
