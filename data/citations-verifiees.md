@@ -16,6 +16,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 ## Utilisées
 | Date | Citation (FR) | Auteur | Source primaire | Vérification |
 |---|---|---|---|---|
+| 2026-11-20 | Ce que tu as hérité de tes pères, acquiers-le pour le posséder. | Johann Wolfgang von Goethe | Faust, première partie (1808), scène « Nuit », monologue de Faust : « Was du ererbt von deinen Vätern hast, / Erwirb es, um es zu besitzen. » | Trad. A. Swanwick (Project Gutenberg n° 11123 : « Wouldst thou possess thy heritage, essay / By use to render it thine own! ») ; citation non contestée ; run du 19/11 |
 | 2026-11-19 | Qui a commencé a fait la moitié du travail. Ose être sage : commence. | Horace | Épîtres, livre I, épître 2 (à Lollius), v. 40-41 (vers 20 av. J.-C.) : « Dimidium facti qui coepit habet; sapere aude; incipe » | wist.info/horace/32340 (latin + traductions Creech 1684, Francis 1747, Conington 1874, Fairclough 1926, Ferry 2001) ; Conington relu sur Gutenberg n° 5419 ; trad. Lifestyles ; run du 18/11 |
 | 2026-11-18 | Pendant qu'on la remet à plus tard, la vie passe en courant. | Sénèque | Lettres à Lucilius, lettre 1, § 3 (vers 62-64) : « Dum differtur vita transcurrit. » | Texte latin (yorku.ca, Epistula I § 3) + trad. Gummere 1917 (« While we are postponing, life speeds by. », § 2 dans son découpage) ; run du 17/11 |
 | 2026-11-17 | Si tu peux remplir la minute impitoyable de soixante secondes de course… | Rudyard Kipling | Poème « If— », recueil Rewards and Fairies (1910), dernière strophe (« If you can fill the unforgiving minute / With sixty seconds' worth of distance run ») | Texte relu sur Representative Poetry Online (Univ. Toronto, d'après Rudyard Kipling's Verse: Definitive Edition, 1940, p. 576-77) ; fac-similé Wikisource de l'édition 1910 ; trad. Lifestyles ; run du 16/11 |
@@ -59,6 +60,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-10-24 | Chez l'homme, c'est comme à vélo : ce n'est qu'en avançant qu'on garde l'équilibre. | Albert Einstein | Lettre à son fils Eduard, 5/02/1930 (« Beim Menschen ist es wie beim Velo… ») | Quote Investigator ; Isaacson, Einstein (2007), p. 565 |
 
 ## Réserve (à vérifier à la source avant usage)
+- « Soyez patient envers tout ce qui n'est pas résolu dans votre cœur… Vivez maintenant les questions » (Rilke, lettre à F. X. Kappus, 1903, Lettres à un jeune poète) : année confirmée (The Marginalian), date et lieu de la lettre non relus le 19/11 → relire le texte allemand avant usage
 - « Ce que j'ai fait, je te le jure, jamais aucune bête ne l'aurait fait » (Guillaumet, dans Saint-Exupéry, Terre des hommes, 1939) : texte non retrouvé le 10/11 → relire le chapitre avant usage
 - (vide — l'interview Viereck 1929 est passée en « Utilisées » le 27/10)
 

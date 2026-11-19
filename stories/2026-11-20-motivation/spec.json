@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Tu ne cours pas contre les autres.<br>Tu cours contre ta <b>dernière excuse</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ton excuse du jour&nbsp;?<br><i>Réponds à cette story ✍️</i>",
+  "wm": "EXCUSE",
+  "wmsize": 220
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "assiduite",
+  "kicker": "TRAVAIL · GOETHE",
+  "quote": "Ce que tu as hérité de tes pères,<br><b>acquiers-le</b> pour le <b>posséder</b>.",
+  "author": "JOHANN WOLFGANG VON GOETHE",
+  "source": "Faust I (1808), scène « Nuit », monologue de Faust : « Was du ererbt von deinen Vätern hast, / Erwirb es, um es zu besitzen » · trad. Lifestyles",
+  "cta": "Le talent se reçoit.<br><i>Le niveau se gagne.</i>",
+  "wm": "ERWIRB",
+  "wmsize": 230
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "einstein",
+  "kicker": "MENTAL",
+  "quote": "Le doute peut monter <b>avec toi</b>.<br>Il ne prend pas <b>le volant</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à quelqu’un<br><i>qui se lance demain.</i>",
+  "wm": "VOLANT",
+  "wmsize": 230
+ }
+]
