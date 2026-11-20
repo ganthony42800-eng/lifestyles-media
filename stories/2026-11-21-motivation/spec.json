@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · SAINT-EXUPÉRY",
+  "quote": "La terre nous en apprend plus long sur nous que tous les livres. Parce qu’elle nous résiste.<br>L’homme <b>se découvre</b> quand il se mesure avec <b>l’obstacle</b>.",
+  "author": "ANTOINE DE SAINT-EXUPÉRY",
+  "source": "Terre des hommes (février 1939), premières lignes du livre",
+  "cta": "Ton obstacle de la semaine&nbsp;?<br><i>Réponds à cette story ✍️</i>",
+  "wm": "OBSTACLE",
+  "wmsize": 200
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL",
+  "quote": "Le travail évité<br>ne disparaît pas.<br><b>Il grossit.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ta tâche évitée&nbsp;?<br><i>10 minutes, maintenant.</i>",
+  "wm": "MAINTENANT",
+  "wmsize": 190
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "mental",
+  "kicker": "MENTAL",
+  "quote": "Pas besoin d’y croire<br>pour commencer.<br><b>Commence</b>, et tu <b>y croiras</b>.",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à quelqu’un<br><i>qui hésite encore.</i>",
+  "wm": "GO",
+  "wmsize": 300
+ }
+]
