@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "sport",
+  "kicker": "SPORT",
+  "quote": "Pas besoin<br>d’une grande séance.<br><b>Juste d’une séance.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "20 minutes aujourd’hui&nbsp;?<br><i>Réponds ✅ quand c’est fait.</i>",
+  "wm": "BOUGE",
+  "wmsize": 240
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "einstein",
+  "kicker": "MENTAL · SÉNÈQUE",
+  "quote": "Il y a plus de choses qui nous <b>font peur</b> que de choses qui nous <b>écrasent</b>.<br>Nous souffrons plus souvent de l’idée que de la réalité.",
+  "author": "SÉNÈQUE",
+  "source": "Lettres à Lucilius, lettre 13, § 4 (vers 62-64) · trad. libre du latin",
+  "cta": "Ta peur du moment&nbsp;?<br><i>Écris-la. Elle rétrécit.</i>",
+  "wm": "PEUR",
+  "wmsize": 260
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "assiduite",
+  "kicker": "ASSIDUITÉ",
+  "quote": "Ce que tu fais<br>chaque jour<br><b>finit par te faire.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Envoie-la à quelqu’un<br><i>qui tient bon cette semaine.</i>",
+  "wm": "JOUR",
+  "wmsize": 260
+ }
+]
