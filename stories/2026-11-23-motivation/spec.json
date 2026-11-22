@@ -1,0 +1,38 @@
+[
+ {
+  "type": "story",
+  "file": "story-01.png",
+  "theme": "travail",
+  "kicker": "TRAVAIL · LUNDI",
+  "quote": "Ce lundi n’a pas besoin<br>d’être parfait.<br><b>Il a besoin d’être commencé.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Ta première tâche de la semaine&nbsp;?<br><i>Réponds-la ici, puis lance-la.</i>",
+  "wm": "LUNDI",
+  "wmsize": 240
+ },
+ {
+  "type": "story",
+  "file": "story-02.png",
+  "theme": "exigence",
+  "kicker": "EXIGENCE · ÉPICTÈTE",
+  "quote": "Jusqu’à quand vas-tu remettre à plus tard le moment de te juger <b>digne du meilleur</b>&nbsp;?",
+  "author": "ÉPICTÈTE",
+  "source": "Manuel (notes d’Arrien, vers 125), chap. 51 · trad. libre du grec",
+  "cta": "Ce que tu repousses depuis trop longtemps&nbsp;?<br><i>Aujourd’hui, fais-en 10 minutes.</i>",
+  "wm": "MAINTENANT",
+  "wmsize": 170
+ },
+ {
+  "type": "story",
+  "file": "story-03.png",
+  "theme": "mental",
+  "kicker": "MENTAL · LE SOIR",
+  "quote": "Ferme la journée.<br>Ce qui n’est pas fait<br>a sa place demain.<br><b>Pas dans ta nuit.</b>",
+  "author": "",
+  "source": "Maxime Lifestyles",
+  "cta": "Note 1 tâche pour demain.<br><i>Puis pose le téléphone.</i>",
+  "wm": "NUIT",
+  "wmsize": 260
+ }
+]
