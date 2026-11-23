@@ -1,0 +1,66 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 23,
+ "shape": "tore",
+ "nodes": 280,
+ "link": 1.05,
+ "camZ": 13,
+ "camY": -0.6,
+ "lookY": -0.3,
+ "tilt": 0.9,
+ "pill": "SCIENCE · <b>FORCE</b>",
+ "hook": [
+  "Ta *poigne* prédit",
+  "ta _santé._"
+ ],
+ "hookFs": 96,
+ "counter": {
+  "prefix": "+",
+  "value": 16,
+  "suffix": " %",
+  "dec": 0,
+  "label": "de risque de décès<br><b>par 5 kg de force de serrage en moins</b>"
+ },
+ "bigFs": 290,
+ "lblFs": 38,
+ "bullets": [
+  "<b>139 691</b> adultes · <b>17</b> pays · suivi ≈ <b>4 ans</b>",
+  "Décès cardiovasculaires : <b>+17 %</b> par 5 kg en moins",
+  "Meilleur prédicteur que la <b>tension artérielle</b> systolique"
+ ],
+ "cardFs": 36,
+ "nuance": "Étude d'observation : la poigne reflète<br>la force générale, pas une cause prouvée.",
+ "nuaFs": 31,
+ "cta": "Enregistre pour ta séance",
+ "ctaFs": 34,
+ "source": "Leong et al. · The Lancet 2015 · étude PURE",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 700,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35
+}

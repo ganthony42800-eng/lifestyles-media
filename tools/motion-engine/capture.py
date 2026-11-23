@@ -40,6 +40,7 @@ def main():
     ap.add_argument("--duree", type=float, required=True)
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--audio")
+    ap.add_argument("--largeur", type=int, default=1080); ap.add_argument("--hauteur", type=int, default=1920)
     ap.add_argument("--apercu", help="liste de temps : produit des PNG au lieu d'une vidéo")
     a = ap.parse_args()
     scene_dir = os.path.abspath(a.scene)
@@ -49,7 +50,7 @@ def main():
     with sync_playwright() as p:
         b = p.chromium.launch(args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-webgl", "--ignore-gpu-blocklist",
                                     "--enable-unsafe-swiftshader", "--font-render-hinting=none"])
-        pg = b.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
+        pg = b.new_page(viewport={"width": a.largeur, "height": a.hauteur}, device_scale_factor=1)
         pg.on("console", lambda m: print("[scene]", m.text) if m.type in ("error", "warning") else None)
         pg.on("pageerror", lambda e: print("[scene ERREUR]", e))
         pg.goto(url); pg.evaluate("window.sceneReady")
