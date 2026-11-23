@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 37,
+ "shape": "helice",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "NUTRITION · <b>MÉTA-ANALYSES</b>",
+ "hook": [
+  "Le nutriment *oublié* :",
+  "les _fibres._"
+ ],
+ "hookFs": 80,
+ "counter": {
+  "prefix": "",
+  "value": 25,
+  "suffix": "-29 g",
+  "dec": 0,
+  "label": "de <b>fibres par jour</b> : la zone où la baisse<br>du risque était la plus forte"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>185</b> études prospectives · <b>58</b> essais cliniques",
+  "Plus gros vs plus petits mangeurs de fibres : <b>15&nbsp;à&nbsp;30&nbsp;%</b> de décès en moins",
+  "Moins de maladies coronariennes, d'<b>AVC</b>, de <b>diabète de type 2</b> et de cancer colorectal"
+ ],
+ "cardFs": 36,
+ "nuance": "Surtout des études d'observation, chez des adultes<br>en bonne santé. Les fibres des aliments, pas des compléments.",
+ "nuaFs": 31,
+ "cta": "Enregistre-le pour tes courses",
+ "ctaFs": 34,
+ "source": "Reynolds, Mann et al. · The Lancet 2019 · OMS",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#B6F23A"
+}

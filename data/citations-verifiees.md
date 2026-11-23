@@ -62,6 +62,12 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | 2026-10-25 | Je n'ai pas de talent particulier. Je suis seulement passionnément curieux. | Albert Einstein | Lettre à Carl Seelig, 11/03/1952 (Archives Einstein 39-013) | Calaprice, The Ultimate Quotable Einstein ; vérificateur 24/10. Ne pas afficher l'allemand « Ich habe keine besonderen Talente… » (retraduction non sourcée) |
 | 2026-10-24 | Chez l'homme, c'est comme à vélo : ce n'est qu'en avançant qu'on garde l'équilibre. | Albert Einstein | Lettre à son fils Eduard, 5/02/1930 (« Beim Menschen ist es wie beim Velo… ») | Quote Investigator ; Isaacson, Einstein (2007), p. 565 |
 
+
+## Maximes Lifestyles (sans auteur) — ajout 24/11
+| Date | Maxime | Thème |
+|---|---|---|
+| 2026-11-24 | Pas besoin d'envie. Besoin d'une heure fixe. | Assiduité (story animée 13:00) |
+
 ## Réserve (à vérifier à la source avant usage)
 - « Soyez patient envers tout ce qui n'est pas résolu dans votre cœur… Vivez maintenant les questions » (Rilke, lettre à F. X. Kappus, 1903, Lettres à un jeune poète) : année confirmée (The Marginalian), date et lieu de la lettre non relus le 19/11 → relire le texte allemand avant usage
 - « Ce que j'ai fait, je te le jure, jamais aucune bête ne l'aurait fait » (Guillaumet, dans Saint-Exupéry, Terre des hommes, 1939) : texte non retrouvé le 10/11 → relire le chapitre avant usage
