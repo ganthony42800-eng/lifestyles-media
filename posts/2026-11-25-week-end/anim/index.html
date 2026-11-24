@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Lifestyles — fait animé</title>
+<style>
+@font-face{font-family:IDBk;src:url(/engine/fonts/InterDisplay-Black.otf)}
+@font-face{font-family:IDXb;src:url(/engine/fonts/InterDisplay-ExtraBold.otf)}
+@font-face{font-family:IDSb;src:url(/engine/fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:IDMd;src:url(/engine/fonts/InterDisplay-Medium.otf)}
+@font-face{font-family:IDLt;src:url(/engine/fonts/InterDisplay-Light.otf)}
+@font-face{font-family:IDLi;src:url(/engine/fonts/InterDisplay-LightItalic.otf)}
+@font-face{font-family:IMd;src:url(/engine/fonts/Inter-Medium.otf)}
+:root{--em:#2BE38F;--em2:#0E7A4D;--go:#F2C86B;--go2:#B8862E;--ink:#F3F6F4}
+html,body{margin:0;overflow:hidden;background:#03070A}
+#gl{position:absolute;left:0;top:0}
+#grid{position:absolute;inset:0;pointer-events:none;opacity:.10;
+  background-image:linear-gradient(rgba(242,200,107,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(242,200,107,.5) 1px,transparent 1px);
+  background-size:54px 54px;-webkit-mask:radial-gradient(ellipse 70% 60% at 50% 45%,#000 20%,transparent 80%);mask:radial-gradient(ellipse 70% 60% at 50% 45%,#000 20%,transparent 80%)}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 85% 70% at 50% 45%,rgba(3,7,10,0) 45%,rgba(3,7,10,.82) 100%)}
+#scan{position:absolute;left:0;right:0;height:180px;pointer-events:none;opacity:0;
+  background:linear-gradient(180deg,rgba(43,227,143,0),rgba(43,227,143,.10) 50%,rgba(43,227,143,0))}
+.a{position:absolute;opacity:0;will-change:transform,opacity,filter}
+.pill{left:0;right:0;display:flex;justify-content:center}
+.pill span{font-family:IDSb;font-size:26px;letter-spacing:.2em;color:var(--go);padding:12px 26px;border-radius:40px;
+  border:1.5px solid rgba(242,200,107,.55);background:rgba(6,14,12,.55);backdrop-filter:blur(6px);box-shadow:0 0 24px rgba(242,200,107,.18)}
+.pill b{color:var(--em);font-weight:normal}
+.hook{left:70px;right:70px;text-align:center;color:var(--ink);font-family:IDBk;line-height:1.02;letter-spacing:-.02em}
+.hook .w{display:inline-block;margin:0 .12em;will-change:transform,opacity,filter}
+.hook .g{background:linear-gradient(100deg,#FFE7AE,#F2C86B 40%,#B8862E 70%,#FFE7AE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hook .e{color:var(--em);text-shadow:0 0 30px rgba(43,227,143,.45)}
+.big{left:0;right:0;text-align:center;font-family:IDBk;letter-spacing:-.04em;line-height:1;
+  background:linear-gradient(180deg,#FFF3D2 0%,#F2C86B 45%,#A8761F 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 40px rgba(242,200,107,.35))}
+.lbl{left:90px;right:90px;text-align:center;color:#DCE7E1;font-family:IDMd;line-height:1.25}
+.lbl b{color:var(--em);font-family:IDSb;font-weight:normal}
+.card{left:70px;right:70px;padding:30px 36px;border-radius:30px;background:linear-gradient(160deg,rgba(18,38,30,.62),rgba(6,12,12,.55));
+  border:1px solid rgba(43,227,143,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 30px 60px rgba(0,0,0,.45);backdrop-filter:blur(14px)}
+.row{display:flex;gap:22px;align-items:flex-start;color:var(--ink);font-family:IDMd;line-height:1.28;margin:12px 0;opacity:0}
+.row i{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-style:normal;
+  font-family:IDXb;font-size:24px;color:#03130B;background:linear-gradient(140deg,#5CF2AE,#17A866);box-shadow:0 0 18px rgba(43,227,143,.45)}
+.row b{color:var(--go);font-family:IDSb;font-weight:normal}
+.nua{left:90px;right:90px;text-align:center;color:#AFC3BA;font-family:IDLi;line-height:1.3}
+.nua b{font-family:IDSb;font-style:normal;color:var(--go);letter-spacing:.14em;font-weight:normal}
+.src{left:0;right:0;text-align:center;font-family:IMd;color:rgba(220,231,225,.78)}
+.cta{left:0;right:0;display:flex;justify-content:center}
+.cta span{font-family:IDXb;color:#03130B;padding:18px 40px;border-radius:60px;background:linear-gradient(120deg,#7BF7BF,#2BE38F 50%,#14A563);
+  box-shadow:0 0 40px rgba(43,227,143,.5)}
+.quote{left:80px;right:80px;text-align:center;color:var(--ink);font-family:IDBk;line-height:1.06;letter-spacing:-.02em}
+.quote .w{display:inline-block;margin:0 .1em;will-change:transform,opacity,filter}
+.quote .g{background:linear-gradient(100deg,#FFE7AE,#F2C86B 40%,#B8862E 70%,#FFE7AE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote .e{color:var(--em);text-shadow:0 0 30px rgba(43,227,143,.45)}
+.auth{left:0;right:0;text-align:center;font-family:IDSb;letter-spacing:.24em;color:var(--go)}
+.line{left:50%;height:2px;background:linear-gradient(90deg,transparent,var(--go),transparent);transform:translateX(-50%)}
+#sigW{position:absolute;left:0;right:0;display:flex;justify-content:flex-end;padding-right:calc(48px * var(--S,1));box-sizing:border-box;pointer-events:none}
+#sigB{position:relative}
+#sig{display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.7))}
+#shine{position:absolute;inset:0;mix-blend-mode:screen;opacity:.0;
+  background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,244,210,.95) 50%,rgba(255,226,176,0) 60%);background-size:300% 100%;
+  -webkit-mask:url(signature-officielle.png) center/100% 100% no-repeat;mask:url(signature-officielle.png) center/100% 100% no-repeat}
+</style>
+<script type="importmap">{"imports":{"three":"/engine/vendor/three/three.module.js"}}</script>
+</head><body>
+<canvas id="gl"></canvas><div id="grid"></div><div id="scan"></div><div id="vig"></div>
+<div id="L"></div>
+<div id="sigW"><div id="sigB"><img id="sig" src="signature-officielle.png"><div id="shine"></div></div></div>
+<script type="module">
+import * as THREE from 'three';
+const D = await (await fetch('data.json')).json();
+// couleur d'accent optionnelle (varier d'un jour à l'autre) : D.accent = '#RRGGBB'
+const ACC=D.accent||'#2BE38F';const _h=ACC.replace('#','');const AR=parseInt(_h.slice(0,2),16),AG=parseInt(_h.slice(2,4),16),AB=parseInt(_h.slice(4,6),16);
+if(D.accent){const st=document.createElement('style');st.textContent=`:root{--em:${ACC}}
+.hook .e,.quote .e{text-shadow:0 0 30px rgba(${AR},${AG},${AB},.45)}
+.row i{background:linear-gradient(140deg,#fff,${ACC});box-shadow:0 0 18px rgba(${AR},${AG},${AB},.45)}
+.cta span{background:linear-gradient(120deg,#fff,${ACC} 45%,${ACC})}
+#scan{background:linear-gradient(180deg,rgba(${AR},${AG},${AB},0),rgba(${AR},${AG},${AB},.10) 50%,rgba(${AR},${AG},${AB},0))}`;document.head.appendChild(st)}
+const W = D.w, H = D.h, S = W/1080;
+document.body.style.width=W+'px'; document.body.style.height=H+'px';
+const L = document.getElementById('L');
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>1-Math.pow(1-clamp(x),3), eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const back=x=>{x=clamp(x);const c=1.70158;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+function el(cls,html,top,fs){const d=document.createElement('div');d.className='a '+cls;d.innerHTML=html;d.style.top=(top*S)+'px';if(fs)d.style.fontSize=(fs*S)+'px';L.appendChild(d);return d}
+function words(cls,lines,top,fs){ // lines: ["mot *or* _vert_", ...]
+  const html=lines.map(l=>l.split(' ').map(w=>{let c='';if(w.startsWith('*')){c='g';w=w.replace(/\*/g,'')}else if(w.startsWith('_')){c='e';w=w.replace(/_/g,'')}return `<span class="w ${c}">${w}</span>`}).join(' ')).join('<br>');
+  const d=el(cls,html,top,fs);d.style.opacity=1;return d}
+// timeline items: {node, t0, t1(out), kind}
+const T=[];
+function fade(node,t0,t1,{dy=40,blur=14,sc=1,dur=.55}={}){T.push(t=>{const i=eo((t-t0)/dur), o=t1?eio((t-t1)/.45):0;const v=i*(1-o);
+  node.style.opacity=v;node.style.transform=`translateY(${(1-i)*dy*S - o*dy*.6*S}px) scale(${sc+(1-sc)*i})`;node.style.filter=`blur(${(1-v)*blur}px)`})}
+function stagger(node,t0,t1,step=.07){const ws=[...node.querySelectorAll('.w,.row')];T.push(t=>{ws.forEach((w,k)=>{const i=eo((t-t0-k*step)/.5),o=t1?eio((t-t1-k*.025)/.4):0,v=i*(1-o);
+  w.style.opacity=v;w.style.transform=`translateY(${(1-i)*60*S}px) rotateX(${(1-i)*70}deg) scale(${.9+.1*i})`;w.style.filter=`blur(${(1-v)*16}px)`})})}
+
+if(D.kind==='fait'){
+  const P=D.pos;
+  const pill=el('pill',`<span>${D.pill}</span>`,P.pill);fade(pill,(D.t.pill??.1),null,{dy:-30});
+  const hook=words('hook',D.hook,P.hook,D.hookFs);stagger(hook,(D.t.hook??.25),D.t.hookOut);
+  const big=el('big','',P.big,D.bigFs);
+  T.push(t=>{const t0=D.t.big, i=clamp((t-t0)/1.6), v=eo((t-t0)/.4)*(1-eio((t-D.t.bigOut)/.45));
+    const val=D.counter.value*eo(i);big.textContent=D.counter.prefix+val.toFixed(D.counter.dec||0).replace('.',',')+D.counter.suffix;
+    big.style.opacity=v;const pop=1+.08*Math.sin(clamp((t-t0-1.6)/.35)*Math.PI);big.style.transform=`scale(${(.75+.25*back((t-t0)/.7))*pop})`;big.style.filter=`blur(${(1-v)*20}px) drop-shadow(0 0 ${40+30*Math.sin(clamp((t-t0-1.6)/.35)*Math.PI)}px rgba(242,200,107,.4))`});
+  const lbl=el('lbl',D.counter.label,P.lbl,D.lblFs);fade(lbl,D.t.big+.9,D.t.bigOut);
+  const card=el('card',D.bullets.map((b,k)=>`<div class="row"><i>${k+1}</i><div>${b}</div></div>`).join(''),P.card,D.cardFs);
+  fade(card,D.t.card,D.t.cardOut,{dy:80,sc:.94,dur:.7});stagger(card,D.t.card+.25,null,.45);
+  const nua=el('nua',`<b>LA NUANCE</b><br>${D.nuance}`,P.nua,D.nuaFs);fade(nua,D.t.nua,null);
+  const cta=el('cta',`<span>${D.cta}</span>`,P.cta,D.ctaFs);fade(cta,D.t.cta,null,{sc:.8,dy:20});
+  const src=el('src',D.source,P.src,D.srcFs);fade(src,D.t.nua+.3,null,{dy:10,blur:6});
+} else {
+  const P=D.pos;
+  const pill=el('pill',`<span>${D.pill}</span>`,P.pill);fade(pill,.1,null,{dy:-30});
+  const q=words('quote',D.quote,P.quote,D.quoteFs);
+  const ws=[...q.querySelectorAll('.w')];T.push(t=>{ws.forEach((w,k)=>{const t0=D.t.q+k*D.t.step, i=eo((t-t0)/.55);
+    w.style.opacity=i;w.style.transform=`translateZ(0) translateY(${(1-i)*70*S}px) scale(${1.25-.25*back((t-t0)/.6)})`;w.style.filter=`blur(${(1-i)*18}px)`})});
+  const ln=el('line','',P.line);T.push(t=>{const i=eo((t-D.t.auth)/.8);ln.style.opacity=i;ln.style.width=(i*420*S)+'px'});
+  const au=el('auth',D.author,P.auth,D.authFs);fade(au,D.t.auth+.2,null,{dy:16});
+  if(D.cta){const cta=el('cta',`<span>${D.cta}</span>`,P.cta,D.ctaFs);fade(cta,D.t.cta,null,{sc:.8,dy:20});}
+}
+// signature : toujours visible
+const sigW=document.getElementById('sigW'), sig=document.getElementById('sig'), sh=document.getElementById('shine');
+sigW.style.top=(D.pos.sig*S)+'px'; sig.style.width=(D.sigW*S)+'px';
+T.push(t=>{const k=clamp((t-(D.duree-2.2))/1.4);sh.style.opacity=k>0&&k<1?1:0;sh.style.backgroundPosition=`${100-k*100}% 0`;sigW.style.opacity=.92+.08*eo((t-(D.duree-2.4))/.5)});
+const scan=document.getElementById('scan');
+T.push(t=>{const k=((t*.32)%1);scan.style.opacity=.9;scan.style.top=(-200*S+k*(H+400*S))+'px'});
+
+// ---------- 3D : réseau de particules émeraude / or ----------
+const R=new THREE.WebGLRenderer({canvas:document.getElementById('gl'),antialias:true,preserveDrawingBuffer:true});
+R.setSize(W,H,false);R.setPixelRatio(1);R.setClearColor(0x03070A,1);
+const scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x03070A,.055);
+const cam=new THREE.PerspectiveCamera(42,W/H,.1,100);
+let seed=D.seed||7;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+const N=D.nodes||260, pos=new Float32Array(N*3), col=new Float32Array(N*3), base=[];
+const cE=new THREE.Color(ACC), cG=new THREE.Color(0xF2C86B), cW=new THREE.Color(0xE8FFF4);
+for(let i=0;i<N;i++){let x,y,z;
+  if(D.shape==='tore'){const a=rnd()*Math.PI*2,b=rnd()*Math.PI*2,r1=3.2,r2=.9+rnd()*.35;x=(r1+r2*Math.cos(b))*Math.cos(a);y=(r1+r2*Math.cos(b))*Math.sin(a);z=r2*Math.sin(b)}
+  else if(D.shape==='helice'){const u=rnd(),a=u*Math.PI*8+(rnd()<.5?0:Math.PI);y=(u-.5)*11;x=Math.cos(a)*1.8+(rnd()-.5)*.5;z=Math.sin(a)*1.8+(rnd()-.5)*.5}
+  else{const u=rnd()*2-1,a=rnd()*Math.PI*2,r=3.6*Math.cbrt(.35+rnd()*.65);x=r*Math.sqrt(1-u*u)*Math.cos(a);y=r*u;z=r*Math.sqrt(1-u*u)*Math.sin(a)}
+  base.push([x,y,z,rnd()*6.28]);const c=rnd()<.22?cG:(rnd()<.15?cW:cE);col.set([c.r,c.g,c.b],i*3)}
+const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('color',new THREE.BufferAttribute(col,3));
+const cv=document.createElement('canvas');cv.width=cv.height=64;const cx=cv.getContext('2d');const gr=cx.createRadialGradient(32,32,0,32,32,32);
+gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.25,'rgba(255,255,255,.85)');gr.addColorStop(1,'rgba(255,255,255,0)');cx.fillStyle=gr;cx.fillRect(0,0,64,64);
+const tex=new THREE.CanvasTexture(cv);
+const pts=new THREE.Points(g,new THREE.PointsMaterial({size:.22,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+const grp=new THREE.Group();grp.add(pts);scene.add(grp);
+// arêtes : paires proches, triées pour apparaître progressivement
+const ed=[];for(let i=0;i<N;i++)for(let j=i+1;j<N;j++){const a=base[i],b=base[j];const d=Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);if(d<(D.link||1.25))ed.push([i,j,rnd()])}
+ed.sort((a,b)=>a[2]-b[2]);
+const lp=new Float32Array(ed.length*6), lc=new Float32Array(ed.length*6);
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.BufferAttribute(lp,3));lg.setAttribute('color',new THREE.BufferAttribute(lc,3));
+ed.forEach((e,k)=>{const c=rnd()<.3?cG:cE;lc.set([c.r,c.g,c.b,c.r,c.g,c.b],k*6)});
+const lines=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.42,depthWrite:false,blending:THREE.AdditiveBlending}));grp.add(lines);
+// poussière lointaine
+const M=900,dp=new Float32Array(M*3);for(let i=0;i<M;i++){dp.set([(rnd()-.5)*40,(rnd()-.5)*40,-rnd()*30-4],i*3)}
+const dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.BufferAttribute(dp,3));
+const dust=new THREE.Points(dg,new THREE.PointsMaterial({size:.07,map:tex,color:new THREE.Color(ACC).lerp(new THREE.Color(0xffffff),.5),transparent:true,opacity:.55,depthWrite:false,blending:THREE.AdditiveBlending}));scene.add(dust);
+// halo
+const hc=document.createElement('canvas');hc.width=hc.height=256;const hx=hc.getContext('2d');const hg=hx.createRadialGradient(128,128,0,128,128,128);
+hg.addColorStop(0,`rgba(${AR},${AG},${AB},.55)`);hg.addColorStop(.4,`rgba(${AR>>1},${AG>>1},${AB>>1},.18)`);hg.addColorStop(1,'rgba(0,0,0,0)');hx.fillStyle=hg;hx.fillRect(0,0,256,256);
+const halo=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(hc),transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));halo.scale.set(16,16,1);halo.position.z=-3;scene.add(halo);
+
+window.renderAt=(t)=>{
+  const form=eio((t+(D.formAdv??0))/1.8); // les points convergent depuis l'explosion
+  for(let i=0;i<N;i++){const b=base[i];const f=1+(1-form)*3.2;const w=Math.sin(t*1.3+b[3])*.06;
+    pos[i*3]=b[0]*f+w;pos[i*3+1]=b[1]*f+Math.cos(t*1.1+b[3])*.06;pos[i*3+2]=b[2]*f+w}
+  g.attributes.position.needsUpdate=true;
+  const e0=D.edge0??0;const shown=Math.floor(ed.length*(e0+(1-e0)*clamp((t-.6)/(D.duree*.7))));
+  for(let k=0;k<shown;k++){const [i,j]=ed[k];lp.set([pos[i*3],pos[i*3+1],pos[i*3+2],pos[j*3],pos[j*3+1],pos[j*3+2]],k*6)}
+  lg.setDrawRange(0,shown*2);lg.attributes.position.needsUpdate=true;
+  grp.rotation.y=t*.22+.3;grp.rotation.x=Math.sin(t*.25)*.22+(D.tilt||0);
+  const zc=(D.camZ||12)-eo(t/D.duree)*2.2;cam.position.set(Math.sin(t*.15)*1.2,(D.camY||0)+Math.cos(t*.12)*.4,zc);cam.lookAt(0,D.lookY||0,0);
+  dust.rotation.z=t*.02;halo.material.opacity=.7+.3*Math.sin(t*1.6);
+  R.render(scene,cam);T.forEach(f=>f(t));
+};
+await document.fonts.ready;await new Promise(r=>sig.complete?r():sig.onload=r);
+window.renderAt(0);window.sceneReadyResolve();
+</script>
+<script>window.sceneReady=new Promise(r=>window.sceneReadyResolve=r);</script>
+</body></html>

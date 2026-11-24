@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 53,
+ "shape": "helice",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "SPORT · <b>63 591 ADULTES</b>",
+ "hook": [
+  "Sport *seulement*",
+  "le _week-end_ ?"
+ ],
+ "hookFs": 80,
+ "counter": {
+  "prefix": "≈ −",
+  "value": 30,
+  "suffix": " %",
+  "dec": 0,
+  "label": "de risque de décès chez les <b>« guerriers<br>du week-end »</b> par rapport aux inactifs"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>63&nbsp;591</b> adultes de 40&nbsp;ans et plus · suivi ≈ <b>9&nbsp;ans</b>",
+  "<b>150&nbsp;min</b> d'effort modéré (ou 75 intense) en <b>1 ou 2 séances</b> par semaine",
+  "Risque proche des actifs <b>3 fois et plus</b> par semaine (≈ −35&nbsp;%)"
+ ],
+ "cardFs": 36,
+ "nuance": "Étude d'observation : un lien, pas une preuve de cause.<br>Activité déclarée, Royaume-Uni, 40 ans et plus.",
+ "nuaFs": 31,
+ "cta": "Envoie-le à ton partenaire de sport",
+ "ctaFs": 34,
+ "source": "O'Donovan et al. · JAMA Intern Med 2017",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#FF9F43"
+}

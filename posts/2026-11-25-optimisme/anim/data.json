@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 71,
+ "shape": "tore",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "FORCE MENTALE · <b>PNAS 2019</b>",
+ "hook": [
+  "Les *optimistes*",
+  "vivent plus _longtemps_ ?"
+ ],
+ "hookFs": 70,
+ "counter": {
+  "prefix": "+",
+  "value": 11,
+  "suffix": "-15 %",
+  "dec": 0,
+  "label": "de durée de vie en moyenne : les <b>plus optimistes</b><br>face aux moins optimistes"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>69&nbsp;744</b> femmes suivies 10&nbsp;ans · <b>1&nbsp;429</b> hommes suivis 30&nbsp;ans",
+  "Plus de chances d'atteindre <b>85&nbsp;ans</b> (odds ratio <b>1,5</b> femmes, <b>1,7</b> hommes)",
+  "Le lien diminue sans disparaître une fois les <b>habitudes de vie</b> prises en compte"
+ ],
+ "cardFs": 36,
+ "nuance": "Étude d'observation : un lien, pas une preuve de cause.<br>Participants surtout blancs et plutôt favorisés.",
+ "nuaFs": 31,
+ "cta": "Envoie-le à ton ami le plus positif",
+ "ctaFs": 34,
+ "source": "Lee, Kubzansky et al. · PNAS 2019",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#C38BFF"
+}

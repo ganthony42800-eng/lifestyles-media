@@ -123,17 +123,17 @@ def post_html(it, i):
 <div class="stage" style="--w:{W}px;--h:{H}px;--bg:#040807;--a1:{a1};--a2:{a3};--a4:{a4}">
 {deco(2000+i, W, H, '#0E8F6A', '#B8862B')}
 <div class="vig"></div><div class="grain"></div>
-<img class="sig" src="/brand/signature-officielle.png" style="top:56px;width:270px">
+<img class="sig" src="/brand/signature-officielle.png" style="left:auto;right:44px;transform:none;bottom:34px;width:250px">
 <div class="ptitle" id="t" style="top:300px;font-size:{it.get('size',104)}px">{it['title']}</div>
 <div class="pline" id="l"></div>
 <div class="psub" id="s" style="font-size:44px">{it['subtitle']}</div>
 <div class="wm" style="right:-20px;bottom:40px;font-size:{it.get('wmsize',420)}px;-webkit-text-stroke:3px #F2C46B;opacity:.16">{html.escape(it.get('wm',''))}</div>
-<div class="pfoot" style="bottom:70px;font-size:26px">{html.escape(it.get('foot',''))}</div>
+<div class="pfoot" style="bottom:150px;font-size:26px">{html.escape(it.get('foot',''))}</div>
 </div>
 <script>
 const t=document.getElementById('t').getBoundingClientRect();const l=document.getElementById('l');l.style.top=(t.bottom+44)+'px';
 const s=document.getElementById('s');s.style.top=(t.bottom+90)+'px';
-window.__overflow=(s.getBoundingClientRect().bottom>1240);
+window.__overflow=(s.getBoundingClientRect().bottom>1120);
 </script>"""
     return W, H, body
 

@@ -50,9 +50,8 @@ html,body{margin:0;overflow:hidden;background:#03070A}
 .quote .e{color:var(--em);text-shadow:0 0 30px rgba(43,227,143,.45)}
 .auth{left:0;right:0;text-align:center;font-family:IDSb;letter-spacing:.24em;color:var(--go)}
 .line{left:50%;height:2px;background:linear-gradient(90deg,transparent,var(--go),transparent);transform:translateX(-50%)}
-#sigW{position:absolute;left:0;right:0;display:flex;justify-content:center;pointer-events:none}
+#sigW{position:absolute;left:0;right:0;display:flex;justify-content:flex-end;padding-right:calc(48px * var(--S,1));box-sizing:border-box;pointer-events:none}
 #sigB{position:relative}
-#sigB::before{content:'';position:absolute;inset:-26px -60px;background:radial-gradient(closest-side,rgba(3,7,10,.75),rgba(3,7,10,0));z-index:-1}
 #sig{display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.7))}
 #shine{position:absolute;inset:0;mix-blend-mode:screen;opacity:.0;
   background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,244,210,.95) 50%,rgba(255,226,176,0) 60%);background-size:300% 100%;
