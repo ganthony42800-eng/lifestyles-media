@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Mythe ou science ? · ép. 13 : un éclair ne frappe jamais deux fois au même endroit ? — Lifestyles</title>
+<style>
+@font-face{font-family:IDBk;src:url(/engine/fonts/InterDisplay-Black.otf)}
+@font-face{font-family:IDSb;src:url(/engine/fonts/InterDisplay-SemiBold.otf)}
+@font-face{font-family:IDBd;src:url(/engine/fonts/InterDisplay-Bold.otf)}
+@font-face{font-family:IDMd;src:url(/engine/fonts/InterDisplay-Medium.otf)}
+@font-face{font-family:IMd;src:url(/engine/fonts/Inter-Medium.otf)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#04050C}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 62% at 50% 52%,rgba(4,5,12,0) 55%,rgba(4,5,12,.62) 100%)}
+.blk{position:absolute;left:60px;width:960px;opacity:0}
+.blk::before{content:'';position:absolute;inset:-50px -20px;z-index:-1;
+  background:radial-gradient(closest-side,rgba(4,5,14,.74),rgba(4,5,14,.45) 60%,rgba(4,5,14,0))}
+.ln{display:block;text-align:center;color:#F4F7FB;white-space:nowrap;transform-origin:50% 82%;line-height:1.12;
+  text-shadow:0 2px 12px rgba(2,4,10,.75),0 1px 2px rgba(2,4,10,.8)}
+.bk{font-family:IDBk}.sb{font-family:IDSb}.md{font-family:IDMd}.bd{font-family:IDBd}
+.cy{color:#55E6FF;text-shadow:0 0 26px rgba(85,230,255,.45),0 2px 10px rgba(2,4,10,.8)}
+.go{color:#FFB547;text-shadow:0 0 26px rgba(255,181,71,.45),0 2px 10px rgba(2,4,10,.8)}
+.co{color:#FF6A55;text-shadow:0 0 24px rgba(255,106,85,.45),0 2px 10px rgba(2,4,10,.8)}
+.vi{color:#C49BFF;text-shadow:0 0 28px rgba(176,120,255,.6),0 2px 10px rgba(2,4,10,.8)}
+.pl{display:inline-block;font-family:IMd;font-size:30px;color:#EEF2F6;letter-spacing:.01em;padding:8px 24px;border-radius:26px;
+  background:rgba(8,10,24,.82);border:1px solid rgba(255,255,255,.22);text-shadow:none;line-height:1.3;text-align:center}
+.src{position:absolute;left:540px;top:1540px;transform:translateX(-50%);white-space:nowrap;opacity:0}
+#pillW{position:absolute;left:0;width:1080px;top:146px;height:64px;display:flex;justify-content:center;opacity:0}
+#pill{height:60px;padding:0 30px;border:2px solid #55E6FF;border-radius:32px;background:rgba(8,10,24,.82);color:#F4F7FB;
+  font-family:IDBd;font-size:31px;letter-spacing:.12em;display:flex;align-items:center;white-space:nowrap;box-shadow:0 0 18px rgba(85,230,255,.30)}
+#pill b{color:#55E6FF;font-weight:normal;margin-left:.35em}
+#sim{position:absolute;left:92px;top:1610px;font-family:IMd;font-size:28px;color:rgba(236,242,248,.9);letter-spacing:.02em;
+  padding:3px 14px;border-radius:18px;background:rgba(8,10,24,.6);opacity:0}
+.tag{position:absolute;top:1235px;font-family:IDBd;font-size:34px;letter-spacing:.06em;padding:4px 18px 6px;border-radius:20px;background:rgba(8,10,24,.78);opacity:0;white-space:nowrap}
+#tagA{left:200px;color:#E8ECF2;border:2px solid rgba(232,236,242,.5)}
+#tagB{right:230px;color:#C49BFF;border:2px solid rgba(196,155,255,.75);box-shadow:0 0 16px rgba(176,120,255,.35)}
+#stampBox{display:inline-block;padding:4px 40px 0;border:9px solid #FF6A55;border-radius:16px;color:#FF6A55;font-family:IDBk;font-size:150px;letter-spacing:.04em;
+  line-height:1.0;text-shadow:none;filter:url(#ink);background:rgba(255,106,85,.12)}
+#shb{display:inline-block;padding:12px 36px 16px;border-radius:50px;border:3px solid #FFB547;color:#FFE3B5;background:rgba(8,10,24,.82);text-shadow:none}
+#btn{display:inline-block;padding:14px 46px 18px;border-radius:60px;background:#55E6FF;color:#04101A;box-shadow:0 0 30px rgba(85,230,255,.55);text-shadow:none}
+#sig{position:absolute;opacity:.97;filter:drop-shadow(0 2px 8px rgba(2,4,10,.7))}
+#sigShine{position:absolute;mix-blend-mode:screen;opacity:0;
+  background:linear-gradient(105deg,rgba(255,226,176,0) 40%,rgba(255,240,200,.95) 50%,rgba(255,226,176,0) 60%);background-size:300% 100%;
+  -webkit-mask:url(signature-officielle.png) center/100% 100% no-repeat;mask:url(signature-officielle.png) center/100% 100% no-repeat}
+#at{position:absolute;left:0;width:1080px;text-align:center;font-family:IDBd;font-size:44px;color:#F4F7FB;letter-spacing:.02em;opacity:0;
+  text-shadow:0 2px 12px rgba(2,4,10,.9)}
+</style>
+<script type="importmap">{"imports":{"three":"/engine/vendor/three/three.module.js","three/addons/":"/engine/vendor/three/addons/"}}</script>
+</head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="ink" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="8" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+  <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.1 1.55" result="ga"/>
+  <feComposite in="d" in2="ga" operator="in"/></filter>
+</defs></svg>
+<div id="vig"></div>
+<div id="texts"></div>
+<div id="pillW"><div id="pill">MYTHE OU SCIENCE&#8239;? ·<b>ÉP.&nbsp;13</b></div></div>
+<div id="flash" style="position:absolute;inset:0;background:#DDE8FF;opacity:0;mix-blend-mode:screen;pointer-events:none"></div>
+<div class="src" id="srcA"><span class="pl">National Weather Service (NWS, États-Unis)</span></div>
+<div id="sim">Illustration 3D</div>
+<img id="sig" src="signature-officielle.png" alt="">
+<div id="sigShine"></div>
+<div id="at">@lifestyles_hf</div>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+
+/* ép. 13 — gratte-ciel à gradins en particules sous l'orage ; la foudre frappe deux fois la même flèche (MYTHE),
+   compteur ≈ 23 frappes par an, plan large haut / pointu / isolé, arbre sur la colline (zone de danger), maison éclairée */
+const RW=720,RH=1280;
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,a,b)=>clamp((t-a)/(b-a));
+const mix=(a,b,k)=>a+(b-a)*k;
+const sm=x=>{x=clamp(x);return x*x*(3-2*x)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const ein=x=>Math.pow(clamp(x),3);
+const eback=x=>{x=clamp(x);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+const springE=p=>p>=1?1:(p<=0?0:1-Math.exp(-5.2*p)*Math.cos(8.6*p));
+const TAU=Math.PI*2;
+
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+r.setPixelRatio(1);r.setSize(RW,RH,false);r.domElement.id='gl';document.body.prepend(r.domElement);
+r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.0;
+const S=new THREE.Scene();S.background=new THREE.Color('#04050C');
+const cam=new THREE.PerspectiveCamera(40,RW/RH,0.05,80);
+const comp=new EffectComposer(r);comp.setPixelRatio(1);comp.setSize(RW,RH);
+comp.addPass(new RenderPass(S,cam));
+const bloom=new UnrealBloomPass(new THREE.Vector2(RW,RH),0.9,0.55,0.12);comp.addPass(bloom);
+comp.addPass(new OutputPass());
+
+const U={uH:{value:RH}};
+const VS=`uniform float uH;attribute vec3 aCol;attribute float aSz;varying vec3 vC;
+ void main(){vC=aCol;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_Position=projectionMatrix*mv;gl_PointSize=clamp(aSz*uH*0.0050/(-mv.z),1.0,14.0);}`;
+const FS=`varying vec3 vC;void main(){vec2 q=gl_PointCoord-0.5;float a=smoothstep(0.5,0.0,length(q));gl_FragColor=vec4(vC*a,1.0);}`;
+const mat=()=>new THREE.ShaderMaterial({uniforms:U,vertexShader:VS,fragmentShader:FS,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending});
+function dyn(n,sz){const g=new THREE.BufferGeometry();const p=new Float32Array(n*3),c=new Float32Array(n*3),z=new Float32Array(n).fill(sz||1);
+  g.setAttribute('position',new THREE.BufferAttribute(p,3));g.setAttribute('aCol',new THREE.BufferAttribute(c,3));g.setAttribute('aSz',new THREE.BufferAttribute(z,1));
+  const o=new THREE.Points(g,mat());o.frustumCulled=false;S.add(o);return {g,p,c,z,o};}
+/* objet statique : points [x,y,z,r,g,b,kind] → couleurs recalculées selon l'éclairage */
+function stat(arr,sz){const D=dyn(arr.length,sz);arr.forEach((a,i)=>D.p.set([a[0],a[1],a[2]],i*3));D.g.attributes.position.needsUpdate=true;D.arr=arr;return D;}
+
+const GY=-1.2; // sol
+const TIP=[0,0.95,0], TREE=[2.6,0.12,-0.5], HOUSE=[-2.4,GY,-0.3];
+const hill=(x,z)=>0.42*Math.exp(-((x-2.6)**2+(z+0.5)**2)/0.55);
+
+/* ---------- gratte-ciel à gradins (kind 0 façade, 1 arête, 2 fenêtre allumée, 3 flèche) ---------- */
+const TW=[];{const R=mulberry32(1313);
+ const tiers=[[GY,-0.50,0.40,0.30],[-0.50,0.18,0.32,0.24],[0.18,0.42,0.22,0.17],[0.42,0.55,0.14,0.11],[0.55,0.63,0.085,0.07]];
+ for(const [y0,y1,hx,hz] of tiers){const h=y1-y0;const per=2*(hx+hz);const n=Math.round(9000*h*per/1.2)+400;
+   for(let i=0;i<n;i++){let u=R()*per;const y=y0+R()*h;let x,z,fx;
+     if(u<2*hx){x=-hx+u;z=hz;fx=u/(2*hx);}else if((u-=2*hx)<2*hz){x=hx;z=hz-u;fx=u/(2*hz);}else if((u-=2*hz)<2*hx){x=hx-u;z=-hz;fx=u/(2*hx);}else{u-=2*hx;x=-hx;z=-hz+u;fx=u/(2*hz);}
+     const row=Math.floor((y-GY)*30),col=Math.floor(fx*14+(x>0?7:0)+(z>0?3:0));const cell=mulberry32(row*131+col*17+Math.round(hx*100))();
+     const inWin=((y-GY)*30%1)<0.5&&((fx*14)%1)<0.55;
+     if(inWin&&cell<0.32)TW.push([x,y,z,0.95,0.62,0.26,2]);else TW.push([x,y,z,0.10,0.14,0.24,0]);}
+   // arêtes verticales lumineuses
+   for(const [ex,ez] of [[-hx,hz],[hx,hz],[hx,-hz],[-hx,-hz]])for(let i=0;i<Math.round(260*h)+40;i++)TW.push([ex,y0+R()*h,ez,0.30,0.55,0.85,1]);
+   // corniche
+   for(let i=0;i<260;i++){const u=R();const s=Math.floor(R()*4);const p=[[-hx+2*hx*u,hz],[hx,hz-2*hz*u],[hx-2*hx*u,-hz],[-hx,-hz+2*hz*u]][s];TW.push([p[0],y1,p[1],0.35,0.55,0.80,1]);}}
+ // flèche (mât) jusqu'au point d'impact
+ for(let i=0;i<1400;i++){const u=R();const y=0.63+u*(TIP[1]-0.63);const rr=0.032*(1-u)+0.004;const a=R()*TAU;TW.push([Math.cos(a)*rr,y,Math.sin(a)*rr,0.75,0.80,0.95,3]);}
+}
+const TOWER=stat(TW,1.15);
+
+/* ---------- ville basse (plus basse que la tour : elle est la plus haute, pointue, isolée) ---------- */
+const CT=[];{const R=mulberry32(4040);
+ for(let b=0;b<46;b++){let x,z;do{x=(R()*2-1)*4.2;z=-0.6-R()*3.6;}while(Math.abs(x)<0.75&&z>-1.6||Math.hypot(x-2.6,z+0.5)<1.1||Math.hypot(x+2.4,z+0.3)<0.8);
+   const hx=0.12+R()*0.18,h=0.15+R()*0.62;const n=Math.round(900*h*hx*6)+60;
+   for(let i=0;i<n;i++){const y=GY+R()*h;const f=R();let px,pz;if(f<0.6){px=x-hx+R()*2*hx;pz=z+hx;}else{px=x+(R()<.5?-hx:hx);pz=z-hx+R()*2*hx;}
+     const lit=((y-GY)*30%1)<0.45&&mulberry32(b*999+Math.floor((y-GY)*30)*7+Math.floor(px*40))()<0.22;
+     CT.push(lit?[px,y,pz,0.75,0.50,0.22,2]:[px,y,pz,0.07,0.10,0.18,0]);}}}
+const CITY=stat(CT,1.0);
+
+/* ---------- sol + colline ---------- */
+const GR=[];{const R=mulberry32(77);for(let i=0;i<9000;i++){const x=(R()*2-1)*6,z=2.6-R()*9;GR.push([x,GY+hill(x,z)+(R()-.5)*0.01,z,0.05,0.07,0.10,0]);}}
+const GROUND=stat(GR,1.1);
+
+/* ---------- arbre isolé sur la colline (kind 0 tronc, 1 feuillage) ---------- */
+const TR=[];{const R=mulberry32(909);const bx=TREE[0],bz=TREE[2],by=GY+hill(bx,bz);
+ for(let i=0;i<1200;i++){const u=R();const a=R()*TAU;const rr=0.035*(1-u*0.6);TR.push([bx+Math.cos(a)*rr,by+u*0.5,bz+Math.sin(a)*rr,0.30,0.20,0.12,0]);}
+ for(let k=0;k<7;k++){const a=k/7*TAU+R();const L=0.18+R()*0.12;for(let i=0;i<160;i++){const u=R();TR.push([bx+Math.cos(a)*u*L,by+0.38+u*L*0.8,bz+Math.sin(a)*u*L,0.28,0.19,0.11,0]);}}
+ for(let i=0;i<7000;i++){let x,y,z,l;do{x=R()*2-1;y=R()*2-1;z=R()*2-1;l=x*x+y*y+z*z}while(l>1);const s=Math.cbrt(R())*0.5+0.5;
+   TR.push([bx+x*0.36*s,by+0.68+y*0.30*s,bz+z*0.36*s,0.07+0.05*R(),0.20+0.10*R(),0.10,1]);}}
+const TREEO=stat(TR,1.2);
+const TREE_BASE=[TREE[0],GY+hill(TREE[0],TREE[2]),TREE[2]];
+const NDZ=1400;const DZ=dyn(NDZ,1.6); // zone de danger sous l'arbre
+
+/* ---------- maison (kind 0 murs, 1 toit, 2 fenêtre chaude) ---------- */
+const HS=[];{const R=mulberry32(5150);const [hx0,hy0,hz0]=HOUSE;const W=0.26,D=0.24,H=0.34;
+ for(let i=0;i<4200;i++){const f=R();let x,y,z,k=0;
+   if(f<0.62){const s=Math.floor(R()*4);y=hy0+R()*H;const u=R()*2-1;[x,z]=[[u*W,D],[W,u*D],[u*W,-D],[-W,u*D]][s];
+     if(s===0&&((Math.abs(x+0.1)<0.07&&y>hy0+0.14&&y<hy0+0.26)||(Math.abs(x-0.12)<0.05&&y<hy0+0.2)))k=2;}
+   else{const u=R()*2-1,v=R();y=hy0+H+v*0.2;const ww=W*(1-v)+0.01;x=u*ww;z=(R()*2-1)*D*1.05;k=1;}
+   HS.push([hx0+x,y,hz0+z,k===2?1.0:(k===1?0.34:0.24),k===2?0.62:(k===1?0.18:0.22),k===2?0.25:(k===1?0.14:0.32),k]);}}
+const HOUSEO=stat(HS,1.15);
+
+/* ---------- nuages d'orage ---------- */
+const CL=[];{const R=mulberry32(31);for(let i=0;i<16000;i++){const x=(R()*2-1)*7,z=2-R()*10;const y=2.25+0.35*Math.sin(x*0.9+z*0.7)*Math.cos(z*0.5)+(R()-.5)*0.35;CL.push([x,y,z,R()]);}}
+const CLOUD=dyn(CL.length,2.4);CL.forEach((c,i)=>CLOUD.p.set([c[0],c[1],c[2]],i*3));CLOUD.g.attributes.position.needsUpdate=true;
+
+/* ---------- pluie ---------- */
+const NR=2600,RDROP=3;const RAIN=dyn(NR*RDROP,1.0);const RD=[];{const R=mulberry32(808);for(let i=0;i<NR;i++)RD.push([(R()*2-1)*6,R(),2.4-R()*8,0.8+0.4*R()]);}
+
+/* ---------- éclairs : déplacement du point milieu, ramifications (graine fixe) ---------- */
+const STR=[]; // {t,tg,seed,g(intensité globale du flash)}
+STR.push({t:1.0,tg:TIP,seed:11,g:1.0},{t:2.55,tg:TIP,seed:12,g:1.0});
+for(let k=0;k<23;k++)STR.push({t:4.62+3.55*Math.pow(k/22,0.85),tg:TIP,seed:100+k,g:0.12,life:0.16,cnt:1});
+STR.push({t:9.25,tg:TIP,seed:201,g:0.45},{t:10.35,tg:TREE,seed:202,g:0.45},{t:11.3,tg:TIP,seed:203,g:0.35},
+  {t:12.95,tg:TREE,seed:204,g:0.9},{t:14.3,tg:TREE,seed:205,g:0.55},
+  {t:15.7,tg:[-4.2,GY,-5],seed:206,g:0.3},{t:16.9,tg:[-0.6,GY,-6.5],seed:207,g:0.3},
+  {t:18.35,tg:TIP,seed:208,g:0.7},{t:20.0,tg:TIP,seed:209,g:0.45});
+function bolt(seed,tg){const R=mulberry32(seed);const top=[tg[0]+(R()-.5)*1.6,2.35,tg[2]+(R()-.5)*0.8];
+  let pts=[top,tg];for(let lv=0;lv<7;lv++){const np=[pts[0]];for(let i=0;i<pts.length-1;i++){const a=pts[i],b=pts[i+1];const L=Math.hypot(b[0]-a[0],b[1]-a[1],b[2]-a[2]);
+      np.push([(a[0]+b[0])/2+(R()-.5)*L*0.42,(a[1]+b[1])/2+(R()-.5)*L*0.12,(a[2]+b[2])/2+(R()-.5)*L*0.3],b);}pts=np;}
+  const out=[];const dens=(A,w)=>{for(let i=0;i<A.length-1;i++){const a=A[i],b=A[i+1];for(let s=0;s<5;s++){const u=s/5;out.push([mix(a[0],b[0],u),mix(a[1],b[1],u),mix(a[2],b[2],u),w]);}}};
+  dens(pts,1);
+  for(let b=0;b<5;b++){const i0=Math.floor(R()*pts.length*0.7);const a=pts[i0];const dir=[(R()-.5)*1.2,-0.4-R()*0.5,(R()-.5)*0.5];const len=0.25+R()*0.45;
+    let br=[a,[a[0]+dir[0]*len,a[1]+dir[1]*len,a[2]+dir[2]*len]];for(let lv=0;lv<4;lv++){const np=[br[0]];for(let i=0;i<br.length-1;i++){const p=br[i],q=br[i+1];const L=Math.hypot(q[0]-p[0],q[1]-p[1]);np.push([(p[0]+q[0])/2+(R()-.5)*L*0.4,(p[1]+q[1])/2+(R()-.5)*L*0.15,(p[2]+q[2])/2+(R()-.5)*L*0.3],q);}br=np;}
+    dens(br,0.35);}
+  return out;}
+STR.forEach(s=>{s.pts=bolt(s.seed,s.tg);s.life=s.life||0.42;});
+const NB=Math.max(...STR.map(s=>s.pts.length))*3;const BOLT=dyn(NB,1.9);
+function boltI(s,t){const a=t-s.t;if(a<0||a>s.life)return 0;const L=s.life;
+  return Math.exp(-a/(0.17*L))+0.75*Math.exp(-Math.pow((a-0.30*L)/(0.06*L),2))+0.4*Math.exp(-Math.pow((a-0.6*L)/(0.05*L),2));}
+
+/* flash d'ambiance : une seule montée/descente douce par frappe (pas de scintillement plein écran : photosensibilité) */
+function flashE(s,t){const a=t-s.t;if(a<0||a>s.life*2.2)return 0;return Math.min(1,a/0.03)*Math.exp(-a/(0.32*s.life));}
+/* ---------- caméra [t, px,py,pz, tx,ty,tz] ---------- */
+const KEYS=[[0,0.30,0.50,4.4,0,0.58,0],[2.6,0.12,0.55,4.05,0,0.60,0],[4.4,-0.55,0.32,3.7,0,0.52,0],[8.4,0.55,0.42,4.7,0,0.40,0],
+  [10.6,0.9,0.55,7.6,0.6,0.15,0],[12.45,2.15,0.05,2.75,2.6,-0.36,-0.5],[15.25,2.95,-0.02,2.45,2.6,-0.40,-0.5],
+  [15.25,-1.65,-0.40,2.45,-2.4,-0.85,-0.3],[17.95,-2.80,-0.50,2.05,-2.4,-0.88,-0.3],
+  [17.95,0.25,0.5,4.6,0,0.52,0],[21.2,0,0.6,5.0,0,0.62,0],[24.0,0.30,0.50,4.4,0,0.58,0]];
+const CUTS=[0,15.25,17.95,99];
+function herm(t,col){let c=0;while(t>=CUTS[c+1])c++;const K=KEYS.filter(k=>k[0]>=CUTS[c]&&k[0]<=CUTS[c+1]).filter((k,i,a)=>!(i===a.length-1&&k[0]===CUTS[c+1]&&a.length>2&&a[i-1][0]!==k[0]&&false));
+  // garder les clés du plan courant : la dernière clé au temps de coupe appartient au plan qui se termine
+  const KK=[];for(const k of KEYS){if(k[0]<CUTS[c]||k[0]>CUTS[c+1])continue;KK.push(k);}
+  // si deux clés au même temps de coupe (début), garder celle qui ouvre le plan
+  let L=KK;if(c>0){const i=KEYS.findIndex(k=>k[0]===CUTS[c]);const j=KEYS.length-1-[...KEYS].reverse().findIndex(k=>k[0]===CUTS[c]);L=KEYS.slice(j).filter(k=>k[0]<=CUTS[c+1]);}
+  if(c<CUTS.length-2){const end=KEYS.findIndex(k=>k[0]===CUTS[c+1]);L=L.filter(k=>KEYS.indexOf(k)<=end);}
+  let i=0;while(i<L.length-2&&t>L[i+1][0])i++;
+  const t0=L[i][0],t1=L[i+1][0],p0=L[i][col],p1=L[i+1][col];const sl=(a,b)=>(L[b][col]-L[a][col])/(L[b][0]-L[a][0]);
+  const m0=i>0?0.5*(sl(i-1,i)+sl(i,i+1)):0,m1=i+2<L.length?0.5*(sl(i,i+1)+sl(i+1,i+2)):0;
+  const h=t1-t0,s=clamp((t-t0)/h),s2=s*s,s3=s2*s;return (2*s3-3*s2+1)*p0+(s3-2*s2+s)*h*m0+(-2*s3+3*s2)*p1+(s3-s2)*h*m1;}
+
+/* ---------- état ---------- */
+let FLASH=0;
+function light(arr,D,amb,fl,near,warm){for(let i=0;i<arr.length;i++){const a=arr[i];let k=amb;let cr=a[3],cg=a[4],cb=a[5];
+    const em=(a[6]===2||(warm&&a[6]===2))?1:0;
+    const f=fl*(near?near(a):1);
+    D.c[i*3]=cr*(em?1:k)+f*0.55*(0.6+cr);D.c[i*3+1]=cg*(em?1:k)+f*0.62*(0.6+cg);D.c[i*3+2]=cb*(em?1:k)+f*0.85*(0.6+cb);}
+  D.g.attributes.aCol.needsUpdate=true;}
+function stateScene(t){
+  // éclairs actifs
+  let fl=0,n=0;const tipGlow=[0,0];
+  for(const s of STR){fl+=flashE(s,t)*s.g;const I=boltI(s,t);if(I<=0)continue;
+    for(const p of s.pts){if(n>=NB)break;const j=mulberry32(n+Math.floor(t*30)*7)();const w=p[3]*I;
+      BOLT.p.set([p[0]+(j-.5)*0.006,p[1],p[2]],n*3);BOLT.c.set([0.75*w,0.85*w,1.0*w],n*3);BOLT.z[n]=p[3]>0.5?2.2:1.4;n++;}
+    if(s.tg===TIP)tipGlow[0]=Math.max(tipGlow[0],I);if(s.tg===TREE)tipGlow[1]=Math.max(tipGlow[1],I);}
+  for(let i=n;i<NB;i++){BOLT.c.set([0,0,0],i*3);}
+  BOLT.g.attributes.position.needsUpdate=true;BOLT.g.attributes.aCol.needsUpdate=true;BOLT.g.attributes.aSz.needsUpdate=true;
+  FLASH=Math.min(1.0,fl*0.8);
+  const amb=0.55+0.15*Math.sin(t*0.7);
+  light(TW,TOWER,amb,FLASH*0.9,a=>a[6]===3?1+2.5*tipGlow[0]:1);
+  light(CT,CITY,amb,FLASH*0.6);
+  light(GR,GROUND,amb,FLASH*0.7,a=>1+1.5*tipGlow[1]*Math.exp(-((a[0]-TREE[0])**2+(a[2]-TREE[2])**2)/0.5));
+  light(TR,TREEO,amb*1.2,FLASH*0.9,a=>1+1.8*tipGlow[1]);
+  light(HS,HOUSEO,amb*1.2,FLASH*0.8);
+  // fenêtre de la maison : chaleur qui respire pendant « rentre »
+  // nuages éclairés de l'intérieur près du départ de l'éclair
+  const act=STR.filter(s=>flashE(s,t)>0);
+  for(let i=0;i<CL.length;i++){const c=CL[i];let e=0;for(const s of act){const p=s.pts[0];const d2=(c[0]-p[0])**2+(c[2]-p[2])**2;e+=flashE(s,t)*s.g*Math.exp(-d2/1.6)*1.6;}
+    const k=0.06+0.05*c[3]+e+FLASH*0.12;CLOUD.c.set([0.30*k,0.32*k,0.55*k],i*3);}
+  CLOUD.g.attributes.aCol.needsUpdate=true;
+  // pluie
+  const rain=0.55+0.45*sm(lin(t,15.2,15.8))*(1-sm(lin(t,17.6,18.2)));
+  for(let i=0;i<NR;i++){const d=RD[i];const y=2.3-((d[1]+t*1.9*d[3])%1)*3.9;
+    for(let k=0;k<RDROP;k++){const idx=(i*RDROP+k)*3;RAIN.p.set([d[0]+0.012*k,y+0.035*k,d[2]],idx);const a=(0.10+FLASH*0.25)*rain*(1-k*0.25);RAIN.c.set([0.45*a,0.55*a,0.75*a],idx);}}
+  RAIN.g.attributes.position.needsUpdate=true;RAIN.g.attributes.aCol.needsUpdate=true;
+  // zone de danger sous l'arbre (anneau corail qui pulse)
+  const dz=sm(lin(t,13.3,13.8))*(1-sm(lin(t,14.9,15.2)));
+  for(let k=0;k<NDZ;k++){const R=mulberry32(k+9000);const a=R()*TAU;const ring=(k%3);const rr=0.18+ring*0.14+0.03*Math.sin(t*4-ring);
+    const x=TREE_BASE[0]+Math.cos(a)*rr,z=TREE_BASE[2]+Math.sin(a)*rr;DZ.p.set([x,GY+hill(x,z)+0.01,z],k*3);const al=dz*(0.7-ring*0.18)*(0.7+0.3*R());DZ.c.set([1.0*al,0.38*al,0.30*al],k*3);}
+  DZ.g.attributes.position.needsUpdate=true;DZ.g.attributes.aCol.needsUpdate=true;
+  // fenêtre chaude plus intense pendant « rentre à l'intérieur »
+  const home=sm(lin(t,15.5,16.2))*(1-sm(lin(t,17.6,18.0)));
+  if(home>0){for(let i=0;i<HS.length;i++)if(HS[i][6]===2){HOUSEO.c[i*3]*=1+home*1.2;HOUSEO.c[i*3+1]*=1+home*1.0;}HOUSEO.g.attributes.aCol.needsUpdate=true;}
+  // caméra (secousse légère aux grands impacts)
+  const sh=0.012*FLASH;const R=mulberry32(Math.floor(t*30)+5);
+  cam.position.set(herm(t,1)+(R()-.5)*sh,herm(t,2)+(R()-.5)*sh,herm(t,3));cam.lookAt(herm(t,4),herm(t,5),herm(t,6));cam.updateMatrixWorld();
+  bloom.strength=0.85+0.6*Math.min(1,FLASH);
+}
+
+/* ---------- textes ---------- */
+const B=[
+ {id:'q1',a:0,z:2.5,a2:23.9,y:240,L:[['sb','font-size:62px','Un éclair ne frappe'],['bk','font-size:100px','jamais deux fois'],['bk','font-size:100px','au même <span class="co">endroit</span>&#8239;?']]},
+ {id:'st',a:2.6,z:4.35,y:250,stamp:1,L:[['','font-size:150px','<span id="stampBox">MYTHE</span>']]},
+ {id:'st2',a:3.05,z:4.35,y:450,L:[['sb','font-size:58px','Il frappe <span class="go">souvent</span> au même endroit.']]},
+ {id:'v1',a:4.45,z:8.35,y:220,stg:0.5,L:[['md','font-size:56px','L’Empire State Building'],['bk','font-size:150px','<span class="go">≈&#8239;<span id="cnt">0</span></span>'],['bk','font-size:76px','frappes par an'],['sb','font-size:48px','en moyenne.']]},
+ {id:'c1',a:8.45,z:12.3,y:230,stg:0.5,L:[['md','font-size:58px','Ce qui attire la foudre&#8239;:'],['bk','font-size:104px','<span class="cy">haut</span>, <span class="go">pointu</span>,'],['bk','font-size:104px','<span class="cy">isolé.</span>'],['sb','font-size:50px','Arbres et montagnes aussi.']]},
+ {id:'a1',a:12.45,z:15.15,y:230,stg:0.5,L:[['md','font-size:50px','Sous un arbre pendant l’orage&#8239;?'],['bk','font-size:120px','<span class="co">2<sup style="font-size:.5em">e</sup> cause</span>'],['bk','font-size:74px','de victimes de la foudre.']]},
+ {id:'d1',a:15.25,z:17.85,y:230,stg:0.45,L:[['md','font-size:60px','Dehors,'],['bk','font-size:100px','aucun endroit'],['bk','font-size:100px','<span class="co">n’est sûr.</span>'],['sb','font-size:56px','Rentre à <span class="go">l’intérieur.</span>']]},
+ {id:'o1',a:17.95,z:21.15,y:230,stg:0.45,L:[['md','font-size:52px','«&#8239;Jamais deux fois&#8239;»&#8239;?'],['bk','font-size:96px','Plutôt'],['bk','font-size:120px','<span class="go">≈&#8239;23 fois</span>'],['bk','font-size:96px','par an.']]},
+ {id:'sh',a:19.4,z:21.15,y:800,btn:1,L:[['bd','font-size:36px','<span id="shb">Envoie ça à celui qui s’abrite sous un arbre</span>']]},
+ {id:'en',a:21.25,z:23.85,y:230,L:[['bd','font-size:50px','<span class="cy">Ép.&nbsp;14</span>&#8239;: les autruches cachent'],['bk','font-size:104px','leur tête'],['bk','font-size:104px','dans le sable&#8239;?']]},
+ {id:'bt',a:21.6,z:23.85,y:600,btn:1,L:[['bd','font-size:50px','<span id="btn">Abonne-toi</span>']]},
+];
+const TX=document.getElementById('texts');
+B.forEach(b=>{const d=document.createElement('div');d.className='blk';d.style.top=b.y+'px';b.el=d;b.lines=[];
+  b.L.forEach(([cls,css,html])=>{const ln=document.createElement('div');ln.className='ln '+cls;ln.style.cssText=css;ln.innerHTML=html;d.appendChild(ln);b.lines.push(ln);});TX.appendChild(d);});
+const $=id=>document.getElementById(id);
+const ENT=0.28,EXT=0.24;
+function styleText(t){
+  for(const b of B){const el=b.el;let a=b.a,z=b.z;
+    if(b.a2&&t>=b.a2){a=b.a2;z=99;}
+    if(t<a-0.02||t>z+0.02){el.style.opacity=0;continue;}
+    el.style.opacity=1;
+    b.lines.forEach((L,li)=>{let op=1,sx=1,sy=1,rot=0;const la=a+li*(b.stg||0.08);
+      if((a>0)&&!b.stamp&&!b.btn){if(t<la){op=0;}else if(t<la+ENT+0.3){const p=lin(t,la,la+ENT);const e=springE(p);sy=mix(1.45,1,e);sx=mix(0.94,1,e);op=lin(p,0,0.3);}}
+      if(b.stamp===1){const k=lin(t,a,a+0.16);sx=sy=mix(1.3,1.0,eback(k));op=lin(t,a,a+0.04);rot=-6;}
+      if(b.btn){const k=lin(t,a,a+0.32);sx=sy=mix(0.6,1.0,eback(k))*(1+0.035*Math.sin(Math.max(0,t-a-0.5)*6.0));op=lin(t,a,a+0.06);}
+      if(t>z-EXT){const p=lin(t,z-EXT,z);op*=1-p;sy*=mix(1,0.6,ein(p));sx*=mix(1,1.04,p);}
+      L.style.opacity=op.toFixed(3);L.style.transform=`rotate(${rot}deg) scale(${sx.toFixed(4)},${sy.toFixed(4)})`;});}
+  // compteur : une unité par frappe
+  {let c=0;for(const s of STR)if(s.cnt&&t>=s.t)c++;$('cnt').textContent=String(c);}
+  const so=(id,a,z)=>{$(id).style.opacity=(lin(t,a,a+0.2)*(1-lin(t,z-0.24,z))).toFixed(3);};
+  so('srcA',4.8,17.85);
+  $('flash').style.opacity=(0.16*clamp(FLASH-0.4,0,1)).toFixed(3);
+  $('pillW').style.opacity=(t<2.55?(1-lin(t,2.35,2.55)):lin(t,23.9,24.0)).toFixed(3);
+  $('sim').style.opacity=(0.95*(1-lin(t,21.0,21.25)+lin(t,23.9,24.0))).toFixed(3);
+  {const g=eio(lin(t,21.25,21.8))*(1-eio(lin(t,23.55,23.9)));const w=238+262*g,h=w*379/1160;const top=1473.6-h;
+   for(const e of [$('sig'),$('sigShine')]){e.style.width=w.toFixed(1)+'px';e.style.left=(930-w).toFixed(1)+'px';e.style.top=top.toFixed(1)+'px';}$('sigShine').style.height=h.toFixed(1)+'px';
+   $('sigShine').style.opacity=g.toFixed(3);$('sigShine').style.backgroundPosition=`${(100-lin(t,21.8,22.6)*100).toFixed(1)}% 0`;
+   $('at').style.opacity=(lin(t,21.85,22.1)*(1-lin(t,23.4,23.65))).toFixed(3);$('at').style.top=(top-64)+'px';}
+}
+
+window.renderAt=(t)=>{stateScene(t);styleText(t);comp.render();};
+window.sceneReady=(async()=>{for(const f of ['IDBk','IDSb','IDBd','IDMd','IMd'])await document.fonts.load(`100px ${f}`);await document.fonts.ready;
+  for(const b of B){b.el.style.opacity=1;for(const L of b.lines){L.style.opacity=1;L.style.transform='none';const rg=document.createRange();rg.selectNodeContents(L);const bb=rg.getBoundingClientRect();
+    if(bb.left<62||bb.right>1018)console.warn('trop large',b.id,Math.round(bb.left),Math.round(bb.right));}
+    const rr=b.el.getBoundingClientRect();console.warn('bloc',b.id,'y',Math.round(rr.top),'→',Math.round(rr.bottom));b.el.style.opacity=0;}
+  window.renderAt(0);})();
+</script></body></html>
