@@ -22,7 +22,7 @@ Certaines espèces qui se nourrissent de nectar voient la lumière ultraviolette
 Les insectivores lancent des cris ultrasonores et repèrent leurs proies grâce à l'écho : c'est l'écholocation. Un sens en plus, pas une vue en moins. Leurs yeux sont même riches en bâtonnets, les cellules qui servent à voir dans la pénombre.
 
 🎯 La nuance
-Toutes ne voient pas pareil : certaines petites espèces ont une vue de nuit plutôt moyenne (un peu comme nous) et comptent surtout sur l'écholocation. Mais « aveugle », non. Comme le dit Bat Conservation International : certaines voient sans doute mieux que toi.
+Toutes ne voient pas pareil : les espèces du Royaume-Uni, par exemple, ont une vue de nuit plutôt moyenne (un peu comme nous) et comptent surtout sur l'écholocation (Bat Conservation Trust). Mais « aveugle », non. Comme le dit Bat Conservation International : certaines voient sans doute mieux que toi.
 
 ✅ Action : la prochaine fois que tu entends « aveugle comme une chauve-souris », tu sais quoi répondre.
 
