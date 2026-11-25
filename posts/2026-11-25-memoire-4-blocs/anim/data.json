@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 47,
+ "shape": "sphere",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "DÉFI MÉMOIRE · <b>BBS 2001</b>",
+ "hook": [
+  "Retiens *7* *chiffres* ?",
+  "Ton cerveau tient _4_ _blocs._"
+ ],
+ "hookFs": 66,
+ "counter": {
+  "prefix": "≈ ",
+  "value": 4,
+  "suffix": "",
+  "dec": 0,
+  "label": "<b>blocs</b> : la limite moyenne de ta <b>mémoire de travail</b><br>quand tu ne peux pas regrouper"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>1956</b> : Miller popularise le « nombre magique » <b>7&nbsp;±&nbsp;2</b>",
+  "<b>2001</b> : Cowan revoit le chiffre : <b>≈&nbsp;4&nbsp;blocs</b> en moyenne (3 à 5)",
+  "L'astuce : <b>491 · 738 · 265</b> = 3 blocs au lieu de 9 chiffres"
+ ],
+ "cardFs": 36,
+ "nuance": "Une moyenne, pas une règle : elle varie selon les personnes<br>et ce qu'on doit retenir.",
+ "nuaFs": 31,
+ "cta": "Envoie-le à quelqu'un et teste-le",
+ "ctaFs": 34,
+ "source": "Cowan · Behav. Brain Sci. 2001 · Miller · Psychol. Rev. 1956",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#3EF0B0"
+}
