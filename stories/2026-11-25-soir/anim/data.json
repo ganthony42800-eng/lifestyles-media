@@ -1,0 +1,28 @@
+{
+ "kind": "citation",
+ "w": 1080,
+ "h": 1920,
+ "duree": 9,
+ "seed": 61,
+ "shape": "helice",
+ "nodes": 300,
+ "link": 1.2,
+ "camZ": 13,
+ "camY": 0,
+ "lookY": 0,
+ "pill": "MERCREDI SOIR · <b>MENTAL</b>",
+ "quote": [
+  "Ton cerveau",
+  "s’habitue à *tout.*",
+  "Habitue-le à",
+  "_tenir_ _parole._"
+ ],
+ "quoteFs": 96,
+ "author": "MAXIME LIFESTYLES",
+ "authFs": 28,
+ "sigW": 430,
+ "t": {"q": -0.5, "step": 0.17, "auth": 4.4},
+ "pos": {"pill": 280, "quote": 560, "line": 1360, "auth": 1392, "sig": 1540},
+ "formAdv": 1.6,
+ "accent": "#FFB547"
+}

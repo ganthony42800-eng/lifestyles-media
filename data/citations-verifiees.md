@@ -67,6 +67,7 @@ Règle : une citation n'entre ici qu'avec une source primaire datée (lettre, li
 | Date | Maxime | Thème |
 |---|---|---|
 | 2026-11-24 | Pas besoin d'envie. Besoin d'une heure fixe. | Assiduité (story animée 13:00) |
+| 2026-11-25 | Ton cerveau s’habitue à tout. Habitue-le à tenir parole. | Mental / conditionnement (story animée du soir) |
 
 ## Réserve (à vérifier à la source avant usage)
 - « Soyez patient envers tout ce qui n'est pas résolu dans votre cœur… Vivez maintenant les questions » (Rilke, lettre à F. X. Kappus, 1903, Lettres à un jeune poète) : année confirmée (The Marginalian), date et lieu de la lettre non relus le 19/11 → relire le texte allemand avant usage
