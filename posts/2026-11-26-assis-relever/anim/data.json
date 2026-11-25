@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 83,
+ "shape": "tore",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "DÉFI · <b>EUR J PREV CARDIOL 2012</b>",
+ "hook": [
+  "Assieds-toi par *terre.*",
+  "Relève-toi _sans_ _les_ _mains._"
+ ],
+ "hookFs": 64,
+ "counter": {
+  "prefix": "≈ ×",
+  "value": 5,
+  "suffix": "",
+  "dec": 0,
+  "label": "le risque de décès des scores <b>0 à 3</b> sur 10<br>face aux scores <b>8 à 10</b>, en ≈&nbsp;6&nbsp;ans"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>2&nbsp;002</b> adultes de <b>51 à 80&nbsp;ans</b>, suivis ≈&nbsp;6&nbsp;ans",
+  "Note sur <b>10</b> : <b>−1</b> point par appui (main, genou…)",
+  "Chaque point en plus : <b>−21&nbsp;%</b> de mortalité"
+ ],
+ "cardFs": 36,
+ "nuance": "Un indicateur, pas une cause (étude d'observation).<br>Sur un sol dégagé, sans forcer.",
+ "nuaFs": 31,
+ "cta": "Envoie-le à quelqu'un et testez-vous",
+ "ctaFs": 34,
+ "source": "Brito et al. · Eur J Prev Cardiol · 2012",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#4FD1FF"
+}

@@ -1,0 +1,67 @@
+{
+ "kind": "fait",
+ "w": 1080,
+ "h": 1350,
+ "duree": 11,
+ "seed": 97,
+ "shape": "sphere",
+ "nodes": 260,
+ "link": 1.15,
+ "camZ": 13.5,
+ "camY": -0.4,
+ "lookY": -0.3,
+ "pill": "NUTRITION · <b>INT J EPIDEMIOL 2017</b>",
+ "hook": [
+  "*5* *par* *jour* ?",
+  "La science dit plutôt _10._"
+ ],
+ "hookFs": 70,
+ "counter": {
+  "prefix": "−",
+  "value": 31,
+  "suffix": " %",
+  "dec": 0,
+  "label": "de risque de <b>décès prématuré</b> à <b>800&nbsp;g par jour</b><br>(≈&nbsp;10 portions) face à zéro fruit ni légume"
+ },
+ "bigFs": 230,
+ "lblFs": 36,
+ "bullets": [
+  "<b>95</b> études · jusqu'à <b>2&nbsp;millions</b> de personnes",
+  "Déjà <b>2,5 portions</b> (200&nbsp;g) : <b>−15&nbsp;%</b>",
+  "Gain jusqu'à <b>800&nbsp;g</b> · 1&nbsp;portion&nbsp;=&nbsp;80&nbsp;g"
+ ],
+ "cardFs": 36,
+ "nuance": "Études d'observation : un lien, pas une preuve.<br>Au-delà de 800&nbsp;g, pas de données.",
+ "nuaFs": 31,
+ "cta": "Envoie-le à celui qui s'arrête à 5",
+ "ctaFs": 34,
+ "source": "Aune et al. · Int J Epidemiol · 2017",
+ "srcFs": 24,
+ "sigW": 330,
+ "t": {
+  "hookOut": null,
+  "big": 1.3,
+  "bigOut": 5.4,
+  "card": 5.7,
+  "cardOut": null,
+  "nua": 7.9,
+  "cta": 9.0,
+  "hook": -1.2,
+  "pill": -1
+ },
+ "pos": {
+  "pill": 66,
+  "hook": 148,
+  "big": 390,
+  "lbl": 690,
+  "card": 380,
+  "nua": 880,
+  "cta": 1030,
+  "src": 1150,
+  "sig": 1205
+ },
+ "formAdv": 2.0,
+ "edge0": 0.35,
+ "tilt": 0.35,
+ "accent": "#8BEA5B"
+}
