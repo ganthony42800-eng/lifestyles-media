@@ -1,0 +1,147 @@
+/* ép. 22 — digestion : assiette néon (protéines corail, glucides or, lipides cyan), flamme métabolique, 100 unités de calories
+   dont ≈ 10 partent en chaleur (repas mixte) → 3 jauges de verre (protéines 20-30 %, glucides 5-10 %, lipides 0-3 %) →
+   100 kcal de protéines : 20 puis jusqu'à 30 unités partent, il en reste 70-80 → céleri qui tourne, flamme minuscule →
+   assiette : la part de protéines grandit à la place des glucides → ép. 23. */
+S.background=new THREE.Color('#08060A');
+const ry=(v,a)=>[v[0]*Math.cos(a)+v[2]*Math.sin(a),v[1],-v[0]*Math.sin(a)+v[2]*Math.cos(a)];
+const rz=(v,a)=>[v[0]*Math.cos(a)-v[1]*Math.sin(a),v[0]*Math.sin(a)+v[1]*Math.cos(a),v[2]];
+const NOFF=[0,-99,0];
+const COR=[1.0,0.40,0.30],GOLD=[1.0,0.68,0.24],CYN=[0.30,0.88,1.0],GRN=[0.42,1.0,0.40],ORG=[1.0,0.46,0.10];
+
+/* ---------- table + bokeh ---------- */
+const NTB=7000;const TB=dyn(NTB,2.6);const TBU=[];{const R=mulberry32(2201);for(let i=0;i<NTB;i++)TBU.push([(R()*2-1)*3.0,-4+R()*5.4,R()]);}
+const NBK=140;const BK=dyn(NBK,26);const BKU=[];{const R=mulberry32(2202);for(let i=0;i<NBK;i++)BKU.push([(R()*2-1)*6,R()*3.6-0.2,-3.5-R()*4,R(),R()]);}
+
+/* ---------- assiette ---------- */
+const NPL=4200;const PL=dyn(NPL,1.3);const PLU=[];{const R=mulberry32(2203);for(let i=0;i<NPL;i++)PLU.push([R()*TAU,Math.sqrt(R()),R()]);}
+function buildPlate(glow){let n=0;for(const [a,r,q] of PLU){let p,k;
+  if(q<0.38){const rr=0.88+0.12*r;p=[Math.cos(a)*rr*0.95,0.035*(rr>0.94?1:0.6),Math.sin(a)*rr*0.95];k=0.42;PL.p.set(p,n*3);PL.c.set(sc([0.75,0.82,1.0],k*glow),n*3);}
+  else{const rr=r*0.82;p=[Math.cos(a)*rr,0.0,Math.sin(a)*rr];k=0.07+0.05*(Math.abs(rr-0.6)<0.01?1:0);PL.p.set(p,n*3);PL.c.set(sc([0.7,0.75,0.9],k*glow),n*3);}
+  n++;}upd(PL);}
+
+/* ---------- aliments : filet (protéines), tas de grains (glucides), gouttes (lipides) ---------- */
+const NFD=6600;const FD=dyn(NFD,1.25);const FDU=[];{const R=mulberry32(2204);for(let i=0;i<NFD;i++)FDU.push([R(),R(),R(),R()]);}
+function buildFood(pro,carb,glow,t){let n=0;
+  for(const [k0,u,v,w] of FDU){let p,c;
+    if(k0<0.42){ // filet : ellipsoïde aplati
+      if(pro<=0.01){FD.p.set(NOFF,n*3);n++;continue;}
+      const th=Math.acos(2*u-1),ph=v*TAU;let x=Math.sin(th)*Math.cos(ph),y=Math.abs(Math.cos(th)),z=Math.sin(th)*Math.sin(ph);
+      const s=pro;p=[-0.26+x*0.30*s,0.02+y*0.10*s,0.10+z*0.17*s];
+      const stripe=0.75+0.25*Math.sin(x*18+z*6);const lit=0.45+0.55*y;c=sc(COR,0.55*stripe*lit);}
+    else if(k0<0.84){ // grains : dôme
+      if(carb<=0.01){FD.p.set(NOFF,n*3);n++;continue;}
+      const a=u*TAU,r=Math.sqrt(v);const h=(1-r*r)*0.17*carb;const s=carb;
+      p=[0.30+Math.cos(a)*r*0.27*s,0.02+h*(0.7+0.3*w),-0.08+Math.sin(a)*r*0.22*s];c=sc(GOLD,(0.30+0.25*w)*(0.7+0.3*(1-r)));}
+    else{ // gouttes d'huile
+      const d=Math.floor(u*7);const cx=0.10+0.09*Math.cos(d*2.1),cz=0.42+0.06*Math.sin(d*1.7);const rr=0.022+0.012*(d%3);
+      const th=Math.acos(2*v-1),ph=w*TAU;p=[cx+Math.sin(th)*Math.cos(ph)*rr,0.03+Math.abs(Math.cos(th))*rr*0.7,cz+Math.sin(th)*Math.sin(ph)*rr];
+      c=sc(CYN,0.5*(0.8+0.2*Math.sin(t*3+d)));}
+    FD.p.set(p,n*3);FD.c.set(sc(c,glow),n*3);n++;}upd(FD);}
+
+/* ---------- flamme métabolique ---------- */
+const NFL=2600;const FL=dyn(NFL,1.7);const FLU=[];{const R=mulberry32(2205);for(let i=0;i<NFL;i++)FLU.push([R(),R(),R()]);}
+function buildFlame(base,W,H,inten,t){let n=0;
+  for(const [u,v,w] of FLU){if(inten<=0.001){FL.p.set(NOFF,n*3);n++;continue;}
+    const life=(u+t*0.9*(0.7+0.6*w))%1;const r=W*(1-life)*Math.sqrt(v)*(0.8+0.2*Math.sin(t*7+w*20));const a=w*TAU+life*3;
+    const p=[base[0]+Math.cos(a)*r+0.03*Math.sin(t*5+life*9),base[1]+life*H,base[2]+Math.sin(a)*r*0.6];
+    const k=inten*Math.sin(Math.PI*life)*(1-0.5*life);const col=lerp3([1.0,0.80,0.35],[1.0,0.30,0.06],life);
+    FL.p.set(p,n*3);FL.c.set(sc(col,0.42*k),n*3);n++;}upd(FL);}
+
+/* ---------- 100 unités de calories ---------- */
+const NOR=40;const ORB=dyn(100*NOR,1.45);const ORU=[];{const R=mulberry32(2206);for(let i=0;i<NOR;i++){const th=Math.acos(2*R()-1),ph=R()*TAU,rr=Math.cbrt(R());ORU.push([Math.sin(th)*Math.cos(ph)*rr,Math.cos(th)*rr,Math.sin(th)*Math.sin(ph)*rr]);}}
+const PERM=[...Array(100).keys()];{const R=mulberry32(2207);for(let i=99;i>0;i--){const j=Math.floor(R()*(i+1));[PERM[i],PERM[j]]=[PERM[j],PERM[i]];}}
+const RANK=new Array(100);PERM.forEach((g,k)=>RANK[g]=k);
+const GC=[0,0.50,0],GS=0.104;
+/* burn : nb d'unités parties (flottant, animé) ; blink : unités suivantes qui clignotent (fourchette) */
+function buildGrid(col,app,burn,blink,flameP,t){let n=0;
+  for(let g=0;g<100;g++){const rI=Math.floor(g/10),cI=g%10;const k=RANK[g];
+    let c0=[GC[0]+(cI-4.5)*GS,GC[1]+(4.5-rI)*GS,GC[2]];
+    const ap=sm(lin(app,(rI*0.06+cI*0.02),(rI*0.06+cI*0.02)+0.35));
+    let bp=clamp(burn-k);let p0=c0,cc=col,a=ap,s=1;
+    if(bp>0){const e=eio(bp);p0=lerp3(c0,[flameP[0]+0.06*Math.sin(g),flameP[1]+0.05,flameP[2]],e);cc=lerp3(col,ORG,sm(bp*2));a=ap*(1-sm(lin(bp,0.75,1)));s=1-0.4*e;}
+    else if(k<burn+blink){const f=0.5+0.5*Math.sin(t*9+g);cc=lerp3(col,ORG,0.75*f);}
+    for(const o of ORU){if(a<=0.002){ORB.p.set(NOFF,n*3);n++;continue;}
+      const rr=0.030*s;ORB.p.set([p0[0]+o[0]*rr,p0[1]+o[1]*rr,p0[2]+o[2]*rr],n*3);
+      const cen=1-Math.hypot(o[0],o[1],o[2]);ORB.c.set(sc(cc,a*(0.20+0.45*cen)),n*3);n++;}}
+  upd(ORB);}
+
+/* ---------- jauges de verre ---------- */
+const NGA=3000;const GA=[dyn(NGA,1.3),dyn(NGA,1.3),dyn(NGA,1.3)];const GAU=[];{const R=mulberry32(2208);for(let i=0;i<NGA;i++)GAU.push([R(),R(),R()]);}
+const GH=1.0,GR=0.15;const pctY=p=>p/30*GH;
+function buildGauge(D,x,lo,hi,fill,col,on,t){let n=0;
+  for(const [u,v,w] of GAU){let p,c;const a=u*TAU;
+    if(w<0.42){ // verre : anneaux haut/bas + filets verticaux
+      const ring=w<0.12;const y=ring?(w<0.06?0:GH):v*GH;const vert=!ring&&(Math.floor(u*12)%3===0);
+      if(!ring&&!vert){D.p.set(NOFF,n*3);n++;continue;}
+      p=[x+Math.cos(a)*GR,y,Math.sin(a)*GR];c=sc([0.75,0.85,1.0],ring?0.30:0.10);}
+    else{ // contenu : jusqu'à hi*fill ; la fourchette lo-hi brille
+      const top=pctY(hi)*fill;const y=v*top;if(top<0.002){D.p.set(NOFF,n*3);n++;continue;}
+      const rr=GR*0.86*Math.sqrt((w-0.42)/0.58);p=[x+Math.cos(a)*rr,y,Math.sin(a)*rr];
+      const inBand=y>=pctY(lo);const pulse=0.7+0.3*Math.sin(t*6+y*20);c=sc(col,inBand?0.55*pulse:0.26);}
+    D.p.set(p,n*3);D.c.set(sc(c,on),n*3);n++;}upd(D);}
+
+/* ---------- céleri ---------- */
+const NCE=5200;const CE=dyn(NCE,1.3);const CEU=[];{const R=mulberry32(2209);for(let i=0;i<NCE;i++)CEU.push([R(),R(),R()]);}
+function buildCelery(c,rot,glow,t){let n=0;
+  for(const [u,v,w] of CEU){let p,col;
+    if(w<0.82){ // tige en U, côtes
+      const s=u;const a=(v*2-1)*Math.PI*0.62;const rr=0.085*(1-0.25*s)*(1+0.05*Math.cos(a*7));
+      p=[Math.sin(a)*rr,s*1.25-0.55,-Math.cos(a)*rr*0.8];p=rz(p,0.18*s*s);
+      const rib=0.65+0.35*Math.pow(0.5+0.5*Math.cos(a*7),3);col=sc(GRN,0.34*rib*(0.8+0.3*s));}
+    else{ // feuilles
+      const lf=Math.floor(v*5);const ang=-1.0+lf*0.5;const L=0.22*(0.6+0.4*((lf*7)%3)/2);const s=u;
+      const side=(w-0.82)/0.18*2-1;p=[Math.sin(ang)*s*L+side*0.05*Math.sin(Math.PI*s)*Math.cos(ang),0.70+Math.cos(ang)*s*L+0.10*s,side*0.03];
+      p=rz(p,0.18);col=sc([0.55,1.0,0.35],0.40);}
+    p=ry(p,rot);p=add(c,p);CE.p.set(p,n*3);CE.c.set(sc(col,glow),n*3);n++;}upd(CE);}
+
+/* ---------- caméra (plans coupés) ---------- */
+const SHOTS=[
+ [0,4.4,[0.0,1.55,2.45,0.0,0.62,0],[0.12,1.42,2.20,0.0,0.62,0]],
+ [4.4,8.4,[0.0,0.80,3.05,0.0,1.02,0],[0.10,0.82,2.90,0.0,1.02,0]],
+ [8.4,12.6,[-0.15,0.85,3.0,0.0,1.05,0],[0.15,0.85,2.85,0.0,1.05,0]],
+ [12.6,16.8,[0.10,0.80,3.05,0.0,1.02,0],[-0.05,0.82,2.90,0.0,1.02,0]],
+ [16.8,18.9,[0.0,0.75,2.55,0.0,0.95,0],[0.0,0.75,2.35,0.0,0.95,0]],
+ [18.9,21.25,[-0.15,1.45,2.35,0.0,0.62,0],[0.10,1.40,2.20,0.0,0.62,0]],
+ [21.25,24.01,[0.10,1.40,2.20,0.0,0.62,0],[0.0,1.75,2.9,0.0,0.75,0]]];
+function camAt(t){const s=SHOTS.find(q=>t>=q[0]&&t<q[1])||SHOTS[SHOTS.length-1];const k=sm(lin(t,s[0],s[1]))*0.85+lin(t,s[0],s[1])*0.15;
+  const v=s[2].map((x,i)=>mix(x,s[3][i],k));cam.position.set(v[0],v[1],v[2]);cam.lookAt(v[3],v[4],v[5]);cam.updateMatrixWorld();}
+
+const FLP=[0,1.18,0];
+function stateScene(t){
+  for(const D of [PL,FD,FL,ORB,...GA,CE])D.o.visible=false;
+  let tbOn=1;
+  if(t<4.4){
+    PL.o.visible=FD.o.visible=FL.o.visible=true;buildPlate(1);buildFood(1,1,1,t);
+    buildFlame([0,0.12,0.05],0.20,0.55,mix(0.5,0.9,sm(lin(t,0.3,2.0)))*(t>2.6?mix(1,0.35,sm(lin(t,2.6,3.2))):1),t);
+  } else if(t<8.4){
+    ORB.o.visible=FL.o.visible=true;tbOn=0.6;
+    buildGrid([0.80,0.82,0.95],lin(t,4.4,5.2),10*lin(t,5.7,7.0)+ (t>5.7?0.0:0),0,FLP,t);
+    buildFlame(FLP,0.13,0.42,0.35+0.6*sm(lin(t,5.9,7.2)),t);
+  } else if(t<12.6){
+    for(const D of GA)D.o.visible=true;tbOn=0.6;
+    const f=k=>eio(lin(t,8.9+k*0.35,10.1+k*0.35));
+    buildGauge(GA[0],-0.52,20,30,f(0),COR,sm(lin(t,8.45,8.8)),t);
+    buildGauge(GA[1],0.0,5,10,f(1),GOLD,sm(lin(t,8.45,8.8)),t);
+    buildGauge(GA[2],0.52,0,3,f(2),CYN,sm(lin(t,8.45,8.8)),t);
+  } else if(t<16.8){
+    ORB.o.visible=FL.o.visible=true;tbOn=0.6;
+    const burn=20*eio(lin(t,13.3,14.9));const blink=t>14.9?10:0;
+    buildGrid(COR,lin(t,12.6,13.3),burn,blink,FLP,t);
+    buildFlame(FLP,0.15,0.48,0.35+0.75*sm(lin(t,13.5,15.0)),t);
+  } else if(t<18.9){
+    CE.o.visible=FL.o.visible=true;tbOn=0.7;
+    buildCelery([0,0.45,0],(t-16.8)*0.9-0.6,sm(lin(t,16.8,17.2)),t);
+    buildFlame([0.0,-0.18,0.0],0.06,0.16,0.35,t);
+  } else {
+    PL.o.visible=FD.o.visible=FL.o.visible=true;
+    const g=t<21.25?1:mix(1,0.45,sm(lin(t,21.25,22.0)));
+    const sw=eio(lin(t,19.3,20.4));buildPlate(g);buildFood(mix(1,1.35,sw),mix(1,0.7,sw),g,t);
+    buildFlame([-0.1,0.12,0.08],0.22,0.6,0.8*g,t);
+  }
+  for(let i=0;i<NTB;i++){const [x,z,q]=TBU[i];const grain=0.5+0.5*Math.sin(x*14+Math.sin(z*3)*2);const k=0.045*(0.5+0.5*grain)*(0.7+0.3*q)*tbOn;
+    TB.p.set([x,-0.01-0.006*q,z],i*3);TB.c.set([k*0.95,k*0.60,k*0.38],i*3);}upd(TB);
+  for(let i=0;i<NBK;i++){const [x,y,z,q,w]=BKU[i];const k=0.018*(0.5+0.5*Math.sin(t*0.6+q*20))*(w<0.5?1:0.7);
+    BK.p.set([x+0.1*Math.sin(t*0.2+q*5),y,z],i*3);BK.c.set(w<0.5?[k*1.0,k*0.55,k*0.25]:[k*0.35,k*0.8,k*1.0],i*3);}upd(BK);
+  camAt(t);
+  bloom.strength=0.8;
+}
