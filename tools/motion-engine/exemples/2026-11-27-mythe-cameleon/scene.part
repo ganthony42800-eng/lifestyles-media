@@ -1,0 +1,136 @@
+/* ép. 19 — caméléon panthère en particules. Accroche : vert sur sa branche, fondu dans les feuilles → tampon PAS SURTOUT,
+   une vague de couleurs vives le parcourt de la tête à la queue → duel de deux mâles qui s'embrasent (turquoise, bandes rouges,
+   tête orange) → gros plan sur la peau : réseau triangulaire de nanocristaux qui s'écartent, la lumière renvoyée change de
+   couleur → nuance : il redevient vert dans le feuillage → ép. 20 dauphin. */
+const ry=(v,a)=>[v[0]*Math.cos(a)+v[2]*Math.sin(a),v[1],-v[0]*Math.sin(a)+v[2]*Math.cos(a)];
+const LD=nrm([-0.35,0.8,0.5]);
+const RIM=nrm([0.75,0.3,-0.6]);
+function shade(n,base,rimK){const d=Math.max(0,n[0]*LD[0]+n[1]*LD[1]+n[2]*LD[2]);const rm=Math.pow(Math.max(0,n[0]*RIM[0]+n[1]*RIM[1]+n[2]*RIM[2]),2)*(rimK||1);
+  return [base[0]*(0.30+0.85*d)+rm*0.18,base[1]*(0.30+0.85*d)+rm*0.22,base[2]*(0.30+0.85*d)+rm*0.18];}
+
+/* ---------- jungle : feuilles (statiques) + branche ---------- */
+const NLV=210,PPL=95;const LEAF=dyn(NLV*PPL,2.4);
+{const R=mulberry32(1919);let n=0;for(let l=0;l<NLV;l++){
+  let cx=(R()*2-1)*3.4,cy=-1.6+R()*3.6,cz=-0.7-R()*3.2;
+  if(l<26){cz=0.35+R()*0.5;cx=(R()<0.5?-1:1)*(0.75+R()*0.9);cy=-0.9+R()*1.9;}
+  const ang=R()*TAU,tilt=(R()*2-1)*0.9,len=0.22+0.28*R(),wid=len*0.38;const hue=R();const far=l<26?0.55:clamp(1.15-(-cz)*0.18,0.35,1);
+  for(let i=0;i<PPL;i++){const s=R()*2-1,w=(R()*2-1)*Math.sqrt(1-s*s)*wid;const lx=s*len,ly=w;
+    const x=lx*Math.cos(ang)-ly*Math.sin(ang),y=lx*Math.sin(ang)+ly*Math.cos(ang);
+    LEAF.p.set([cx+x,cy+y,cz+x*tilt*0.5],n*3);const vein=Math.abs(w)<wid*0.08?1.35:1;const k=(0.16+0.10*R())*far*vein;
+    LEAF.c.set([k*mix(0.35,0.75,hue),k*1.15,k*mix(0.25,0.45,hue)],n*3);n++;}}upd(LEAF);}
+const BY=-0.205,BR=0.045;
+const NBR=7000;const BRANCH=dyn(NBR,1.8);
+{const R=mulberry32(19);for(let i=0;i<NBR;i++){let x,y,z;const a=R()*TAU;
+  if(i<6200){x=-3.5+R()*7;const rr=BR*(1+0.08*Math.sin(x*9));y=BY+Math.cos(a)*rr;z=Math.sin(a)*rr;}
+  else{const s=R();x=-2.7+s*0.5;const rr=0.016*(1-s*0.6);y=BY+s*0.55+Math.cos(a)*rr;z=-0.05+Math.sin(a)*rr;}
+  BRANCH.p.set([x,y,z],i*3);const bark=0.75+0.25*Math.sin(x*37+a*3);const nn=[0,Math.cos(a),Math.sin(a)];
+  BRANCH.c.set(shade(nn,[0.30*bark,0.19*bark,0.11*bark],0.6),i*3);}upd(BRANCH);}
+const NST=900;const MOTE=dyn(NST,1.4);const MOU=[];{const R=mulberry32(7);for(let i=0;i<NST;i++)MOU.push([(R()*2-1)*3,-1.2+R()*3,-0.3-R()*2.5,R()]);}
+
+/* ---------- caméléon (géométrie partagée, deux instances) ---------- */
+const OR=mulberry32(1920);
+const NBO=8200,NHE=3400,NTA=2600,NLG=2200,NEY=700,NCR=500;
+const NCH=NBO+NHE+NTA+NLG+NEY+NCR;
+const BOU=[];for(let i=0;i<NBO;i++)BOU.push([OR(),OR()*TAU,OR()]);
+const HEU=[];for(let i=0;i<NHE;i++)HEU.push([OR(),OR()*TAU,OR()]);
+const TAU_=[];for(let i=0;i<NTA;i++)TAU_.push([OR(),OR()*TAU,OR()]);
+const LGU=[];for(let i=0;i<NLG;i++)LGU.push([i%4,OR(),OR()*TAU]);
+const EYU=[];for(let i=0;i<NEY;i++){const th=Math.acos(2*OR()-1),ph=OR()*TAU;EYU.push([i%2,Math.sin(th)*Math.cos(ph),Math.cos(th),Math.sin(th)*Math.sin(ph)]);}
+const CRU=[];for(let i=0;i<NCR;i++)CRU.push([OR(),OR()]);
+const CH1=dyn(NCH,1.1),CH2=dyn(NCH,1.1);
+const bodyX=u=>mix(-0.30,0.30,u);
+const bodyY=u=>0.03*Math.sin(Math.PI*u);
+const bodyA=u=>0.125*(0.50+0.50*Math.sin(Math.PI*(0.08+0.84*u)));
+const bodyB=u=>0.052*(0.55+0.45*Math.sin(Math.PI*(0.08+0.84*u)));
+/* couleur : k = 0 camouflage vert, 1 parure (turquoise, bandes rouge-orangé, liseré clair, tête orange) */
+const GREEN=[0.30,0.78,0.26],GREEN_L=[0.62,0.92,0.42],GREEN_D=[0.14,0.42,0.14];
+const TURQ=[0.10,0.62,1.05],RED=[1.05,0.26,0.10],ORANGE=[1.05,0.55,0.12],CREAM=[1.0,0.92,0.62];
+function skin(k,u,ca,q,head){
+  const camo=ca<-0.25&&ca>-0.55?GREEN_L:(Math.sin(u*31+q*2)>0.82?GREEN_D:GREEN);
+  let disp;
+  if(head)disp=ca<-0.3?TURQ:ORANGE;
+  else{const band=Math.sin(u*Math.PI*7.0)>0.35;disp=(ca<-0.28&&ca>-0.56)?CREAM:(band?RED:TURQ);}
+  const tex=0.86+0.14*q;return sc(lerp3(camo,disp,k),tex);}
+let ST={};
+function buildCham(D,P,t){
+  const {pos,yaw,k,wave,puff,glow,eyeA}=P;let n=0;
+  const toW=v=>add(pos,ry(v,yaw));
+  const kk=u=>clamp(k*(1+wave)-wave*(1-u));   // vague de couleur : la tête d'abord
+  const put=(p,c,s)=>{D.p.set(toW(p),n*3);D.c.set(sc(c,glow*0.50),n*3);D.z[n]=s||1.1;n++;};
+  const br=1+0.02*Math.sin(t*2.4+pos[0]);
+  // corps : section ovale haute et plate + crête dorsale
+  for(const [u,a,q] of BOU){const A=bodyA(u)*br,B=bodyB(u)*br*(1+0.35*puff);const ca=Math.cos(a),sa=Math.sin(a);
+    const y=bodyY(u)+A*ca,z=B*sa;const nn=nrm([0,ca/A,sa/B]);put([bodyX(u),y,z],shade(nn,skin(kk(u*0.75+0.05),u,ca,q,0),1.2),1.15);}
+  for(const [u,q] of CRU){const uu=u*1.08-0.02;const x=bodyX(clamp(uu));const top=bodyY(clamp(uu))+bodyA(clamp(uu))*br;
+    const sp=Math.abs(Math.sin(uu*44));put([x,top+0.012+0.012*sp*q,0],sc(skin(kk(uu*0.75),uu,1,q,0),1.3),1.0);}
+  // tête : cône vers l'avant + casque qui remonte vers l'arrière
+  for(const [v,a,q] of HEU){const x=0.29+0.22*v;const ca=Math.cos(a),sa=Math.sin(a);
+    const A=0.085*(1-0.62*v)+(ca>0?0.055*(1-v)*(1-v):0);const B=0.050*(1-0.55*v)*(1+0.25*puff);
+    const y=0.035-0.02*v+A*ca+(ca>0?0.03*(1-v):0);const z=B*sa;const ku=kk(0.85+0.15*v);
+    const lip=Math.abs(ca+0.15)<0.08&&v>0.45;
+    put([x,y,z],shade(nrm([0.25,ca,sa]),lip?sc(CREAM,0.9):skin(ku,0.9,ca,q,1),1.2),1.1);}
+  // yeux en tourelle (pupille qui balaie)
+  for(const [s,x,y,z] of EYU){const side=s?1:-1;const c=[0.42,0.065,0.052*side];const r0=0.034;
+    const v=add(c,[x*r0,y*r0,z*r0*0.8]);const ea=eyeA*(s?1:-1);const pd=[Math.cos(ea)*0.6,0.2,side*0.8];
+    const pup=(x*pd[0]+y*pd[1]+z*pd[2]*side*side)>0.88;
+    put(v,pup?[0.04,0.04,0.04]:shade([x,y,z*side],skin(kk(1),0.9,0.2,0.5,1),1.1),pup?1.6:1.0);
+    if(pup)D.c.set(sc([1.6,1.5,1.2],glow*0.9),(n-1)*3);}
+  // queue enroulée (spirale qui passe sous la branche)
+  for(const [s,a,q] of TAU_){const th=s*2.9*Math.PI;const r=0.16*Math.exp(-0.30*th);const ph=Math.PI/2+th;
+    const cx=-0.30-0.02,cy=BY+0.05;const x=cx+Math.cos(ph)*r-0.10*sm(s*3),y=cy+Math.sin(ph)*r;const rr=0.030*(1-0.72*s)+0.004;
+    const tn=[-Math.sin(ph),Math.cos(ph)];const nn=[Math.cos(a)*tn[1],Math.cos(a)*-tn[0],Math.sin(a)];
+    put([x+nn[0]*rr,y+nn[1]*rr,nn[2]*rr],sc(shade(nn,skin(kk(0.05*(1-s)),0.1+s*0.5,Math.cos(a),q,0),1.1),1-0.7*s),1.05);}
+  // pattes : hanche → genou (vers l'extérieur) → pied pincé sur la branche
+  for(const [lg,u,a] of LGU){const front=lg<2,side=lg%2?1:-1;const ux=front?0.82:0.15;const hx=bodyX(ux),hy=bodyY(ux)-bodyA(ux)*0.55;
+    const knee=[hx+(front?-0.035:0.05),hy-0.07,side*0.10];const foot=[hx+(front?0.035:-0.015),BY+BR*0.9,side*0.025];
+    const p=u<0.5?lerp3([hx,hy,side*0.035],knee,u*2):lerp3(knee,foot,(u-0.5)*2);const rr=u>0.92?0.022:0.016;
+    put(add(p,[Math.cos(a)*rr*0.6,Math.sin(a)*rr,Math.cos(a)*rr*0.6*side]),shade(nrm([0,Math.sin(a),Math.cos(a)*side]),skin(kk(ux*0.75),ux,-0.1,0.5,0),1.1),1.05);}
+  upd(D);}
+
+/* ---------- peau au microscope : réseau triangulaire de nanocristaux ---------- */
+const LC=[0,40,0];const NI=19,NJ=21,PPC=11;const NLAT=NI*NJ*PPC;const LAT=dyn(NLAT,1.5);
+const LAU=[];{const R=mulberry32(55);for(let i=0;i<NLAT;i++){const th=Math.acos(2*R()-1),ph=R()*TAU;LAU.push([Math.sin(th)*Math.cos(ph),Math.cos(th),Math.sin(th)*Math.sin(ph),R()]);}}
+const NBM=2400;const BEAM=dyn(NBM,1.6);const BMU=[];{const R=mulberry32(56);for(let i=0;i<NBM;i++)BMU.push([R(),R(),R()]);}
+const latCol=k=>{const c0=[0.22,0.50,1.30],c1=[0.35,1.10,0.55],c2=[1.30,0.70,0.14];return k<0.5?lerp3(c0,c1,k*2):lerp3(c1,c2,(k-0.5)*2);};
+let LATK=0,LATON=0,LATS=1;
+function buildLattice(t){
+  const d=mix(0.105,0.150,LATK)*LATS;let n=0;const col=latCol(LATK);
+  for(let j=0;j<NJ;j++)for(let i=0;i<NI;i++){const x=(i-(NI-1)/2+(j%2?0.5:0))*d,y=(j-(NJ-1)/2)*d*0.866;
+    const wob=0.006*Math.sin(t*3+i*1.3+j*0.7);const fall=Math.hypot(x,y*1.1);const vis=LATON*clamp(1.35-fall*0.85,0,1);
+    for(let q=0;q<PPC;q++){const [ux,uy,uz,r]=LAU[n];const rr=0.020*(0.4+0.6*r);
+      LAT.p.set([LC[0]+x+ux*rr,LC[1]+y+uy*rr+wob,LC[2]+uz*rr*0.6],n*3);const k=vis*(q===0?1.6:0.55);LAT.c.set(sc(col,k),n*3);n++;}}
+  upd(LAT);
+  // lumière blanche qui arrive en haut à gauche, lumière colorée renvoyée en haut à droite
+  for(let i=0;i<NBM;i++){const [u,r,q]=BMU[i];const out=i>=NBM/2;const s=(u+t*0.55)%1;const w=(r-0.5)*0.10;
+    const dir=out?nrm([0.55,0.85,0.25]):nrm([-0.55,0.85,0.25]);const along=out?s*2.6:(1-s)*2.6;
+    const p=add(add(LC,sc(dir,along)),[w*dir[1],-w*dir[0],(q-0.5)*0.05]);
+    const k=LATON*0.32*(0.4+0.6*Math.pow(Math.sin(Math.PI*s),0.5));const c=out?sc(col,k*1.1):[k,k,k*1.05];
+    BEAM.p.set(LATON>0?p:[0,-99,0],i*3);BEAM.c.set(c,i*3);}upd(BEAM);}
+
+/* ---------- caméra ---------- */
+const SHOTS=[
+ [0,4.4,[0.80,0.22,2.25,0.06,0.10,0],[0.62,0.18,1.95,0.07,0.09,0]],
+ [4.4,8.6,[2.2,0.6,3.35,0,0.10,0],[1.9,0.5,3.05,0,0.09,0]],
+ [8.6,13.2,[-1.35,0.45,2.95,0.0,0.09,0],[-1.05,0.35,2.6,0.05,0.09,0]],
+ [13.2,18.0,[0,40.15,3.1,0,40.05,0],[0,40.15,2.55,0,40.05,0]],
+ [18.0,21.25,[0.60,0.18,1.95,0.07,0.10,0],[0.95,0.28,2.45,0.05,0.11,0]],
+ [21.25,24.01,[0.95,0.28,2.45,0.05,0.11,0],[1.15,0.40,3.0,0.05,0.14,0]]];
+function camAt(t){const s=SHOTS.find(q=>t>=q[0]&&t<q[1])||SHOTS[SHOTS.length-1];const k=sm(lin(t,s[0],s[1]))*0.85+lin(t,s[0],s[1])*0.15;
+  const v=s[2].map((x,i)=>mix(x,s[3][i],k));cam.position.set(v[0],v[1],v[2]);cam.lookAt(v[3],v[4],v[5]);cam.updateMatrixWorld();}
+
+function stateScene(t){
+  const lab=(t>=13.2&&t<18.0);
+  LEAF.o.visible=!lab;BRANCH.o.visible=!lab;MOTE.o.visible=!lab;CH1.o.visible=!lab;
+  const duel=(t>=4.4&&t<13.2);CH2.o.visible=duel;LAT.o.visible=lab;BEAM.o.visible=lab;
+  const eyeA=0.6*Math.sin(t*0.9)+0.3*Math.sin(t*2.3);
+  if(t<4.4){const k=sm(lin(t,2.55,3.55));buildCham(CH1,{pos:[0,0,0],yaw:0,k,wave:1.2,puff:0.2*k,glow:1,eyeA},t);}
+  else if(duel){const pulse=0.88+0.12*Math.sin(t*3.1);const sway=0.03*Math.sin(t*2.2);
+    buildCham(CH1,{pos:[-0.62+sway,0,0],yaw:0,k:pulse,wave:0.2,puff:0.8+0.2*Math.sin(t*2.6),glow:1,eyeA:0.0},t);
+    buildCham(CH2,{pos:[0.62-sway,0,0],yaw:Math.PI,k:0.9+0.1*Math.sin(t*2.7+1),wave:0.2,puff:0.8+0.2*Math.sin(t*2.4+1),glow:0.95,eyeA:0.0},t);}
+  else if(!lab){const k=t<21.25?1-sm(lin(t,18.2,19.4)):0;buildCham(CH1,{pos:[0,0,0],yaw:0,k,wave:0.8,puff:0.1*k,glow:t<21.25?1:mix(1,0.6,sm(lin(t,21.25,21.9))),eyeA},t);}
+  if(lab){LATON=sm(lin(t,13.25,13.9));LATK=eio(lin(t,14.7,16.6));LATS=1+0.05*sm(lin(t,13.2,18));buildLattice(t);}
+  if(!lab){for(let i=0;i<NST;i++){const [x,y,z,q]=MOU[i];const yy=y+((t*0.04*(0.5+q))%1)*0.3;const k=0.10*Math.pow(0.5+0.5*Math.sin(t*1.3+q*20),3);
+    MOTE.p.set([x+0.05*Math.sin(t*0.5+q*9),yy,z],i*3);MOTE.c.set([k*1.0,k*0.95,k*0.6],i*3);}upd(MOTE);}
+  camAt(t);
+  bloom.strength=lab?0.95:0.70;
+}
