@@ -1,0 +1,155 @@
+
+/* ép. 18 — chat tigré en particules. Accroche : il tombe sur le dos le long d'une façade de nuit et se retourne → tampon
+   PAS TOUJOURS → au ralenti : il se plie en deux, l'avant tourne d'un côté, l'arrière de l'autre (flèches) → gros plan tête :
+   l'oreille interne (3 canaux qui s'allument) → le piège : il glisse d'une table sur le dos, trop bas, atterrit sur le flanc
+   (puis se relève) → de haut : fenêtre ouverte, chat sur le rebord, la vitre se referme → ép. 19 caméléon. */
+const LD=nrm([-0.35,0.8,0.5]);
+const RIM=nrm([0.75,0.3,-0.6]);
+function shade(n,base,rimK){const d=Math.max(0,n[0]*LD[0]+n[1]*LD[1]+n[2]*LD[2]);const rm=Math.pow(Math.max(0,n[0]*RIM[0]+n[1]*RIM[1]+n[2]*RIM[2]),2)*(rimK||1);
+  return [base[0]*(0.34+0.85*d)+rm*0.55,base[1]*(0.34+0.85*d)+rm*0.50,base[2]*(0.34+0.85*d)+rm*0.62];}
+
+/* ---------- façade d'immeuble (statique) ---------- */
+const WX=3.2,WY=3.6,WW=2.0,WH=2.4,FZ=-3.5;
+const winOf=(x,y)=>{const i=Math.round(x/WX),j=Math.floor((y-1.0)/WY);const cx=i*WX,sy=1.0+j*WY;
+  return (Math.abs(x-cx)<WW/2&&y>sy&&y<sy+WH)?[i,j]:null;};
+const litOf=(i,j)=>{if(i===0&&j===3)return 1;const h=Math.sin(i*12.9898+j*78.233)*43758.5453;return (h-Math.floor(h))<0.42?1:0;};
+const NFA=42000;const FAC=dyn(NFA,3.2);
+{const R=mulberry32(1818);for(let n=0;n<NFA;n++){const x=(R()*2-1)*6.5,y=-1+R()*28;const w=winOf(x,y);let c;
+  if(w){const l=litOf(w[0],w[1]);const q=R();if(w[0]===0&&w[1]===3){c=[0,0,0];}else c=l?[1.05*(0.55+0.45*q),0.62*(0.55+0.45*q),0.26*(0.55+0.45*q)]:[0.05,0.06,0.10];
+    FAC.p.set([x,y,FZ-0.12],n*3);}
+  else{const k=0.05+0.05*R();const edge=(()=>{for(const dx of[-0.06,0.06])for(const dy of[-0.06,0.06])if(winOf(x+dx,y+dy))return 1;return 0;})();
+    c=edge?[0.42,0.45,0.58]:[k*1.0,k*1.1,k*1.5];FAC.p.set([x,y,FZ],n*3);}
+  FAC.c.set(c,n*3);}upd(FAC);}
+/* fenêtre « ouverte » (colonne 0, rangée 3) : intérieur chaud + rebord + vitre coulissante */
+const SILL=1.0+3*WY;
+const NIN=5200;const INW=dyn(NIN,2.6);const INU=[];{const R=mulberry32(77);for(let i=0;i<NIN;i++)INU.push([R()*2-1,R(),R()]);}
+const NPA=2400;const PANE=dyn(NPA,2.2);const PAU=[];{const R=mulberry32(78);for(let i=0;i<NPA;i++)PAU.push([R(),R(),R()]);}
+const NST=1500;const STAR=dyn(NST,1.5);{const R=mulberry32(5);for(let i=0;i<NST;i++){STAR.p.set([(R()*2-1)*40,-5+R()*60,-30],i*3);const k=0.04+0.45*R()**7;STAR.c.set([k*0.9,k*0.92,k],i*3);}upd(STAR);}
+
+/* ---------- pièce (plan bas) : sol + table ---------- */
+const NFL=9000;const FLOOR=dyn(NFL,2.6);{const R=mulberry32(31);for(let i=0;i<NFL;i++){const x=(R()*2-1)*4,z=(R()*2-1)*3.2;FLOOR.p.set([x,0,z],i*3);
+  const d=Math.hypot(x-0.3,z);const k=(0.22+0.10*R())*clamp(1.3-d*0.25,0.2,1);FLOOR.c.set([k*1.0,k*0.85,k*0.72],i*3);}upd(FLOOR);}
+const TX0=-2.4,TX1=-0.05,TY=0.55,TZ=0.55;
+const NTB=7000;const TABLE=dyn(NTB,2.0);{const R=mulberry32(32);for(let i=0;i<NTB;i++){let p;const q=R();
+  if(q<0.62)p=[mix(TX0,TX1,R()),TY,(R()*2-1)*TZ];
+  else if(q<0.80){p=[mix(TX0,TX1,R()),TY-R()*0.05,R()<0.5?-TZ:TZ];}
+  else if(q<0.86){p=[TX1,TY-R()*0.05,(R()*2-1)*TZ];}
+  else{const lg=Math.floor(R()*4);p=[lg%2?TX1-0.08:TX0+0.08,R()*TY,lg<2?-TZ+0.08:TZ-0.08];}
+  TABLE.p.set(p,i*3);const edge=(Math.abs(p[0]-TX1)<0.02||Math.abs(Math.abs(p[2])-TZ)<0.02)?1.6:1;const k=(0.30+0.08*R())*edge;TABLE.c.set([k*0.95,k*0.75,k*0.55],i*3);}upd(TABLE);}
+const NDU=700;const DUST=dyn(NDU,1.3);const DUU=[];{const R=mulberry32(33);for(let i=0;i<NDU;i++)DUU.push([R()*TAU,R(),R()]);}
+
+/* ---------- chat ---------- */
+const OR=mulberry32(1818);
+const NBO=9000,NLG=2800,NHE=2600,NMZ=400,NEA=500,NEY=40,NTL=700;
+const CAT=dyn(NBO+NLG+NHE+NMZ+NEA+NEY+NTL,1.15);
+const BOU=[];for(let i=0;i<NBO;i++)BOU.push([OR(),OR()*TAU,OR()]);
+const LGU=[];for(let i=0;i<NLG;i++)LGU.push([i%4,OR(),OR()*TAU]);
+const SPH=n=>{const a=[];for(let i=0;i<n;i++){const th=Math.acos(2*OR()-1),ph=OR()*TAU;a.push([Math.sin(th)*Math.cos(ph),Math.cos(th),Math.sin(th)*Math.sin(ph),OR()]);}return a;};
+const HEU=SPH(NHE),MZU=SPH(NMZ);
+const EAU=[];for(let i=0;i<NEA;i++)EAU.push([i%2,OR(),OR()]);
+const TLU=[];for(let i=0;i<NTL;i++)TLU.push([OR(),OR()*TAU]);
+const FUR=[1.0,0.56,0.22],BELLY=[1.0,0.88,0.72];
+let PF=Math.PI,PR=Math.PI,BEND=0,SIT=0,YAW=0.5,POS=[0,0,0],CATK=1,HEADK=1,TUCK=0,PITCH=0;
+const rx=(v,a)=>[v[0],v[1]*Math.cos(a)-v[2]*Math.sin(a),v[1]*Math.sin(a)+v[2]*Math.cos(a)];
+const rz=(v,a)=>[v[0]*Math.cos(a)-v[1]*Math.sin(a),v[0]*Math.sin(a)+v[1]*Math.cos(a),v[2]];
+const ry=(v,a)=>[v[0]*Math.cos(a)+v[2]*Math.sin(a),v[1],-v[0]*Math.sin(a)+v[2]*Math.cos(a)];
+const spineY=u=>-BEND*0.16*Math.sin(Math.PI*u)+SIT*0.62*u;
+const bx=u=>mix(-0.45,0.42,u)*(1-0.5*SIT);
+const rollU=u=>mix(PR,PF,sm(lin(u,0.38,0.62)));
+const toW=v=>add(POS,ry(rz(v,PITCH),YAW));
+let HEADW=[0,0,0];
+function buildCat(t){let n=0;
+  const put=(p,c,s)=>{CAT.p.set(toW(p),n*3);CAT.c.set(sc(c,CATK),n*3);CAT.z[n]=s||1.15;n++;};
+  const br=1+0.015*Math.sin(t*2.2);
+  // corps (tube elliptique le long de la colonne, chaque moitié roulée de son côté)
+  for(const [u,a,q] of BOU){const x=bx(u),y0=spineY(u);const R0=0.125*(0.82+0.28*Math.sin(Math.PI*u))*br;const ph=rollU(u);
+    const ca=Math.cos(a),sa=Math.sin(a);const off=rx([0,R0*ca,R0*0.86*sa],ph);
+    const stripe=0.72+0.28*Math.sin(u*40+ca*1.5);const base=ca<-0.35?BELLY:sc(FUR,ca>0.1?stripe:0.95);
+    put([x,y0+off[1],off[2]],shade(nrm(rx([0,ca,sa],ph)),base,1.3),1.2);}
+  // pattes
+  for(const [k,u,a] of LGU){const front=k<2,side=k%2?1:-1;const u0=front?0.84:0.16;const x0=bx(u0),y0=spineY(u0);const ph=front?PF:PR;
+    let tilt=front?-TUCK*0.9:TUCK*0.9;let L=front?0.33+0.39*SIT:0.33;if(!front&&SIT>0){L=mix(0.33,0.10,SIT);tilt+=SIT*0.9;}
+    const d=[Math.sin(tilt),-Math.cos(tilt),0];const at=[0,-0.06,0.065*side];
+    const r0=u>0.9?0.042:mix(0.05,0.033,u);const loc=add(add(at,sc(d,u*L)),[Math.cos(a)*r0*0.8,0,Math.sin(a)*r0]);
+    const w=rx(loc,ph);put([x0+w[0],y0+w[1],w[2]],shade(nrm(rx([Math.cos(a),0,Math.sin(a)],ph)),u>0.9?BELLY:FUR,1.3),1.15);}
+  // tête
+  const x1=bx(1),y1=spineY(1);const hl=[0.13,0.06+SIT*0.04,0];
+  const hW=(v)=>{const w=rx(v,PF);return [x1+w[0],y1+w[1],w[2]];};
+  HEADW=toW(hW(hl));
+  for(const [x,y,z,q] of HEU){const v=add(hl,[x*0.115,y*0.10,z*0.11]);put(hW(v),sc(shade(rx([x,y,z],PF),y<-0.4?BELLY:FUR,1.3),HEADK),1.1);}
+  for(const [x,y,z,q] of MZU){const v=add(hl,[0.09+x*0.05,-0.03+y*0.04,z*0.055]);put(hW(v),sc(shade(rx([x,y,z],PF),BELLY,1.2),HEADK),1.05);}
+  for(const [s,h,q] of EAU){const side=s?1:-1;const b=Math.sqrt(q)*(1-h);const ang=q*TAU;const v=add(hl,[-0.01+Math.cos(ang)*0.03*b,0.08+h*0.085,0.06*side+Math.sin(ang)*0.02*b]);
+    put(hW(v),sc(shade(rx([0.2,0.6,0.5*side],PF),h>0.85?[0.4,0.25,0.2]:FUR,1.4),HEADK),1.1);}
+  for(let i=0;i<NEY;i++){const s=i%2?1:-1;const v=add(hl,[0.095,0.028,0.048*s]);put(hW(v),[0.55,1.7,0.55],1.6);}
+  // queue
+  for(const [u,a] of TLU){const sw=0.06*Math.sin(t*2.0+u*3);const loc=[-0.47-0.36*u,0.02+0.22*u*u+sw*u,0.10*Math.sin(u*2.5+t*1.4)];const w=rx(loc,PR);const r0=0.032*(1-0.3*u);
+    put(add([w[0],spineY(0)+w[1],w[2]],[0,Math.cos(a)*r0,Math.sin(a)*r0]),shade([0,Math.cos(a),Math.sin(a)],sc(FUR,0.75+0.25*Math.sin(u*14)),1.2),1.1);}
+  upd(CAT);}
+
+/* canaux semi-circulaires (3 anneaux orthogonaux) + otolithes */
+const NCA=3*300+40;const CANAL=dyn(NCA,1.35);
+/* flèches de rotation (avant / arrière) */
+const NAR=2*900;const ARR=dyn(NAR,1.3);
+
+/* ---------- caméra ---------- */
+const fallY=t=>23-1.25*t-0.10*t*t;
+const SHOTS=[
+ [0,4.45,null,null],
+ [4.45,8.45,[1.15,14.55,2.9,0,14.0,0],[0.85,14.45,2.55,0,14.0,0]],
+ [8.45,13.45,null,null],
+ [13.45,17.95,[0.9,1.75,2.7,-0.2,0.35,0],[0.8,1.55,2.35,0.1,0.30,0]],
+ [17.95,21.25,[1.5,SILL+1.2,1.6,0,SILL+0.9,FZ],[1.2,SILL+1.1,0.9,0,SILL+0.85,FZ]],
+ [21.25,24.01,[1.2,SILL+1.1,0.9,0,SILL+0.85,FZ],[1.6,SILL+1.4,2.6,0,SILL+1.1,FZ]]];
+function camAt(t){let s=SHOTS.find(q=>t>=q[0]&&t<q[1])||SHOTS[SHOTS.length-1];const k=sm(lin(t,s[0],s[1]))*0.85+lin(t,s[0],s[1])*0.15;
+  if(s[0]===0){const y=fallY(t);const a=0.25+0.12*k;cam.position.set(Math.sin(a)*3.3+0.2,y+0.55,Math.cos(a)*3.3);cam.lookAt(0.1,y-0.05,0);cam.updateMatrixWorld();return;}
+  if(s[0]===8.45){const h=HEADW;cam.position.set(h[0]+mix(1.05,0.90,k),h[1]+0.16,h[2]+mix(1.15,0.98,k));cam.lookAt(h[0]-0.02,h[1]+0.02,h[2]);cam.updateMatrixWorld();return;}
+  const v=s[2].map((x,i)=>mix(x,s[3][i],k));cam.position.set(v[0],v[1],v[2]);cam.lookAt(v[3],v[4],v[5]);cam.updateMatrixWorld();}
+
+function stateScene(t){
+  PF=0;PR=0;BEND=0;SIT=0;YAW=0.5;PITCH=0;CATK=1;HEADK=1;TUCK=0;
+  const room=(t>=13.45&&t<17.95);
+  FAC.o.visible=!room;STAR.o.visible=!room;INW.o.visible=!room;PANE.o.visible=!room;FLOOR.o.visible=room;TABLE.o.visible=room;DUST.o.visible=room;
+  let canal=0,arrows=0;
+  if(t<4.45){POS=[0,fallY(t),0];YAW=0.55;const kf=eio(lin(t,1.15,2.15)),kr=eio(lin(t,1.55,2.55));PF=Math.PI*(1-kf);PR=Math.PI*(1-kr);
+    BEND=Math.sin(Math.PI*lin(t,1.1,2.6))*1.0;TUCK=Math.sin(Math.PI*lin(t,1.1,2.6))*0.6;}
+  else if(t<8.45){POS=[0,14.0+0.03*Math.sin(t*1.3),0];YAW=0.1;const kf=eio(lin(t,5.0,6.6)),kr=eio(lin(t,5.8,7.4));PF=Math.PI*(1-kf);PR=Math.PI*(1-kr);
+    BEND=Math.sin(Math.PI*lin(t,4.9,7.6))*1.1;TUCK=Math.sin(Math.PI*lin(t,4.9,7.6))*0.7;arrows=lin(t,4.7,5.0)*(1-lin(t,7.9,8.3));}
+  else if(t<13.45){POS=[0,10.0+0.02*Math.sin(t*1.1),0];YAW=0.1;HEADK=mix(1,0.22,sm(lin(t,9.0,9.8)));CATK=mix(1,0.55,sm(lin(t,9.0,9.8)));canal=sm(lin(t,9.3,10.0))*(1-lin(t,13.1,13.45));}
+  else if(t<17.95){YAW=-0.15;
+    // glisse sur le dos du bord de la table, tombe de trop bas, atterrit sur le flanc, se relève
+    const s1=sm(lin(t,13.6,14.4));const f=lin(t,14.4,15.35);const top=TY+0.13;
+    if(t<14.4){POS=[mix(-0.75,-0.30,s1),top,0];PF=Math.PI;PR=Math.PI;PITCH=0;}
+    else if(t<15.35){const ff=f*f;POS=[mix(-0.30,0.30,f),mix(top,0.13,ff),0];PF=Math.PI-1.1*sm(lin(t,14.55,15.35));PR=Math.PI-0.8*sm(lin(t,14.75,15.35));PITCH=-0.25*f;BEND=0.6*f;}
+    else{const b=Math.exp(-(t-15.35)*9)*Math.abs(Math.sin((t-15.35)*16))*0.04;const up=eio(lin(t,16.7,17.5));
+      POS=[0.30,0.13+b+up*0.27,0];PF=mix(Math.PI-1.2,0,up);PR=mix(Math.PI-1.2,0,eio(lin(t,16.8,17.6)));PITCH=mix(-0.05,0,up);BEND=0.3*(1-up);}}
+  else{POS=[0,SILL+0.16,FZ-0.35];YAW=0.55;SIT=1;}
+  buildCat(t);
+  // canaux
+  {const hc=HEADW;let n=0;const k0=canal;
+    for(let r=0;r<3;r++)for(let i=0;i<300;i++){const a=i/300*TAU*0.85;const rr=0.045;let v=[Math.cos(a)*rr,Math.sin(a)*rr,0];
+      if(r===1)v=[v[0],0,v[1]];if(r===2)v=[0,v[0],v[1]];v=ry(v,YAW);const base=add(hc,ry([-0.025,0.035,0.06],YAW));
+      const sp=0.5+0.5*Math.cos(a*1-(t*5+r*2));const k=k0*(0.35+0.9*Math.pow(sp,6));CANAL.p.set(k0>0?add(base,v):[0,-99,0],n*3);CANAL.c.set([0.45*k,1.5*k,2.4*k],n*3);n++;}
+    const R=mulberry32(9);for(let i=0;i<40;i++){const base=add(hc,ry([-0.03+(R()-0.5)*0.02,0.012+(R()-0.5)*0.012,0.06+(R()-0.5)*0.01],YAW));const k=k0*(0.9+0.4*Math.sin(t*3+i));
+      CANAL.p.set(k0>0?base:[0,-99,0],n*3);CANAL.c.set([1.4*k,0.85*k,0.25*k],n*3);n++;}upd(CANAL);}
+  // flèches avant (cyan) / arrière (ambre), tournent en sens opposés
+  {let n=0;for(let h=0;h<2;h++){const xx=h?0.28:-0.30;const sgn=h?1:-1;const ph0=h?PF:PR;
+      for(let i=0;i<900;i++){const u=i/900;const a=sgn*(u*1.35*Math.PI)+(-ph0)+Math.PI*0.25;const rr=0.30+0.006*Math.sin(i);
+        const p=toW([xx,spineY(h?0.8:0.2)+Math.cos(a)*rr,Math.sin(a)*rr]);const head=u>0.9?1.8:0.25+0.75*u;const k=arrows*head;
+        ARR.p.set(arrows>0?p:[0,-99,0],n*3);ARR.c.set(h?[0.33*k,0.9*k,1.0*k]:[1.0*k,0.62*k,0.18*k],n*3);n++;}}upd(ARR);}
+  // fenêtre ouverte : intérieur chaud, rebord, vitre qui se ferme
+  {const sh=(t>=17.95)?1:0.0;const glow=0.55+0.5*sh;
+    for(let i=0;i<NIN;i++){const [x,y,q]=INU[i];let p,c;
+      if(q<0.80){p=[x*WW/2,SILL+y*WH,FZ-0.9-q*0.2];const k=glow*(0.55+0.35*q)*(1-0.4*y);c=[0.95*k,0.58*k,0.25*k];}
+      else if(q<0.93){p=[x*(WW/2+0.08),SILL+(q-0.80)*0.4-0.03,FZ+mix(-0.9,0.15,y)];const k=0.30*glow;c=[k,0.85*k,0.7*k];}
+      else{const side=x<0?-1:1;p=[side*(WW/2+0.02),SILL+y*WH,FZ+0.02];const k=0.6;c=[k*0.8,k*0.85,k];}
+      INW.p.set(p,i*3);INW.c.set(c,i*3);}upd(INW);
+    const cl=eio(lin(t,19.9,20.8));const w=WW*(t<17.95?1:mix(0.08,1,cl));
+    for(let i=0;i<NPA;i++){const [x,y,q]=PAU[i];const xx=-WW/2+x*w;const edge=(x>0.985||y<0.015||y>0.985)?1:0;const k=edge?0.55:0.07+0.06*q;
+      const shine=Math.pow(Math.max(0,Math.sin((x*w+y*1.2-t*0.8)*2.0)),12)*0.25;
+      PANE.p.set([xx,SILL+y*WH,FZ+0.05],i*3);PANE.c.set([(k+shine)*0.75,(k+shine)*0.85,(k+shine)*1.0],i*3);}upd(PANE);}
+  // poussière à l'atterrissage
+  {const on=room&&t>15.35?1:0;const age=t-15.35;for(let i=0;i<NDU;i++){const [a,r0,q]=DUU[i];const rr=0.2+age*(0.5+0.6*r0);const k=on*0.35*Math.exp(-age*1.6)*(0.5+0.5*q);
+    DUST.p.set([0.3+Math.cos(a)*rr,0.02+q*0.05*age,Math.sin(a)*rr*0.8],i*3);DUST.c.set([k,0.9*k,0.8*k],i*3);}upd(DUST);}
+  camAt(t);
+  bloom.strength=room?0.6:0.78;
+}
