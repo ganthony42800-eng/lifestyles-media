@@ -1,0 +1,142 @@
+/* ép. 23 — vaches en particules (robe pie blanche / gris ardoise), pré de nuit sous un ciel d'orage.
+   Accroche : troupeau couché, nuages qui roulent → tampon MYTHE → Met Office : la pluie tombe sur une vache debout ET une couchée
+   → vraie raison : couchée jusqu'à la moitié du temps (anneau d'horloge à moitié rempli, mâchoire qui rumine)
+   → Allen et al. 2015 : thermomètre cyan → rouge, la vache se lève, la chaleur s'échappe de son flanc
+   → nuance : en troupeau elles s'imitent (4 vaches qui se couchent en cascade, pluie ou pas) → ép. 24. */
+S.background=new THREE.Color('#05070C');
+const LD=nrm([0.35,1.0,0.6]);
+function shade(n,base){const d=Math.max(0,n[0]*LD[0]+n[1]*LD[1]+n[2]*LD[2]);const k=0.32+0.80*d;return [base[0]*k,base[1]*k,base[2]*k];}
+const NOFF=[0,-99,0];
+const ry=(v,a)=>[v[0]*Math.cos(a)+v[2]*Math.sin(a),v[1],-v[0]*Math.sin(a)+v[2]*Math.cos(a)];
+
+/* ---------- décor : herbe, nuages, pluie ---------- */
+const NGR=14000;const GR=dyn(NGR,3.2);const GRU=[];{const R=mulberry32(2301);for(let i=0;i<NGR;i++)GRU.push([(R()*2-1)*11,-12+R()*15,R(),R()]);}
+const NCL=9000;const CL=dyn(NCL,30);const CLU=[];{const R=mulberry32(2302);for(let i=0;i<NCL;i++){const b=Math.floor(R()*14);CLU.push([b,(R()*2-1),(R()*2-1),(R()*2-1),R()]);}}
+const CLB=[];{const R=mulberry32(2303);for(let b=0;b<14;b++)CLB.push([(R()*2-1)*9,5.2+R()*2.2,-5-R()*7,2.0+R()*2.2]);}
+const NRN=2600;const RN=dyn(NRN*3,2.6);const RNU=[];{const R=mulberry32(2304);for(let i=0;i<NRN;i++)RNU.push([(R()*2-1)*7,R(),-6+R()*10,R()]);}
+
+/* ---------- vache (géométrie partagée) ---------- */
+const VR=mulberry32(2305);
+// [cx,cy(rel. H),cz, rx,ry,rz, n, part] part : 0 corps,1 cou,2 tête,3 museau,4 oreille,5 corne
+const VEL=[[0,0,0, 0.98,0.43,0.40, 6200,0],[0.92,0.17,0, 0.34,0.25,0.21, 900,1],[1.30,0.20,0, 0.27,0.17,0.15, 1100,2],
+ [1.53,0.11,0, 0.11,0.11,0.12, 380,3],[1.22,0.33,0.19, 0.05,0.035,0.11, 90,4],[1.22,0.33,-0.19, 0.05,0.035,0.11, 90,4],
+ [1.27,0.40,0.09, 0.025,0.06,0.025, 40,5],[1.27,0.40,-0.09, 0.025,0.06,0.025, 40,5]];
+const VU=[];for(const e of VEL){for(let i=0;i<e[6];i++){const th=Math.acos(2*VR()-1),ph=VR()*TAU;VU.push([e,th,ph,VR()]);}}
+const VLEG=[[0.62,0.20,1],[0.62,-0.20,1],[-0.66,0.20,0],[-0.66,-0.20,0]];
+const NLS=170;const VLG=[];for(let l=0;l<4;l++)for(let k=0;k<2;k++)for(let i=0;i<NLS;i++)VLG.push([l,k,VR(),VR()]);
+const NTL=140;const VTL=[];for(let i=0;i<NTL;i++)VTL.push([VR(),VR()]);
+const NVC=VU.length+VLG.length+NTL;
+const WHITE=[0.95,0.93,0.88],SLATE=[0.30,0.36,0.48],PINK=[0.95,0.55,0.55];
+function patch(p,seed){return Math.sin(3.1*p[0]+seed)*Math.sin(2.6*p[1]+1.7*seed)*Math.sin(3.4*p[2]+0.5)+0.55*Math.sin(5.3*p[0]-2.1*p[2]+seed*2.3);}
+function mkV(){return dyn(NVC,1.25);}
+/* P : pos, yaw, lie (0 debout → 1 couchée), chew, graze (tête basse), heat (teinte chaude), glow, seed, sc */
+function buildCow(D,P){
+  const {pos,yaw}=P;const lie=P.lie||0,chew=P.chew||0,graze=P.graze||0,heat=P.heat||0,glow=P.glow==null?1:P.glow,seed=P.seed||1,S0=P.sc||1;
+  const H=mix(1.02,0.50,lie);let n=0;
+  const toW=v=>add(pos,sc(ry(v,yaw),S0));
+  const tint=c=>heat>0?lerp3(c,[c[0]*1.25+0.15,c[1]*0.75,c[2]*0.55],heat):c;
+  const put=(p,c,s)=>{D.p.set(toW(p),n*3);D.c.set(sc(tint(c),glow*0.85),n*3);D.z[n]=(s||1.25)*S0;n++;};
+  const hd=graze*0.55;
+  for(const [e,th,ph2,q] of VU){const part=e[7];
+    const x=Math.cos(th),y=Math.sin(th)*Math.cos(ph2),z=Math.sin(th)*Math.sin(ph2);
+    const nn=nrm([x/e[3],y/e[4],z/e[5]]);
+    let p=[e[0]+x*e[3],H+e[1]+y*e[4],e[2]+z*e[5]];
+    if(part>=2){p[1]-=hd*(part===2?1:1.05);p[0]-=hd*0.25;}
+    if(part===1){const k=clamp((x+1)/2);p[1]-=hd*k*0.8;}
+    if(part===3&&y<0)p[1]+=chew*0.025*Math.sin(P.t*9);
+    let base;
+    if(part===3)base=lerp3(PINK,WHITE,0.3);
+    else if(part===5)base=[0.9,0.85,0.7];
+    else base=patch(p,seed)>0.05?WHITE:SLATE;
+    put(p,shade(nn,base),part===0?1.3:1.2);}
+  for(const [l,k,u,q] of VLG){const L=VLEG[l];const x=L[0],z=L[1],front=L[2];
+    const hipS=[x,H-0.22,z],kneeS=[x+(front?0.02:-0.05),0.48,z],hoofS=[x,0.0,z];
+    const hipL=[x,H-0.25,z*1.05];
+    const kneeL=front?[x+0.30,0.10,z*1.25]:[x+0.30,0.12,z*1.55];
+    const hoofL=front?[x-0.12,0.06,z*1.25]:[x+0.62,0.06,z*1.45];
+    const hip=lerp3(hipS,hipL,lie),knee=lerp3(kneeS,kneeL,lie),hoof=lerp3(hoofS,hoofL,lie);
+    const A=k?knee:hip,B2=k?hoof:knee;let p=add(sc(A,1-u),sc(B2,u));
+    const ang=q*TAU;const rr=(k?0.055:0.085)*(1-0.3*u);p=add(p,[Math.cos(ang)*rr,0,Math.sin(ang)*rr]);
+    const hoofPart=k&&u>0.86;const base=hoofPart?[0.25,0.22,0.2]:(patch(p,seed+3)>0.2?WHITE:SLATE);
+    put(p,sc(base,0.85),1.1);}
+  for(const [u,q] of VTL){const sw=0.06*Math.sin(P.t*1.3+seed);const p=[-0.97-0.05*u+sw*u*u,H+0.30-0.80*u*(1-lie*0.4),sw*u+0.01*Math.cos(q*TAU)];
+    put(p,u>0.85?SLATE:sc(WHITE,0.7),1.0);}
+  upd(D);
+  return {toW,H};
+}
+const CW=[mkV(),mkV(),mkV(),mkV()];
+
+/* ---------- anneau horloge (24 h), thermomètre, chaleur ---------- */
+const NRG=900;const RING=dyn(NRG,1.8);
+const NTH=1400;const TH=dyn(NTH,1.7);const THU=[];{const R=mulberry32(2306);for(let i=0;i<NTH;i++)THU.push([R(),R(),R()]);}
+const NHT=900;const HT=dyn(NHT,2.2);const HTU=[];{const R=mulberry32(2307);for(let i=0;i<NHT;i++)HTU.push([(R()*2-1)*0.9,R(),(R()*2-1)*0.35,R()]);}
+
+/* ---------- caméra (plans coupés) ---------- */
+const SHOTS=[
+ [0,4.4,[0.5,1.6,7.4,0.3,1.55,-0.6],[0.3,1.5,6.6,0.3,1.45,-0.6]],
+ [4.4,9.0,[1.0,1.7,6.6,0.1,1.45,0],[0.6,1.6,6.1,0.1,1.4,0]],
+ [9.0,13.4,[1.6,1.5,4.8,0.4,1.15,0],[1.2,1.45,4.4,0.4,1.1,0]],
+ [13.4,18.0,[1.0,1.6,5.2,0.0,1.4,0],[0.7,1.55,4.9,0.0,1.35,0]],
+ [18.0,21.25,[0.0,1.8,8.8,0.0,1.75,-1.0],[0.5,1.8,8.3,0.0,1.7,-1.0]],
+ [21.25,24.01,[0.5,1.8,8.3,0.0,1.7,-1.0],[0.4,2.3,9.8,0.0,2.2,-1.0]]];
+function camAt(t){const s=SHOTS.find(q=>t>=q[0]&&t<q[1])||SHOTS[SHOTS.length-1];const k=sm(lin(t,s[0],s[1]))*0.85+lin(t,s[0],s[1])*0.15;
+  const v=s[2].map((x,i)=>mix(x,s[3][i],k));cam.position.set(v[0],v[1],v[2]);cam.lookAt(v[3],v[4],v[5]);cam.updateMatrixWorld();}
+
+function stateScene(t){
+  for(const D of [...CW,RING,TH,HT,RN])D.o.visible=false;
+  let rain=0,storm=0.6,grOn=1;
+  if(t<4.4){
+    // accroche : troupeau couché, l'orage arrive
+    storm=mix(0.6,1.0,lin(t,0,4.4));rain=0;
+    const L=[[-2.3,-0.6,0.5,1],[0.6,0.4,-0.35,2],[2.9,-2.2,2.6,3]];
+    L.forEach(([x,z,yaw,sd],i)=>{CW[i].o.visible=true;buildCow(CW[i],{pos:[x,0,z],yaw,lie:1,chew:1,seed:sd,t});});
+  } else if(t<9.0){
+    // Met Office : la pluie tombe sur une vache debout et sur une couchée
+    storm=1;rain=sm(lin(t,4.6,5.4));
+    CW[0].o.visible=true;CW[1].o.visible=true;
+    buildCow(CW[0],{pos:[-1.3,0,-0.4],yaw:0.35,lie:0,graze:0.4+0.3*Math.sin(t*0.8),seed:1,t});
+    buildCow(CW[1],{pos:[1.4,0,0.5],yaw:-0.4,lie:1,chew:1,seed:2,t});
+  } else if(t<13.4){
+    // vraie raison : couchée jusqu'à la moitié du temps, elle rumine
+    storm=0.55;rain=0;
+    CW[0].o.visible=true;RING.o.visible=true;
+    buildCow(CW[0],{pos:[0,0,0],yaw:0.25,lie:1,chew:1,seed:2,t});
+    const fill=0.5*eio(lin(t,9.5,11.2));
+    for(let i=0;i<NRG;i++){const f=i/NRG;const a=Math.PI/2-f*TAU;const r=0.85+0.012*Math.sin(f*80+t*4);
+      const on=f<fill;const tick=(Math.abs((f*24)%1-0.5)>0.47)?1.6:1;
+      const k=on?(0.55+0.25*Math.sin(f*30-t*5))*tick:0.10*tick;
+      RING.p.set([0.45+Math.cos(a)*r,0.72+Math.sin(a)*r,0.35],i*3);RING.c.set(on?[k*1.1,k*0.66,k*0.18]:[k*0.6,k*0.7,k*0.9],i*3);}upd(RING);
+  } else if(t<18.0){
+    // Allen et al. 2015 : température interne ↑ → elle se lève
+    storm=0.5;rain=0;CW[0].o.visible=true;TH.o.visible=true;HT.o.visible=true;
+    const heat=sm(lin(t,13.8,15.4));const up=eio(lin(t,15.2,16.4));
+    buildCow(CW[0],{pos:[0.3,0,0],yaw:0.3,lie:1-up,chew:1-up,heat:heat*0.55,seed:2,t});
+    for(let i=0;i<NTH;i++){const [a,b,q]=THU[i];let p,col;const x0=-1.2,y0=0.35,hgt=2.1;
+      if(q<0.35){const ang=a*TAU;p=[x0+Math.cos(ang)*0.10,y0+b*hgt,Math.sin(ang)*0.10];const k=0.35;col=[k*0.8,k*0.85,k];}
+      else if(q<0.45){const ang=a*TAU,th2=b*Math.PI;p=[x0+Math.cos(ang)*Math.sin(th2)*0.17,y0-0.05+Math.cos(th2)*0.17,Math.sin(ang)*Math.sin(th2)*0.17];
+        col=sc(lerp3([0.25,0.9,1.2],[1.3,0.3,0.12],heat),0.8);}
+      else{const lvl=mix(0.25,0.92,heat);const yy=b*lvl;if(b>lvl+0.001){TH.p.set(NOFF,i*3);continue;}
+        p=[x0+(a-0.5)*0.10,y0+yy*hgt,(q-0.72)*0.10];col=sc(lerp3([0.25,0.9,1.2],[1.3,0.3,0.12],heat),0.75*(0.8+0.2*Math.sin(t*6+b*20)));}
+      TH.p.set(p,i*3);TH.c.set(col,i*3);}upd(TH);
+    for(let i=0;i<NHT;i++){const [x,ph,z,q]=HTU[i];const s=((t*0.45+ph)%1);const on=up*heat;
+      const k=on*(1-s)*0.35*(0.6+0.4*q);HT.p.set([0.3+x,mix(1.0,0.5,1-up)+0.25+s*1.6,z+0.1*Math.sin(s*6+q*9)],i*3);HT.c.set([k*1.3,k*0.45,k*0.15],i*3);}upd(HT);
+  } else {
+    // nuance : troupeau qui s'imite (couchées en cascade)
+    storm=0.75;rain=t<21.25?0.25*sm(lin(t,19.6,20.4)):0.25;
+    const L=[[-3.0,-1.2,0.5,1,18.4],[-0.9,0.2,-0.3,2,19.1],[1.3,-1.8,0.4,3,19.6],[3.3,-0.4,-0.5,4,20.0]];
+    L.forEach(([x,z,yaw,sd,tl],i)=>{CW[i].o.visible=true;buildCow(CW[i],{pos:[x,0,z],yaw,lie:eio(lin(t,tl,tl+1.0)),graze:(1-lin(t,tl-0.6,tl))*0.4,seed:sd,t,glow:t<21.25?1:mix(1,0.7,sm(lin(t,21.25,22)))});});
+  }
+  // herbe
+  for(let i=0;i<NGR;i++){const [x,z,q,w]=GRU[i];const k=0.075*(0.55+0.45*q)*grOn*(0.85+0.15*Math.sin(x*1.3+t*1.5+w*6));
+    GR.p.set([x,0.02*Math.sin(x*7+z*5),z],i*3);GR.c.set([k*0.35,k*0.95,k*0.45],i*3);}upd(GR);
+  // nuages qui roulent
+  for(let i=0;i<NCL;i++){const [b,u,v,w,q]=CLU[i];const C=CLB[b];const rr=Math.cbrt(Math.abs(q))*C[3];
+    const p=[C[0]+u*rr*1.4+t*0.12,C[1]+v*rr*0.35,C[2]+w*rr*0.8];const flick=(b%5===2)?Math.max(0,Math.sin(t*1.7+b))**30*0.6:0;
+    const k=(0.05+0.025*Math.sin(q*30+t*0.5))*storm*(1+flick);CL.p.set(p,i*3);CL.c.set([k*0.55,k*0.65,k*0.95],i*3);}upd(CL);
+  // pluie (traînées de 3 points)
+  RN.o.visible=rain>0.001;
+  if(rain>0.001){for(let i=0;i<NRN;i++){const [x,y0,z,q]=RNU[i];const y=7.5-((y0*7.5+t*(7+3*q))%7.5);const k=0.55*rain*(0.5+0.5*q);
+    for(let j=0;j<3;j++){RN.p.set([x-0.02*j,y+j*0.09,z],(i*3+j)*3);RN.c.set([k*0.55*(1-j*0.25),k*0.75*(1-j*0.25),k*1.0*(1-j*0.25)],(i*3+j)*3);}}upd(RN);}
+  camAt(t);
+  bloom.strength=0.75;
+}

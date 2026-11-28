@@ -1,0 +1,13 @@
+/* ---------- textes ---------- */
+const B=[
+ {id:'q1',a:0,z:2.5,y:220,L:[['sb','font-size:60px','Les vaches se couchent…'],['bk','font-size:132px','quand il va'],['bk','font-size:132px','<span class="cy">pleuvoir</span>&#8239;?']]},
+ {id:'st',a:2.6,z:4.3,y:250,stamp:1,L:[['','font-size:96px','<span id="stampBox">MYTHE</span>']]},
+ {id:'st2',a:3.05,z:4.3,y:430,L:[['sb','font-size:50px','La vraie raison est <span class="go">ailleurs</span>.']]},
+ {id:'v1',a:4.4,z:9.0,y:190,stg:0.45,L:[['md','font-size:52px','Le service météo britannique&#8239;:'],['bk','font-size:84px','« Aucune base'],['bk','font-size:84px','<span class="cy">scientifique</span>. »'],['sb','font-size:50px','Debout ou couchée,'],['sb','font-size:50px','la pluie tombe pareil.']]},
+ {id:'c1',a:9.0,z:13.4,y:190,stg:0.6,L:[['md','font-size:52px','Une vache passe jusqu’à'],['bk','font-size:110px','<span class="go">la moitié</span>'],['bk','font-size:84px','de son temps couchée.'],['sb','font-size:48px','Pour se reposer et ruminer.']]},
+ {id:'m1',a:13.4,z:18.0,y:190,stg:0.55,L:[['md','font-size:50px','157 vaches avec capteurs&#8239;:'],['bk','font-size:104px','<span class="co">38,93&nbsp;°C</span>'],['bk','font-size:64px','de température interne'],['sb','font-size:50px','= 1 chance sur 2 d’être <span class="go">debout</span>.'],['sb','font-size:46px','Quand elle a chaud, elle se lève.']]},
+ {id:'p1',a:18.0,z:21.15,y:190,stg:0.45,L:[['md','font-size:56px','La nuance&#8239;:'],['bk','font-size:84px','en troupeau,'],['bk','font-size:84px','<span class="go">elles s’imitent</span>.'],['sb','font-size:46px','Une se couche, les autres suivent…'],['sb','font-size:46px','pluie ou pas.']]},
+ {id:'sh',a:19.4,z:21.15,y:720,btn:1,L:[['bd','font-size:36px','<span id="shb">Envoie ça à celui qui prédit la météo aux vaches</span>']]},
+ {id:'en',a:21.25,z:23.85,y:220,L:[['bd','font-size:46px','<span class="cy">Ép.&nbsp;24</span>&#8239;: les moustiques'],['bk','font-size:92px','te préfèrent'],['bk','font-size:92px','à ton voisin&#8239;?']]},
+ {id:'bt',a:21.6,z:23.85,y:590,btn:1,L:[['bd','font-size:50px','<span id="btn">Abonne-toi</span>']]},
+];
